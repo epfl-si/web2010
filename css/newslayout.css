@@ -127,24 +127,25 @@ ul.text-layout{
     overflow: hidden;
 }
 .unit-cell{
-    height: 90px;
     margin: 0 0 4px 0;
-    padding: 6px;
+    height: 90px;
     overflow: hidden;
 }
+.unit-cell p,h2,h3,ul{ padding: 6px; margin: 0;}
 .unit-2-cells{
     height: 184px;
     margin: 0 0 4px 0;
-    padding: 6px;
     overflow: hidden;
 }
+.unit-2-cells p,h2,h3,ul{ padding: 6px; margin: 0; }
 .unit-3-cells{
     height: 278px;
     margin: 0 0 4px 0;
-    padding: 6px;
     overflow: hidden;
 
 }
+.unit-3-cells p,h2,h3,ul{ padding: 6px; margin: 0;}
+
 .last-cell{
     margin: 0px;
 }
