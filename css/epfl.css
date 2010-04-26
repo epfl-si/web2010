@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+}
+h2 {font-family: Arial Black, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 23px;
+    margin: 0;
+ }
+img {
+    border: none;
+}
+.portal { background-color: #999c98; /* light gray */ }
+.school {background-color: #696f6e; /* dark gray */}
+.short { background-color: #474e52; /* darker gray */}
+.looking { background-color: #ae0010; /* dark red */}
+.contrast {background-color: #f00000; /* lighter red */ }
+
+#header{
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+#header .logo {
+    float: left;
+    height: 90px;
+    width: 160px;
+    margin: 0 4px 0 0;
+    position: relative;
+    border-bottom: 1px solid #474e52; /* darker gray */
+}
+#header .logo img{
+    position: absolute;
+    top: 27px;
+}
+#header .portal {
+    float:left;
+    height: 90px;
+    width: 160px;
+    margin: 0 4px 0 0;
+    position: relative;
+    border-bottom: 1px solid #474e52; /* darker gray */
+}
+#header .school {
+    float:left;
+    height: 90px;
+    width: 160px;
+    margin: 0 4px 0 0; 
+    position: relative;
+    border-bottom: 1px solid #474e52; /* darker gray */
+}
+#header .short {
+    float:left;
+    height: 90px;
+    width: 160px;
+    margin: 0 4px 0 0;
+    position: relative;
+    border-bottom: 1px solid #474e52; /* darker gray */
+}
+#header .looking {
+    float:left;
+    height: 90px;
+    width: 324px;
+    margin: 0;
+    position: relative;
+    border-bottom: 1px solid #474e52; /* darker gray */
+}
+#header a.main-navigation {
+    position: absolute;
+    bottom: 3px;
+    left: 9px;
+    font-family: Impact, Arial Black, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 11px;
+    padding-bottom: 6px;
+    background: url(../img/fleche_menu.gif) no-repeat  bottom right;
+    background-repeat: no-repeat;
+}
+#header a.main-navigation span { display: block; margin-bottom: 4px; font-size: 15px; }
+#header a.main-navigation:hover{ color: #666; background-image: url(../img/fleche_menu_on.gif);}
+#header a.main-navigation:active{ color: #666; background-image: url(../img/fleche_menu_on.gif);}
+
+#header .whattosearch a{width:63px;height:24px;padding-top:3px;overflow:hidden;text-align:left;margin-left:3px;text-decoration:none;font-size:12px;font-family:Georgia,"Times New Roman",Times,serif;font-style:italic;color:#fff;float:left;border-bottom:0 solid #fff;}
+#header .whattosearch a.current{font-weight:bold;color:#fff;padding-left:3px;background:url(../img/wheretosearch.png) no-repeat top left;}
+#header .whattosearch{margin-top:10px;}
+#header .whattosearch li{display:inline;}
+#searchform .button{vertical-align:bottom;margin-bottom:4px;}
+#searchform .search{width:250px;padding-left:3px;border:2px solid #fff;font-size:13px;font-family:Georgia,serif;font-style:italic;color:#030303;margin-bottom:6px;}
+#searchform{text-align:left;margin-left:8px;}
+div.forms div{display:none;}
+
+
+#maincontent{
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+.right-col{
+    width: 324px;
+    float:left;
+}
+.unit-col{
+    width: 160px;
+    margin: 0 4px 0 0;
+    float: left;
+}
+.last-col{
+    margin: 0px;
+}
+
+.teaser-head {
+   font-family:  Impact, Arial Black, Arial, Helvetica, sans-serif;
+   font-size: 15px;
+   line-height: 16px;
+   letter-spacing: 0.1em;
+   background-color: #000;
+   color: #fff;
+   text-transform: uppercase;
+   padding: 0 7px 0 7px;
+}
+.epfl { color: #f00; }
+.innovation { color: #0f0;}
+.campus { color: #0ff;}
+.education { color: #ff0;}
+.research { color: #f0f;}
+
+.news-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+}
+
+.news-text h2 {
+    font-family: Arial Black, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 14px;
+    margin: 0;
+}
+.news-text span.date {
+    font-family:  Georgia, serif;
+    font-size: 11px;
+    font-style: italic;
+    color: #000;
+}
+.news-text p {
+    color:  #4e4e4e;
+    margin: 0;
+}
+.news-text p img{
+    vertical-align: top;
+}
+
+

@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <link href="./css/epfl.css" media="all" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="logo">
+        <img src="./img/epfl.png" />
+      </div>
+      <div class="portal">
+        <a href="toto" class="main-navigation"><span>Par</span> public</a>
+      </div>
+      <div class="school">
+        <a href="toto" class="main-navigation"><span>Par</span> facult&eacute;s</a>
+      </div>
+      <div class="short">
+       <a href="toto" class="main-navigation"><span>EPFL</span> en bref</a>
+      </div>
+      <div class="looking">
+        <div id="searchform">
+          <ul class="whattosearch">
+            <li><a href="#">Nom</a></li>
+            <li><a href="#">Lieu</a></li>
+            <li><a href="#">EPFL</a></li>
+            <li><a href="#">Ce site</a></li>
+          </ul>
+          <div class="forms">
+          	<div>
+              <form name="form1" action="http://search.epfl.ch/compoundDirectory.do">
+                <input type="hidden" class="search" name="lang" value="${currentRequest.processingContext.locale}"/>
+                <input type="text" class="search" name="q" value="Chercher une personne"/>
+                <input class="button" type="image" alt="toto" title="toto" src="./img/img/red-more.png"/>
+              </form>
+          	</div>
+          	<div>
+              <form name="form2" action="http://plan.epfl.ch/">
+                <input type="hidden" class="search" name="lang" value="${currentRequest.processingContext.locale}"/>
+                <input type="text" class="search" name="room" value="Chercher un lieu"/>
+                <input class="button" type="image" src="./img/img/red-more.png" />
+              </form>
+          	</div>
+          	<div>
+              <form name="form3" action="http://search.epfl.ch/web.do">
+                <input type="hidden" class="search" name="lang" value="${currentRequest.processingContext.locale}"/>
+                <input type="text" class="search" name="q" value="Chercher dans tout l'EPFL"/>
+                <input class="button" type="image" src="./img/img/red-more.png" />
+              </form>
+          	</div>
+          	<div>
+              <form name="form4" action="http://search.epfl.ch/web.do">
+                <input type="text" class="search" name="lang" value="Chercher dans ce site"/>
+                <input class="button" type="image" src="./img/img/red-more.png" />
+              </form>
+          	</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
