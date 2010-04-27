@@ -131,20 +131,20 @@ ul.text-layout{
     height: 90px;
     overflow: hidden;
 }
-.unit-cell p,h2,h3,ul{ padding: 6px; margin: 0;}
+.unit-cell p, .unit-cell h2, .unit-cell h3, .unit-cell ul{ padding: 6px; margin: 0;}
 .unit-2-cells{
     height: 184px;
     margin: 0 0 4px 0;
     overflow: hidden;
 }
-.unit-2-cells p,h2,h3,ul{ padding: 6px; margin: 0; }
+.unit-2-cells p,.unit-2-cells h2,.unit-2-cells h3,.unit-2-cells ul{ padding: 6px; margin: 0; }
 .unit-3-cells{
     height: 278px;
     margin: 0 0 4px 0;
     overflow: hidden;
 
 }
-.unit-3-cells p,h2,h3,ul{ padding: 6px; margin: 0;}
+.unit-3-cells p, .unit-3-cells h2, .unit-3-cells h3, .unit-3-cells ul{ padding: 6px; margin: 0;}
 
 .last-cell{
     margin: 0px;
