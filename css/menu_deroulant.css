@@ -1,5 +1,39 @@
 @charset "utf-8";
 /* CSS Document */
+.navigation-menu {
+    width: 982px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-top: none;
+}
+.navigation-menu .menu {
+    float: left;
+    width: 160px;
+    margin-right: 4px;
+}
+.navigation-menu .menu-2-cols {
+    float: left;
+    width: 324px;
+    margin-right: 4px;
+}
+.navigation-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation-menu a {
+    font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:22px;
+	letter-spacing:.05em;
+	color:#000;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+} 
+.navigation-menu a:hover, .navigation-menu a:active { color:#666; } 
+
 
 .menus {
 	width:100%;
