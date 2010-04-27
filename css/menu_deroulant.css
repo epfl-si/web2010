@@ -1,28 +1,28 @@
 @charset "utf-8";
 /* CSS Document */
 .navigation-menu {
-    width: 982px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-    border-top: none;
+	width: 982px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	border-top: none;
 }
 .navigation-menu .menu {
-    float: left;
-    width: 160px;
-    margin-right: 4px;
+	float: left;
+	width: 160px;
+	margin-right: 4px;
 }
 .navigation-menu .menu-2-cols {
-    float: left;
-    width: 324px;
-    margin-right: 4px;
+	float: left;
+	width: 324px;
+	margin-right: 4px;
 }
 .navigation-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
-.navigation-menu a {
+/*.navigation-menu a {
     font-family:"Arial black", Arial;
 	font-size:12px;
 	line-height:22px;
@@ -33,28 +33,22 @@
 	text-decoration:none;
 } 
 .navigation-menu a:hover, .navigation-menu a:active { color:#666; } 
+ */
 
-
-.menus {
-	width:100%;
-	border-right:1px solid black;
-	border-bottom:1px solid black;
-	border-left:1px solid black;
-}
-.menus ul.public {
+.navigation-menu .public {
 	float: left;
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-.menus ul.public li {
+.navigation-menu .public .menu {
 	float: left;
 	width: 160px;
 	height: 70px;
-	margin: 60px 6px 4px 0;
+	margin: 60px 4px 4px 0;
 }
-.menus ul.public a {
+.navigation-menu .public a {
 	font-family:"Arial black", Arial;
 	font-size:12px;
 	line-height:22px;
@@ -64,23 +58,13 @@
 	font-weight:bold;
 	text-decoration:none;
 }
-.menus ul.public a:active, .menus ul.public a:hover {
-	font-family:"Arial black", Arial;
-	font-size:12px;
-	line-height:22px;
-	letter-spacing:.05em;
+.navigation-menu .public a:active, .navigation-menu .public a:hover {
 	color:#666;
-	text-transform:none;
-	font-weight:bold;
-	text-decoration:none;
 }
-.menus ul.bref {
-	float: left;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	list-style: none;
+.navigation-menu .bref .menu h3 {
 	color: red;
+	margin:0;
+padding:0;
 	font-family:"Arial black", Arial;
 	font-size:12px;
 	line-height:14px;
@@ -89,19 +73,24 @@
 	font-weight:bold;
 	text-decoration:none;
 }
-.menus ul.bref li {
+.navigation-menu .bref {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.navigation-menu .bref .menu {
 	float: left;
 	width: 160px;
 	height: 120px;
-	margin: 60px 6px 4px 0;
+	margin: 60px 4px 4px 0;
 }
-.menus ul.bref li.four {
-	float: left;
-	width: 200px;
-	height: 120px;
-	margin: 60px 6px 4px 0;
+.navigation-menu .bref .large {
+	width: 320px;
+	margin-right:none;
 }
-.menus ul.bref a {
+.navigation-menu .bref a {
 	font-family:"Arial black", Arial;
 	font-size:12px;
 	line-height:14px;
@@ -111,46 +100,42 @@
 	font-weight:bold;
 	text-decoration:none;
 }
-.menus ul.bref a:active, .menus ul.bref a:hover {
+.navigation-menu .bref a:active, .navigation-menu .bref a:hover {
+	color:#666;
+}
+.navigation-menu .fac .menu h3 {
+margin:0;
+padding:0;
 	font-family:"Arial black", Arial;
 	font-size:12px;
 	line-height:14px;
 	letter-spacing:.05em;
-	color:#666;
 	text-transform:none;
 	font-weight:bold;
 	text-decoration:none;
 }
-.menus ul.fac {
+.navigation-menu .fac {
 	float: left;
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	color: red;
-	font-family:"Arial black", Arial;
-	font-size:12px;
-	line-height:14px;
-	letter-spacing:.05em;
-	text-transform:none;
-	font-weight:bold;
-	text-decoration:none;
 }
-.menus ul.fac li {
+.navigation-menu .fac .menu {
 	float: left;
 	width: 318px;
 	margin: 5px 6px 4px 0px;
 }
-.menus ul.fac li.top {
+.navigation-menu .fac .top {
 	margin-top: 60px;
 }
-.menus ul.fac li.bottom {
+.navigation-menu .fac .bottom {
 	margin-bottom: 40px;
 }
-.menus ul.fac li.first {
+.navigation-menu .fac .first {
 	margin-left: 8px;
 }
-.menus ul.fac a {
+.navigation-menu .fac a {
 	font-family:"Arial black", Arial;
 	font-size:12px;
 	line-height:14px;
@@ -160,17 +145,9 @@
 	font-weight:bold;
 	text-decoration:none;
 }
-.menus ul.fac a:active, .menus ul.fac a:hover {
-	font-family:"Arial black", Arial;
-	font-size:12px;
-	line-height:14px;
-	letter-spacing:.05em;
+.navigation-menu .fac a:active, .navigation-menu .fac a:hover {
 	color:#666;
-	text-transform:none;
-	font-weight:bold;
-	text-decoration:none;
 }
-
 .color_sti {
 	color:#a9aad5;
 }
