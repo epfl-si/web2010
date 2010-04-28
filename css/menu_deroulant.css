@@ -58,13 +58,12 @@
 	font-weight:bold;
 	text-decoration:none;
 }
-.navigation-menu .public a:active, .navigation-menu .public a:hover {
-	color:#666;
-}
+.navigation-menu .public a:active, .navigation-menu .public a:hover {color:#666;}
+
 .navigation-menu .bref .menu h3 {
 	color: red;
 	margin:0;
-padding:0;
+	padding:0;
 	font-family:"Arial black", Arial;
 	font-size:12px;
 	line-height:14px;
@@ -104,8 +103,8 @@ padding:0;
 	color:#666;
 }
 .navigation-menu .fac .menu h3 {
-margin:0;
-padding:0;
+	margin:0;
+	padding:0;
 	font-family:"Arial black", Arial;
 	font-size:12px;
 	line-height:14px;
@@ -145,30 +144,13 @@ padding:0;
 	font-weight:bold;
 	text-decoration:none;
 }
-.navigation-menu .fac a:active, .navigation-menu .fac a:hover {
-	color:#666;
-}
-.color_sti {
-	color:#a9aad5;
-}
-.color_enac {
-	color:#eb690b;
-}
-.color_cdm {
-	color:#990066;
-}
-.color_cdh {
-	color:#daa520;
-}
-.color_sv {
-	color:#97bf0d;
-}
-.color_sb {
-	color:#009ee1;
-}
-.color_ic {
-	color:#30b3ad;
-}
-.color_epfl {
-	color:#991229;
-}
+.navigation-menu .fac a:active, .navigation-menu .fac a:hover {	color:#666;}
+
+.color_sti {color:#a9aad5;}
+.color_enac {color:#eb690b;}
+.color_cdm {color:#990066;}
+.color_cdh {color:#daa520;}
+.color_sv {color:#97bf0d;}
+.color_sb {color:#009ee1;}
+.color_ic {color:#30b3ad;}
+.color_epfl {color:#991229;}
