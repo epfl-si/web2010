@@ -1,28 +1,41 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    
+    <title>EPFL Header</title>
     <link href="./css/epfl.css" media="all" rel="stylesheet" type="text/css" />
-  </head>
+    <link href="./css/menu_deroulant.css" rel="stylesheet" type="text/css" />
+    
+    <link href="./css/jquery-epfl/jquery-ui-1.7.2.custom.css" type="text/css"  rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="js/globalnav.js"></script>
+    
+      </head>
   <body>
     <div id="header">
       <div class="logo">
         <img src="./img/epfl.png" />
       </div>
-      <div class="portal">
-        <a href="toto" class="main-navigation"><span>Par</span> public</a>
+      <div class="portal" id="public_link">
+        <a href="#" class="main-navigation"><span>Par</span> public</a>
       </div>
-      <div class="school">
-        <a href="toto" class="main-navigation"><span>Par</span> facult&eacute;s</a>
+      <div class="school" id="school_link">
+        <a href="#" class="main-navigation" ><span>Par</span> facult&eacute;s</a>
       </div>
-      <div class="short">
-       <a href="toto" class="main-navigation"><span>EPFL</span> en bref</a>
+      <div class="short" id="brief_link">
+       <a href="#" class="main-navigation"><span><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></span> en bref</a>
       </div>
       <div class="looking">
         <div id="searchform">
           <ul class="whattosearch">
             <li><a href="#">Nom</a></li>
             <li><a href="#">Lieu</a></li>
-            <li><a href="#">EPFL</a></li>
+            <li><a href="#"><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></a></li>
             <li><a href="#">Ce site</a></li>
           </ul>
           <div class="forms">
@@ -43,7 +56,7 @@
           	<div>
               <form name="form3" action="http://search.epfl.ch/web.do">
                 <input type="hidden" class="search" name="lang" value="${currentRequest.processingContext.locale}"/>
-                <input type="text" class="search" name="q" value="Chercher dans tout l'EPFL"/>
+                <input type="text" class="search" name="q" value="Chercher dans toute l'EPFL"/>
                 <input class="button" type="image" src="./img/img/red-more.png" />
               </form>
           	</div>
@@ -56,6 +69,134 @@
           </div>
         </div>
       </div>
+      <div style="clear:both"></div>
     </div>
+    
+    
+    <div class="navigation-panel" id="public_panel">
+      <div class="group"><br /></div>
+      <div class="group">
+        <ul>
+          <li><a href="#">Chercheur</a></li>
+          <li><a href="#">Futur &Eacute;tudiant</a></li>
+        </ul>
+      </div>
+      <div class="group">
+        <ul>
+          <li><a href="#">Collaborateur</a></li>
+          <li><a href="#">&Eacute;tudiant</a></li>
+        </ul>
+      </div>
+      <div class="group">
+        <ul>
+          <li><a href="#">M&eacute;dia</a></li>
+          <li><a href="#">Entreprise</a></li>
+        </ul>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+    
+    <div class="navigation-panel" id="school_panel">
+      <div class="group-2-cols enac">
+        <h3>Environnement Naturel, Architectural et Construit <acronym title="Environnement Naturel, Architectural et Construit">ENAC</acronym></h3>
+        <ul>
+          <li><a href="#">Architecture</a></li>
+          <li><a href="#">G&eacute;nie civil</a></li>
+          <li><a href="#">Environnement</a></li>
+          <li><a href="#">Territoire</a></li>
+        </ul>
+      </div>
+      <div class="group-2-cols sti">
+        <h3>Facult&eacute; des Sciences et Techniques de l’Ing&eacute;nieur <acronym title="Sciences et Techniques de l’Ing&eacute;nieur">STI</acronym></h3>
+        <ul>
+          <li><a href="#">G&eacute;nie &Eacute;lectrique et &Eacute;lectronique</a></li>
+          <li><a href="#">G&eacute;nie M&eacute;canique</a></li>
+          <li><a href="#">Science et G&eacute;nie des Mat&eacute;riaux</a></li>
+          <li><a href="#">Microtechnique</a></li>
+        </ul>
+      </div>
+      <div class="group-2-cols last cdm">
+        <h3>Coll&egrave;ge du Management de la Technologie <acronym title="Coll&egrave;ge du Management de la Technologie">CDM</acronym></h3>
+        <ul>
+          <li><a href="#">Management de la Technologie</a></li>
+          <li><a href="#">Ing&eacute;nierie financi&egrave;re</a></li>
+        </ul>
+      </div>
+      <div class="group-2-cols sb">
+        <h3>Sciences de Base <acronym title="Sciences de Base">SB</acronym></h3>
+        <ul>
+          <li><a href="#">Chimie</a></li>
+          <li><a href="#">Math&eacute;matique</a></li>
+          <li><a href="#">Physique</a></li>
+        </ul>
+      </div>
+      <div class="group-2-cols sv">
+        <h3>Facult&eacute; des Sciences de la Vie <acronym title="Sciences de la Vie">SV</acronym></h3>
+        <ul>
+          <li><a href="#">Sciences et technologie de la vie</a></li>
+          <li><a href="#">Bioengineering</a></li>
+        </ul>
+      </div>
+      <div class="group-2-cols last cdh">
+        <h3>Coll&egrave;ge des Humanit&eacute;s <acronym title="Coll&egrave;ge des Humanit&eacute;s">CDH</acronym></h3>
+        <ul>
+          <li><a href="#">Sciences humaines et sociales</a></li>
+        </ul>  
+      </div>
+      <div style="clear:both"></div>
+      <div class="group-2-cols ic">
+        <h3>Facult&eacute; Informatique &amp; Communications <acronym title="Informatique &amp; Communications">I&amp;C</acronym></h3>
+        <ul>
+          <li><a href="#">Informatique</a></li>
+          <li><a href="#">Syst&egrave;mes de communication</a></li>
+        </ul>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+    
+    
+    <div class="navigation-panel" id="brief_panel">
+      <div class="group"><br/></div>
+      <div class="group">
+        <h3><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></h3>
+        <ul>
+          <li><a href="#">Direction</a></li>
+          <li><a href="#">Structure</a></li>
+          <li><a href="#"><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym> en bref</a></li>
+          <li><a href="#">Information</a> </li>
+        </ul>
+      </div>
+      <div class="group">
+        <h3>Formation</h3>
+        <ul>
+          <li><a href="#">Cours Pr&eacute;paratoire</a></li>
+          <li><a href="#"><acronym title="Cours de Math&eacute;matiques Sp&eacute;ciales">CMS</acronym></a></li>
+          <li><a href="#">Bachelor</a></li>
+          <li><a href="#">Master</a></li>
+          <li><a href="#">&Eacute;cole doctorale</a></li>
+        </ul>
+      </div>
+      <div class="group">
+        <h3>Recherche</h3>
+        <ul>
+          <li><a href="#">Recherche en bref</a></li>
+          <li><a href="#">Publications <acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></a></li>
+          <li><a href="#">Grants office</a></li>
+          <li><a href="#">Commission de recherche</a></li>
+        </ul>
+      </div>
+      <div class="group-2-cols last">
+        <h3>Innovation &amp; Valorisation</h3>
+        <ul>
+          <li><a href="#">Quartier de l'innovation</a></li>
+          <li><a href="#"><acronym title="Parc Scientifique de l'&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">PSE</acronym></a></li>
+          <li><a href="#">Alliance</a></li>
+          <li><a href="#">Relations industrielles</a></li>
+        </ul>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+    
+    
   </body>
 </html>

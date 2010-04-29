@@ -1,69 +1,45 @@
 @charset "utf-8";
 /* CSS Document */
-.navigation-menu {
-	width: 982px;
+.navigation-panel {
+	width: 980px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 60px 8px 40px 8px;
+	border:none;
 	border: 1px solid black;
-	border-top: none;
+	display: none;
 }
-.navigation-menu .menu {
+.navigation-panel .group {
 	float: left;
 	width: 160px;
 	margin-right: 4px;
+	padding: 0;
 }
-.navigation-menu .menu-2-cols {
+.navigation-panel .group-2-cols {
 	float: left;
 	width: 324px;
 	margin-right: 4px;
 }
-.navigation-menu ul {
+.navigation-panel .last { margin: 0; }
+.navigation-panel ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-/*.navigation-menu a {
-    font-family:"Arial black", Arial;
-	font-size:12px;
-	line-height:22px;
-	letter-spacing:.05em;
-	color:#000;
+.navigation-panel a{
+    font-family: Arial black, Arial;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing:.05em;
 	text-transform:none;
 	font-weight:bold;
 	text-decoration:none;
-} 
-.navigation-menu a:hover, .navigation-menu a:active { color:#666; } 
- */
-
-.navigation-menu .public {
-	float: left;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	list-style: none;
+	color: #000;
 }
-.navigation-menu .public .menu {
-	float: left;
-	width: 160px;
-	height: 70px;
-	margin: 60px 4px 4px 0;
-}
-.navigation-menu .public a {
-	font-family:"Arial black", Arial;
-	font-size:12px;
-	line-height:22px;
-	letter-spacing:.05em;
-	color:#000;
-	text-transform:none;
-	font-weight:bold;
-	text-decoration:none;
-}
-.navigation-menu .public a:active, .navigation-menu .public a:hover {color:#666;}
-
-.navigation-menu .bref .menu h3 {
-	color: red;
-	margin:0;
-	padding:0;
+.navigation-panel a:active, .navigation-panel a:hover { color:#666; }
+.navigation-panel h3 {
+    margin:0;
+    padding:0;
 	font-family:"Arial black", Arial;
 	font-size:12px;
 	line-height:14px;
@@ -72,85 +48,26 @@
 	font-weight:bold;
 	text-decoration:none;
 }
-.navigation-menu .bref {
-	float: left;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.navigation-menu .bref .menu {
-	float: left;
-	width: 160px;
-	height: 120px;
-	margin: 60px 4px 4px 0;
-}
-.navigation-menu .bref .large {
+
+
+#public_panel a { line-height:22px; }
+#public_panel a:active, .#public_panel a:hover { color:#666; }
+
+#brief_panel h3 { color: red;}
+#brief_panel .large {
 	width: 320px;
 	margin-right:none;
 }
-.navigation-menu .bref a {
-	font-family:"Arial black", Arial;
-	font-size:12px;
-	line-height:14px;
-	letter-spacing:.05em;
-	color:#000;
-	text-transform:none;
-	font-weight:bold;
-	text-decoration:none;
-}
-.navigation-menu .bref a:active, .navigation-menu .bref a:hover {
-	color:#666;
-}
-.navigation-menu .fac .menu h3 {
-	margin:0;
-	padding:0;
-	font-family:"Arial black", Arial;
-	font-size:12px;
-	line-height:14px;
-	letter-spacing:.05em;
-	text-transform:none;
-	font-weight:bold;
-	text-decoration:none;
-}
-.navigation-menu .fac {
-	float: left;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.navigation-menu .fac .menu {
-	float: left;
-	width: 318px;
-	margin: 5px 6px 4px 0px;
-}
-.navigation-menu .fac .top {
-	margin-top: 60px;
-}
-.navigation-menu .fac .bottom {
-	margin-bottom: 40px;
-}
-.navigation-menu .fac .first {
-	margin-left: 8px;
-}
-.navigation-menu .fac a {
-	font-family:"Arial black", Arial;
-	font-size:12px;
-	line-height:14px;
-	letter-spacing:.05em;
-	color:#000;
-	text-transform:none;
-	font-weight:bold;
-	text-decoration:none;
-}
-.navigation-menu .fac a:active, .navigation-menu .fac a:hover {	color:#666;}
 
-.color_sti {color:#a9aad5;}
-.color_enac {color:#eb690b;}
-.color_cdm {color:#990066;}
-.color_cdh {color:#daa520;}
-.color_sv {color:#97bf0d;}
-.color_sb {color:#009ee1;}
-.color_ic {color:#30b3ad;}
-.color_epfl {color:#991229;}
+#school_panel { padding-bottom: 36px; } 
+#school_panel .group-2-cols { margin-bottom: 4px; }
+
+#school_panel a { line-height:14px;}
+#school_panel h3 acronym { color: #4e4e4e;}.navigation-panel .sti{ color:#a9aad5;}
+.navigation-panel .enac{color:#eb690b;}
+.navigation-panel .cdm{color:#990066;}
+.navigation-panel .cdh{color:#daa520;}
+.navigation-panel .sv{color:#97bf0d;}
+.navigation-panel .sb{color:#009ee1;}
+.navigation-panel .ic{color:#30b3ad;}
+.navigation-panel .epfl{color:#991229;}

@@ -3,11 +3,66 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Document sans nom</title>
-<link href="css/newslayout.css" rel="stylesheet" type="text/css" />
-<link href="css/menu_deroulant.css" rel="stylesheet" type="text/css" />
-<link href="css/epfl.css" rel="stylesheet" type="text/css" />
+    <link href="css/newslayout.css" rel="stylesheet" type="text/css" />
+    <link href="css/menu_deroulant.css" rel="stylesheet" type="text/css" />
+    <link href="css/epfl.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body style="background-color: #7f7f7f;">
+<div id="header">
+      <div class="logo">
+        <img src="./img/epfl.png" />
+      </div>
+      <div class="portal">
+        <a href="toto" class="main-navigation"><span>Par</span> public</a>
+      </div>
+      <div class="school">
+        <a href="toto" class="main-navigation"><span>Par</span> facult&eacute;s</a>
+      </div>
+      <div class="short">
+       <a href="toto" class="main-navigation"><span>EPFL</span> en bref</a>
+      </div>
+      <div class="looking">
+        <div id="searchform">
+          <ul class="whattosearch">
+            <li><a href="#">Nom</a></li>
+            <li><a href="#">Lieu</a></li>
+            <li><a href="#">EPFL</a></li>
+            <li><a href="#">Ce site</a></li>
+          </ul>
+          <div class="forms">
+          	<div>
+              <form name="form1" action="http://search.epfl.ch/compoundDirectory.do">
+                <input type="hidden" class="search" name="lang" value="${currentRequest.processingContext.locale}"/>
+                <input type="text" class="search" name="q" value="Chercher une personne"/>
+                <input class="button" type="image" alt="toto" title="toto" src="./img/img/red-more.png"/>
+              </form>
+          	</div>
+          	<div>
+              <form name="form2" action="http://plan.epfl.ch/">
+                <input type="hidden" class="search" name="lang" value="${currentRequest.processingContext.locale}"/>
+                <input type="text" class="search" name="room" value="Chercher un lieu"/>
+                <input class="button" type="image" src="./img/img/red-more.png" />
+              </form>
+          	</div>
+          	<div>
+              <form name="form3" action="http://search.epfl.ch/web.do">
+                <input type="hidden" class="search" name="lang" value="${currentRequest.processingContext.locale}"/>
+                <input type="text" class="search" name="q" value="Chercher dans tout l'EPFL"/>
+                <input class="button" type="image" src="./img/img/red-more.png" />
+              </form>
+          	</div>
+          	<div>
+              <form name="form4" action="http://search.epfl.ch/web.do">
+                <input type="text" class="search" name="lang" value="Chercher dans ce site"/>
+                <input class="button" type="image" src="./img/img/red-more.png" />
+              </form>
+          	</div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div style="clear:both;"></div>
+
 <div class="navigation-menu">
   <div class="public">
     <div class="menu"><br>
@@ -82,52 +137,12 @@
   <div style="clear:both"></div>
 </div>
 
-<!--
-    <ul class="bref">
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div>EPFL<br>
-          <a href="#">Direction</a><br>
-          <a href="#">Structure</a><br>
-          <a href="#">EPFL en bref</a><br>
-          <a href="#">Information</a> </div>
-      </li>
-      <li>
-        <div>Formation<br>
-          <a href="#">Cours Préparatoire</a><br>
-          <a href="#">CMS</a><br>
-          <a href="#">Bachelor</a><br>
-          <a href="#">Master</a><br>
-          <a href="#">&Eacute;cole doctorale</a><br>
-        </div>
-      </li>
-      <li>
-        <div>Recherche<br>
-          <a href="#">Recherche en bref</a><br>
-          <a href="#">Publication EPFL</a><br>
-          <a href="#">Grants office</a><br>
-          <a href="#">Commission de recherche</a><br>
-        </div>
-      </li>
-      <li class="four">
-        <div>Innovation &amp; Valorisation<br>
-          <a href="#">Quartier de l'innovation</a><br>
-          <a href="#">PSE</a><br>
-          <a href="#">Alliance</a><br>
-          <a href="#">Relations industrielles</a><br>
-        </div>
-      </li>
-    </ul>
-    <div style="clear:both"></div>
-  </div>
-</div>-->
 <br />
 <br />
 <!--- space WOOOOOOT --->
 <br />
 <br />
+
 <div class="navigation-menu">
   <div class="fac">
     <div class="menu top first color_enac">
@@ -182,8 +197,17 @@
       <ul>
         <li><a href="#">Sciences humaines et sociales</a></li>
       </ul>
+      <div style="clear: both"></div>
     </div>
+    
 
+    <div class="menu first color_ic">
+      <h3>Faculté Informatique &amp; Communications <span style="color:#4e4e4e">I&amp;C</span></h3>
+      <ul>
+        <li><a href="#">Informatique</a></li>
+        <li><a href="#">Syst&egrave;mes de communication</a></li>
+      </ul>
+    </div>
   </div>
   <div style="clear:both"></div>
 </div>
