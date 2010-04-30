@@ -1,12 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 .navigation-panel {
+    position: absolute;
+    top: 90px;
 	width: 980px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 60px 8px 40px 8px;
-	border:none;
-	border: 1px solid black;
+	border: none;
 	display: none;
 }
 .navigation-panel .group {
@@ -49,21 +50,30 @@
 	text-decoration:none;
 }
 
-
+#public_panel {left: -172px;}
 #public_panel a { line-height:22px; }
 #public_panel a:active, .#public_panel a:hover { color:#666; }
 
+
+#school_panel { 
+    left: -336px;
+    padding-bottom: 36px; 
+} 
+#school_panel .group-2-cols { margin-bottom: 4px; }
+
+#school_panel a { line-height:14px;}
+#school_panel h3 acronym { color: #4e4e4e;}
+
+#brief_panel { left: -500px; }
 #brief_panel h3 { color: red;}
 #brief_panel .large {
 	width: 320px;
 	margin-right:none;
 }
 
-#school_panel { padding-bottom: 36px; } 
-#school_panel .group-2-cols { margin-bottom: 4px; }
 
-#school_panel a { line-height:14px;}
-#school_panel h3 acronym { color: #4e4e4e;}.navigation-panel .sti{ color:#a9aad5;}
+
+.navigation-panel .sti{ color:#a9aad5;}
 .navigation-panel .enac{color:#eb690b;}
 .navigation-panel .cdm{color:#990066;}
 .navigation-panel .cdh{color:#daa520;}
@@ -71,3 +81,15 @@
 .navigation-panel .sb{color:#009ee1;}
 .navigation-panel .ic{color:#30b3ad;}
 .navigation-panel .epfl{color:#991229;}
+
+#dark_blanket{
+    display:none;
+    position: fixed;
+    _position:absolute; /*MSIE6*/
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index=1;
+}
