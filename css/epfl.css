@@ -7,6 +7,17 @@ body {
     margin: 4px;
     background-color: #fff;
 }
+
+h1{
+    font-family: Impact, Arial Black, Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing:.1em;
+    margin-top:40px;
+    margin-bottom: 12px;
+    text-transform:uppercase;
+}
+h1 acronym { color: }
 h2 {font-family: Arial Black, Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-weight: bold;
@@ -16,6 +27,15 @@ h2 {font-family: Arial Black, Arial, Helvetica, sans-serif;
  }
 acronym{ border: none }
 img {border: none;}
+
+.sti{ color:#a9aad5;}
+.enac{color:#eb690b;}
+.cdm{color:#990066;}
+.cdh{color:#daa520;}
+.sv{color:#97bf0d;}
+.sb{color:#009ee1;}
+.ic{color:#30b3ad;}
+.epfl{color:#ae0010;}
 
 /******************* Header definition ***********************/
 #header{
@@ -267,11 +287,11 @@ img {border: none;}
    text-transform: uppercase;
    padding: 0 7px 0 7px;
 }
-.epfl { color: #f00; }
-.innovation { color: #0f0;}
-.campus { color: #0ff;}
-.education { color: #ff0;}
-.research { color: #f0f;}
+.news-text .epfl { color: #f00; }
+.news-text .innovation { color: #0f0;}
+.news-text .campus { color: #0ff;}
+.news-text .education { color: #ff0;}
+.news-text .research { color: #f0f;}
 
 .news-text {
     font-family: Arial, Helvetica, sans-serif;
@@ -301,71 +321,3 @@ img {border: none;}
 .news-text p img{
     vertical-align: top;
 }
-
-
-
-
-#maincontent{
-    margin-left: auto;
-    margin-right: auto;
-    width: 980px;
-}
-.right-col{
-    width: 324px;
-    float:left;
-}
-.unit-col{
-    width: 160px;
-    margin: 0 4px 0 0;
-    float: left;
-}
-.last-col{
-    margin: 0px;
-}
-
-.teaser-head {
-   font-family:  Impact, Arial Black, Arial, Helvetica, sans-serif;
-   font-size: 15px;
-   line-height: 16px;
-   letter-spacing: 0.1em;
-   background-color: #000;
-   color: #fff;
-   text-transform: uppercase;
-   padding: 0 7px 0 7px;
-}
-.epfl { color: #f00; }
-.innovation { color: #0f0;}
-.campus { color: #0ff;}
-.education { color: #ff0;}
-.research { color: #f0f;}
-
-.news-text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    line-height: 14px;
-    letter-spacing: 0.05em;
-}
-
-.news-text h2 {
-    font-family: Arial Black, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 0.05em;
-    line-height: 14px;
-    margin: 0;
-}
-.news-text span.date {
-    font-family:  Georgia, serif;
-    font-size: 11px;
-    font-style: italic;
-    color: #000;
-}
-.news-text p {
-    color:  #4e4e4e;
-    margin: 0;
-}
-.news-text p img{
-    vertical-align: top;
-}
-
-
