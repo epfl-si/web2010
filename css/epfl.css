@@ -1,8 +1,11 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;}
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     line-height: 14px;
     letter-spacing: 0.05em;
+    margin: 4px;
+    background-color: #fff;
 }
 h2 {font-family: Arial Black, Arial, Helvetica, sans-serif;
     font-size: 22px;
@@ -129,13 +132,14 @@ img {border: none;}
 
 .navigation-panel {
     position: absolute;
-    top: 90px;
+    top: 91px;
 	width: 980px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 60px 8px 40px 8px;
 	border: none;
 	display: none;
+	background-color: #fff;
 }
 .navigation-panel .group {
 	float: left;
@@ -203,6 +207,35 @@ img {border: none;}
 	width: 320px;
 	margin-right:none;
 }
+
+#breadcrumbs, #languages{
+    padding-top:8px;
+    font-family: Georgia, Times, serif;
+    font-style: italic;
+    font-size:11px;
+    font-weight: bold;
+}
+#breadcrumbs { float: left; }
+#breadcrumbs li{
+    display:inline;
+    background: url(../img/separator.png) no-repeat right center;
+    padding-right: 16px;
+}
+
+#breadcrumbs li.last{ background: none; }
+#breadcrumbs a, #languages, #languages a{
+    color: #000;
+    text-decoration: none;
+    font-size: 11px;}
+#breadcrumbs .last a, #languages .current{ color:#999; }
+
+#languages{ color:#000; float: right;}
+#languages li {
+    display:inline; 
+    padding:0 0 0 10px;
+}
+#languages{text-align:right;}
+
 
 /****************************** Main content *****************************/
 
