@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta charset="utf-8" />
-    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
     <title>EPFL Header</title>
     <link href="./css/epfl.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="./css/menu_deroulant.css" rel="stylesheet" type="text/css" />
-    
     <link href="./css/jquery-epfl/jquery-ui-1.7.2.custom.css" type="text/css"  rel="stylesheet" />
+    
     <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"></script>
-    <script type="text/javascript" src="js/globalnav.js"></script>
-    
+    <script type="text/javascript" src="js/globalnav.js"></script> 
   </head>
   <body>
     <div id="header">
       <div id="nav_logo">
-        <img src="./img/epfl.png" />
+        <img src="./img/epfl.png" alt="Logo de l'EPFL" />
       </div>
       <div id="nav_menus">
         <ul id="main_menus">
@@ -48,7 +44,6 @@
               <div style="clear:both"></div>
             </div>
           </li>
-          
           <li class="school menu" id="school_menu_link">
             <a class="main-link" href="#"><span>Par</span> facult&eacute;s</a>
             <div class="navigation-panel" id="school_panel">
@@ -109,7 +104,6 @@
               <div style="clear:both"></div>
             </div>
           </li>
-          
           <li class="short menu" id="brief_menu_link">
             <a class="main-link" href="#"><span><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></span> en bref</a>
             <div class="navigation-panel" id="brief_panel">
@@ -153,62 +147,52 @@
               </div>
               <div style="clear:both"></div>
             </div>
-          
-          
-          
-          
-          
           </li>
         </ul>
       </div>
+      
       <div class="looking" id="nav_search">
-        <div id="searchform">
-          <ul class="whattosearch">
-            <li><a href="#">Nom</a></li>
-            <li><a href="#">Lieu</a></li>
-            <li><a href="#"><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></a></li>
-            <li><a href="#">Ce site</a></li>
-          </ul>
-          <div class="forms">
-          	<div>
-              <form name="form1" action="http://search.epfl.ch/compoundDirectory.do">
-                <input type="hidden" class="search" name="lang" value="${currentRequest.processingContext.locale}"/>
-                <input type="text" class="search" name="q" value="Chercher une personne"/>
-                <input class="button" type="image" alt="toto" title="toto" src="./img/img/red-more.png"/>
+        <ul class="whattosearch">
+          <li id="search_person">
+            <a href="#">Nom</a>
+            <div id="search_person_form" class="search-box">
+              <form name="search-person" action="http://search.epfl.ch/compoundDirectory.do">
+                <input type="hidden" name="lang" value="fr" />
+                <input type="text" class="search" name="q" value="" title="Chercher une personne" /><button type="submit" class="search-button"  title="Rechercher"></button>
               </form>
-          	</div>
-          	<div>
-              <form name="form2" action="http://plan.epfl.ch/">
-                <input type="hidden" class="search" name="lang" value="${currentRequest.processingContext.locale}"/>
-                <input type="text" class="search" name="room" value="Chercher un lieu"/>
-                <input class="button" type="image" src="./img/img/red-more.png" />
+            </div>
+          </li>
+          <li id="search_place">
+            <a href="#">Lieu</a>
+            <div id="search_place_form" class="search-box">
+              <form name="search-place" action="http://plan.epfl.ch/">
+                <input type="hidden" name="lang" value="fr" />
+                <input type="text" class="search" name="room" value="" title="Chercher un lieu" /><button type="submit" class="search-button"  title="Rechercher"></button>
               </form>
-          	</div>
-          	<div>
-              <form name="form3" action="http://search.epfl.ch/web.do">
-                <input type="hidden" class="search" name="lang" value="${currentRequest.processingContext.locale}"/>
-                <input type="text" class="search" name="q" value="Chercher dans toute l'EPFL"/>
-                <input class="button" type="image" src="./img/img/red-more.png" />
+            </div>
+          </li>
+          <li id="search_epfl">
+            <a href="#"><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></a>
+            <div id="search_epfl_form" class="search-box">
+              <form name="search-epfl" action="http://search.epfl.ch/web.do">
+                <input type="hidden" name="lang" value="fr" />
+                <input type="text" class="search" name="q" value="" title="Chercher dans toute l'EPFL" /><button type="submit" class="search-button"  title="Rechercher"></button>
               </form>
-          	</div>
-          	<div>
-              <form name="form4" action="http://search.epfl.ch/web.do">
-                <input type="text" class="search" name="lang" value="Chercher dans ce site"/>
-                <input class="button" type="image" src="./img/img/red-more.png" />
+            </div>
+          </li>
+          <li id="search_local">
+            <a href="#">Ce site</a>
+            <div id="search_local_form" class="search-box">
+              <form name="search-local" action="http://search.epfl.ch/web.do">
+                <input type="hidden"  name="lang" value="fr" />
+                <input type="text" class="search" name="q" value="" title="Chercher dans ce site"/><button type="submit" class="search-button"  title="Rechercher"></button>
               </form>
-          	</div>
-          </div>
-        </div>
+            </div>
+          </li>
+        </ul>
       </div>
       <div style="clear:both"></div>
     </div>
-    
-    
-        
-    
-    
-
-    
-    
+  
   </body>
 </html>
