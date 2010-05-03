@@ -1,4 +1,54 @@
-#maincontent ul { list-style-type:none; }
+#main_navigation {
+	width:980px;
+	height: 26px;
+	font-size:11px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	color:#000;
+	font-weight:bold;
+    background-color:#e3e3e3;
+}
+#main_navigation .group {float: left;}
+#grid-icon { 
+    background-image:url(../img/grid.png);
+	background-repeat:no-repeat;
+	height:22px;
+	width: 36px;
+	display:block;
+}
+#grid-icon.current { background-image:url(../img/grid-on.png);}
+#list-icon { 
+    background-image:url(../img/list.png);
+	background-repeat:no-repeat;
+	height:22px;
+	width:36px;
+	display:block;
+}
+#list-icon.current { background-image:url(../img/list-on.png);}
+#text-icon { 
+    background-image:url(../img/text.png);
+	background-repeat:no-repeat;
+	height:22px;
+	width:36px;
+	display:block;
+}
+#text-icon.current { background-image:url(../img/text-on.png);}
+#main_navigation .group { float: left; }
+#main_navigation .group span { height: 19px; float: left; padding-top: 7px; margin-right: 2px;}
+#main_navigation ul{
+    float: left;
+    list-style: none;
+    position: relative;
+    top: 2px;
+}
+#main_navigation ul.dropdown{
+    position: absolute;
+}
+#main_navigation .menu {display: none; position: relative; top: 26px;}
+#main_navigation li {
+    float: left;
+}
+
 ul.list-layout {
     float: left;
     width: 656px;

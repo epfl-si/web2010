@@ -12,7 +12,7 @@
     
     <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"></script>
-    <script type="text/javascript" src="js/globalnav.js"></script> 
+    <script type="text/javascript" src="js/globalnav.js"></script>
   </head>
   <body>
     <div id="header">
@@ -210,6 +210,52 @@
     
     <div id="maincontent">
       <h1>École polytechnique fédérale de Lausanne <acronym title="École Polytechnique Fédérale de Lausanne" class="epfl">EPFL</acronym></h1>
+      
+      
+      <div id="main_navigation">
+        <div class="group">
+            <span>Vue par</span>
+            <ul>
+              <li><a href="home-grid.html" id="grid-icon" class="current" alt="Actualités présentées en grille"></a></li>
+              <li><a href="home-list.html" id="list-icon" alt="Actualités présentées en liste"></a></li>
+              <li><a href="home-text" id="text-icon" alt="Actualités présentées textuellement"></a></li>
+            </ul>
+        </div>
+        <div class="group">
+            <span>Tri par</span>
+            <ul>
+              <li>
+                <a href="#" class="dropdown">Thème</a>
+                <ul class="menu">
+                  <li>Sciences de base</li>
+                  <li>Santé</li>
+                  <li>Informatique</li>
+                  <li>Ingénierie</li>
+                  <li>Environnement</li>
+                  <li>Archi/Construction</li>	
+                  <li>Société/Culture</li>
+                  <li>Eco/Finance</li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="dropdown">Catégorie</a>
+                <ul class="menu">
+                  <li><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></li>
+                  <li>Enseignement</li>
+                  <li>Recherche</li>
+                  <li>Ingénierie</li>
+                  <li>Transfert technologique</li>
+                  <li>Vie sur le campus</li>	
+                </ul>
+              </li>
+              <li><a href="#" class="menu_nav_fleche_homepage">Date</a></li>
+            </ul>
+        </div>
+        <div class="feed">
+            <a href="#" class="rss" title="RSS Feed" ></a>
+        </div>
+      </div>
+      
       <ul title="Latest news" class="grid-layout">
       <li class="heading-news">
           <a href="actualited.epfl.ch" title="Read more">

@@ -53,4 +53,14 @@ $(document).ready(function(){
             if (e.which == 13) $(this).parent('form').submit();
         });
     });
+    /*
+    $('.dropdown').each(function(){
+        $(this).click(function(){ 
+            alert('tata');
+        });
+    });*/
+    $('.dropdown').click(function(){
+        $(this).siblings('ul').show();
+    });
+
 });
