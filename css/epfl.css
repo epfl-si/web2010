@@ -25,6 +25,10 @@ h2 {font-family: Arial Black, Arial, Helvetica, sans-serif;
     line-height: 23px;
     margin: 0;
  }
+a {
+    text-decoration: none;
+    color: #000;
+}
 acronym{ border: none }
 img {border: none;}
 
@@ -160,6 +164,7 @@ img {border: none;}
 	border: none;
 	display: none;
 	background-color: #fff;
+	z-index: 999;
 }
 .navigation-panel .group {
 	float: left;
@@ -256,6 +261,43 @@ img {border: none;}
 }
 #languages{text-align:right;}
 
+/****************************** Interface Elements ************************/
+.dropdown {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    font-style: italic;
+    position: relative;
+    height: 20px;
+    border: 1px solid #b8b8b8;
+    background: url(../img/dropdown-head.png) repeat-x right center;
+    margin: 0 2px 0 2px;
+}
+.dropdown:hover {
+    cursor: pointer; 
+    border: 1px solid #000;
+    background: url(../img/dropdown-head-on.png) repeat-x right center;
+    margin: 0 2px 0 2px;
+}
+.dropdown a{
+    padding: 4px 22px 0px 8px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+.dropdown:hover a{ color: #fff;}
+
+.dropdown .menu {
+    list-style: none;
+    position: absolute;
+    left: -1px; top: 20px;
+    display: none;
+    z-index: 998;
+    line-height: 18px;
+    background: #fff none;
+    border: 1px solid #b8b8b8;
+    padding: 8px;
+}
+.dropdown .menu li { margin: 0; padding: 0; }
 
 /****************************** Main content *****************************/
 
@@ -321,3 +363,27 @@ img {border: none;}
 .news-text p img{
     vertical-align: top;
 }
+/************************ Footer ********************************/
+#footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    border-bottom: 1px solid #000;
+    font-family:  Georgia, serif;
+    font-size: 11px;
+    font-style: italic;
+    margin-top: 16px;
+    padding-bottom: 4px;
+
+}
+#footer ul{
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+#footer li {
+    display: inline;
+    margin-right: 16px;
+}
+
+.copyright { color:#4e4e4e}
