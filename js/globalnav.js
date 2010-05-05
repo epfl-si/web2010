@@ -23,37 +23,44 @@ $(document).ready(function(){
     $('#school_menu_link').mouseenter(function(){ show_panel($('#school_panel')); });
     $('#brief_menu_link').mouseenter(function(){ show_panel($('#brief_panel')); });
     
-    /* Navigation: search boxes */
-    var opened_searchbox = null;
-    function toggle_searchbox(searchbox){
-        if (opened_searchbox != null){
-            opened_searchbox.hide();
-            opened_searchbox.siblings('a').toggleClass('current');
+    /* Navigation: search boxes */ 
+    function change_search_base(label){
+        switch (label.attr('for')){
+            case "search_engine_person":
+                $('#search_form').attr('action', 'http://search.epfl.ch/compoundDirectory.do');
+                $('#search_field').attr('name', 'q');
+                break;
+            case "search_engine_place":
+                $('#search_form').attr('action', 'http://plan.epfl.ch/');
+                $('#search_field').attr('name', 'room');
+                break;
+            case "search_engine_epfl":
+                $('#search_form').attr('action', 'http://search.epfl.ch/web.do');
+                $('#search_field').attr('name', 'q');
+                break;
+            case "search_engine_local":
+                $('#search_form').attr('action', 'http://search.epfl.ch/web.do');
+                $('#search_field').attr('name', 'q');
+                break;
         }
-        searchbox.show();
-        searchbox.siblings('a').toggleClass('current');
-        opened_searchbox = searchbox;
+        if ($('#search_field').val() === $('#search_form label.current').attr('title')) $('#search_field').val('');
+        if ($('#search_field').val() === '') $('#search_field').val(label.attr('title'));
+        $('#search_form label').removeClass('current')
+        label.addClass('current')
     }
-    $('#search_person').mouseenter(function(){ toggle_searchbox($('#search_person_form')); });
-    $('#search_place').mouseenter(function(){ toggle_searchbox($('#search_place_form')); });
-    $('#search_epfl').mouseenter(function(){ toggle_searchbox($('#search_epfl_form')); });
-    $('#search_local').mouseenter(function(){ toggle_searchbox($('#search_local_form')); });
-    toggle_searchbox($('#search_person_form'));
     
-    /* Texts input in header (search fields) */
-    $('#header').find('input[title]').each(function() {
-        if ($(this).val() === '') $(this).val($(this).attr('title'));
-        $(this).focus(function() {
-            if ($(this).val() === $(this).attr('title')) $(this).val('').addClass('focused');
-        });
-        $(this).blur(function() {
-            if ($(this).val() === '')  $(this).val($(this).attr('title')).removeClass('focused');
-        });
-        $(this).keypress(function(e){
+    $('#search_form label').click(function(){ change_search_base($(this)); });
+    $('#search_field').focus(function(){
+        if ($(this).val() === $('#search_form label.current').attr('title')) $(this).val('').addClass('focused');
+        /*alert('here');*/
+    });
+    $('#search_field').focus(function() {
+            if ($(this).val() === '')  $(this).val($('#search_form label.current').attr('title')).removeClass('focused');
+    });
+    $('#search_field').keypress(function(e){
             if (e.which == 13) $(this).parent('form').submit();
         });
-    });
-    
+        
     $('.dropdown').click(function(){ $(this).children('ul').toggle();});
     $('.dropdown').mouseleave(function(){ $(this).children('ul').hide() });
 

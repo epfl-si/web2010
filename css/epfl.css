@@ -41,6 +41,11 @@ img {border: none;}
 .ic{color:#30b3ad;}
 .epfl{color:#ae0010;}
 
+.hidden{
+    position: absolute;
+    left: -1000em;
+}
+
 /******************* Header definition ***********************/
 #header{
     margin-left: auto;
@@ -100,21 +105,16 @@ img {border: none;}
     position: relative;
     border-bottom: 1px solid #474e52; /* darker gray */
 }
-#nav_search ul.whattosearch{
+
+#search-box {
     margin: 0 8px 0 8px;
     padding: 0;
     position: absolute;
-    bottom: 30px;
+    bottom: 8px;
 }
-#nav_search li {
-    float: left;
-    position: relative;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-#nav_search a{
+#search_form label{
     display: block;
+    float: left;
     width:64px;
     height:24px;
     padding-top: 3px;
@@ -126,23 +126,18 @@ img {border: none;}
     font-family: Arial, helvetica, sans-serif;
     color:#fff;
 }
-#nav_search a.current{
+#search_form label:hover {cursor: pointer;}
+#search_form label.current{
     font-weight:bold;
     background:url(../img/wheretosearch.png) no-repeat top left;}
-#nav_search .search-box {
-    position: absolute;
-    display: none;
-    top: 28px;
-    width: 308px;
-}
-#nav_search .search-box input.search{
+#search_form input.search{
     width: 280px;
     height: 22px;
     margin-right: 1px;
     padding: 0 0 0 4px;
     border: none;
 }
-#nav_search .search-box button{
+#search_form button{
     background: url(../img/search.png) no-repeat top left;
     width: 22px;
     height: 22px;
@@ -150,9 +145,6 @@ img {border: none;}
     border: none;
     vertical-align: bottom;   
 }
-#search_place_form{ left: -68px;}
-#search_epfl_form{ left: -136px;}
-#search_local_form{ left: -204px;}
 
 .navigation-panel {
     position: absolute;
