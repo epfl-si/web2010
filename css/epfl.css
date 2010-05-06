@@ -46,6 +46,7 @@ img {border: none;}
     left: -1000em;
 }
 
+
 /******************* Header definition ***********************/
 #header{
     margin-left: auto;
@@ -197,6 +198,8 @@ img {border: none;}
 	font-weight:bold;
 	text-decoration:none;
 }
+.navigation-panel h3 a { color: inherit }
+
 .navigation-panel .sti{ color:#a9aad5;}
 .navigation-panel .enac{color:#eb690b;}
 .navigation-panel .cdm{color:#990066;}
