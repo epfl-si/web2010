@@ -23,7 +23,9 @@ $(document).ready(function(){
     $('#school_menu_link').mouseenter(function(){ show_panel($('#school_panel')); });
     $('#brief_menu_link').mouseenter(function(){ show_panel($('#brief_panel')); });
     
+    
     /* Navigation: search boxes */ 
+    var current_search_base = $('#search_form label.current');
     function change_search_base(label){
         switch (label.attr('for')){
             case "search_engine_person":
@@ -45,16 +47,18 @@ $(document).ready(function(){
         }
         if ($('#search_field').val() === $('#search_form label.current').attr('title')) $('#search_field').val('');
         if ($('#search_field').val() === '') $('#search_field').val(label.attr('title'));
-        $('#search_form label').removeClass('current')
-        label.addClass('current')
+        current_search_base.toggleClass('current');
+        current_search_base = label;
+        current_search_base.toggleClass('current')
     }
     
     $('#search_form label').click(function(){ change_search_base($(this)); });
     $('#search_field').focus(function(){
-        if ($(this).val() === $('#search_form label.current').attr('title')) $(this).val('').addClass('focused');
+        
+        if ($(this).val() === current_search_base.attr('title')) $(this).val('').addClass('focused');
         /*alert('here');*/
     });
-    $('#search_field').focus(function() {
+    $('#search_field').blur(function() {
             if ($(this).val() === '')  $(this).val($('#search_form label.current').attr('title')).removeClass('focused');
     });
     $('#search_field').keypress(function(e){

@@ -4,15 +4,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
-    <title>EPFL Homepage - Grid layout</title>
+    <title>EPFL Header</title>
     <link href="./css/epfl.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="./css/newslayout.css" media="all" rel="stylesheet" type="text/css" />
-
     <link href="./css/jquery-epfl/jquery-ui-1.7.2.custom.css" type="text/css"  rel="stylesheet" />
     
     <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"></script>
-    <script type="text/javascript" src="js/globalnav.js"></script>
+    <script type="text/javascript" src="js/globalnav.js"></script> 
   </head>
   <body>
     <div id="header">
@@ -154,45 +152,21 @@
       </div>
       
       <div class="looking" id="nav_search">
-        <ul class="whattosearch">
-          <li id="search_person">
-            <a href="#">Nom</a>
-            <div id="search_person_form" class="search-box">
-              <form name="search-person" action="http://search.epfl.ch/compoundDirectory.do">
-                <input type="hidden" name="lang" value="fr" />
-                <input type="text" class="search" name="q" value="" title="Chercher une personne" /><button type="submit" class="search-button"  title="Rechercher"></button>
-              </form>
-            </div>
-          </li>
-          <li id="search_place">
-            <a href="#">Lieu</a>
-            <div id="search_place_form" class="search-box">
-              <form name="search-place" action="http://plan.epfl.ch/">
-                <input type="hidden" name="lang" value="fr" />
-                <input type="text" class="search" name="room" value="" title="Chercher un lieu" /><button type="submit" class="search-button"  title="Rechercher"></button>
-              </form>
-            </div>
-          </li>
-          <li id="search_epfl">
-            <a href="#"><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></a>
-            <div id="search_epfl_form" class="search-box">
-              <form name="search-epfl" action="http://search.epfl.ch/web.do">
-                <input type="hidden" name="lang" value="fr" />
-                <input type="text" class="search" name="q" value="" title="Chercher dans toute l'EPFL" /><button type="submit" class="search-button"  title="Rechercher"></button>
-              </form>
-            </div>
-          </li>
-          <li id="search_local">
-            <a href="#">Ce site</a>
-            <div id="search_local_form" class="search-box">
-              <form name="search-local" action="http://search.epfl.ch/web.do">
-                <input type="hidden"  name="lang" value="fr" />
-                <input type="text" class="search" name="q" value="" title="Chercher dans ce site"/><button type="submit" class="search-button"  title="Rechercher"></button>
-              </form>
-            </div>
-          </li>
-        </ul>
-      </div>
+        <div id="search-box">
+          <form name="search" action="http://search.epfl.ch/compoundDirectory.do" id="search_form">
+            <input class="hidden" type="radio" name="engine" id="search_engine_person" value="person" checked="checked" />
+		    <label for="search_engine_person" class="current" title="Chercher une personne">Nom</label>
+		    <input class="hidden" type="radio" name="engine" id="search_engine_place" value="place" />
+		    <label for="search_engine_place" title="Chercher un lieu">Lieu</label>
+		    <input class="hidden" type="radio" name="engine" id="search_engine_epfl" value="epfl"/>
+		    <label for="search_engine_epfl" title="Chercher dans toute l'EPFL"><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></label>
+		    <input class="hidden" type="radio" name="engine" id="search_engine_local" value="local" />
+		    <label for="search_engine_local" title="Chercher dans ce site">Ce site</label>
+		    <input type="hidden" name="lang" value="fr" />
+            <input type="text" class="search" name="q" value="Chercher une personne" id="search_field" /><button type="submit" class="search_button"  title="Rechercher"></button>
+          </form>
+        </div>
+      </div> 
       <div style="clear:both"></div>
       <ul id="breadcrumbs">
         <li><a href="http://www.epfl.ch/" title="Page d'accueil de l'EPFL">EPFL</a></li>
@@ -207,7 +181,7 @@
       </ul>
       <div style="clear:both"></div>
     </div>
-    
+       
     <div id="maincontent">
       <h1>École polytechnique fédérale de Lausanne <acronym title="École Polytechnique Fédérale de Lausanne" class="epfl">EPFL</acronym></h1>
       
