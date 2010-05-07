@@ -293,6 +293,7 @@ img {border: none;}
     padding: 8px;
 }
 .dropdown .menu li { margin: 0; padding: 0; }
+.dropdown .menu a, .dropdown .menu a:visited, .dropdown .menu a:hover{ color: #000; margin: 0; padding: 0; }
 
 /****************************** Main content *****************************/
 
