@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -11,18 +10,37 @@
     
     <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tools.min.js"></script>
+    <script type="text/javascript">
+        jQuery.noConflict();
+    </script> 
     <script type="text/javascript" src="js/globalnav.js"></script> 
+    
   </head>
   <body>
-        <div id="header">
+    <div id="accessibility" class="hidden" title="École polytechnique Fédérale de Lausanne - Accès rapide">
+      <ul>
+            <li><a href="http://www.epfl.ch/accessibility" title="Accès spécifique pour personnes handicapées" accesskey="0">Accessiblité</a></li>
+			<li><a href="http://www.epfl.ch/" title="Page d'accueil"  accesskey="1">Accueil</a></li>
+			<li><a href="#navigation" accesskey="2" title="Navigation dans l'École">Navigation dans les sites de l'École</a></li>
+			<li><a href="#navigate_site" accesskey="3" title="Navigation dans ce site">Navigation dans ce site</a></li>
+			<li><a href="#search" id="searchlink" accesskey="4" title="Accès au champ de recherche">Acc&egrave;s au champ de recherche</a></li>
+      		<li><a href="#maincontent" accesskey="5" title="Début du contenu de la page">D&eacute;but du contenu de la page</a></li>
+			<li><a href="http://www.epfl.ch/sitemap/" title="Plan du site de l'EPFL" accesskey="8">Plan du site</a></li>
+            <li><a href="mailto:webmaster@epfl.ch" title="Contact" accesskey="9">Contact technique</a></li>
+      </ul>
+    </div>
+    
+    <div id="header">
       <div id="nav_logo">
         <img src="./img/epfl.png" alt="Logo de l'EPFL" />
       </div>
       <div id="nav_menus">
         <ul id="main_menus">
+          <a name="navigation"></a>
           <li class="portal menu" id="public_menu_link">
-            <a class="main-link" href="#"><span>Par</span> public</a>
-            <div class="navigation-panel" id="public_panel">
+            <a class="main-link" href="http://www.epfl.ch/navigate.fr.html"><span>Par</span> public</a>
+            <div class="navigation_panel hidden" id="public_panel">
               <div class="group"><br /></div>
               <div class="group">
                 <ul>
@@ -46,106 +64,110 @@
             </div>
           </li>
           <li class="school menu" id="school_menu_link">
-            <a class="main-link" href="#"><span>Par</span> facult&eacute;s</a>
-            <div class="navigation-panel" id="school_panel">
-              <div class="group-2-cols enac">
-                <h3><a href="http://enac.epfl.ch/">Environnement Naturel, Architectural et Construit <acronym title="Environnement Naturel, Architectural et Construit">ENAC</acronym></a></h3>
-                <ul>
-                  <li><a href="http://ia.epfl.ch/">Architecture</a></li>
-                  <li><a href="http://iic.epfl.ch/">G&eacute;nie civil</a></li>
-                  <li><a href="http://iie.epfl.ch/">Environnement</a></li>
-                  <li><a href="http://inter.epfl.ch/">Territoire</a></li>
-                </ul>
-              </div>
-              <div class="group-2-cols sti">
-                <h3><a href="http://sti.epfl.ch/">Facult&eacute; des Sciences et Techniques de l’Ing&eacute;nieur <acronym title="Sciences et Techniques de l’Ing&eacute;nieur">STI</acronym></a></h3>
-                <ul>
-                  <li><a href="http://iel.epfl.ch/">G&eacute;nie &Eacute;lectrique et &Eacute;lectronique</a></li>
-                  <li><a href="http://igm.epfl.ch/">G&eacute;nie M&eacute;canique</a></li>
-                  <li><a href="http://imx.epfl.ch/">Science et G&eacute;nie des Mat&eacute;riaux</a></li>
-                  <li><a href="http://imt.epfl.ch/">Microtechnique</a></li>
-                </ul>
-              </div>
-              <div class="group-2-cols last cdm">
-                <h3><a href="http://cdm.epfl.ch/">Coll&egrave;ge du Management de la Technologie <acronym title="Coll&egrave;ge du Management de la Technologie">CDM</acronym></a></h3>
-                <ul>
-                  <li><a href="http://smte.epfl.ch/">Management de la Technologie</a></li>
-                  <li><a href="http://sif.epfl.ch/">Ing&eacute;nierie financi&egrave;re</a></li>
-                </ul>
-              </div>
-              <div class="group-2-cols sb">
-                <h3><a href="http://sb.epfl.ch/">Sciences de Base <acronym title="Sciences de Base">SB</acronym></a></h3>
-                <ul>
-                  <li><a href="http://scgc.epfl.ch/">Chimie</a></li>
-                  <li><a href="http://sma.epfl.ch/">Math&eacute;matique</a></li>
-                  <li><a href="http://sph.epfl.ch/">Physique</a></li>
-                </ul>
-              </div>
-              <div class="group-2-cols sv">
-                <h3><a href="http://sv.epfl.ch/">Facult&eacute; des Sciences de la Vie <acronym title="Sciences de la Vie">SV</acronym></a></h3>
-                <ul>
-                  <li><a href="http://epfl.ch/erreur404.html">Sciences et technologie de la vie</a></li>
-                  <li><a href="http://ibi.epfl.ch/">Bioengineering</a></li>
-                </ul>
-              </div>
-              <div class="group-2-cols last cdh">
-                <h3><a href="http://cdh.epfl.ch/">Coll&egrave;ge des Humanit&eacute;s <acronym title="Coll&egrave;ge des Humanit&eacute;s">CDH</acronym></a></h3>
-                <ul>
-                  <li><a href="http://epfl.ch/erreur404.html">Sciences humaines et sociales</a></li>
-                </ul>  
-              </div>
-              <div style="clear:both"></div>
-              <div class="group-2-cols ic">
-                <h3><a href="http://ic.epfl.ch/">Facult&eacute; Informatique &amp; Communications <acronym title="Informatique &amp; Communications">I&amp;C</acronym></a></h3>
-                <ul>
-                  <li><a href="http://epfl.ch/erreur404.html">Informatique</a></li>
-                  <li><a href="http://epfl.ch/erreur404.html">Syst&egrave;mes de communication</a></li>
-                </ul>
-              </div>
-              <div style="clear:both"></div>
+            <a class="main-link" href="http://www.epfl.ch/navigate.fr.html"><span>Par</span> facult&eacute;s</a>
+            <div class="navigation_panel hidden" id="school_panel">
+              <ul>
+                <li class="group-2-cols">
+                  <h3 class="enac"><a href="http://enac.epfl.ch/">Environnement Naturel, Architectural et Construit <acronym title="Environnement Naturel, Architectural et Construit">ENAC</acronym></a></h3>
+                  <ul>
+                    <li><a href="http://ia.epfl.ch/">Architecture</a></li>
+                    <li><a href="http://iic.epfl.ch/">G&eacute;nie civil</a></li>
+                    <li><a href="http://iie.epfl.ch/">Environnement</a></li>
+                    <li><a href="http://inter.epfl.ch/">Territoire</a></li>
+                  </ul>
+                </li>
+                <li class="group-2-cols">
+                  <h3 class="sti"><a href="http://sti.epfl.ch/">Facult&eacute; des Sciences et Techniques de l’Ing&eacute;nieur <acronym title="Sciences et Techniques de l’Ing&eacute;nieur">STI</acronym></a></h3>
+                  <ul>
+                    <li><a href="http://iel.epfl.ch/">G&eacute;nie &Eacute;lectrique et &Eacute;lectronique</a></li>
+                    <li><a href="http://igm.epfl.ch/">G&eacute;nie M&eacute;canique</a></li>
+                    <li><a href="http://imx.epfl.ch/">Science et G&eacute;nie des Mat&eacute;riaux</a></li>
+                    <li><a href="http://imt.epfl.ch/">Microtechnique</a></li>
+                  </ul>
+                </li>
+                <li class="group-2-cols last">
+                  <h3 class="cdm"><a href="http://cdm.epfl.ch/">Coll&egrave;ge du Management de la Technologie <acronym title="Coll&egrave;ge du Management de la Technologie">CDM</acronym></a></h3>
+                  <ul>
+                    <li><a href="http://smte.epfl.ch/">Management de la Technologie</a></li>
+                    <li><a href="http://sif.epfl.ch/">Ing&eacute;nierie financi&egrave;re</a></li>
+                  </ul>
+                </li>
+                <li class="group-2-cols">
+                  <h3 class="sb"><a href="http://sb.epfl.ch/">Sciences de Base <acronym title="Sciences de Base">SB</acronym></a></h3>
+                  <ul>
+                    <li><a href="http://scgc.epfl.ch/">Chimie</a></li>
+                    <li><a href="http://sma.epfl.ch/">Math&eacute;matique</a></li>
+                    <li><a href="http://sph.epfl.ch/">Physique</a></li>
+                  </ul>
+                </li>
+                <li class="group-2-cols">
+                  <h3 class="sv"><a href="http://sv.epfl.ch/">Facult&eacute; des Sciences de la Vie <acronym title="Sciences de la Vie">SV</acronym></a></h3>
+                  <ul>
+                    <li><a href="http://epfl.ch/erreur404.html">Sciences et technologie de la vie</a></li>
+                    <li><a href="http://ibi.epfl.ch/">Bioengineering</a></li>
+                  </ul>
+                </li>
+                <li class="group-2-cols last">
+                  <h3 class="cdh"><a href="http://cdh.epfl.ch/">Coll&egrave;ge des Humanit&eacute;s <acronym title="Coll&egrave;ge des Humanit&eacute;s">CDH</acronym></a></h3>
+                  <ul>
+                    <li><a href="http://epfl.ch/erreur404.html">Sciences humaines et sociales</a></li>
+                  </ul>  
+                </li>
+                <div style="clear:both"></div>
+                <li class="group-2-cols">
+                  <h3 class="ic"><a href="http://ic.epfl.ch/">Facult&eacute; Informatique &amp; Communications <acronym title="Informatique &amp; Communications">I&amp;C</acronym></a></h3>
+                  <ul>
+                    <li><a href="http://epfl.ch/erreur404.html">Informatique</a></li>
+                    <li><a href="http://epfl.ch/erreur404.html">Syst&egrave;mes de communication</a></li>
+                  </ul>
+                </li>
+                <div style="clear:both"></div>
+              </ul>
             </div>
           </li>
           <li class="short menu" id="brief_menu_link">
-            <a class="main-link" href="#"><span><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></span> en bref</a>
-            <div class="navigation-panel" id="brief_panel">
+            <a class="main-link" href="http://www.epfl.ch/navigate.fr.html"><span><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></span> en bref</a>
+            <div class="navigation_panel hidden" id="brief_panel">
               <div class="group"><br/></div>
-              <div class="group">
-                <h3><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></h3>
-                <ul>
-                  <li><a href="http://direction.epfl.ch/">Direction</a></li>
-                  <li><a href="http://www.epfl.ch/organigrammes/">Structure</a></li>
-                  <li><a href="http://presentation.epfl.ch/"><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym> en bref</a></li>
-                  <li><a href="http://epfl.ch/erreur404.html">Information</a> </li>
-                </ul>
-              </div>
-              <div class="group">
-                <h3>Formation</h3>
-                <ul>
-                  <li><a href="http://epfl.ch/erreur404.html">Cours Pr&eacute;paratoire</a></li>
-                  <li><a href="http://cms.epfl.ch/"><acronym title="Cours de Math&eacute;matiques Sp&eacute;ciales">CMS</acronym></a></li>
-                  <li><a href="http://bachelor.epfl.ch/">Bachelor</a></li>
-                  <li><a href="http://master.epfl.ch/">Master</a></li>
-                  <li><a href="http://phd.epfl.ch/">&Eacute;cole doctorale</a></li>
-                </ul>
-              </div>
-              <div class="group">
-                <h3>Recherche</h3>
-                <ul>
-                  <li><a href="http://epfl.ch/erreur404.html">Recherche en bref</a></li>
-                  <li><a href="http://infoscience.epfl.ch?ln=fr">Publications <acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></a></li>
-                  <li><a href="http://grantsoffice.epfl.ch/">Grants office</a></li>
-                  <li><a href="http://vpaa.epfl.ch/page14808.html">Commission de recherche</a></li>
-                </ul>
-              </div>
-              <div class="group-2-cols last">
-                <h3>Innovation &amp; Valorisation</h3>
-                <ul>
-                  <li><a href="http://vpiv.epfl.ch/page36351-fr.html">Quartier de l'innovation</a></li>
-                  <li><a href="http://www.parc-scientifique.ch/"><acronym title="Parc Scientifique sur le site de l'&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">PSE</acronym></a></li>
-                  <li><a href="http://newsletter.epfl.ch/alliance/">Alliance</a></li>
-                  <li><a href="http://sri.epfl.ch/">Relations industrielles</a></li>
-                </ul>
-              </div>
+              <ul>
+                <li class="group">
+                  <h3><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></h3>
+                  <ul>
+                    <li><a href="http://direction.epfl.ch/">Direction</a></li>
+                    <li><a href="http://www.epfl.ch/organigrammes/">Structure</a></li>
+                    <li><a href="http://presentation.epfl.ch/"><acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym> en bref</a></li>
+                    <li><a href="http://epfl.ch/erreur404.html">Information</a> </li>
+                  </ul>
+                </li>
+                <li class="group">
+                  <h3>Formation</h3>
+                  <ul>
+                    <li><a href="http://epfl.ch/erreur404.html">Cours Pr&eacute;paratoire</a></li>
+                    <li><a href="http://cms.epfl.ch/"><acronym title="Cours de Math&eacute;matiques Sp&eacute;ciales">CMS</acronym></a></li>
+                    <li><a href="http://bachelor.epfl.ch/">Bachelor</a></li>
+                    <li><a href="http://master.epfl.ch/">Master</a></li>
+                    <li><a href="http://phd.epfl.ch/">&Eacute;cole doctorale</a></li>
+                  </ul>
+                </li>
+                <li class="group">
+                  <h3>Recherche</h3>
+                  <ul>
+                    <li><a href="http://epfl.ch/erreur404.html">Recherche en bref</a></li>
+                    <li><a href="http://infoscience.epfl.ch?ln=fr">Publications <acronym title="&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">EPFL</acronym></a></li>
+                    <li><a href="http://grantsoffice.epfl.ch/">Grants office</a></li>
+                    <li><a href="http://vpaa.epfl.ch/page14808.html">Commission de recherche</a></li>
+                  </ul>
+                </li>
+                <li class="group-2-cols last">
+                  <h3>Innovation &amp; Valorisation</h3>
+                  <ul>
+                    <li><a href="http://vpiv.epfl.ch/page36351-fr.html">Quartier de l'innovation</a></li>
+                    <li><a href="http://www.parc-scientifique.ch/"><acronym title="Parc Scientifique sur le site de l'&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne">PSE</acronym></a></li>
+                    <li><a href="http://newsletter.epfl.ch/alliance/">Alliance</a></li>
+                    <li><a href="http://sri.epfl.ch/">Relations industrielles</a></li>
+                  </ul>
+                </li>
+              </ul>
               <div style="clear:both"></div>
             </div>
           </li>
@@ -154,6 +176,7 @@
       
       <div class="looking" id="nav_search">
         <div id="search-box">
+          <a name="search"></a>
           <form name="search" action="http://search.epfl.ch/compoundDirectory.do" id="search_form">
             <input class="hidden" type="radio" name="engine" id="search_engine_person" value="person" checked="checked" />
 		    <label for="search_engine_person" class="current" title="Chercher une personne">Nom</label>
@@ -164,7 +187,7 @@
 		    <input class="hidden" type="radio" name="engine" id="search_engine_local" value="local" />
 		    <label for="search_engine_local" title="Chercher dans ce site">Ce site</label>
 		    <input type="hidden" name="lang" value="fr" />
-            <input type="text" class="search" name="q" value="Chercher une personne" id="search_field" /><button type="submit" class="search_button"  title="Rechercher"></button>
+            <input type="text" class="search" name="q" value="" id="search_field" /><button type="submit" class="search_button"  title="Rechercher">Rechercher</button>
           </form>
         </div>
       </div> 
@@ -231,7 +254,7 @@
         </div>
       </div>
       
-      <ul title="Latest news" class="grid-layout">
+      <ul title="Latest news" class="news-list grid-layout">
       <li class="heading-news">
           <a href="actualited.epfl.ch" title="le titre d'une actualité">
             <img src="./img/demo-img/1.jpg" class="news-img" alt="Image représentant des bâtiments"/>

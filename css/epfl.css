@@ -1,34 +1,34 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td, p{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;}
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 14px;
-    letter-spacing: 0.05em;
-    margin: 4px;
     background-color: #fff;
+    margin: 0px;
+    padding: 0px;
 }
 
 h1{
     font-family: Impact, Arial Black, Arial, Helvetica, sans-serif;
-    font-size: 26px;
-    font-weight: bold;
-    letter-spacing:.1em;
+    font-size: 27px;
+    letter-spacing:.08em;
     margin-top:40px;
     margin-bottom: 12px;
     text-transform:uppercase;
 }
 h1 acronym { color: }
 h2 {font-family: Arial Black, Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 20px;
     letter-spacing: 0.05em;
-    line-height: 23px;
+    line-height: 22px;
     margin: 0;
+    padding-bottom: 4px;
  }
 a {
     text-decoration: none;
     color: #000;
 }
+a:hover{text-decoration: underline;}
 acronym{ border: none }
 img {border: none;}
 
@@ -43,7 +43,7 @@ img {border: none;}
 
 .hidden{
     position: absolute;
-    left: -1000em;
+    left: -9999em;
 }
 
 
@@ -52,6 +52,8 @@ img {border: none;}
     margin-left: auto;
     margin-right: auto;
     width: 980px;
+    padding: 0 8px 0 8px;
+    background-color: #fff;
 }
 #header input{ color: #666;}
 #header input.focused{ color: #000; }
@@ -68,50 +70,54 @@ img {border: none;}
     position: relative;
     border-bottom: 1px solid #474e52; /* darker gray */
 }
-#nav_logo img{ position: absolute; top: 27px; }
+#nav_logo img{ position: absolute; bottom: 8px; }
 
 #nav_menus{margin: 0; padding: 0; float: left;}
 #main_menus {list-style: none; padding: 0; margin: 0;}
 #main_menus li.menu {
     float:left;
-    height: 90px;
+    height: 91px;
     width: 160px;
     margin: 0 4px 0 0;
     position: relative;
-    border-bottom: 1px solid #474e52; /* darker gray */
+    color: #fff;
 }
+#main_menus li.menu:hover {
+    background-color: #fff;
+    color: #000;
+}
+#main_menus li.menu:hover a.main-link { background-image: url(../img/arrow-menu-on.gif);}
 #nav_menus a.main-link {
+    color: inherit;   
     position: absolute;
-    bottom: 3px;
+    bottom: 9px;
     left: 9px;
     font-family: Impact, Arial Black, Arial, Helvetica, sans-serif;
     font-size: 22px;
     letter-spacing: 0.1em;
-    color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 0 11px 6px 0;
-    background: url(../img/fleche_menu.gif) no-repeat  bottom right;
+    padding: 0 11px 0 0;
+    background: url(../img/arrow-menu.gif) no-repeat  bottom right;
     background-repeat: no-repeat;
 }
-#nav_menus a.main-link span { display: block; margin-bottom: 4px; font-size: 15px; }
-#nav_menus a.main-link:hover{ color: #666; background-image: url(../img/fleche_menu_on.gif);}
-#nav_menus a.main-link:active{ color: #666; background-image: url(../img/fleche_menu_on.gif);}
+#nav_menus a.main-link span { display: block; margin-bottom: 6px; font-size: 18px; }
+#nav_menus a.main-link:hover{ background-image: url(../img/arrow-menu-on.gif);}
+#nav_menus a.main-link:active{background-image: url(../img/arrow-menu-on.gif);}
 
 #nav_search {
     float:left;
-    height: 90px;
+    height: 91px;
     width: 324px;
     margin: 0;
     position: relative;
-    border-bottom: 1px solid #474e52; /* darker gray */
 }
 
 #search-box {
     margin: 0 8px 0 8px;
     padding: 0;
     position: absolute;
-    bottom: 8px;
+    bottom: 9px;
 }
 #search_form label{
     display: block;
@@ -123,7 +129,7 @@ img {border: none;}
     overflow:hidden;
     text-align:center;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 12px;
     font-family: Arial, helvetica, sans-serif;
     color:#fff;
 }
@@ -132,11 +138,13 @@ img {border: none;}
     font-weight:bold;
     background:url(../img/wheretosearch.png) no-repeat top left;}
 #search_form input.search{
-    width: 280px;
+    width: 279px;
     height: 22px;
-    margin-right: 1px;
-    padding: 0 0 0 4px;
     border: none;
+    border-right: 1px solid #b8b8b8;
+    padding: 0 0 0 4px;
+    font-size:12px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #search_form button{
     background: url(../img/search.png) no-repeat top left;
@@ -144,10 +152,11 @@ img {border: none;}
     height: 22px;
     cursor: pointer;
     border: none;
-    vertical-align: bottom;   
+    vertical-align: bottom;
+    text-indent: -9999em;  
 }
 
-.navigation-panel {
+.navigation_panel {
     position: absolute;
     top: 91px;
 	width: 980px;
@@ -155,61 +164,60 @@ img {border: none;}
 	margin-right: auto;
 	padding: 60px 8px 40px 8px;
 	border: none;
-	display: none;
 	background-color: #fff;
 	z-index: 999;
 }
-.navigation-panel .group {
+.navigation_panel .group {
 	float: left;
 	width: 160px;
 	margin-right: 4px;
 	padding: 0;
 }
-.navigation-panel .group-2-cols {
+.navigation_panel .group-2-cols {
 	float: left;
 	width: 324px;
 	margin-right: 4px;
 }
-.navigation-panel .last { margin: 0; }
-.navigation-panel ul {
+.navigation_panel .last { margin: 0; }
+.navigation_panel ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-.navigation-panel a{
+.navigation_panel a{
     font-family: Arial black, Arial;
     font-size: 12px;
     line-height: 14px;
     letter-spacing:.05em;
 	text-transform:none;
-	font-weight:bold;
 	text-decoration:none;
 	color: #000;
 }
-.navigation-panel a:active, .navigation-panel a:hover { color:#666; }
-.navigation-panel h3 {
+.navigation_panel a:active, .navigation_panel a:hover { color:#666; }
+.navigation_panel h3 {
     margin:0;
     padding:0;
-	font-family:"Arial black", Arial;
+	font-family: "Arial black", Arial;
 	font-size:12px;
 	line-height:14px;
 	letter-spacing:.05em;
 	text-transform:none;
-	font-weight:bold;
 	text-decoration:none;
 }
-.navigation-panel h3 a { color: inherit }
+.navigation_panel h3 a { color: inherit }
 
-.navigation-panel .sti{ color:#a9aad5;}
-.navigation-panel .enac{color:#eb690b;}
-.navigation-panel .cdm{color:#990066;}
-.navigation-panel .cdh{color:#daa520;}
-.navigation-panel .sv{color:#97bf0d;}
-.navigation-panel .sb{color:#009ee1;}
-.navigation-panel .ic{color:#30b3ad;}
-.navigation-panel .epfl{color:#991229;}
+.navigation_panel .sti{ color:#a9aad5;}
+.navigation_panel .enac{color:#eb690b;}
+.navigation_panel .cdm{color:#990066;}
+.navigation_panel .cdh{color:#daa520;}
+.navigation_panel .sv{color:#97bf0d;}
+.navigation_panel .sb{color:#009ee1;}
+.navigation_panel .ic{color:#30b3ad;}
+.navigation_panel .epfl{color:#991229;}
 
 #public_panel {left: -172px;}
+#public_panel.hidden { left: -9999em; }
+
 #public_panel a { line-height:22px; }
 #public_panel a:active, .#public_panel a:hover { color:#666; }
 
@@ -217,11 +225,15 @@ img {border: none;}
     left: -336px;
     padding-bottom: 36px; 
 } 
+#school_panel.hidden { left: -9999em; }
+
 #school_panel .group-2-cols { margin-bottom: 4px; }
 #school_panel a { line-height:14px;}
 #school_panel h3 acronym { color: #4e4e4e;}
 
 #brief_panel { left: -500px; }
+#brief_panel.hidden { left: -9999em; }
+
 #brief_panel h3 { color: red;}
 #brief_panel .large {
 	width: 320px;
@@ -230,10 +242,9 @@ img {border: none;}
 
 #breadcrumbs, #languages{
     padding-top:8px;
-    font-family: Georgia, Times, serif;
+    font-family: Georgia, serif;
     font-style: italic;
-    font-size:11px;
-    font-weight: bold;
+    letter-spacing: 1px;
 }
 #breadcrumbs { float: left; }
 #breadcrumbs li{
@@ -241,7 +252,7 @@ img {border: none;}
     background: url(../img/separator.png) no-repeat right center;
     padding-right: 16px;
 }
-
+#breadcrumbs a:hover a:hover{text-decoration: underline;}
 #breadcrumbs li.last{ background: none; }
 #breadcrumbs a, #languages, #languages a{
     color: #000;
@@ -293,7 +304,6 @@ img {border: none;}
     padding: 8px;
 }
 .dropdown .menu li { margin: 0; padding: 0; }
-.dropdown .menu a, .dropdown .menu a:visited, .dropdown .menu a:hover{ color: #000; margin: 0; padding: 0; }
 
 /****************************** Main content *****************************/
 
@@ -320,10 +330,9 @@ img {border: none;}
    font-size: 15px;
    line-height: 16px;
    letter-spacing: 0.1em;
-   background-color: #000;
-   color: #fff;
    text-transform: uppercase;
-   padding: 0 7px 0 7px;
+   padding-bottom: 1px;
+   display: block;
 }
 .news-text .epfl { color: #f00; }
 .news-text .innovation { color: #0f0;}
@@ -333,24 +342,30 @@ img {border: none;}
 
 .news-text {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
     line-height: 14px;
-    letter-spacing: 0.05em;
 }
 
 .news-text h2 {
-    font-family: Arial Black, Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    letter-spacing: 0.05em;
+    font-size: 13px;
     line-height: 14px;
     margin: 0;
+    margin-top: -1px;
+    letter-spacing: 0em;
+    padding-bottom: 1px;
+}
+.news-text h2 a:hover {
+    color: #e2001a;
+    text-decoration: none;
 }
 .news-text span.date {
     font-family:  Georgia, serif;
-    font-size: 11px;
+    font-size: 12px;
     font-style: italic;
+    font-weight: bold;
     color: #000;
+    padding-right: 4px;
 }
 .news-text p {
     color:  #4e4e4e;
@@ -361,14 +376,13 @@ img {border: none;}
 }
 /************************ Footer ********************************/
 #footer{
-    margin-left: auto;
-    margin-right: auto;
     width: 980px;
+    margin: 40px auto 8px auto;
     border-bottom: 1px solid #000;
-    font-family:  Georgia, serif;
-    font-size: 11px;
+    font-family: Georgia, serif;
     font-style: italic;
-    margin-top: 16px;
+    font-size: 11px;
+    letter-spacing: 1px;
     padding-bottom: 4px;
 
 }
