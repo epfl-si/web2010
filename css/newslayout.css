@@ -127,6 +127,11 @@ ul.news-list {
     color: #fff;
     overflow: hidden;
 }
+.right-col-fac{
+    height: auto;
+    color: #fff;
+    overflow: hidden;
+}
 .unit-cell{
     margin: 0 0 4px 0;
     height: 100px;

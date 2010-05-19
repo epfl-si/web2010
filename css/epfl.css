@@ -61,6 +61,8 @@ img {border: none;}
 .school{ background-color: #696f6e; /* dark gray */}
 .short{ background-color: #474e52; /* darker gray */}
 .looking{ background-color: #ae0010; /* dark red */}
+.looking2{ background-color: #474e52; /* darker gray */}
+.looking3{ background-color: #999c98; /* light gray */ }
 .contrast{ background-color: #f00000; /* lighter red */ }
 #nav_logo {
     float: left;
@@ -398,3 +400,56 @@ img {border: none;}
 }
 
 .copyright { color:#4e4e4e}
+
+/************************ menu fac&co ********************************/
+
+.menu_nav_fleche {
+	background-image:url(../img/fleche_menu_over.png);
+	background-repeat: no-repeat;
+	background-position:bottom;
+	width:15px;
+	height:9px;
+	display: inline-block;
+	padding-left:5px;
+}
+
+.main_nav_text {
+	width:auto;
+	padding-top:2px;
+	display:block;
+	float:left;
+}
+
+#main_nav {
+	width:100%;
+	margin-top:8px;
+	height:25px;
+	overflow:hidden;
+	padding-bottom:2px;
+}
+#main_nav a:active, #main_nav a:hover {
+	font-size:12px;
+	line-height:22px;
+	padding:5px 0px 5px 8px;
+	border-right:2px solid #fff;
+	border-left:2px solid #fff;
+	font-family:"Arial black", Arial, Helvetica, sans-serif;
+	color:#FFF;
+	font-weight:bold;
+	text-decoration:none;
+	background-color:#000;
+	margin-left:-2px;
+	font-style: normal;
+}
+#main_nav a {
+	font-size:12px;
+	line-height:22px;
+	padding:5px 2px 5px 10px;
+	font-family:"Arial black", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#fff;
+	text-decoration:none;
+	margin-left:-2px;
+	font-style: normal;
+
+}
