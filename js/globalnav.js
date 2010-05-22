@@ -57,7 +57,7 @@ jQuery(document).ready(function(){
     jQuery('#searchfield').keypress(function(e){ if (e.which == 13) jQuery(this).parent('form').submit(); });
     
     /* navigation: Dropdown menus */
-    jQuery('.dropdown').click(function(){ jQuery(this).children('ul').toggle();});
-    jQuery('.dropdown').mouseleave(function(){ jQuery(this).children('ul').hide() });
+    jQuery('.dropdown').click(function(){ jQuery(this).children('ul').toggleClass('hidden');});
+    jQuery('.dropdown').mouseleave(function(){ jQuery(this).children('ul').addClass('hidden') });
     
 });
