@@ -5,6 +5,7 @@
 	font-style:italic;
 	color:#000;
 }
+
 #main-navigation ul.topnav{ top: 1px; }
 #grid-icon { 
     background-image: url(../img/grid.png);
@@ -32,20 +33,17 @@
 #text-icon.current { background-image:url(../img/text-on.png);}
 
 .dropdown {
-    height: 20px;
+    height: 16px;
     border: 1px solid #b8b8b8;
     background: url(../img/dropdown-homepage.png) repeat-x right center;
-    padding: 0;
+    padding: 4px 22px 0 8px;
 }
 .dropdown:hover {
     border-color: #000;
     background-image: url(../img/dropdown-homepage-on.png);
 }
-.dropdown a{
-    padding: 4px 22px 0px 8px;
-    display: block;
-}
 .dropdown .menu {
     left: -1px; top: 20px;
     line-height: 18px;
 }
+.dropdown .menu a{ font-weight: normal}
