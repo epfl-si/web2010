@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+.col_news{
+    float: left;
+    width: 648px;
+    height: auto;
+    color: #000;
+	margin-right:8px;
+}
+
+.col_news h2{
+font:"Arial black", Helvetica black, sans-serif;
+font-size:32px;
+line-height:32px;
+letter-spacing:0.05px;
+font-weight:normal;
+margin-top:0px;
+margin-bottom:8px;
+}
+.col_news h3{
+font:Arial, Helvetica black, sans-serif;
+font-size:13px;
+line-height:18px;
+font-weight:bold;
+margin-top:8px;
+margin-bottom:8px;
+}
+
+.col_news p{
+font:Arial, Helvetica black, sans-serif;
+font-size:13px;
+line-height:18px;
+font-weight:normal;
+color:#4e4e4e;
+}
