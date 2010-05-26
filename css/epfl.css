@@ -373,8 +373,8 @@ ul.topnav li{
 .box a:hover{ border-bottom: 1px solid #000;}
 
 
-.right-col{width: 324px; float:left; color: #fff; overflow: hidden;}
-.right-col a, .right-col h2, .right-col h3, .right-col h4 {color: #fff }
+.right-col{width: 324px; float:left; overflow: hidden;}
+.home-navpanel, .home-navpanel a, .home-navpanelh2, .home-navpanel h3, .home-navpanel h4 {color: #fff }
 .unit-col{width: 160px; margin: 0 4px 0 0; float: left;}
 .unit-cell{ margin: 0 0 4px 0; height: 90px;overflow: hidden;}
 .last-cell{ margin: 0px;}
