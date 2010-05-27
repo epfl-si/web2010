@@ -1,6 +1,7 @@
 .local-color{background-color:#daa521;}
 .local-color-text{color:#daa521;}
-#main_navigation {background-color:#daa521;}
+#main-navigation {background-color: #daa521;}
+#main-navigation .dropdown {border-color: #daa521;}
 .local-color-light {background-color:#b77504;}
 .local-color-dark {background-color:#a25700;}
 .news-text h2 a:hover {color: #daa521; text-decoration: none;}

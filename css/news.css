@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-.col_news{
+#content{
     float: left;
     width: 648px;
     height: auto;

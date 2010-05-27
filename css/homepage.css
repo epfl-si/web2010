@@ -1,49 +1,30 @@
-#main-navigation {
-    background:url(../img/bg_main_nav.png);
-    font-size:11px;
+.navigation-bar {
+    background: url(../img/bg_main_nav.png);
+    font-size: 11px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style:italic;
 	color:#000;
 }
-
-#main-navigation ul.topnav{ top: 1px; }
-#grid-icon { 
-    background-image: url(../img/grid.png);
-	background-repeat:no-repeat;
+.navigation-bar .group span { height: 19px; float: left; padding-top: 4px; margin-right: 4px;}
+.navigation-bar ul.topnav{ top: 1px; }
+#grid-icon {
+    background: url(../img/grid.png) no-repeat top;
 	height:22px;
 	width: 36px;
 	display:block;
 }
 #grid-icon.current { background-image:url(../img/grid-on.png);}
 #list-icon { 
-    background-image:url(../img/list.png);
-	background-repeat:no-repeat;
+    background:url(../img/list.png) no-repeat top;
 	height:22px;
 	width:36px;
 	display:block;
 }
 #list-icon.current { background-image:url(../img/list-on.png);}
 #text-icon { 
-    background-image:url(../img/text.png);
-	background-repeat:no-repeat;
+    background:url(../img/text.png) no-repeat top;
 	height:22px;
 	width:36px;
 	display:block;
 }
 #text-icon.current { background-image:url(../img/text-on.png);}
-
-.dropdown {
-    height: 16px;
-    border: 1px solid #b8b8b8;
-    background: url(../img/dropdown-homepage.png) repeat-x right center;
-    padding: 4px 22px 0 8px;
-}
-.dropdown:hover {
-    border-color: #000;
-    background-image: url(../img/dropdown-homepage-on.png);
-}
-.dropdown .menu {
-    left: -1px; top: 20px;
-    line-height: 18px;
-}
-.dropdown .menu a{ font-weight: normal}
