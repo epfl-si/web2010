@@ -1,6 +1,6 @@
-.looking{background-color:#007ba5;}
-.enac{color:#007ba5;}
-#main_navigation {background-color:#007ba5;}
-.looking2 {background-color:#015876;}
-.looking3 {background-color:#003047;}
+.local-color{background-color:#007ba5;}
+.local-color-text{color:#007ba5;}
+#main-navigation {background-color:#007ba5;}
+.local-color-light {background-color:#015876;}
+.local-color-dark {background-color:#003047;}
 .news-text h2 a:hover {color: #007ba5; text-decoration: none;}

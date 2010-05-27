@@ -1,6 +1,6 @@
-.looking{background-color:#8972d5;}
-.enac{color:#8972d5;}
-#main_navigation {background-color:#8972d5;}
-.looking2 {background-color:#5d41a2;}
-.looking3 {background-color:#431f7f;}
-.news-text h2 a:hover {color: #8972d5;text-decoration: none;}
+.local-color{background-color:#8972d5;}
+.local-color-text{color:#8972d5;}
+#main-navigation {background-color:#8972d5;}
+.local-color-light {background-color:#5d41a2;}
+.local-color-dark {background-color:#431f7f;}
+.news-text h2 a:hover {color: #8972d5; text-decoration: none;}
