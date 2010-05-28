@@ -36,7 +36,10 @@ h3 {
 h4 { color: #000;}
 p {margin-bottom: 18px; color: #4e4e4e;}
 
-a {text-decoration: none; color: #000; background: url(../img/underline.gif) repeat-x 0 12px; /*for exact top position of the image*/}
+a {
+    text-decoration: none; 
+    color: #000; 
+    background: url(../img/underline.gif) repeat-x 0 12px; }
 a:hover{}
 
 ul { padding-left: 0;}
@@ -76,6 +79,9 @@ blockquote p {
     font-weight: bold;
     font-size: 13px;
     color: #000;
+}
+.heading a{
+    background-position: 0 13px;
 }
 
 /******************* Header definition ***********************/
@@ -378,13 +384,33 @@ ul.topnav li{
     margin-right: auto;
     width: 980px;
 }
+#tools{
+    height: 40px;
+}
 #content{
     float: left;
     width: 652px;
 	margin-right:4px;
+	border-top: 1px solid #000;
+	padding-top: 4px;
 }
-#content img { margin-bottom: 22px; margin-top: 8px;}
+#content img { margin-bottom: 12px;}
 #content p img {margin-bottom: 8px; margin-top: 8px; }
+
+.link-list li{
+    list-style-type: none;
+    background: url(../img/dot.png) no-repeat top left;
+    padding-left: 12px;
+    margin-bottom: 2px; 
+    line-height: 14px;
+}
+.link-list a {
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight:normal;
+    color: #000;
+    text-decoration:none;
+}
 .box{
     margin-bottom: 20px;
     margin-right: 4px;
@@ -398,30 +424,29 @@ ul.topnav li{
     letter-spacing:0.1em;
 	line-height:23px;
     text-transform: uppercase;
+    padding-bottom:4px;
     border-bottom:1px solid #000;
-	margin-bottom: 4px;
+	margin-bottom: 8px;
 }
-.box ul { list-style-type: disc; padding: 0;}
-.box ul.two-cols li{ float: left; width: 156px; padding-right: 4px;}
-ul.link-list li{ list-style-position: inside; }
-.link-list a {
-    font-family:  Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight:normal;
-    color: #000;
-    text-decoration:none;
-    
-}
-.link-list li{margin-bottom: 2px; line-height: 14px;}
-
-
-.box a:hover{ }
-
+.box ul { list-style-type: none; }
+.box ul.two-cols li{ 
+    float: left; width: 144px; 
+    padding-right: 4px;}
 
 .right-col{width: 324px; float:left; overflow: hidden;}
+.right-col .box {margin-right: 0; }
+
 .home-navpanel, .home-navpanel a, .home-navpanel p, .home-navpanel h2, .home-navpanel h3, .home-navpanel h4 {color: #fff; }
-.home-navpanel h2 { font-size: 20px; line-height: 20px;}
+.home-navpanel h3 {
+    font-family: "Arial black", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: none;
+    border: none;
+    font-size: 20px; line-height: 20px; 
+}
 .home-navpanel a { background-image: url(../img/underline-white.gif); }
+.box.home-navpanel {padding: 8px; width: 308px; }
+
 .unit-col{width: 160px; margin: 0 4px 0 0; float: left;}
 .unit-cell{ margin: 0 0 4px 0; height: 90px;overflow: hidden;}
 .last-cell{ margin: 0px;}
