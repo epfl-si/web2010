@@ -69,7 +69,8 @@ blockquote p {
 .sv{color:#97bf0d;}
 .sb{color:#009ee1;}
 .ic{color:#30b3ad;}
-.local-color {background-color: #ae0010; /* dark red */}
+.local-color {background-color: #ae0010; color: #fff;/* dark red */}
+.local-color a { color: #fff; }
 .local-color-text {color:#ae0010;/* dark red */}
 .local-color-light{ background-color: #f00000; /* darker gray */}
 .local-color-dark{ background-color: #999c98; /* light gray */ }
@@ -321,6 +322,34 @@ blockquote p {
 }
 .dropdown .menu ul li{ margin-bottom: 2px; }
 .dropdown .menu ul li a{ font-weight: normal; padding-left: 16px;}
+
+.tree {margin-bottom: 20px;}
+.tree li {
+    height: 18px;
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 2px;
+    background: url(../img/arrow-nav-menu-white.gif) no-repeat left center;
+}
+.tree li.open {
+    background-image: url(../img/arrow-nav-menu-white-open.gif);
+}
+.tree a { background: none; }
+.tree ul {
+    background-color: #fff;
+    font-weight: normal;
+    color: #000;
+}
+.tree ul li {
+    background: url(../img/arrow-nav-menu-black.gif) no-repeat left center;
+}
+.tree ul li.open {
+    background-image: url(../img/arrow-nav-menu-black-open.gif);
+}
+.tree ul a {
+    color: #000;
+}
 
 /****************************** Navigation ********************************/
 .navigation-bar {

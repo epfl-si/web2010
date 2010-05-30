@@ -66,6 +66,14 @@ jQuery(document).ready(function(){
     jQuery('#main-navigation .dropdown').hoverIntent(
         function(){ jQuery(this).children('ul').removeClass('hidden'); }, 
         function(){ jQuery(this).children('ul').addClass('hidden');});
-    /*jQuery('#main-navigation .dropdown').hoverintent(jQuery(this).children('ul').toggleClass('hidden'), jQuery(this).children('ul').toggleClass('hidden'));*/
-    jQuery('.dropdown').click(function(){ return true;});
+    jQuery('#main-navigation .dropdown').click(function(){ return true;});
+    
+    jQuery(".tree li.inpath").addClass('open');
+    /* navigation: tree  */
+    jQuery(".tree").treeview({
+        collapsed: true,
+        unique: true,
+    });
+    /*jQuery(".tree li").addClass('expandable').addClass('closed');*/
+    
 });
