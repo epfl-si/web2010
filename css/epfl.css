@@ -324,27 +324,33 @@ blockquote p {
 .dropdown .menu ul li a{ font-weight: normal; padding-left: 16px;}
 
 .tree {margin-bottom: 20px;}
+.tree .hitarea {
+    height: 20px;
+    width: 16px;
+	cursor: pointer; float: left; }
+.tree .expandable-hitarea{
+background: url(../img/arrow-nav-menu-white.gif) no-repeat left 6px;
+}
+.tree .collapsable-hitarea{
+background: url(../img/arrow-nav-menu-white-open.gif) no-repeat left 6px;
+}
+
 .tree li {
-    height: 18px;
     border-bottom: 1px solid #fff;
     font-weight: bold;
-    padding-left: 20px;
-    padding-top: 2px;
-    background: url(../img/arrow-nav-menu-white.gif) no-repeat left center;
 }
-.tree li.open {
-    background-image: url(../img/arrow-nav-menu-white-open.gif);
-}
-.tree a { background: none; }
+.tree a { background: none; height: 18px; padding-top: 2px; padding-left: 20px; display: block;}
 .tree ul {
     background-color: #fff;
     font-weight: normal;
     color: #000;
+    list-style-type: none;
+    padding-left: 14px;
 }
-.tree ul li {
-    background: url(../img/arrow-nav-menu-black.gif) no-repeat left center;
+.tree ul .expandable-hitarea{
+    background-image: url(../img/arrow-nav-menu-black.gif);
 }
-.tree ul li.open {
+.tree ul .collapsable-hitarea {
     background-image: url(../img/arrow-nav-menu-black-open.gif);
 }
 .tree ul a {
