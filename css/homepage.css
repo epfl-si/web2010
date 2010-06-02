@@ -1,5 +1,6 @@
 .navigation-bar {
-    background: url(../img/bg_main_nav.png);
+    background: url(../img/main-navigation.png);
+    height: 24px;
     font-size: 11px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style:italic;
@@ -8,23 +9,23 @@
 .navigation-bar .group span { height: 19px; float: left; padding-top: 4px; margin-right: 4px;}
 .navigation-bar ul.topnav{ top: 1px; }
 #grid-icon {
-    background: url(../img/grid.png) no-repeat top;
+    background: url(../img/homepage-icons.png) no-repeat 0 0;
 	height:22px;
 	width: 36px;
 	display:block;
 }
-#grid-icon.current { background-image:url(../img/grid-on.png);}
+#grid-icon.current { background-position: 0 -22px;}
 #list-icon { 
-    background:url(../img/list.png) no-repeat top;
+    background:url(../img/homepage-icons.png) no-repeat -36px 0;
 	height:22px;
 	width:36px;
 	display:block;
 }
-#list-icon.current { background-image:url(../img/list-on.png);}
+#list-icon.current { background-position: -36px -22px;}
 #text-icon { 
-    background:url(../img/text.png) no-repeat top;
+    background:url(../img/homepage-icons.png) no-repeat -72px 0;
 	height:22px;
 	width:36px;
 	display:block;
 }
-#text-icon.current { background-image:url(../img/text-on.png);}
+#text-icon.current { background-position: -72px -22px;}

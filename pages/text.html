@@ -6,10 +6,7 @@
     <title>EPFL | École Polytechnique Fédérale de Lausanne - Page d'accueil</title>
     <link href="../css/epfl.css" media="all" rel="stylesheet" type="text/css" />
     <link href="../css/enac.css" media="all" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.treeview.js"></script>
-    <script type="text/javascript" src="../js/jquery.tools.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.hoverIntent.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-epfl.min.js"></script>
     <script type="text/javascript">jQuery.noConflict();</script> 
     <script type="text/javascript" src="../js/globalnav.js"></script>
   </head>
@@ -220,10 +217,10 @@
               <li><a href="#">subpage 2</a></li>
             </ul>
           </li>
-          <li class="dropdown current">
+          <li class="dropdown inpath">
             <a href="#">Environnement</a>
             <ul class="menu hidden">
-              <li><a href="#">subpage</a></li>
+              <li class="current"><a href="#">subpage</a></li>
               <li><a href="#">subpage 2</a></li>
             </ul>
           </li>
@@ -242,6 +239,7 @@
             </ul>
           </li>
         </ul>
+        <div style="clear:both"></div>
       </div>
       <div id="tools">
   
@@ -288,7 +286,7 @@ Cumquaecto magnam esto enias vit ullam, conserest, ut quam res sinimaio quiderun
             <ul>
               <li class="inpath"><a href="#">Submenu 1</a>
                 <ul>
-                  <li><a href="#">Subsubmenu 1</a>
+                  <li class="inpath"><a href="#">Subsubmenu 1</a>
                     <ul>
                       <li class="current"><a href="#">Subsubsubmenu 1</a></li>
                       <li><a href="#">Subsubsubmenu 2</a></li>
