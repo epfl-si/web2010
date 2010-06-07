@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2010 EPFL
  *
- * Date: 2010-05-25 15:00
+ * Date: 2010-06-07 09:00
  * Revision: 1.1
  */
 jQuery(document).ready(function(){    
@@ -41,6 +41,10 @@ jQuery(document).ready(function(){
                 jQuery('#searchform').attr('action', 'http://search.epfl.ch/web.do');
                 jQuery('#searchfield').attr('name', 'q');
                 break;
+            default:
+                jQuery('#searchform').attr('action', 'http://search.epfl.ch/web.do');
+                jQuery('#searchfield').attr('name', 'q');
+                break;
         }
         if (jQuery('#searchfield').val() === jQuery('#searchform label.current').attr('title')) { jQuery('#searchfield').val(''); }
         if (jQuery('#searchfield').val() === '') { jQuery('#searchfield').val(label.attr('title')); }
@@ -67,23 +71,18 @@ jQuery(document).ready(function(){
         function(){ jQuery(this).children('ul').removeClass('hidden');}, 
         function(){ jQuery(this).children('ul').addClass('hidden');});
     jQuery('#main-navigation .dropdown').click(function(){ return true;});
-    
     jQuery(".tree li.inpath").addClass('open');
+    
     /* navigation: tree */
-    jQuery(".tree").treeview({
-        'collapsed': true,
-        'unique': true
-    });
+    jQuery(".tree").treeview({ 'collapsed': true, 'unique': true });
+    jQuery(".tree").children().addClass('local-color');
     jQuery(".tree li").hover(
-        function(e) {
-            e.stopPropagation();
-            jQuery(this).addClass("hover");
-        },
-        function(e) {
-            e.stopPropagation();
-            jQuery(this).removeClass("hover");
-        }
+        function(e) { e.stopPropagation(); jQuery(this).addClass("hover");},
+        function(e) { e.stopPropagation(); jQuery(this).removeClass("hover");}
     );
-    jQuery(".box.two-cols div:even",this).addClass("box-left-col");
-    jQuery(".box.two-cols div:odd", this).addClass("box-right-col"); 
+    
+    /* Set correct margin to elements */
+    jQuery(".box.two-cols div.box-col:even",this).addClass("box-left-col");
+    jQuery(".box.two-cols div.box-col:odd", this).addClass("box-right-col");
+    jQuery("#content .box:odd",this).addClass("last-col"); 
 });
