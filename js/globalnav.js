@@ -74,7 +74,7 @@ jQuery(document).ready(function(){
     jQuery(".tree li.inpath").addClass('open');
     
     /* navigation: tree */
-    jQuery(".tree").treeview({ 'collapsed': true, 'unique': true });
+    jQuery(".tree").treeview({ 'collapsed': true, 'unique': false });
     jQuery(".tree").children().addClass('local-color');
     jQuery(".tree li").hover(
         function(e) { e.stopPropagation(); jQuery(this).addClass("hover");},
@@ -84,5 +84,5 @@ jQuery(document).ready(function(){
     /* Set correct margin to elements */
     jQuery(".box.two-cols div.box-col:even",this).addClass("box-left-col");
     jQuery(".box.two-cols div.box-col:odd", this).addClass("box-right-col");
-    jQuery("#content .box:odd",this).addClass("last-col"); 
+    jQuery("#content .box:odd",this).addClass("last-col");     
 });
