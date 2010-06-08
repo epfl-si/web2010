@@ -447,9 +447,9 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .content .box{ float: left; }
 .box h3 { margin-top: 0; }
 .box ul { list-style-type: none; }
-.box.two-cols li{ float: left; width: 144px; padding-right: 4px;}
-.box.two-cols div.box-col { float: left; width: 160px; }
-.box.two-cols div.box-left-col{ margin-right:4px;}
+.box.two-cols li, .box .two-cols li{ float: left; width: 144px; padding-right: 4px;}
+.box.two-cols div.box-col, .box .two-cols div.box-col { float: left; width: 160px; }
+.box.two-cols div.box-left-col, .box .two-cols div.box-left-col{ margin-right:4px;}
 
 
 .right-col{ width: 324px; float:left; padding: 0;}
