@@ -1,0 +1,12 @@
+.local-color{background-color:#aebd00;}
+.local-color-text{color:#aebd00;}
+#main-navigation {background-color:#aebd00;}
+#main-navigation .dropdown {border-color: #aebd00;}
+
+.local-color-light {background-color:#8ca000;}
+.local-color-dark {background-color:#6a7e00;}
+.news-text h2 a:hover {color: #aebd00;}
+
+.search-results a {color:#aebd00; }
+.search-results cite {color:#6a7e00;}
+.pagination .current {color:#aebd00;}

@@ -334,7 +334,7 @@ blockquote p {
 .tree .expandable-hitarea{ background-position: 0 1px; }
 .tree .collapsable-hitarea{ background-position: -16px 1px;}
 .tree ul { background-color: #fff; }
-.tree ul li {background-color: #fff; color: #000; border-top: 1px solid #4e4e4e; border-bottom: none; }
+.tree ul li {background-color: #fff; color: #000; border-top: 1px solid #999C98; border-bottom: none; }
 .tree ul li:first-child { border-top: 1px solid #fff;}
 .tree ul li:first-child li { border-top: 1px solid #4e4e4e; }
 .tree ul a { color: #000;}
@@ -387,12 +387,14 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 #main-navigation .dropdown {
     top: 0;
     height: 19px;
-    padding: 5px 18px 0 8px;
+    padding: 5px 14px 0 6px;
     background: url(../img/nav-menus.gif) no-repeat right -24px;
     border: none;
-    border-left: 4px solid #ae0010;
-    border-right: 4px solid #ae0010;
+    border-left: 1px solid #ae0010;
+    border-right: 1px solid #ae0010;
+    margin-right: 0;
 }
+#main-navigation:first-child .dropdown { border-left: none;}
 #main-navigation .dropdown:hover { border-color: #fff; background-color: #000; }
 #main-navigation .dropdown.inpath{ border-color: #fff; background-color: #000; }
 #main-navigation .dropdown a{ color: #fff; }
@@ -422,6 +424,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 	overflow: hidden;
 }
 .homepage-content{ border-top: none; padding-top: 0;}
+.fullpage-content { width: 980px; margin-right: 0; border: none; }
 .content img { margin-bottom: 12px;}
 .content p img {margin-bottom: 8px; margin-top: 8px; }
 
@@ -581,6 +584,32 @@ ul.text-layout { overflow: hidden; width: 656px;}
 ul.simple-layout li img.news-img {margin-right:4px; vertical-align: bottom;}
 ul.simple-layout .news-text {float: left; width: 484px;}
 
+/******************** Search results ****************************/
+ol.search-results{}
+ol.search-results li{
+  list-style-type: none;
+  border-bottom: 1px solid #999C98;
+  margin: 8px 0;
+  padding-bottom: 8px;
+}
+.search-results h3 { 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14px; text-transform: none; 
+    margin: 0; padding: 0; border:none;}
+.search-results a { background:none; color:#ae0010;}
+.search-results a:hover { text-decoration:underline;}
+.search-results p { margin:0;}
+.search-results .date {color: #999C98;}
+.search-results .highlight {padding: 0px 4px; background-color:#000; color: #fff;}
+.search-results cite {color:#999c98;}
+p.results-count{font-weight: bold; border-top: 1px solid #000; margin-top: 20px;}
+
+.pagination {margin-top: 40px;}
+.pagination ul {float: left;}
+.pagination p {float: right;}
+.pagination li {display: inline; margin-right: 20px;}
+.pagination .current, .pagination-position { font-weight: bold;}
+.pagination .current { color:#ae0010; }
 /************************ Footer ********************************/
 #footer{
     color: #000;

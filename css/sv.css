@@ -5,4 +5,8 @@
 
 .local-color-light {background-color:#439809;}
 .local-color-dark {background-color:#0b7101;}
-.news-text h2 a:hover {color: #8dc700; text-decoration: none;}
+.news-text h2 a:hover {color: #8dc700;}
+
+.search-results a {color:#8dc700; }
+.search-results cite {color:#0b7101;}
+.pagination .current {color:#8dc700;}

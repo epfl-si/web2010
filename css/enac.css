@@ -4,4 +4,8 @@
 #main-navigation .dropdown {border-color:#ea5e00;}
 .local-color-light {background-color:#d53c00;}
 .local-color-dark {background-color:#b91e00;}
-.news-text h2 a:hover {color: #ea5e00; text-decoration: none;}
+.news-text h2 a:hover {color: #ea5e00;}
+
+.search-results a {color:#ea5e00; }
+.search-results cite {color:#b91e00;}
+.pagination .current {color:#ea5e00;}

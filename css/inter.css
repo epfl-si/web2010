@@ -1,8 +1,12 @@
-.looking{background-color:#8dc700;}
-.enac{color:#8dc700;}
-#main-navigation {background-color:#8dc700;}
-#main-navigation .dropdown {border-color: #8dc700;}
+.local-color{background-color:#895116;}
+.local-color-text{color:#895116;}
+#main-navigation {background-color:#895116;}
+#main-navigation .dropdown {border-color: #895116;}
 
-.looking2 {background-color:#439809;}
-.looking3 {background-color:#0b7101;}
-.news-text h2 a:hover {color: #8dc700; text-decoration: none;}
+.local-color-light {background-color:#652f00;}
+.local-color-dark {background-color:#471900;}
+.news-text h2 a:hover {color: #895116;}
+
+.search-results a {color:#895116; }
+.search-results cite {color:#471900;}
+.pagination .current {color:#895116;}
