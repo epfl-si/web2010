@@ -423,6 +423,13 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 	padding-top: 4px;
 	overflow: hidden;
 }
+.content-nomenu{
+    float: left;
+    width: 652px;
+	margin-right:4px;
+	padding-top: 4px;
+	overflow: hidden;
+}
 .homepage-content{ border-top: none; padding-top: 0;}
 .fullpage-content { width: 980px; margin-right: 0; border: none; }
 .content img { margin-bottom: 12px;}
