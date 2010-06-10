@@ -10,3 +10,16 @@
 .search-results a {color:#8972d5; }
 .search-results cite {color:#431f7f;}
 .pagination .current {color:#8972d5;}
+
+.print {background-position: 0 -264px; }
+.print:hover {background-position: 0 -240px;}
+.feed {background-position: -24px -264px; }
+.feed:hover {background-position: -24px -240px; }
+.share {background-position: -48px -264px; }
+.share:hover {background-position: -48px -240px; }
+.information {background-position: -72px -264px; }
+.information:hover {background-position: -72px -240px; }
+.question {background-position: -96px -264px; }
+.question:hover {background-position: -96px -240px; }
+.showall {background-position: -120px -264px; }
+.showall:hover {background-position: -120px -240px; }

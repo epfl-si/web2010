@@ -9,3 +9,16 @@
 .search-results a {color:#ea5e00; }
 .search-results cite {color:#b91e00;}
 .pagination .current {color:#ea5e00;}
+
+.print {background-position: 0 -408px; }
+.print:hover {background-position: 0 -384px;}
+.feed {background-position: -24px -408px; }
+.feed:hover {background-position: -24px -384px; }
+.share {background-position: -48px -408px; }
+.share:hover {background-position: -48px -384px; }
+.information {background-position: -72px -408px; }
+.information:hover {background-position: -72px -384px; }
+.question {background-position: -96px -408px; }
+.question:hover {background-position: -96px -384px; }
+.showall {background-position: -120px -408px; }
+.showall:hover {background-position: -120px -384px; }

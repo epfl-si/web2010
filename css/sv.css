@@ -7,6 +7,19 @@
 .local-color-dark {background-color:#0b7101;}
 .news-text h2 a:hover {color: #8dc700;}
 
-.search-results a {color:#8dc700; }
+.search-results a {color:black;}/*#8dc700; }*/
 .search-results cite {color:#0b7101;}
 .pagination .current {color:#8dc700;}
+
+.print {background-position: 0 -216px; }
+.print:hover {background-position: 0 -192px;}
+.feed {background-position: -24px -216px; }
+.feed:hover {background-position: -24px -192px; }
+.share {background-position: -48px -216px; }
+.share:hover {background-position: -48px -192px; }
+.information {background-position: -72px -216px; }
+.information:hover {background-position: -72px -192px; }
+.question {background-position: -96px -216px; }
+.question:hover {background-position: -96px -192px; }
+.showall {background-position: -120px -216px; }
+.showall:hover {background-position: -120px -192px; }
