@@ -421,8 +421,8 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 #main-navigation .dropdown.inpath{ border-color: #fff; background-color: #000; }
 #main-navigation .dropdown a{padding: 0; color: #fff; }
 #main-navigation .dropdown:hover a{ color: #fff;  }
-#main-navigation .dropdown .menu {left: 0; top: 24px; padding-bottom: 4px;}
-#main-navigation .dropdown .menu li {border: none;}
+#main-navigation .dropdown .menu {left: 0; top: 24px; padding-bottom: 4px; padding-top:6px;}
+#main-navigation .dropdown .menu li {border: none; margin-bottom:2px;}
 #main-navigation .dropdown .menu li:hover {background: none;}
 #main-navigation .dropdown .menu.hidden {left: -9999em;}
 #main-navigation .dropdown .menu a { padding-left: 4px; display: block; color: #000; font-weight: bold; }
