@@ -1,7 +1,7 @@
 .local-color{background-color:#ea5e00;}
 .local-color-text{color:#ea5e00;}
 #main-navigation {background-color:#ea5e00;}
-#main-navigation .dropdown {border-color:#ea5e00;}
+#main-navigation li {border-color:#ea5e00;}
 .local-color-light {background-color:#d53c00;}
 .local-color-dark {background-color:#b91e00;}
 .news-text h2 a:hover {color: #ea5e00;}
@@ -10,15 +10,15 @@
 .search-results cite {color:#b91e00;}
 .pagination .current {color:#ea5e00;}
 
-.print {background-position: 0 -408px; }
-.print:hover {background-position: 0 -384px;}
-.feed {background-position: -24px -408px; }
-.feed:hover {background-position: -24px -384px; }
-.share {background-position: -48px -408px; }
-.share:hover {background-position: -48px -384px; }
-.information {background-position: -72px -408px; }
-.information:hover {background-position: -72px -384px; }
-.question {background-position: -96px -408px; }
-.question:hover {background-position: -96px -384px; }
-.showall {background-position: -120px -408px; }
-.showall:hover {background-position: -120px -384px; }
+.print .icon {background-position: 0 -408px; }
+.print:hover .icon {background-position: 0 -384px;}
+.feed .icon {background-position: -24px -408px; }
+.feed:hover .icon {background-position: -24px -384px; }
+.share .icon {background-position: -48px -408px; }
+.share:hover .icon {background-position: -48px -384px; }
+.information .icon {background-position: -72px -408px; }
+.information:hover .icon {background-position: -72px -384px; }
+.question .icon {background-position: -96px -408px; }
+.question:hover .icon {background-position: -96px -384px; }
+.showall .icon {background-position: -120px -408px; }
+.showall:hover .icon {background-position: -120px -384px; }

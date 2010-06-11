@@ -1,7 +1,7 @@
 .local-color{background-color:#007ba5;}
 .local-color-text{color:#007ba5;}
 #main-navigation {background-color:#007ba5;}
-#main-navigation .dropdown {border-color: #007ba5;}
+#main-navigation li {border-color: #007ba5;}
 
 .local-color-light {background-color:#015876;}
 .local-color-dark {background-color:#003047;}
@@ -11,15 +11,15 @@
 .search-results cite {color:#003047;}
 .pagination .current {color:#007ba5;}
 
-.print {background-position: 0 -360px; }
-.print:hover {background-position: 0 -336px;}
-.feed {background-position: -24px -360px; }
-.feed:hover {background-position: -24px -336px; }
-.share {background-position: -48px -360px; }
-.share:hover {background-position: -48px -336px; }
-.information {background-position: -72px -360px; }
-.information:hover {background-position: -72px -336px; }
-.question {background-position: -96px -360px; }
-.question:hover {background-position: -96px -336px; }
-.showall {background-position: -120px -360px; }
-.showall:hover {background-position: -120px -336px; }
+.print .icon {background-position: 0 -360px; }
+.print:hover .icon {background-position: 0 -336px;}
+.feed .icon {background-position: -24px -360px; }
+.feed:hover .icon {background-position: -24px -336px; }
+.share .icon {background-position: -48px -360px; }
+.share:hover .icon {background-position: -48px -336px; }
+.information .icon {background-position: -72px -360px; }
+.information:hover .icon {background-position: -72px -336px; }
+.question .icon {background-position: -96px -360px; }
+.question:hover .icon {background-position: -96px -336px; }
+.showall .icon {background-position: -120px -360px; }
+.showall:hover .icon {background-position: -120px -336px; }
