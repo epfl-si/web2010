@@ -84,5 +84,8 @@ jQuery(document).ready(function(){
     /* Set correct margin to elements */
     jQuery(".box.two-cols div.box-col:even",this).addClass("box-left-col");
     jQuery(".box.two-cols div.box-col:odd", this).addClass("box-right-col");
-    jQuery("#content .box:odd",this).addClass("last-col");     
+    jQuery("#content .box:odd",this).addClass("last-col");
+    
+    /* Google Analytics */
+    jQuery.ga.load("UA-4833294-1");    
 });
