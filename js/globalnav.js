@@ -71,9 +71,9 @@ jQuery(document).ready(function(){
         function(){ jQuery(this).children('ul').removeClass('hidden');}, 
         function(){ jQuery(this).children('ul').addClass('hidden');});
     jQuery('#main-navigation .dropdown').click(function(){ return true;});
-    jQuery(".tree li.inpath").addClass('open');
     
     /* navigation: tree */
+    jQuery(".tree li.inpath").addClass('open');
     jQuery(".tree").treeview({ 'collapsed': true, 'unique': false });
     jQuery(".tree").children().addClass('local-color');
     jQuery(".tree li").hover(

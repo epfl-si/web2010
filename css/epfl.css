@@ -7,6 +7,7 @@ body {
     background-color: #fff;
     color: #4e4e4e;
     margin: 0;
+    padding:0.1px; /* FF3 */
 }
 h1{ font-family: Impact, "Arial Black", Arial, Helvetica, sans-serif;
     font-size: 27px;
@@ -101,7 +102,7 @@ blockquote p {
 
 /******************* Header definition ***********************/
 #header{ margin-left: auto; margin-right: auto; width: 980px; padding: 0 8px; background-color: #fff;}
-#header a{ background: none; font-weight: normal;}
+#header a{ background: none; }
 #header input{ color: #666;}
 #header input.focused{ color: #000; }
 .portal{ background-color: #999c98; /* light gray */ }
@@ -127,8 +128,9 @@ blockquote p {
 #nav-menus a.main-link span { display: block; margin-bottom: 2px; font-size: 18px; }
 #nav-menus a.main-link:hover{ background-image: url(../img/arrow-menu-on.gif);}
 #nav-menus a.main-link:active{ background-image: url(../img/arrow-menu-on.gif);}
-#public-menu-link { margin-right: 4px; }
-#school-menu-link { margin-right: 4px; }
+#public-menu-link { margin-right: 4px; font-weight: normal;}
+#school-menu-link { margin-right: 4px; font-weight: normal;}
+#brief-menu-link { font-weight: normal}
 #nav-search {
     float: left;
     height: 84px;
@@ -145,10 +147,10 @@ blockquote p {
 #searchform label{
     display: block;
     float: left;
-    width:64px;
+    width:77px;
     height:25px;
     padding-top: 2px;
-    margin-right: 4px;
+    margin-right: 0px;
     margin-bottom: 4px;
     overflow:hidden;
     text-align:center;
@@ -186,7 +188,7 @@ blockquote p {
 	width: 980px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 60px 8px 40px 8px;
+	padding: 60px 8px 0 8px;
 	border: none;
 	background-color: #fff;
 	z-index: 999;
@@ -197,46 +199,26 @@ blockquote p {
 	margin-right: 4px;
 	padding: 0;
 }
-.navigation-panel .group-2-cols {
-	float: left;
-	width: 324px;
-	margin-right: 4px;
-}
-.navigation-panel .last { margin: 0; }
-.navigation-panel ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-.navigation-panel a{
-    font-family: "Arial black", Arial, helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing:.05em;
-}
-.navigation-panel a:active, .navigation-panel a:hover { color:#666; }
 
+.navigation-panel ul { list-style: none; padding: 0; margin-bottom: 28px; }
+.navigation-panel a{ font-family: Arial, helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing:.05em;}
+.navigation-panel a:active, .navigation-panel a:hover { color:#666; }
 .navigation-panel h3 {
-    margin:0;
-    padding:0;
-	font-family: "Arial black", Arial;
-	font-size:12px;
-	line-height:14px;
-	letter-spacing:.05em;
-	text-transform:none;
-	text-decoration:none;
-	border: none;
+    margin:0 0 4px 0; padding:0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:13px; line-height:14px; font-weight: bold; letter-spacing:.05em;
 }
+.navigation-panel .group-2-cols { float: left; width: 324px; margin-right: 4px; }
+.navigation-panel .last { margin: 0; }
+
 
 #public-panel {left: -172px;}
 #public-panel.hidden { left: -9999em; }
-#public-panel a { line-height: 22px; }
-#public-panel a:active, #public-panel a:hover { color:#666; }
+#public-panel h3 a { color: red;}
 
-#school-panel { left: -336px; padding-bottom: 36px; } 
+
+#school-panel { left: -336px;} 
 #school-panel.hidden { left: -9999em; }
-#school-panel .group-2-cols { margin-bottom: 4px; }
-#school-panel a { line-height:14px;}
 #school-panel h3 acronym { color: #4e4e4e;}
 
 #brief-panel { left: -500px; }
@@ -245,7 +227,7 @@ blockquote p {
 #brief-panel .large { width: 320px; margin-right:0; }
 
 #breadcrumbs, #languages{
-    padding: 4px 0 0 0;
+    padding: 2px 0 0 0;
     font-family: Georgia, serif;
     font-style: italic;
     letter-spacing: 1px;
@@ -399,7 +381,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 /****************************** Main content *****************************/
 
 #main-content{ margin-left: auto; margin-right: auto; width: 980px; }
-#tools{ height: 31px; }
+#tools{ height: 27px; }
 .content{
     float: left; width: 652px; overflow: hidden;
 	margin-right:4px; margin-bottom: 20px;
