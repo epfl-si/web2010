@@ -110,7 +110,7 @@ blockquote p {
 .short{ background-color: #474e52; /* darker gray */}
 
 #nav-logo {
-    float: left; height: 83px; width: 160px; position: relative; margin: 0 4px 0 0;
+    float: left; height: 79px; width: 160px; position: relative; margin: 0 4px 0 0;
     background: url(../img/epfl.png) no-repeat 0 18px; border-bottom: 1px solid #474e52; /* darker gray */ }
 #nav-logo img{ width: 112px; height: 54px; position: absolute; bottom: 7px; }
 #main-menus { list-style: none; padding: 0; margin: 0;}
