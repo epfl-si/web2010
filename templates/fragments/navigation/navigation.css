@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+
+.menus {
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+	border-left:1px solid black;
+
+}
+.menus ul.public {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menus ul.public li {
+	float: left;
+	width: 160px;
+	height: 70px;
+	margin: 40px 6px 4px 0;
+}
+.menus ul.public a {
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:22px;
+	letter-spacing:.05em;
+	color:#000;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+	background:none;
+}
+.menus ul.public a:active, .menus ul.public a:hover {
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:22px;
+	letter-spacing:.05em;
+	color:#666;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+}
+.menus ul.bref {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: red;
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:14px;
+	letter-spacing:.05em;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+}
+.menus ul.bref li {
+	float: left;
+	width: 160px;
+	height: 120px;
+	margin: 40px 6px 4px 0;
+}
+.menus ul.bref li.four {
+	float: left;
+	width: 200px;
+	height: 120px;
+	margin: 60px 6px 4px 0;
+}
+.menus ul.bref a {
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:14px;
+	letter-spacing:.05em;
+	color:#000;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+	background:none;
+}
+.menus ul.bref a:active, .menus ul.bref a:hover {
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:14px;
+	letter-spacing:.05em;
+	color:#666;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+}
+.menus ul.fac {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: red;
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:14px;
+	letter-spacing:.05em;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+}
+.menus ul.fac li {
+	float: left;
+	width: 317px;
+	margin: 5px 6px 4px 0px;
+}
+.menus ul.fac li.top {
+	margin-top: 40px;
+}
+.menus ul.fac li.bottom {
+	margin-bottom: 40px;
+}
+.menus ul.fac li.first {
+	margin-left: 8px;
+}
+.menus ul.fac a {
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:14px;
+	letter-spacing:.05em;
+	color:#000;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+	background:none;
+
+}
+.menus ul.fac a:active, .menus ul.fac a:hover {
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:14px;
+	letter-spacing:.05em;
+	color:#666;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.color_sti {
+	color:#a9aad5;
+}
+.color_enac {
+	color:#eb690b;
+}
+.color_cdm {
+	color:#990066;
+}
+.color_cdh {
+	color:#daa520;
+}
+.color_sv {
+	color:#97bf0d;
+}
+.color_sb {
+	color:#009ee1;
+}
+.color_ic {
+	color:#30b3ad;
+}
+.color_epfl {
+	color:#991229;
+}
