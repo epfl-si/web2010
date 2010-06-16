@@ -114,7 +114,7 @@ blockquote p {
     border-bottom: 1px solid #474e52; /* darker gray */ }
 #nav-logo img{ width: 112px; height: 54px; position: absolute; bottom: 7px; }
 #main-menus { list-style: none; padding: 0; margin: 0;}
-#main-menus li.menu { float: left; height: 84px; width: 160px; position: relative; cursor: pointer;}
+#main-menus li.menu { float: left; height: 84px; width: 160px; position: relative; cursor: pointer; }
 #main-menus li.menu .navigation-panel {cursor: default;}
 #nav-menus{ margin-right: 4px; padding: 0; float: left;}
 #nav-menus li.menu:hover { background-color: #fff; color: #000;}
@@ -388,6 +388,11 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 	border-top: 1px solid #000;
 	padding-top: 4px;
 }
+.content ol, .content ul { margin-bottom: 4px; }
+.content li { 
+    background: url(../img/dot.png) no-repeat 0 4px; 
+    padding-left: 12px; margin-bottom: 2px; line-height: 14px;}
+.content ol li { background: none; padding: 0; list-style-position: inside; }
 .content-nomenu{ 
     float: left; width: 652px;
 	margin-right:4px; padding-top: 4px;
@@ -400,10 +405,11 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 
 .link-list li{
     list-style-type: none;
-    background: url(../img/dot.png) no-repeat top left;
-    padding-left: 12px;
     margin-bottom: 2px; 
     line-height: 14px;
+    background: url(../img/dot.png) no-repeat 0 4px; 
+    padding-left: 12px; }
+
 }
 .link-list a {
     font-family:  Arial, Helvetica, sans-serif;
@@ -487,7 +493,7 @@ ul.news-list {
     float: left; width: 652px;
     margin: 0 0 40px 0; padding: 0;
     list-style: none;}
-.news-list li { margin: 0 4px 4px 0; }
+.news-list li { margin: 0 4px 4px 0; padding: 0;}
 .news-list img.news-img { width: 160px; float: left; margin: 0}
 .news-list li.heading-news h2 {
     font-family: "Arial Black", Arial, Helvetica, sans-serif;
