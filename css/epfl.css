@@ -41,7 +41,7 @@ h4 { color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: bold; 
 p { margin-bottom: 18px; color: #4e4e4e; }
 a { text-decoration: none; color: #000; background: url(../img/underline.gif) repeat-x 0 12px; }
 a:hover { background-image: url(../img/underline-hover.png); }
-
+b { color: #000; }
 ul { padding-left: 0;}
 blockquote img {
     width: 50px;
@@ -67,6 +67,7 @@ blockquote p {
 .sv{color:#8dc700;}
 .sb{color:#007ba5;}
 .ic{color:#1bb5b5;}
+
 .local-color {background-color: #ae0010; color: #fff;}
 .local-color a { color: #fff; }
 .local-color-text {color:#ae0010;}
@@ -548,13 +549,13 @@ ol.search-results li{
 .search-results .date a {background-position: 0 13px;}
 .search-results .highlight {padding: 0 4px; background-color:#000; color: #fff;}
 .search-results cite {color:#999c98;}
-p.results-count{font-weight: bold; border-top: 1px solid #000; margin-top: 20px; color: #000;}
+p.results-count{border-top: 1px solid #000; margin-top: 20px; }
 
 .pagination {margin-top: 40px;}
 .pagination ul {float: left;}
 .pagination p {float: right;}
 .pagination li {display: inline; margin-right: 20px;}
-.pagination .current, .pagination-position { font-weight: bold;}
+.pagination .current, .pagination-position { font-weight: normal;}
 .pagination .current { color:#ae0010; }
 /************************ Footer ********************************/
 #footer{
