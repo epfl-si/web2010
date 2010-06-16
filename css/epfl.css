@@ -60,13 +60,13 @@ blockquote p {
     width: 266px;
 }
 
-.sti{ color:#a9aad5;}
+.sti{ color:#8972d5;}
 .enac{color:#ea5e00;}
-.cdm{color:#906;}
+.cdm{color:#990165;}
 .cdh{color:#daa521;}
-.sv{color:#97bf0d;}
-.sb{color:#009ee1;}
-.ic{color:#30b3ad;}
+.sv{color:#8dc700;}
+.sb{color:#007ba5;}
+.ic{color:#1bb5b5;}
 .local-color {background-color: #ae0010; color: #fff;}
 .local-color a { color: #fff; }
 .local-color-text {color:#ae0010;}
@@ -361,8 +361,9 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 #main-navigation .dropdown {
     top: 0;
     height: 20px;
-    padding: 4px 18px 0 8px;
-    background: url(../img/nav-menus.gif) no-repeat right -26px;
+    padding: 4px 8px 0 8px;
+    background: none;
+/*    background: url(../img/nav-menus.gif) no-repeat right -26px;*/
     margin-right: 0;
 }
 #main-navigation:first-child .dropdown { border-left: none;}
@@ -374,7 +375,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 #main-navigation .dropdown .menu li {border: none; margin-bottom:2px;}
 #main-navigation .dropdown .menu li:hover {background: none;}
 #main-navigation .dropdown .menu.hidden {left: -9999em;}
-#main-navigation .dropdown .menu a { padding-left: 4px; display: block; color: #000; font-weight: bold; }
+#main-navigation .dropdown .menu a { padding-left: 7px; display: block; color: #000; font-weight: bold; }
 #main-navigation .dropdown .menu ul a { color: #000; font-weight: normal; }
 #main-navigation .dropdown .menu a:hover { color: #fff; background-color: #000;}
 
@@ -526,7 +527,7 @@ ul.text-layout { overflow: hidden; width: 656px;}
     float: left; width: 324px; height: 89px; overflow: hidden;
     border-bottom: 1px solid #000;}
 .text-layout li.heading-news .news-text {height: 91px; margin-top: 2px;}
-ul.simple-layout li { padding-bottom: 4px; margin-bottom: 4px; border-bottom: 1px solid #000;} 
+ul.simple-layout li { padding-bottom: 4px; margin-bottom: 4px; border-bottom: 1px dotted #000;} 
 ul.simple-layout li img.news-img {margin-right:4px; vertical-align: bottom;}
 ul.simple-layout .news-text {float: left; width: 484px; line-height: 18px;}
 
