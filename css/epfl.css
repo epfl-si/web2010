@@ -101,7 +101,6 @@ blockquote p {
 .showall .icon {background-position: -120px -24px; }
 .showall:hover .icon {background-position: -120px 0; }
 
-.read-more { background: url("../img/arrow_more.png") no-repeat 0 0; width: 16px; height: 15px; }
 
 /******************* Header definition ***********************/
 #header{ margin-left: auto; margin-right: auto; width: 980px; padding: 0 8px; background-color: #fff;}
@@ -482,10 +481,12 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
     padding-bottom: 1px;
 }
 .news-text a{ background:none; }
+.news-text .read-more { background: url(../img/arrow-more.png) no-repeat 0 3px; width: 16px; height: 12px; display: inline-block; }
+
 .news-text span.date {
     font-family:  Georgia, serif; font-size: 12px; font-style: italic; font-weight: bold;
     color: #000; padding-right: 4px; }
-.news-text p { margin: 0;}
+.news-text p { margin: 0; float: left;}
 .news-text p img{ margin: 0; vertical-align: top;}
 .news-text .epfl { color: #f00; }
 .news-text .innovation { color: #0f0;}
@@ -556,7 +557,7 @@ p.results-count{border-top: 1px solid #000; margin-top: 20px; }
 .pagination {margin-top: 40px;}
 .pagination ul {float: left;}
 .pagination p {float: right;}
-.pagination li {display: inline; margin-right: 20px;}
+.pagination li {display: inline; margin-right: 20px; background: none; padding: 0;}
 .pagination .current, .pagination-position { font-weight: normal;}
 .pagination .current { color:#ae0010; }
 /************************ Footer ********************************/
