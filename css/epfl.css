@@ -82,6 +82,8 @@ blockquote p {
 }
 .heading a{ background-position: 0 13px; }
 
+.clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+
 .button { float: left; margin-right: 20px; cursor: pointer;}
 .icon {float: left; background: url(../img/icons.png) no-repeat; height: 24px; width: 24px; margin-right: 4px; border: none; cursor: pointer;}
 .label {font-family: Georgia, serif; font-style: italic; background: url(../img/underline.gif) repeat-x 0 15px; cursor: pointer;}
@@ -481,7 +483,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
     padding-bottom: 1px;
 }
 .news-text a{ background:none; }
-.news-text .read-more { background: url(../img/arrow-more.png) no-repeat 0 3px; width: 16px; height: 12px; display: inline-block; }
+.news-text .read-more { background: url(../img/arrow-more-test3.png) no-repeat 0 4px; width: 12px; height: 12px; margin-left: 4px; display: inline-block; }
 
 .news-text span.date {
     font-family:  Georgia, serif; font-size: 12px; font-style: italic; font-weight: bold;

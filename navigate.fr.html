@@ -3,189 +3,307 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!--#include virtual="fragments/header.sig.html" -->
-    <title>Templates Web 2010</title>
+<!--#include virtual="templates/fragments/header.sig.html" -->
+    <title>Navigation dans les pages de l'EPFL</title>
     <link href="http://www.epfl.ch/css/epfl.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="http://www.epfl.ch/css/homepage.css" media="all" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    .menus {
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+	border-left:1px solid black;
+
+}
+.menus ul.public {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menus ul.public li {
+	float: left;
+	width: 160px;
+	height: 70px;
+	margin: 40px 6px 4px 0;
+}
+.menus ul.public a {
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:22px;
+	letter-spacing:.05em;
+	color:#000;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+	background:none;
+}
+.menus ul.public a:active, .menus ul.public a:hover {
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:22px;
+	letter-spacing:.05em;
+	color:#666;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+}
+.menus ul.bref {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: red;
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:14px;
+	letter-spacing:.05em;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+}
+.menus ul.bref li {
+	float: left;
+	width: 160px;
+	height: 120px;
+	margin: 40px 6px 4px 0;
+}
+.menus ul.bref li.four {
+	float: left;
+	width: 200px;
+	height: 120px;
+	margin: 60px 6px 4px 0;
+}
+.menus ul.bref a {
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:14px;
+	letter-spacing:.05em;
+	color:#000;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+	background:none;
+}
+.menus ul.bref a:active, .menus ul.bref a:hover {
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:14px;
+	letter-spacing:.05em;
+	color:#666;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+}
+.menus ul.fac {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: red;
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:14px;
+	letter-spacing:.05em;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+}
+.menus ul.fac li {
+	float: left;
+	width: 317px;
+	margin: 5px 6px 4px 0px;
+}
+.menus ul.fac li.top {
+	margin-top: 40px;
+}
+.menus ul.fac li.bottom {
+	margin-bottom: 40px;
+}
+.menus ul.fac li.first {
+	margin-left: 8px;
+}
+.menus ul.fac a {
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:14px;
+	letter-spacing:.05em;
+	color:#000;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+	background:none;
+
+}
+.menus ul.fac a:active, .menus ul.fac a:hover {
+	font-family:"Arial black", Arial;
+	font-size:12px;
+	line-height:14px;
+	letter-spacing:.05em;
+	color:#666;
+	text-transform:none;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.color_sti {color:#a9aad5;}
+.color_enac {color:#eb690b;}
+.color_cdm {color:#990066;}
+.color_cdh {color:#daa520;}
+.color_sv {color:#97bf0d;}
+.color_sb {color:#009ee1; }
+.color_ic {color:#30b3ad;}
+.color_epfl {color:#991229; }
+    </style>
     <script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
     <script type="text/javascript">jQuery.noConflict();</script> 
-    <script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script> 
+    <script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
+    <script type="text/javascript">jQuery(document).ready(function(){ jQuery("#jswarning").hide(); });</script> 
   </head>
   <body>
-<!--#include virtual="fragments/header.fr.html" -->
-  <div id="main-content">
-    <h1>Navigation dans les pages de l'<acronym title="École Polytechnique Fédérale de Lausanne" class="local-color-text">EPFL</acronym></h1>
-  <div id="main-navigation" class="navigation-bar">
-    <ul class="topnav">
-      <li class="dropdown"> <a href="#">Architecture</a>
-        <ul class="menu hidden">
-          <li><a href="#">subpage</a></li>
-          <li><a href="#">subpage with a veeeeeeeerrrry long title</a></li>
+<!--#include virtual="templates/fragments/header.fr.html" -->
+    <div id="main-content">
+      <ul id="breadcrumbs" title="Navigation dans l'arborescence de l'EPFL">
+        <li><a href="http://www.epfl.ch/" title="Page d'accueil de l'EPFL">EPFL</a></li>
+        <li class="last">Navigation</li>
+      </ul>
+      <ul id="languages" title="Choix de la langue">
+        <li><a href="navigate.en.html">English</a></li>
+        <li class="current">français</li>
+      </ul>
+      <div class="clear"></div>
+      
+      <h1>Navigation dans les pages de l'<acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></h1>
+      <div id="main-navigation" class="navigation-bar">
+        <ul class="topnav">
+          <li class="dropdown"></li>
         </ul>
-      </li>
-      <li class="dropdown"> <a href="#">Génie civil</a>
-        <ul class="menu hidden">
-          <li><a href="#">submenu</a>
-            <ul>
-              <li><a href="#">element 1</a></li>
-              <li><a href="#">element 2</a></li>
-            </ul>
-          </li>
-          <li><a href="#">subpage 2</a></li>
-        </ul>
-      </li>
-      <li class="dropdown"> <a href="#">Environnement</a>
-        <ul class="menu hidden">
-          <li><a href="#">subpage</a></li>
-          <li><a href="#">subpage 2</a></li>
-        </ul>
-      </li>
-      <li class="dropdown"> <a href="#">Territoire</a>
-        <ul class="menu hidden">
-          <li><a href="#">subpage</a></li>
-          <li><a href="#">subpage 2</a></li>
-        </ul>
-      </li>
-      <li class="dropdown"> <a href="#">À propos de l'ENAC</a>
-        <ul class="menu hidden">
-          <li><a href="#">subpage</a></li>
-          <li><a href="#">subpage 2</a></li>
-        </ul>
-      </li>
-    </ul>
-    <div style="clear:both"></div>
-</div>
-  <div id="content" class="content fullpage-content">
-    <p>Si vous voyez que votre barre de navigation s'affiche comme ceci. C'est que vous avez le moteur Java Script déactivé. Pour avoir un confort de navigation optimale à travers le site de l’EPFL, veuillez activer le moteur Java Script dans le navigateur Web.</p>
-</div>
+        <div style="clear:both"></div>
+      </div>
+      
+      <div id="content" class="content fullpage-content">
+        <p id="jswarning">Javascript est désactivé par votre navigateur. Cette technologie est utilisée pour offrir un plus grand confort de navigation au travers du site de l'EPFL. Nous vous conseillons donc de <a href="javascript-help.fr.html" title="Instructions pour l'activation de javascript">l'activer</a>.</p>
+
         <h1>Par public</h1>
-  <div id="content" class="content fullpage-content">
-      <div class="menus">
-        <ul class="public">
+        <div class="menus">
+          <ul class="public">
           <li>
             <div></div>
           </li>
           <li>
-            <div><a href="#">Chercheur</a><br>
+            <div><a href="#">Chercheur</a><br />
               <a href="#">Futur &Eacute;tudiant</a></div>
           </li>
           <li>
-            <div><a href="#">Collaborateur</a><br>
+            <div><a href="#">Collaborateur</a><br />
               <a href="#">&Eacute;tudiant</a></div>
           </li>
           <li>
-            <div><a href="#">M&eacute;dia</a><br>
+            <div><a href="#">M&eacute;dia</a><br />
               <a href="#">Entreprise</a></div>
           </li>
         </ul>
         <div style="clear:both"></div>
       </div>
-</div>
-<br />
-<!--- space WOOOOOOT --->
-<br />
-        <h1>Par facult&eacute;</h1>
-  <div id="content" class="content fullpage-content">
-  <div class="menus">
-    <ul class="fac">
-      <li class="top first color_enac">
-        <div>Environnement Naturel, Architectural et Construit <span style="color:#4e4e4e">ENAC</span><br>
-          <a href="#">Architecture</a><br>
-          <a href="#">G&eacute;nie civil</a><br>
-          <a href="#">Environnement</a><br>
-          <a href="#">Territoire</a><br>
-        </div>
-      </li>
-      <li class="top color_sti">
-        <div>Faculté des Sciences et Techniques de l’Ingénieur <span style="color:#4e4e4e">STI</span><br>
-          <a href="#">G&eacute;nie Electrique et Electronique</a><br>
-          <a href="#">G&eacute;nie M&eacute;canique</a><br>
-          <a href="#">Science et G&eacute;nie des Mat&eacute;riaux</a><br>
-          <a href="#">Microtechnique</a><br>
-        </div>
-      </li>
-      <li class="top color_cdm">
-        <div>Collège du Management de la Technologie <span style="color:#4e4e4e">CDM</span><br>
-          <a href="#">Management de la Technologie</a><br>
-          <a href="#">Ing&eacute;nierie financi&egrave;re</a><br>
+      
+      <h1>Par facult&eacute;</h1>
+      <div class="menus">
+      <ul class="fac">
+        <li class="top first color_enac">
+          <div>Environnement Naturel, Architectural et Construit <span style="color:#4e4e4e">ENAC</span><br/>
+            <a href="#">Architecture</a><br />
+            <a href="#">G&eacute;nie civil</a><br />
+            <a href="#">Environnement</a><br />
+            <a href="#">Territoire</a><br />
+          </div>
+        </li>
+        <li class="top color_sti">
+          <div>Faculté des Sciences et Techniques de l’Ingénieur <span style="color:#4e4e4e">STI</span><br/>
+            <a href="#">G&eacute;nie Electrique et Electronique</a><br />
+            <a href="#">G&eacute;nie M&eacute;canique</a><br />
+            <a href="#">Science et G&eacute;nie des Mat&eacute;riaux</a><br />
+            <a href="#">Microtechnique</a><br />
+          </div>
+        </li>
+        <li class="top color_cdm">
+          <div>Collège du Management de la Technologie <span style="color:#4e4e4e">CDM</span><br/>
+          <a href="#">Management de la Technologie</a><br />
+          <a href="#">Ing&eacute;nierie financi&egrave;re</a><br />
         </div>
       </li>
       <li class="first color_sb">
-        <div>Sciences de Base <span style="color:#4e4e4e">SB</span><br>
-          <a href="#">Chimie</a><br>
-          <a href="#">Math&eacute;matique</a><br>
-          <a href="#">Physique</a><br>
+        <div>Sciences de Base <span style="color:#4e4e4e">SB</span><br />
+          <a href="#">Chimie</a><br />
+          <a href="#">Math&eacute;matique</a><br />
+          <a href="#">Physique</a><br />
         </div>
       </li>
       <li class="color_sv">
-        <div>Facult&eacute; des Sciences de la Vie <span style="color:#4e4e4e">SV</span><br>
-          <a href="#">Sciences et technologie de la vie</a><br>
-          <a href="#">Bioengineering</a><br>
+        <div>Facult&eacute; des Sciences de la Vie <span style="color:#4e4e4e">SV</span><br />
+          <a href="#">Sciences et technologie de la vie</a><br />
+          <a href="#">Bioengineering</a><br />
         </div>
       </li>
       <li class="color_cdh">
-        <div>Coll&egrave;ge des Humanit&eacute;s <span style="color:#4e4e4e">CDH</span><br>
-          <a href="#">Sciences humaines et sociales</a><br>
+        <div>Coll&egrave;ge des Humanit&eacute;s <span style="color:#4e4e4e">CDH</span><br />
+          <a href="#">Sciences humaines et sociales</a><br />
         </div>
       </li>
       <li class="first bottom color_ic">
-        <div>Faculté Informatique &amp; Communications <span style="color:#4e4e4e">I&amp;C</span><br>
-          <a href="#">Informatique</a><br>
-          <a href="#">Systèmes de communication</a><br>
+        <div>Faculté Informatique &amp; Communications <span style="color:#4e4e4e">I&amp;C</span><br />
+          <a href="#">Informatique</a><br />
+          <a href="#">Systèmes de communication</a><br />
         </div>
       </li>
     </ul>
     <div style="clear:both"></div>
   </div>
-  </div>
-    <br />
-  <!--- space WOOOOOOT --->
-  <br />
+
     <h1>EPFL en bref</h1>
-    <div id="content" class="content fullpage-content">
     <div class="menus">
       <ul class="bref">
         <li>
           <div></div>
         </li>
         <li>
-          <div>EPFL<br>
-            <a href="#">Direction</a><br>
-            <a href="#">Structure</a><br>
-            <a href="#">EPFL en bref</a><br>
+          <div>EPFL<br />
+            <a href="#">Direction</a><br />
+            <a href="#">Structure</a><br />
+            <a href="#">EPFL en bref</a><br />
             <a href="#">Information</a> </div>
         </li>
         <li>
-          <div>Formation<br>
-            <a href="#">Cours Préparatoire</a><br>
-            <a href="#">CMS</a><br>
-            <a href="#">Bachelor</a><br>
-            <a href="#">Master</a><br>
-            <a href="#">&Eacute;cole doctorale</a><br>
+          <div>Formation<br />
+            <a href="#">Cours Préparatoire</a><br />
+            <a href="#">CMS</a><br />
+            <a href="#">Bachelor</a><br />
+            <a href="#">Master</a><br />
+            <a href="#">&Eacute;cole doctorale</a><br />
           </div>
         </li>
         <li>
-          <div>Recherche<br>
-            <a href="#">Recherche en bref</a><br>
-            <a href="#">Publication EPFL</a><br>
-            <a href="#">Grants office</a><br>
-            <a href="#">Commission de recherche</a><br>
+          <div>Recherche<br />
+            <a href="#">Recherche en bref</a><br />
+            <a href="#">Publication EPFL</a><br />
+            <a href="#">Grants office</a><br />
+            <a href="#">Commission de recherche</a><br />
           </div>
         </li>
         <li class="four">
-          <div>Innovation &amp; Valorisation<br>
-            <a href="#">Quartier de l'innovation</a><br>
-            <a href="#">PSE</a><br>
-            <a href="#">Alliance</a><br>
-            <a href="#">Relations industrielles</a><br>
+          <div>Innovation &amp; Valorisation<br />
+            <a href="#">Quartier de l'innovation</a><br />
+            <a href="#">PSE</a><br />
+            <a href="#">Alliance</a><br />
+            <a href="#">Relations industrielles</a><br />
           </div>
         </li>
       </ul>
       <div style="clear:both"></div>
     </div>
-    </div>
- <br /> 
-<div id="footer">
+  
+  </div>
+  <div id="footer">
   <ul>
     <li>Plan du site</li>
     <li>Contact</li>
@@ -193,6 +311,6 @@
     <li class="copyright">&copy; 2010 EPFL tous droits réservés</li>
     <li><a href="#top" class="hidden">Retour en haut de la page</a></li>
   </ul>
-</div>
+  </div>
 </body>
 </html>
