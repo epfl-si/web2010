@@ -206,7 +206,7 @@ blockquote p {
 
 .navigation-panel ul { list-style: none; padding: 0; margin-bottom: 28px; }
 .navigation-panel a{ font-family: Arial, helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing:.05em;}
-.navigation-panel a:active, .navigation-panel a:hover { color:#666; }
+.navigation-panel a:hover { text-decoration: underline;}
 .navigation-panel h3 {
     margin:0 0 4px 0; padding:0;
 	font-family: Arial, Helvetica, sans-serif;
@@ -548,7 +548,7 @@ ol.search-results li{
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 13px; text-transform: none; font-weight:bold;
     margin: 0; padding: 0; border:none;}
-.search-results a { background-position: 0 14px; color:#ae0010; }
+.search-results a { background-position: 0 14px; color:#ae0010; letter-spacing: 0;}
 .search-results p { margin:0;}
 .search-results .date {font-family: georgia; font-style: italic; font-weight: normal; color: #999C98; color: #4e4e4e; letter-spacing:1px;}
 .search-results .date a {background-position: 0 13px;}
