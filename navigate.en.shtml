@@ -1,23 +1,58 @@
-    <a name="top"></a>
-    <div id="accessibility" class="hidden" title="École polytechnique Fédérale de Lausanne - Quick access">
-      <ul>
-        <li><a href="http://www.epfl.ch/accessibility.fr.html" title="Specific informations for persons with disabilities" accesskey="0">Accessibility</a></li>
-        <li><a href="http://www.epfl.ch/" title="EPFL's homepage"  accesskey="1">Homepage</a></li>
-        <li><a href="#navigation" accesskey="2">Navigation within EPFL sites</a></li>
-        <li><a href="#navigate_site" accesskey="3">Navigation within this site</a></li>
-        <li><a href="#search" id="searchlink" accesskey="4">Jump to search field</a></li>
-        <li><a href="#content" accesskey="5">Jump to page content</a></li>
-        <li><a href="mailto:webmaster@epfl.ch" accesskey="9">Technical contact</a></li>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--#include virtual="templates/fragments/header.sig.html" -->
+    <title>Navigation within EPFL websites</title>
+    <link href="http://www.epfl.ch/css/epfl.css" media="all" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+.menus { border-bottom:1px solid black;  margin-bottom: 28px}
+.menus ul { padding: 0; margin-bottom: 28px; }
+.menus li {list-style-type: none; background: none; padding: 0;}
+.menus a{ font-family: Arial, helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing:.05em; background: none;}
+.menus a:hover { text-decoration: underline;}
+.menus h3 {
+    margin:0 0 4px 0; padding:0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:13px; line-height:14px; font-weight: bold; letter-spacing:.05em;
+}
+.menus .group-2-cols { float: left; width: 324px; margin-right: 4px; }
+.menus .last { margin: 0; }
+.public h3 a { color: red;}
+.fac h3 acronym { color: #4e4e4e;}
+.bref h3 { color: red;}    </style>
+    <script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
+    <script type="text/javascript">jQuery.noConflict();</script> 
+    <script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
+    <script type="text/javascript">jQuery(document).ready(function(){ jQuery("#jswarning").hide(); });</script> 
+  </head>
+  <body>
+<!--#include virtual="templates/fragments/header.en.html" -->
+    <div id="main-content">
+      <ul id="breadcrumbs">
+        <li><a href="http://www.epfl.ch/" title="EPFL Homepage">EPFL</a></li>
+        <li class="last">Navigation</li>
       </ul>
-    </div>
-    <div id="header">
-      <div id="nav-logo"></div>
-      <div id="nav-menus">
-        <a name="navigation"></a>
-        <ul id="main-menus">
-          <li class="portal menu" id="public-menu-link">
-            <a class="main-link" href="http://www.epfl.ch/navigate.en.shtml" title="Navigate by community"><span>By</span> community</a>
-            <div class="navigation-panel hidden" id="public-panel">
+      <ul id="languages" title="Language">
+        <li class="current">English</li>
+        <li><a href="navigate.fr.shtml">français</a></li>
+      </ul>
+      <div class="clear"></div>
+      
+      <h1>Navigation within <acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym> websites</h1>
+      <div id="main-navigation" class="navigation-bar">
+        <ul class="topnav">
+          <li class="dropdown"></li>
+        </ul>
+        <div style="clear:both"></div>
+      </div>
+      
+      <div id="content" class="content fullpage-content">
+        <p id="jswarning">Javascript is currently disabled by your browser. This technology provides a better navigation experience within EPFL websites. We suggest you to <a href="javascript-help.en.shtml" title="Instructions on how to activate javascript">activate it</a>.</p>
+
+        <h2>By public</h2>
+        <div class="menus public">
               <ul>
                 <li class="group-2-cols">
                   <h3><a href="http://futuretudiant.epfl.ch/">Prospective students</a></h3>
@@ -69,12 +104,11 @@
                   </ul>
                 </li>
               </ul>
-              <div class="clear"></div>
-            </div>
-          </li>
-          <li class="school menu" id="school-menu-link">
-            <a class="main-link" href="http://www.epfl.ch/navigate.en.shtml" title="Navigate by school"><span>By</span> school</a>
-            <div class="navigation-panel hidden" id="school-panel">
+        <div style="clear:both"></div>
+      </div>
+      
+      <h2>By school</h2>
+      <div class="menus fac">
               <ul>
                 <li class="group-2-cols">
                   <h3><a href="http://enac.epfl.ch/" class="enac">Architecture, Civil and Environmental Engineering <acronym title="Environnement Naturel, Architectural et Construit">ENAC</acronym></a></h3>
@@ -133,11 +167,11 @@
                   </ul>
                 </li>
               </ul>
-            </div>
-          </li>
-          <li class="short menu" id="brief-menu-link">
-            <a class="main-link" href="http://www.epfl.ch/navigate.en.shtml"><span>about</span> <acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></a>
-            <div class="navigation-panel hidden" id="brief-panel">
+      <div style="clear:both"></div>
+    </div>
+
+    <h2>About EPFL</h2>
+    <div class="menus bref">
               <ul>
                 <li class="group-2-cols">
                   <h3><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></h3>
@@ -179,28 +213,17 @@
                   </ul>
                 </li>
               </ul>
-              <div class="clear"></div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="local-color" id="nav-search">
-        <div id="search-box">
-          <a name="search"></a>
-          <form name="search" action="http://search.epfl.ch/compoundDirectory.do" id="searchform">
-            <input class="hidden" type="radio" name="engine" id="search-engine-person" value="person" checked="checked" title="Find a person" />
-            <label for="search-engine-person" class="current" title="Find a person">Person</label>
-            <input class="hidden" type="radio" name="engine" id="search-engine-place" value="place" title="Find a place"/>
-            <label for="search-engine-place" title="Find a place">Place</label>
-            <input class="hidden" type="radio" name="engine" id="search-engine-epfl" value="epfl" title="Search within EPFL sites"/>
-            <label for="search-engine-epfl" title="Search within EPFL sites"><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym> Web</label>
-            <input class="hidden" type="radio" name="engine" id="search-engine-local" value="local"  title="Search within this site"/>
-            <label for="search-engine-local" title="Search within this site">On this site</label>
-            <input type="hidden" name="lang" value="fr" />
-            <input type="text" class="search" name="q" value="" id="searchfield" /><button type="submit" class="search-button"  title="Search">Search</button>
-          </form>
-        </div>
-      </div> 
-      <div class="clear"></div>
+      <div style="clear:both"></div>
     </div>
+  
+  </div>
+    <div id="footer">
+      <ul>
+        <li><a href="mailto:webmaster@epfl.ch">Contact</a></li>
+        <li><a href="accessibility.en.shtml">Accessibility</a></li>
+        <li class="copyright">&copy; 2010 EPFL all rights reserved</li>
+        <li><a href="#top" class="hidden">Jump to top of the page</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

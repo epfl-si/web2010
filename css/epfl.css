@@ -393,16 +393,12 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 	border-top: 1px solid #000;
 	padding-top: 4px;
 }
-.content ol, .content ul { margin-bottom: 4px; }
+.content ol, .content ul { margin-bottom: 18px; }
 .content li { 
     background: url(../img/dot.png) no-repeat 0 4px; 
     padding-left: 12px; margin-bottom: 2px; line-height: 14px;}
 .content ol li { background: none; padding: 0; list-style-position: inside; }
-.content-nomenu{ 
-    float: left; width: 652px;
-	margin-right:4px; padding-top: 4px;
-	overflow: hidden;
-}
+.content-nomenu{ border-top: none}
 .homepage-content{ border-top: none; padding-top: 0;}
 .fullpage-content { width: 980px; margin-right: 0; border: none; }
 .content img { margin-bottom: 12px;}
