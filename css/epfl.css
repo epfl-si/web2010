@@ -59,7 +59,7 @@ blockquote p {
     display: block;
     width: 266px;
 }
-
+object { z-index: 0; }
 .sti{ color:#8972d5;}
 .enac{color:#ea5e00;}
 .cdm{color:#990165;}
@@ -273,7 +273,7 @@ blockquote p {
     width: 178px;
     position: absolute;
     left: -1px; top: 20px;
-    z-index: 998;
+    z-index: 995;
     padding: 6px 0 2px 0;
     border: 1px solid #b8b8b8;
     background: #fff none;
