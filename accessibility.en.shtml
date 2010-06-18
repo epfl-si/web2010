@@ -19,7 +19,7 @@
       </ul>
       <ul id="languages" title="Language">
         <li class="current">English</li>
-        <li><a href="accessibility.fr.html">français</a></li>
+        <li><a href="accessibility.fr.shtml">français</a></li>
       </ul>
       <div class="clear"></div>
       
@@ -99,8 +99,8 @@
         <div class="box two-cols">
           <h3>Additional material</h3>
           <ul class="link-list">
-            <li><a href="#">Checklist des webmasters</a></li>
-            <li><a href="#">Aide-mémoire</a></li>
+            <li><a href="http://web2010.epfl.ch/files/content/sites/web2010/files/Checklist%20pour%20l'accessibilité.pdf">Checklist des webmasters (french only)</a></li>
+            <li><a href="http://web2010.epfl.ch/files/content/sites/web2010/files/Aide-mémoire%20(Accessibilité).pdf">Aide-mémoire (french only)</a></li>
           </ul>
         </div>
       </div>

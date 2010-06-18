@@ -100,8 +100,8 @@
         <div class="box two-cols">
           <h3>À consulter</h3>
           <ul class="link-list">
-            <li><a href="#">Checklist des webmasters</a></li>
-            <li><a href="#">Aide-mémoire</a></li>
+            <li><a href="http://web2010.epfl.ch/files/content/sites/web2010/files/Checklist%20pour%20l'accessibilité.pdf">Checklist des webmasters</a></li>
+            <li><a href="http://web2010.epfl.ch/files/content/sites/web2010/files/Aide-mémoire%20(Accessibilité).pdf">Aide-mémoire</a></li>
           </ul>
         </div>
       </div>
@@ -110,9 +110,8 @@
     
     <div id="footer">
       <ul>
-        <li>Plan du site</li>
-        <li>Contact</li>
-        <li>Accessibilité</li>
+        <li><a href="mailto:webmaster@epfl.ch">Contact</a></li>
+        <li><a href="accessibility.en.shtml">Accessibilité</a></li>
         <li class="copyright">&copy; 2010 EPFL tous droits réservés</li>
         <li><a href="#top" class="hidden">Retour en haut de la page</a></li>
       </ul>
