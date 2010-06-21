@@ -116,7 +116,7 @@ object { z-index: 0; }
 #nav-logo {
     float: left; height: 79px; width: 160px; position: relative; margin: 0 4px 0 0;
     background: url(../img/epfl.png) no-repeat 0 18px; border-bottom: 1px solid #474e52; /* darker gray */ }
-#nav-logo img{ width: 112px; height: 54px; position: absolute; bottom: 7px; }
+#nav-logo a{ display: block; width: 160px; height: 79px;}
 #main-menus { list-style: none; padding: 0; margin: 0;}
 #main-menus li.menu { float: left; height: 80px; width: 160px; position: relative; cursor: pointer; }
 #main-menus li.menu .navigation-panel {cursor: default;}
