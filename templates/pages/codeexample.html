@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--#include virtual="../fragments/header.sig.html" -->
+    <title>About coding - LFS</title>
+    <link href="http://www.epfl.ch/css/epfl.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="http://www.epfl.ch/css/ic.css" media="all" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
+    <script type="text/javascript">jQuery.noConflict();</script>
+    <script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
+    <script type="text/javascript" src="http://www.epfl.ch/js/syntaxhighlighter/shCore.js"></script>
+    <script type="text/javascript" src="http://www.epfl.ch/js/syntaxhighlighter/shBrushCss.js"></script>
+    <script type="text/javascript" src="http://www.epfl.ch/js/syntaxhighlighter/shBrushJScript.js"></script>
+    <script type="text/javascript" src="http://www.epfl.ch/js/syntaxhighlighter/shBrushPython.js"></script>
+    <link type="text/css" rel="stylesheet" href="http://www.epfl.ch/css/syntaxhighlighter/shCore.css"/>
+	<link type="text/css" rel="stylesheet" href="http://www.epfl.ch/css/syntaxhighlighter/shThemeEPFL.css"/>
+	<script type="text/javascript">
+		SyntaxHighlighter.config.clipboardSwf = 'http://www.epfl.ch/js/syntaxhighlighter/clipboard.swf';
+		SyntaxHighlighter.all();
+	</script>
+  </head>
+  <body>
+<!--#include virtual="../fragments/header.fr.html" -->
+  <div id="main-content">
+    <ul id="breadcrumbs" title="Navigation dans l'arborescence de l'EPFL">
+      <li><a href="http://www.epfl.ch/" title="Page d'accueil de l'EPFL">EPFL</a></li>
+      <li class="last"><a href="../../cms/site/ic_import/page-5287-fr.html">Faculté Environnement Naturel, Architecture et Construit</a></li>
+    </ul>
+    <ul id="languages" title="Choix de la langue">
+      <li><a href="home-en.html">English</a></li>
+      <li class="current">français</li>
+    </ul>
+    <div style="clear:both"></div>
+
+    <h1>About coding</h1>
+
+    <div id="main-navigation" class="navigation-bar">
+      <ul class="topnav">
+        <li class="dropdown">
+          <a href="#">Architecture</a>
+          <ul class="menu hidden">
+            <li><a href="#">subpage</a></li>
+            <li><a href="#">subpage with a veeeeeeeerrrry long title</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Génie civil</a>
+          <ul class="menu hidden">
+            <li>
+              <a href="#">submenu</a>
+              <ul>
+                <li><a href="#">element 1</a></li>
+                <li><a href="#">element 2</a></li>
+              </ul>
+            </li>
+            <li><a href="#">subpage 2</a></li>
+          </ul>
+        </li>
+        <li class="dropdown inpath">
+          <a href="#">Environnement</a>
+          <ul class="menu hidden">
+            <li class="current"><a href="#">subpage</a></li>
+            <li><a href="#">subpage 2</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Territoire</a>
+          <ul class="menu hidden">
+            <li><a href="#">subpage</a></li>
+            <li><a href="#">subpage 2</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div style="clear:both"></div>
+    </div>
+    <div id="tools">
+      <div class="button print"><a href="toto.html"><button class="icon"></button><span class="label">Imprimer</span></a></div>
+      <div class="button feed"><a href="toto.html"><button class="icon"></button><span class="label">RSS feed</span></a></div>
+      <div class="button share"><a href="toto.html"><button class="icon"></button><span class="label">Share</span></a></div>
+    </div>
+
+    <div id="content" class="content">
+      <h2>Testing your code</h2>
+      <img src="../img/pony.jpg" alt="description"/>
+      <h3>Javascript example</h3>
+      <pre class="brush: js">
+jQuery(document).ready(function(){    
+    /* Navigation: big panels */
+    function togglePanel(panel){
+        if (panel.is('.hidden')) { jQuery("#header").expose({color: '#000', opacity: 0.6, loadSpeed: 0, closeSpeed: 0}); }
+        else { jQuery.mask.close(); }
+        panel.toggleClass("hidden");   
+    }
+    jQuery('#main-menus .menu').each(function(){
+        var panel = jQuery(this).children('.navigation-panel');
+        jQuery(this).mouseleave(function() { panel.addClass("hidden"); jQuery.mask.close(); });
+        jQuery(this).click(function(){ togglePanel(panel); return true; });
+        jQuery(this).children('.main-link').click(function(){ togglePanel(panel); return false; });
+    });
+});</pre>
+      <h3>Python example</h3>
+      <pre class="brush: python">
+from xml.sax.handler import ContentHandler
+from xml.sax import make_parser
+from glob import glob
+import sys
+
+def parsefile(file):
+    parser = make_parser()
+    parser.setContentHandler(ContentHandler())
+    parser.parse(file)
+
+for arg in sys.argv[1:]:
+    for filename in glob(arg):
+        try:
+            parsefile(filename)
+            print "%s is well-formed" % filename
+        except Exception, e:
+            print "%s is NOT well-formed! %s" % (filename, e)</pre>
+    </div>
+    <div class="right-col">
+      <ul class="tree">
+        <li>
+          <a href="#">Architecture</a>
+          <ul>
+            <li>
+              <a href="#">Submenu 1</a>
+              <ul>
+                <li><a href="#">Subsubmenu I</a></li>
+                <li><a href="#">Subsubmenu II</a></li>
+                <li><a href="#">Subsubmenu III</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="inpath">
+          <a href="#">Génie civil</a>
+          <ul>
+            <li class="inpath">
+              <a href="#">Submenu 1</a>
+              <ul>
+                <li class="current inpath">
+                  <a href="#">Page actuelle</a>
+                  <ul>
+                    <li class=""><a href="#">Subsubsubmenu 1</a></li>
+                    <li><a href="#">Subsubsubmenu 2 which is very long and should take 2 lines.</a></li>
+                    <li><a href="#">Subsubsubmenu 3</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Subsubmenu 2</a></li>
+                <li><a href="#">Subsubmenu 3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Submenu 2</a>
+              <ul>
+                <li>
+                  <a href="#">Subsubmenu 1</a>
+                  <ul>
+                    <li><a href="#">Subsubsubmenu 1</a></li>
+                    <li><a href="#">Subsubsubmenu 2</a></li>
+                    <li><a href="#">Subsubsubmenu 3</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Subsubmenu 2</a></li>
+                <li><a href="#">Subsubmenu 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Environnement</a></li>
+        <li><a href="#">Territoire</a></li>
+        <li><a href="#">À propos de l'ENAC</a></li>
+      </ul>
+      <div class="box two-cols">
+        <h3>Contacts</h3>
+        <div>
+          <h4>Laboratory of Fictive Science (LFS)</h4>
+          <p>EPFL-FS-FI-LFS<br/>
+             Station fictive<br/>
+             CH-1015 Lausanne<br/>
+             <a href="http://plan.epfl.ch?unit=LTS">Show on campus map</a>
+          </p>
+        </div>
+        <div class="contact-phone">
+            Tel: +41 (0) 21 693 00 00<br/>
+            Fax: +41 (0) 21 693 00 00
+        </div>
+      </div>
+      <div class="box">
+        <h3>Bo&icirc;te libre</h3>
+        <h4>De Gallos Helvetii</h4>
+        <p>Qua de causa Helvetii quoque reliquos Gallos virtute praecedunt, quod fere cotidianis proeliis cum Germanis
+            contendunt, cum aut suis finibus eos prohibent aut ipsi in eorum finibus bellum gerunt.
+        </p>
+      </div>
+      
+      <div class="box two-cols">
+        <h3>Services aux Étudiants</h3>
+        <ul class="link-list">
+            <li><a href="#">Premier lien très long qui doit donc atteindre 2 lignes</a></li>
+            <li><a href="#">deuxième lien</a></li>
+            <li><a href="#">troisième lien</a></li>
+            <li><a href="#">quatrième lien</a></li>
+            <li><a href="#">cinquième lien</a></li>
+            <li><a href="#">sixième lien</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+  </div>
+
+    <div id="footer">
+      <ul>
+        <li>Plan du site</li>
+        <li>Contact</li>
+        <li>Accessibilité</li>
+        <li class="copyright">&copy; 2010 EPFL tous droits réservés</li>
+        <li><a href="#top" class="hidden">Retour en haut de la page</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

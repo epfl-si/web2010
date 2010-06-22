@@ -59,6 +59,9 @@ blockquote p {
     display: block;
     width: 266px;
 }
+
+pre {display: block; white-space:pre; font-family: "Courier New", courier, "Nimbus Mono L", monospace;}
+
 object { z-index: 0; }
 .sti{ color:#8972d5;}
 .enac{color:#ea5e00;}
