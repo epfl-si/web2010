@@ -17,6 +17,7 @@ h1{ font-family: Impact, "Arial Black", Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
     text-transform:uppercase;
 }
+h1 a { background: none; text-decoration: none; }
 h2 {
     font-family: "Arial Black", Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -41,7 +42,8 @@ h4 { color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: bold; 
 p { margin-bottom: 18px; color: #4e4e4e; }
 a { text-decoration: none; color: #000; background: url(../img/underline.gif) repeat-x 0 12px; }
 a:hover { background-image: url(../img/underline-hover.png); }
-b { color: #000; }
+b, strong { color: #000; font-weight: bold;}
+i, em { font-style: italic; }
 ul { padding-left: 0;}
 blockquote img {
     width: 50px;
@@ -106,7 +108,8 @@ object { z-index: 0; }
 .showall .icon {background-position: -120px -24px; }
 .showall:hover .icon {background-position: -120px 0; }
 
-
+.left { margin-right: 4px; float: left;}
+.right {margin-left: 4px; float: right;}
 /******************* Header definition ***********************/
 #header{ margin-left: auto; margin-right: auto; width: 980px; padding: 0 8px; background-color: #fff;}
 #header a{ background: none; }

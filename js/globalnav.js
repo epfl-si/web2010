@@ -86,6 +86,10 @@ jQuery(document).ready(function(){
     jQuery(".box.two-cols div.box-col:odd", this).addClass("box-right-col");
     jQuery("#content .box:odd",this).addClass("last-col");
     
+    /* add class .left to images having align="left" and so on. */
+    jQuery('img[align]').each(function(){ jQuery(this).addClass(jQuery(this).attr('align')); });
+    
+    
     /* Google Analytics */
     jQuery.ga.load("UA-4833294-1");    
 });
