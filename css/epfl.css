@@ -18,6 +18,7 @@ h1{ font-family: Impact, "Arial Black", Arial, Helvetica, sans-serif;
     text-transform:uppercase;
 }
 h1 a { background: none; text-decoration: none; }
+h1 a:hover {background: none; }
 h2 {
     font-family: "Arial Black", Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -416,8 +417,6 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
     line-height: 14px;
     background: url(../img/dot.png) no-repeat 0 4px; 
     padding-left: 12px; }
-
-}
 .link-list a {
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -441,7 +440,8 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .box p, .fullbox p { margin-bottom:2px; padding-top: 0;}
 .box ul, .fullbox ul { list-style-type: none; }
 .box.two-cols li, .box .two-cols li, .fullbox.two-cols li, .fullbox .two-cols li{ float: left; width: 144px; padding-right: 4px;}
-.box.two-cols div.box-col, .box .two-cols div.box-col,.fullbox.two-cols div.box-col, .fullbox .two-cols div.box-col { float: left; width: 160px; }
+.box.two-cols div.box-col, .box .two-cols div.box-col, 
+.fullbox.two-cols div.box-col, .fullbox .two-cols div.box-col { float: left; width: 160px; }
 .box.two-cols div.box-left-col, .box .two-cols div.box-left-col{ margin-right:4px;}
 
 .right-col{ width: 324px; float:left; padding: 0;}
