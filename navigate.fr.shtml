@@ -160,7 +160,7 @@
                     <li>Sciences humaines et sociales</li>
                   </ul>  
                 </li>
-                <li class="group-2-cols clear">
+                <li class="group-2-cols" style="clear:left;">
                   <h3><a href="http://ic.epfl.ch/" class="ic">Faculté Informatique &amp; Communications <acronym title="Informatique &amp; Communications">I&amp;C</acronym></a></h3>
                   <ul>
                     <li>Informatique</li>
