@@ -118,7 +118,18 @@ for arg in sys.argv[1:]:
             parsefile(filename)
             print "%s is well-formed" % filename
         except Exception, e:
-            print "%s is NOT well-formed! %s" % (filename, e)</pre>
+            print "%s is NOT well-formed! %s" % (filename, e)
+
+class Foo:
+    def __init__(self):
+        self.bar(1)
+    
+    def bar(self, value):
+        if value != None:
+            f = open('toto.xml', 'w')
+            f.write(value)           
+
+</pre>
     </div>
     <div class="right-col">
       <ul class="tree">

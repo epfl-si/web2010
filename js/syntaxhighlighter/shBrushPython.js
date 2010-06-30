@@ -33,9 +33,10 @@ SyntaxHighlighter.brushes.Python = function()
 	
 	var keywords =  'and assert break class continue def del elif else ' +
 					'except exec finally for from global if import in is ' +
-					'lambda not or pass print raise return try yield while';
+					'lambda not or pass print raise return try yield while ' +
+					'None True False self';
 
-	var funcs = '__import__ abs all any apply basestring bin bool buffer callable ' +
+	var funcs = 'abs all any apply basestring bin bool buffer callable ' +
 				'chr classmethod cmp coerce compile complex delattr dict dir ' +
 				'divmod enumerate eval execfile file filter float format frozenset ' +
 				'getattr globals hasattr hash help hex id input int intern ' +
@@ -44,7 +45,7 @@ SyntaxHighlighter.brushes.Python = function()
 				'reload repr reversed round set setattr slice sorted staticmethod ' +
 				'str sum super tuple type type unichr unicode vars xrange zip';
 
-	var special =  'None True False self cls class_';
+	var special =  '__import__ __init__ __add__ __contains__ __eq__ __ge__ __ge__ __getattribute__ __getitem__ __getnewargs__ __getslice__ __gt__ __hash__ __le__ __len__ __lt__ __mod__ __mul__ __ne__ __repr__ __rmod__ __rmul__ __str__ __unicode__'; 
 
 	this.regexList = [
 			{ regex: SyntaxHighlighter.regexLib.singleLinePerlComments, css: 'comments' },

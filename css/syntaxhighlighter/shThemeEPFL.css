@@ -56,7 +56,7 @@
 	height: auto !important;
 	width: auto !important;
 	line-height: 14px !important;
-	font-family: Monaco, "Andale Mono", "Courier", "Lucida console", "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+	font-family: Monaco, "Andale Mono", "Courier", "Lucida console", "Consolas", "Bitstream Vera Sans Mono", monospace !important;
 	font-weight: normal !important;
 	font-style: normal !important;
 	font-size: 10px !important;
@@ -106,20 +106,15 @@
 	color: #881350 !important; 
 	font-weight: normal !important; 
 }
-.syntaxhighlighter.printing .keyword{ font-weight: normal !important; }
-.syntaxhighlighter.printing .script{font-weight: normal !important;}
-
 .syntaxhighlighter .preprocessor { color: gray !important; }
 .syntaxhighlighter .variable { color: #a70 !important; }
 .syntaxhighlighter .value { color: #1e00fb !important; }
-.syntaxhighlighter .functions { color: #ff1493 !important; }
+.syntaxhighlighter .functions { color: #460086 !important; }
 .syntaxhighlighter .constants { color: #0066CC !important; }
 .syntaxhighlighter .script { background-color: yellow !important;}
 .syntaxhighlighter .color1,
-.syntaxhighlighter .color1 a { color: #808080 !important; }
+.syntaxhighlighter .color1 a { color: #fd0013 !important; }
 .syntaxhighlighter .color2,
 .syntaxhighlighter .color2 a { color: #ff1493 !important; }
 .syntaxhighlighter .color3,
 .syntaxhighlighter .color3 a { color: red !important; }
-.syntaxhighlighter .functions,
-.syntaxhighlighter .functions a { color: rgb(136, 19, 79) !important; }
