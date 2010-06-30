@@ -32,16 +32,46 @@
  * 
  * Interface elements.
  ************************************/
-
+.syntaxhighlighter,
+.syntaxhighlighter div,
+.syntaxhighlighter code,
+.syntaxhighlighter table,
+.syntaxhighlighter table td,
+.syntaxhighlighter table tr,
+.syntaxhighlighter table tbody
+{
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	outline: 0 !important;
+	background: none !important;
+	text-align: left !important;
+	float: none !important;
+	vertical-align: baseline !important;
+	position: static !important;
+	left: auto !important;
+	top: auto !important;
+	right: auto !important;
+	bottom: auto !important;
+	height: auto !important;
+	width: auto !important;
+	line-height: 14px !important;
+	font-family: Monaco, "Andale Mono", "Courier", "Lucida console", "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-size: 10px !important;
+	min-height: inherit !important; /* For IE8, FF & WebKit */
+	min-height: auto !important; /* For IE7 */
+}
 .syntaxhighlighter { background-color: #fff !important; }
 /* Highlighed line number */
 .syntaxhighlighter .line.highlighted .number { color: black !important; }
 /* Highlighed line */
 .syntaxhighlighter .line.highlighted.alt1,
-.syntaxhighlighter .line.highlighted.alt2 { background-color: #e0e0e0 !important;}
+.syntaxhighlighter .line.highlighted.alt2 { background-color: #eceeea !important;}
 
 /* Gutter line numbers */
-.syntaxhighlighter .line .number { color: #4e4e4e !important;}
+.syntaxhighlighter .line .number { color: #454545 !important;}
 
 /* Add border to the lines */
 .syntaxhighlighter .line .content {
@@ -67,18 +97,21 @@
  * Actual syntax highlighter colors.
  ************************************/
 .syntaxhighlighter .plain,
-.syntaxhighlighter .plain a { color: #000 !important; }
+.syntaxhighlighter .plain a { color: #454545 !important; }
 .syntaxhighlighter .comments,
-.syntaxhighlighter .comments a { color: #008200 !important; }
+.syntaxhighlighter .comments a { color: #226e27 !important; }
 .syntaxhighlighter .string,
-.syntaxhighlighter .string a { color: blue !important; }
+.syntaxhighlighter .string a { color: #750f17 !important; }
 .syntaxhighlighter .keyword { 
-	color: #069 !important; 
-	font-weight: bold !important; 
+	color: #881350 !important; 
+	font-weight: normal !important; 
 }
+.syntaxhighlighter.printing .keyword{ font-weight: normal !important; }
+.syntaxhighlighter.printing .script{font-weight: normal !important;}
+
 .syntaxhighlighter .preprocessor { color: gray !important; }
 .syntaxhighlighter .variable { color: #a70 !important; }
-.syntaxhighlighter .value { color: #090 !important; }
+.syntaxhighlighter .value { color: #1e00fb !important; }
 .syntaxhighlighter .functions { color: #ff1493 !important; }
 .syntaxhighlighter .constants { color: #0066CC !important; }
 .syntaxhighlighter .script { background-color: yellow !important;}
@@ -88,3 +121,5 @@
 .syntaxhighlighter .color2 a { color: #ff1493 !important; }
 .syntaxhighlighter .color3,
 .syntaxhighlighter .color3 a { color: red !important; }
+.syntaxhighlighter .functions,
+.syntaxhighlighter .functions a { color: rgb(136, 19, 79) !important; }
