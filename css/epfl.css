@@ -74,7 +74,7 @@ pre, code {
     font-family: Monaco, "Andale Mono", "Courier", "Lucida console", "Consolas", "Bitstream Vera Sans Mono", "Nimbus Mono L", monospace !important;
     font-size: 10px;           
  }
-pre {display: block; white-space: pre; }
+pre {display: block; white-space: pre; margin-bottom: 20px;}
 
 dl dt { position: relative; left: 0; top: 1.5em; width: 10em; font-weight: bold; color: #000;}
 dl dd { border-left: 1px solid #000; margin-left: 10.5em; padding-left: 0.5em; }
