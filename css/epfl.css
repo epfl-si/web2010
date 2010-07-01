@@ -83,6 +83,15 @@ fieldset { border-top: 1px solid #000; }
 legend {   font-weight: bold; font-size: 13px; color: #000; padding-bottom: -3px; }
 
 object { z-index: 0; }
+
+.table { border-collapse: collapse; border-spacing: 0; margin-bottom: 20px; width: 100%;}
+.table tr {border-bottom: 1px dotted #000;}
+.table thead tr {border-bottom: 1px solid #000;}
+.table th {
+    padding: 4px; color: #000; font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold; font-size: 15px; line-height: 19px; text-align: left; } 
+.table td { padding: 4px;}
+
 .sti{ color:#8972d5;}
 .enac{color:#ea5e00;}
 .cdm{color:#990165;}
