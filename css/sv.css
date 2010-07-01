@@ -1,15 +1,15 @@
-.local-color{background-color:#8dc700;}
-.local-color-text{color:#8dc700;}
-#main-navigation {background-color:#8dc700;}
-#main-navigation li {border-color: #8dc700;}
+.local-color{background-color:#6fba01;}
+.local-color-text{color:#6fba01;}
+#main-navigation {background-color:#6fba01;}
+#main-navigation li {border-color: #6fba01;}
 
 .local-color-light {background-color:#439809;}
 .local-color-dark {background-color:#0b7101;}
-.news-text h2 a:hover {color: #8dc700;}
+.news-text h2 a:hover {color: #6fba01;}
 
-.search-results a {color:black;}/*#8dc700; }*/
+.search-results a {color:black;}/*#6fba01; }*/
 .search-results cite {color:#0b7101;}
-.pagination .current {color:#8dc700;}
+.pagination .current {color:#6fba01;}
 
 .print .icon {background-position: 0 -216px; }
 .print:hover .icon {background-position: 0 -192px;}
