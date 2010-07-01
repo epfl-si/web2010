@@ -90,7 +90,7 @@ object { z-index: 0; }
 .table th {
     padding: 4px; color: #000; font-family: Arial, Helvetica, sans-serif; 
     font-weight: bold; font-size: 15px; line-height: 19px; text-align: left; } 
-.table td { padding: 4px;}
+.table td { padding: 4px; vertical-align: top;}
 
 .sti{ color:#8972d5;}
 .enac{color:#ea5e00;}
