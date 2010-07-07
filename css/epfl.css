@@ -612,6 +612,8 @@ p.results-count{border-top: 1px solid #000; margin-top: 20px; margin-right: 0;}
 .pagination li {display: inline; margin-right: 20px; background: none; padding: 0;}
 .pagination .current, .pagination-position { font-weight: normal;}
 .pagination .current { color:#ae0010; }
+
+/************************ Forms ********************************/
 /************************ Footer ********************************/
 #footer{
     color: #000;
