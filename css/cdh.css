@@ -1,5 +1,7 @@
 .local-color{background-color:#daa521;}
 .local-color-text{color:#daa521;}
+acronym, abbr {color:#daa521;}
+
 #main-navigation {background-color: #daa521;}
 #main-navigation li {border-color: #daa521;}
 .local-color-light {background-color:#b77504;}

@@ -81,7 +81,7 @@
         <p>Les touches d'acc&egrave;s clavier sont &agrave; priori un mécanisme d'accessibilit&eacute; tr&egrave;s s&eacute;duisant par sa simplicit&eacute; de mise en oeuvre. Mais les nombreux obstacles rencontr&eacute;s du fait d'une impl&eacute;mentation inachev&eacute;e en limitent consid&eacute;rablement la port&eacute;e. Seules une poign&eacute;e de touches num&eacute;riques s'avèrent finalement pertinentes, et ce uniquement en renfort d'autres mesures d'accessibilit&eacute; plus &eacute;prouv&eacute;es.<br />
         <a target="_blank" href="http://openweb.eu.org/articles/accesskey_essai_non_transforme/">Lire l'article complet</a> paru sur <a href="http://openweb.eu.org/" target="_blank">Openweb</a>. </p>
   
-        <h3>Autres formes d'accessiblit&eacute; Web </h3>
+        <h3>Autres formes d'accessibilit&eacute; Web </h3>
         <p>Pour aider les personnes malvoyants, les raccourcis clavier zoom et dézoom sont utilisables. </p>
         <ul>
           <li>Pour faire un zoom sur Windows : utiliser <acronym title="Touche contr&ocirc;le du clavier">CTRL</acronym> puis la touche +</li>

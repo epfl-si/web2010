@@ -1,0 +1,29 @@
+ul.middle{ width:980px; height:407px; }
+ul.middle li{ list-style-type:none; }
+.top404{
+	background:url(../img/404page_03.png) no-repeat;
+	width:980px; height:66px; float:left; margin-top:20px;
+}
+.left404{
+	background:url(../img/404page_05.png) no-repeat;
+	width:324px; height:407px; float:left; margin-right:4px;
+}
+.search404{ width:324px; height:86px; float:left; }
+.center404{
+	background:url(../img/404page_09.png) no-repeat;
+	width:324px; height:321px; float:left;
+}
+.right404{
+	background:url(../img/404page_07.png) no-repeat;
+	width:160px; height:407px; float:right;
+}
+.right-link404{
+	margin: 128px 0 0 8px;
+	background-color: #ae0010;
+	width:160px; height:279px; float:right; display:block;
+}
+.bottom404{
+	background:url(../img/404page_11.png) no-repeat;
+	width:980px; height:94px; float:left;
+}
+.space404{ padding-top:40px;}
