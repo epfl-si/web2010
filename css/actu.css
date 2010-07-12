@@ -1,0 +1,103 @@
+.article_bottom{
+	width:100%;
+	margin-top:15px;
+	color:#FFF;
+	font-family:"Georgia", Times New Roman, Times, serif;
+	font-style:italic;
+	}
+.article_bottom li.heading{
+	color:#FFF;
+	}
+.article_bottom ul{
+    padding: 0; 
+    margin: 0;
+}
+.article_bottom li{
+	list-style-type: none;
+	list-style:none;
+	display: inline;
+    margin-right: 0px;
+	margin-left: 0px;
+	background:none;
+	}
+.link_actu{
+	border-bottom:dotted 1px #000;
+	width:100%;
+	margin-top:5px;
+	}
+.link_actu a{
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	background:none;
+	font-weight:bold;
+	}
+.link_actu .date{
+	font-size:11px;
+	line-height:9px;
+	font-family:"Georgia", Times New Roman, Times, serif;
+	font-style:italic;
+	margin:0px;
+}
+.radio{
+	font-size:11px;
+	}
+#content .results-count{
+	border-top: none;
+	border-bottom: 1px solid #000;
+	padding-bottom:3px;
+	margin-top:10px;
+	}
+.results-count .selected{
+	font-family:"Arial", Helvetica, sans-serif;
+	font-weight: bold;
+	float:left;
+	font-size:12px;
+	padding-right:8px;
+	color:#000;
+	}
+.all_actu li{
+	border-bottom:1px dotted #000;
+	list-style-type:none;
+	margin:8px 0;
+	height:98px;
+	padding-bottom:15px;
+}
+.all_actu .img_actu{
+	float:left;
+	width:160px;
+	height:90px;	
+	}
+.all_actu .txt_actu{
+	height:90px;
+	width:485px;
+	float:left;
+	padding-left:5px;
+	}
+.pagination {margin-top: 10px; font-family:"Georgia", Times New Roman, Times, serif; font-style:italic;}
+.pagination ul {float: left;}
+.pagination p {float: right;}
+.pagination li {display: inline; margin-right: 20px; background: none; padding: 0;}
+.pagination .current, .pagination-position { font-weight: normal;}
+.pagination .current { color:#000; font-weight:bold; font-size:15px; }
+.pagination a {background:url("../img/underline.gif") repeat-x scroll 0 14px transparent; }
+.pagination a:hover {background:url("../img/underline-hover.png") repeat-x scroll 0 14px transparent; }
+
+.search-button{
+    background: url(../img/search.png) no-repeat top left;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: 1px solid #b8b8b8;
+	border-left:none;
+    vertical-align: bottom;
+    text-indent: -9999em;
+}
+#searchform{
+    width: 277px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #b8b8b8;
+    padding: 0 0 0 8px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+	}
