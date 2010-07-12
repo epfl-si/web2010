@@ -74,3 +74,22 @@ li .number{
 	width:110px;
 	float:left;
 	}
+.search-button{
+    background: url(../img/search.png) no-repeat top left;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: 1px solid #b8b8b8;
+	border-left:none;
+    vertical-align: bottom;
+    text-indent: -9999em;
+}
+#searchform{
+    width: 277px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #b8b8b8;
+    padding: 0 0 0 8px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+	}
