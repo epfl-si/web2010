@@ -76,9 +76,12 @@ jQuery(document).ready(function(){
     jQuery(".tree li.inpath").addClass('open');
     jQuery(".tree").treeview({ 'collapsed': true, 'unique': false });
     jQuery(".tree").children().addClass('local-color');
-    jQuery(".tree li").hover(
-        function(e) { e.stopPropagation(); jQuery(this).addClass("hover");},
-        function(e) { e.stopPropagation(); jQuery(this).removeClass("hover");}
+    jQuery(".tree li a").hover(
+        function(e) { e.stopPropagation(); 
+                      jQuery('.tree li').removeClass("hover");
+                      jQuery(this).parent().addClass('hover');
+                      },
+        function(e) { e.stopPropagation(); jQuery(this).parent().removeClass("hover");}
     );
     
     /* Set correct margin to elements */
