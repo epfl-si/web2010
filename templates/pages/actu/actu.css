@@ -5,21 +5,27 @@
 	margin-top:15px;
 	color:#FFF;
 	font-family:"Georgia", Times New Roman, Times, serif;
+	font-size: 11px; letter-spacing: 1px;
 	font-style:italic;
+	margin-bottom: 20px;
 	}
 .article_bottom li.heading{
 	color:#FFF;
+	font-size: 11px;
+	margin-right: 0;
 	}
 .article_bottom ul{
     padding: 0; 
     margin: 0;
+    margin-left: 8px;
 }
 .article_bottom li{
 	list-style-type: none;
 	list-style:none;
 	display: inline;
-    margin-right: 0px;
-	margin-left: 0px;
+margin: 0;
+    padding: 0;
+	margin-right: 20px;
 	background:none;
 	}
 .link_actu{

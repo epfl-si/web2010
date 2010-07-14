@@ -64,28 +64,29 @@ blockquote p {
     font-style:italic;
     font-weight:bold;
     line-height:18px;
+    top: -1px;
+    position: relative;
     float: left;
     display: block;
     width: 266px;
     color: #000;
 }
 pre, code { 
-    font-family: Monaco, "Andale Mono", "Courier", "Lucida console", "Consolas", "Bitstream Vera Sans Mono", "Nimbus Mono L", monospace !important;
+    font-family: Monaco, "Andale Mono", "Courier", "Lucida console", "Consolas", "Bitstream Vera Sans Mono", "Nimbus Mono L", monospace;
     font-size: 10px;           
- }
+}
 pre {display: block; white-space: pre; margin-bottom: 20px;}
-
 dl dt { position: relative; left: 0; top: 16px; width: 160px; 
         color: #000; font-family: Arial, Helvetica, sans-serif; 
         font-weight: bold; font-size: 13px; line-height: 18px;}
 dl dd { border-left: 1px solid #000; margin-left: 160px; padding-left: 4px; }
-
 
 object { z-index: 0; }
 cite { font-family: Georgia, serif; font-style: italic; letter-spacing: 1px; font-size: 11px;}
 
 sup, sub { font-size: 11px; }
 acronym, abbr {color:#ae0010;}
+
 .table { border-collapse: collapse; border-spacing: 0; margin-bottom: 40px; width: 100%;}
 .table th {
     padding: 4px 4px 4px 0; color: #000; font-family: Arial, Helvetica, sans-serif; 
@@ -102,7 +103,6 @@ acronym, abbr {color:#ae0010;}
 .sv{color:#6fba01;}
 .sb{color:#007ba5;}
 .ic{color:#1bb5b5;}
-
 .local-color {background-color: #ae0010; color: #fff;}
 .local-color a { color: #fff; }
 .local-color-text {color:#ae0010;}
@@ -121,7 +121,7 @@ acronym, abbr {color:#ae0010;}
 
 .button { float: left; margin-right: 20px; cursor: pointer;}
 .icon {float: left; background: url(../img/icons.png) no-repeat; height: 24px; width: 24px; margin-right: 4px; border: none; cursor: pointer;}
-.label {font-family: Georgia, serif; font-style: italic; background: url(../img/underline.gif) repeat-x 0 13px; cursor: pointer;}
+.label {font-family: Georgia, serif; font-size: 11px; letter-spacing: 1px; font-style: italic; background: url(../img/underline.gif) repeat-x 0 14px; cursor: pointer;}
 .button .label {display: block; float: left; margin-top: 3px; }
 .button:hover .label { background-image: url(../img/underline-hover.png); } 
 
@@ -138,9 +138,8 @@ acronym, abbr {color:#ae0010;}
 .showall .icon {background-position: -120px -24px; }
 .showall:hover .icon {background-position: -120px 0; }
 
-.left { margin-right: 4px; float: left;}
-.right {margin-left: 4px; float: right;}
-/******************* Header definition ***********************/
+
+/**************************** Header definition *******************************/
 #header{ margin-left: auto; margin-right: auto; width: 980px; padding: 0 8px; background-color: #fff;}
 #header a{ background: none; }
 #header input{ color: #666;}
@@ -228,7 +227,7 @@ acronym, abbr {color:#ae0010;}
 }
 .navigation-panel {
     position: absolute;
-    top: 80px;
+    top: 74px;
 	width: 980px;
 	margin-left: auto;
 	margin-right: auto;
@@ -293,7 +292,7 @@ acronym, abbr {color:#ae0010;}
 #languages li { display:inline; padding:0 0 0 20px;}
 #languages{text-align:right;}
 
-/****************************** Interface Elements ************************/
+/****************************** Interface Elements ****************************/
 .dropdown {
     height: 18px; padding: 2px 18px 0 8px; margin-right: 2px;
     border: 1px solid #b8b8b8;
@@ -380,8 +379,7 @@ acronym, abbr {color:#ae0010;}
 .tree li.current li .expandable-hitarea{ background-position: -32px -1px;}
 .tree li.current li .collapsable-hitarea {background-position: -48px -1px;}
 
-
-/****************************** Navigation ********************************/
+/******************************** Navigation **********************************/
 .navigation-bar {
 	width: 980px;
 	margin-bottom: 5px;
@@ -400,21 +398,18 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
     padding: 4px 8px 2px 8px;
     background: none;}
 #main-navigation li {
+    border: none;
     border-left: 1px solid #ae0010;
     border-right: 1px solid #ae0010;
-    border-top: none;
-    border-bottom: none;
 }
 #main-navigation .dropdown {
-    top: 0;
-    height: 20px;
-    padding: 4px 8px 0 8px;
-    background: none;
-    margin-right: 0;
+    top: 0; height: 20px; 
+    margin-right: 0; padding: 4px 8px 0 8px;
+    background: none; 
 }
 #main-navigation:first-child .dropdown { border-left: none;}
 #main-navigation li:hover { border-color: #fff; background-color: #7e000c; }
-#main-navigation .dropdown.inpath{ border-color: #fff; background-color: #000; }
+#main-navigation .dropdown.inpath, #main-navigation .dropdown.current { border-color: #fff; background-color: #000; }
 #main-navigation .dropdown a{padding: 0; color: #fff; }
 #main-navigation .dropdown:hover a{ color: #fff;  }
 #main-navigation .dropdown .menu {left: 0; top: 24px; padding-bottom: 4px; padding-top:6px; width: 320px; border-color: #000; border-top: none;}
@@ -427,7 +422,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 #main-navigation .dropdown .menu ul {margin-bottom: 12px;}
 #main-navigation .dropdown .menu a:hover { color: #000; background-color: #cfd0ca;}
 
-/****************************** Main content *****************************/
+/******************************* Main content *********************************/
 #main-content{ margin-left: auto; margin-right: auto; width: 980px; }
 #tools{ height: 25px; }
 .content{
@@ -436,11 +431,17 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 	border-top: 1px solid #000;
 	padding-top: 4px;
 }
+.right-col{ width: 324px; float:left; padding: 0;}
+.right-col .box {margin-right: 0; }
+
 .content p { margin-right: 35px; }
-.content ol, .content ul { margin-bottom: 18px; }
+.content blockquote p{margin-right: 35px; width: auto;}
+
+
+.content ol, .content ul { margin-bottom: 18px; margin-right: 35px;}
 .content li { 
-    background: url(../img/dot.png) no-repeat 0 4px; 
-    padding-left: 12px; margin-bottom: 2px; line-height: 14px;}
+    background: url(../img/dot.png) no-repeat 0 5px; 
+    padding-left: 12px; margin-bottom: 2px; line-height: 16px;}
 .content ol li { background: none; padding: 0; list-style-position: inside; }
 .content-nomenu{ border-top: none}
 .homepage-content{ border-top: none; padding-top: 0;}
@@ -462,8 +463,13 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
     text-decoration:none;
     background-position: 0 14px;
 }
+.left { margin-right: 4px; float: left;}
+.right {margin-left: 4px; float: right;}
+
+/********************************** Boxes *************************************/
 .box{ margin-bottom: 40px; margin-right: 4px; width: 324px; }
-.fullbox{ margin-bottom: 20px; margin-right: 4px; width: 644px; }
+.fullbox{ margin-bottom: 40px; margin-right: 4px; width: 644px; }
+
 .content .box{ float: left; }
 .box h3, .fullbox h3 {    
     font-family: Impact, "Arial Black","DejaVu Sans", Arial, Helvetica , sans-serif;
@@ -484,10 +490,10 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .fullbox.two-cols div.box-col, .fullbox .two-cols div.box-col { float: left; width: 160px; }
 .box.two-cols div.box-left-col, .box .two-cols div.box-left-col{ margin-right:4px;}
 .box .button { margin-top: 4px; }
+.box blockquote {margin-top: 6px;}
 
-.right-col{ width: 324px; float:left; padding: 0;}
-.right-col .box {margin-right: 0; }
-.home-navpanel { margin-bottom: 40px; line-height: 14px;}
+.home-navpanel { margin-bottom: 40px; line-height: 18px;}
+.home-navpanel .unit-col {line-height: 14px;}
 .home-navpanel, .home-navpanel a, .home-navpanel p, .home-navpanel h2, .home-navpanel h3, .home-navpanel h4 {color: #fff; }
 .home-navpanel h3 {
     font-family: "Arial black", Arial, Helvetica, sans-serif;
@@ -508,7 +514,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .unit-3-cells p, .unit-3-cells h2, .unit-3-cells h3, .unit-3-cells ul{ padding: 2px 8px; margin: 0;}
 
 
-/****************************** News block ********************************/
+/******************************** News block **********************************/
 .teaser-head {
    font-family:  Impact, "Arial Black","DejaVu Sans", Arial, Helvetica , sans-serif;
    font-size: 15px;
@@ -602,7 +608,6 @@ ol.search-results li{
 .search-results cite {color:#999c98;}
 p.results-count{border-top: 1px solid #000; margin-top: 20px; margin-right: 0;}
 
-/*.pagination {margin-top: 40px;}*/
 .pagination ul {float: left;}
 .pagination p {float: right;}
 .pagination li {display: inline; margin-right: 20px; background: none; padding: 0;}
@@ -623,8 +628,7 @@ ol.people-list .role { width: 200px; }
 ol.people-list .place { width: 90px; }
 ol.people-list .phone { width: 110px; margin-right: 0;}
 
-
-/************************ Forms *********************************/
+/******************************** Forms ***************************************/
 fieldset { border-left: 1px solid #000; margin: 20px 0 20px 160px; position: relative; padding-left: 4px;}
 legend { 
     color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 13px; line-height: 18px;
@@ -643,7 +647,41 @@ html>body legend {left: -160px;}
 .left-aligned label.check, .left-aligned label.radio { position:relative; text-align:left; }*/
 
 
-/************************ Footer ********************************/
+/****************************** Publications **********************************/
+
+.infoscience_header1 { 
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000;
+    font-size:18px;
+    letter-spacing:1px;
+	line-height:22px;
+	margin-bottom: 8px;
+	margin-top: 15px;
+}
+.infoscience_header2 { color: #000; font-family: Arial, Helvetica, sans-serif; 
+     font-weight: bold; font-size: 13px; margin-bottom: 8px; margin-top: 1px;
+     line-height: 19px;
+     padding-left: 8px;
+     padding-bottom: 1px;
+     background: url(../img/main-navigation.png); 
+
+}   
+
+.infoscience_record {border-bottom: 1px dotted #000; margin-top: 8px; padding-bottom: 7px;}
+
+.infoscience_record h3.infoscience_title { 
+    color: #000; font-family: Arial, Helvetica, sans-serif; letter-spacing: 0;
+    font-weight: bold; font-size: 13px; line-height: 15px; text-transform: none; 
+    padding-bottom: 3px; margin: 0; border: none; }
+.infoscience_record p {margin-bottom: 0;}
+.infoscience_bullet { float: left; text-align: right; width: 3em;}
+.infoscience_data { margin-left: 4em; } 
+.infoscience_abstract { padding-top: 8px;}
+.infoscience_links {padding-top: 8px; font-size: 11px; letter-spacing: 1px;font-family: Georgia, serif; font-style: italic; }
+.infoscience_links a {background-position: 0 12px; padding-bottom: 1px; }/*as soon as dashes have been removed... margin-right: 20px;}*/
+
+/*********************************** Footer ***********************************/
 #footer{
     color: #000;
     width: 980px;
@@ -656,21 +694,11 @@ html>body legend {left: -160px;}
     padding-bottom: 0px;
 
 }
-#footer ul{
-    list-style: none; 
-    padding: 0; 
-    margin: 0;
-}
-#footer li {
-    display: inline;
-    margin-right: 16px;
-}
-#footer a{
-    color: #000;
-    background: none;
-    font-weight: normal;
-}
+#footer a{ color: #000; background: none; font-weight: normal; }
 #footer a:hover { text-decoration: underline}
+
+#footer ul{  padding: 0; margin: 0; }
+#footer li { list-style: none; display: inline; margin-right: 16px; }
 
 .copyright { color:#454545}
 #footer li.login {
