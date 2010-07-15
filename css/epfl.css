@@ -46,6 +46,7 @@ h5 { color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: bold; 
 h6 { color: #000; font-weight: bold;}
 
 p { margin-bottom: 18px; color: #454545; }
+form { margin-bottom: 18px;}
 a { text-decoration: none; color: #000; background: url(../img/underline.gif) repeat-x 0 14px; }
 a:hover { background-image: url(../img/underline-hover.png); }
 b, strong { color: #000; font-weight: bold;}
@@ -125,18 +126,18 @@ acronym, abbr {color:#ae0010;}
 .button .label {display: block; float: left; margin-top: 3px; }
 .button:hover .label { background-image: url(../img/underline-hover.png); } 
 
-.print .icon {background-position: 0 -24px; }
-.print:hover .icon {background-position: 0 0;}
-.feed .icon {background-position: -24px -24px; }
-.feed:hover .icon {background-position: -24px 0; }
-.share .icon {background-position: -48px -24px; }
-.share:hover .icon {background-position: -48px 0; }
-.information .icon {background-position: -72px -24px; }
-.information:hover .icon {background-position: -72px 0; }
-.question .icon {background-position: -96px -24px; }
-.question:hover .icon {background-position: -96px 0; }
-.showall .icon {background-position: -120px -24px; }
-.showall:hover .icon {background-position: -120px 0; }
+.print .icon {background-position: 0 0; }
+.print:hover .icon {background-position: 0 -24px;}
+.feed .icon {background-position: -24px 0; }
+.feed:hover .icon {background-position: -24px -24px; }
+.share .icon {background-position: -48px 0; }
+.share:hover .icon {background-position: -48px -24px; }
+.information .icon {background-position: -72px 0; }
+.information:hover .icon {background-position: -72px -24px; }
+.question .icon {background-position: -96px 0; }
+.question:hover .icon {background-position: -96px -24px; }
+.showall .icon {background-position: -120px 0; }
+.showall:hover .icon {background-position: -120px -24px; }
 
 
 /**************************** Header definition *******************************/
@@ -202,6 +203,7 @@ acronym, abbr {color:#ae0010;}
     font-family: Arial, helvetica, sans-serif;
     color:#fff;
 }
+#searchform {margin: 0;}
 #searchform label:hover {cursor: pointer;}
 #searchform label.current{
     font-weight:bold;
@@ -447,7 +449,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .homepage-content{ border-top: none; padding-top: 0;}
 .fullpage-content { width: 980px; margin-right: 0; border: none; }
 .content img { margin-bottom: 12px;}
-.content p img {margin-bottom: 8px; margin-top: 8px; }
+.content p img {margin-bottom: 8px; margin-top: 0px; }
 
 .link-list li{
     list-style-type: none;
@@ -484,7 +486,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .box h5, .fullbox h5 {font-weight: bold; font-size: 13px;}
 .box h6, .fullbox h6 {font-size: 13px;}
 .box p, .fullbox p { margin-bottom:2px; padding-top: 0;}
-.box ul, .fullbox ul { list-style-type: none; padding-top: 3px;}
+.box ul, .fullbox ul { list-style-type: none; padding-top: 3px; margin-right: 0;}
 .box.two-cols li, .box .two-cols li, .fullbox.two-cols li, .fullbox .two-cols li{ float: left; width: 144px; padding-right: 4px;}
 .box.two-cols div.box-col, .box .two-cols div.box-col, 
 .fullbox.two-cols div.box-col, .fullbox .two-cols div.box-col { float: left; width: 160px; }
@@ -493,7 +495,9 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .box blockquote {margin-top: 6px;}
 
 .home-navpanel { margin-bottom: 40px; line-height: 18px;}
-.home-navpanel .unit-col {line-height: 14px;}
+.home-navpanel .unit-col {line-height: 14px; }
+.home-navpanel .unit-col div:first-child {padding-top: 4px; padding-bottom: 5px}
+
 .home-navpanel, .home-navpanel a, .home-navpanel p, .home-navpanel h2, .home-navpanel h3, .home-navpanel h4 {color: #fff; }
 .home-navpanel h3 {
     font-family: "Arial black", Arial, Helvetica, sans-serif;
@@ -503,16 +507,13 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .home-navpanel a { background-image: url(../img/underline-white.gif); }
 .box-flat-panel { padding: 8px; width: 308px;} /* could be done as .box.home-navpanel. Say thanks to MSIE6 buggy selectors */
 
-.unit-col{width: 160px; margin: 0 4px 0 0; padding:0;float: left;}
-.unit-cell{ margin: 0 0 4px 0; height: 90px;overflow: hidden;}
+.unit-col{width: 160px; margin: 0 4px 0 0; padding:0;float: left; font-size: 12px;}
+.unit-col a { background-position: 0 13px; }
+.unit-cell{ margin: 0 0 4px 0; height: 86px; overflow: hidden; padding: 2px 8px;}
 .last-cell{ margin: 0;}
 .last-col{ margin-right: 0;}
-.unit-cell p, .unit-cell h2, .unit-cell h3, .unit-cell ul{ padding: 2px 8px; margin: 0;}
-.unit-2-cells{ height: 184px; margin: 0 0 4px 0; overflow: hidden; }
-.unit-2-cells p,.unit-2-cells h2,.unit-2-cells h3,.unit-2-cells ul{ padding: 2px 8px; margin: 0; }
-.unit-3-cells{ height: 278px; margin: 0 0 4px 0; overflow: hidden;}
-.unit-3-cells p, .unit-3-cells h2, .unit-3-cells h3, .unit-3-cells ul{ padding: 2px 8px; margin: 0;}
-
+.unit-2-cells{ height: 180px; padding: 2px 8px; margin: 0 0 4px 0; overflow: hidden; }
+.unit-3-cells{ height: 274px; padding: 2px 8px; margin: 0 0 4px 0; overflow: hidden;}
 
 /******************************** News block **********************************/
 .teaser-head {
@@ -532,7 +533,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
     padding-bottom: 3px;
 }
 .news-text a{ background:none; }
-.news-text .read-more { background: url(../img/arrow-more-test3.png) no-repeat 0 4px; width: 12px; height: 12px; margin-left: 4px; display: inline-block; }
+.news-text .read-more { background: url(../img/arrow-more.png) no-repeat 0 4px; width: 12px; height: 12px; margin-left: 4px; display: inline-block; }
 
 .news-text span.date {
     font-family:  Georgia, serif; font-size: 12px; font-style: italic; font-weight: bold;
@@ -557,7 +558,7 @@ ul.news-list {
     padding-bottom: 2px;}
 .news-list li.heading-news .news-img{ width: 324px; height: 184px;}
 
-ul.list-layout { overflow: hidden; width: 656px; }
+ul.list-layout { padding-top: 4px; border-top: 1px solid #000; overflow: hidden; width: 656px; }
 .list-layout li { float:left; width: 324px; height: 90px; }
 .list-layout img.news-img{ height: 90px; margin-right: 6px;}
 .list-layout li.heading-news{ height: 278px;}

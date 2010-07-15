@@ -11,7 +11,7 @@
     <script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
   </head>
   <body>
-<!--#include virtual="./templates/fragments/header.fr.html" -->
+<!--#include virtual="./templates/fragments/header-no-local-search.fr.html" -->
     <div id="main-content">
       <ul id="breadcrumbs">
         <li><a href="http://www.epfl.ch/" title="EPFL Homepage">EPFL</a></li>

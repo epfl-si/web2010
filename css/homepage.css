@@ -32,3 +32,15 @@
 	display:block;
 }
 #text-icon.current { background-position: -72px -22px;}
+
+.home-navpanel .unit-col div:first-child {padding-top: 2px; padding-bottom: 2px;}
+#nav-search { background-color: #ae0010;}
+
+/* colors */
+.local-color {background-color: #e2001a; color: #fff;}
+.local-color-text {color:#e2001a;}
+.local-color-light{ background-color: #ae0010; }
+.local-color-dark{ background-color: #33383d; }
+
+
+ul.list-layout { padding-top: 0; border-top: none; }

@@ -15,7 +15,7 @@
     <link href="css/help.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-<!--#include virtual="templates/fragments/header.fr.html" -->
+<!--#include virtual="templates/fragments/header-no-local-search.fr.html" -->
     <div id="main-content">
       <ul id="breadcrumbs" title="Navigation dans l'arborescence de l'EPFL">
         <li><a href="http://www.epfl.ch/" title="Page d'accueil de l'EPFL">EPFL</a></li>
