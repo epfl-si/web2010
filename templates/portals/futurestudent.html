@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!--#include virtual="../fragments/header.sig.html" -->  
-    <title>Portail étudiants</title>
+    <title>Futurs étudiants</title>
     <link href="http://www.epfl.ch/css/epfl.css" media="all" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>    
     <script type="text/javascript">jQuery.noConflict();</script> 
@@ -15,7 +15,7 @@
     <div id="main-content">
       <ul id="breadcrumbs" title="Navigation dans l'arborescence de l'EPFL">
         <li><a href="http://www.epfl.ch/" title="Page d'accueil de l'EPFL">EPFL</a></li>
-        <li class="last"><a href="http://student.epfl.ch">Portail étudiant</a></li>
+        <li class="last"><a href="futurestudent.epfl.ch">Portail Futurs étudiants</a></li>
       </ul>
       <ul id="languages" title="Choix de la langue">
         <li><a href="home-en.html">English</a></li>
@@ -23,52 +23,13 @@
       </ul>
       <div class="clear"></div>
 
-      <h1>Étudiants</h1>
+      <h1>Futurs étudiants</h1>
       <div id="main-navigation" class="navigation-bar">
         <ul class="topnav">
-          <li class="dropdown">
-            <a href="#">Intégration réussie</a>
-            <ul class="menu hidden">
-              <li><a href="#">subpage</a></li>
-              <li><a href="#">subpage with a veeeeeeeerrrry long title</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#">Vie académique</a>
-            <ul class="menu hidden">
-              <li><a href="#">submenu</a>
-                <ul>
-                  <li><a href="#">element 1</a></li>
-                  <li><a href="#">element 2</a></li>
-                </ul>
-              </li>
-              <li><a href="#">subpage 2</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#">Mon quotidien</a>
-            <ul class="menu hidden">
-              <li><a href="#">subpage</a></li>
-              <li><a href="#">subpage 2</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#">EPFL Fun</a>
-            <ul class="menu hidden">
-              <li><a href="#">subpage</a></li>
-              <li><a href="#">subpage 2</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#">Guichet étudiants</a>
-            <ul class="menu hidden">
-              <li><a href="#">subpage</a></li>
-              <li><a href="#">subpage 2</a></li>
-            </ul>
-          </li>
+          <li class="dropdown"></li>
         </ul>
-        <div class="clear"></div>
-      </div>
+        <div style="clear:both"></div>
+      </div>      
       <div id="tools">
         <div class="button showall">
           <a href="http://actu.epfl.ch/public/student">
@@ -83,10 +44,53 @@
           </a>
         </div>        
       </div>
-      <div id="content" class="content homepage-content">
-<!--#include virtual="../fragments/news-homepage-school.html" -->
+      
+      <div id="content" class="content fullpage-content">  
+        <div class="single-news">
+          <img src="../img/1.jpg" class="news-img" alt="description de l'image"/>
+          <div class="news-text">
+            <h2>The Edbiopharm Life Sciences Award</h2>
+            <p><span class="date">3.12.09</span> - Having participated in the Breitling Orbiter adventure in 1999, EPFL currently advises Bertrand Piccard's team on its new "Solar Impulse" project" <a href="actualited.epfl.ch" title="Read more" class="read-more"></a>
+            </p>
+          </div>
+        </div>
+        
+        <div class="home-navpanel">
+          <div class="unit-col">
+            <div class="unit-3-cells epfl last-cell">
+              <h3>Bachelor</h3>
+              <p><a href="#">Une foule de liens utiles pour votre travail quotidien</a></p>
+            </div>
+          </div>
+          <div class="unit-col last-col">
+            <div class="unit-3-cells local-color last-cell">
+              <h3>Master</h3>
+              <p><a href="#">Le guichet "service aux étudiant-e-s" est le point de contact central pour traiter vos demandes</a></p>
+            </div>
+          </div>
+          <div class="clear"></div>    
+        </div>
+
+        <div class="home-navpanel last-col">
+          <div class="unit-col">
+            <div class="unit-3-cells short last-cell">
+              <h3>École doctorale</h3>
+              <p><a href="#">Une foule de liens utiles pour votre travail quotidien</a></p>
+            </div>
+          </div>
+          <div class="unit-col last-col">
+            <div class="unit-3-cells black last-cell">
+              <h3>Formation continue</h3>
+              <p><a href="#">Le guichet "service aux étudiant-e-s" est le point de contact central pour traiter vos demandes</a></p>
+            </div>
+          </div>
+          <div class="clear"></div>    
+        </div>
+      
+        <div class="clear"></div>
+
         <div class="box">
-          <h3>Sections</h3>
+          <h3>Notre école</h3>
           <ul class="link-list two-cols">
             <li><a href="#">Architecture</a></li>
             <li><a href="#">Chimie, génie chimique</a></li>
@@ -97,7 +101,7 @@
           </ul>
         </div>
         <div class="box">
-          <h3>Programmes doctoraux</h3>
+          <h3>Services aux étudiants</h3>
           <ul class="link-list two-cols">
             <li><a href="#">Ingénieur en matériaux composites</a></li>
             <li><a href="#">Informatique et / ou administrateur Web</a></li>
@@ -105,26 +109,9 @@
             <li><a href="#">Banc d'essai d'ingénieur</a></li>
           </ul>
         </div>
-      </div>
       
-      <div class="right-col">
-        <div class="home-navpanel">
-          <div class="unit-col">
-            <div class="unit-3-cells local-color-light last-cell">
-              <h3>Guide de l'étudiant</h3>
-              <p><a href="#">Une foule de liens utiles pour votre travail quotidien</a></p>
-            </div>
-          </div>
-          <div class="unit-col last-col">
-            <div class="unit-3-cells local-color-dark last-cell">
-              <h3>Guichet étudiants</h3>
-              <p><a href="#">Le guichet "service aux étudiant-e-s" est le point de contact central pour traiter vos demandes</a></p>
-            </div>
-          </div>
-          <div class="clear"></div>    
-        </div>
-        <div class="box">
-          <h3>Services</h3>
+        <div class="box last-col">
+          <h3>Témoignages</h3>
           <ul class="link-list two-cols">
             <li><a href="#">Ingénieur en matériaux composites</a></li>
             <li><a href="#">Informatique et / ou administrateur Web</a></li>
@@ -132,10 +119,10 @@
             <li><a href="#">Banc d'essai d'ingénieur</a></li>
           </ul>
         </div>
+        <div class="clear"></div>
       </div>
-    </div> 
+    </div>
     
-    <div class="clear"></div>
     <div id="footer">
       <ul>
         <li><a href="#">Plan du site</a></li>
