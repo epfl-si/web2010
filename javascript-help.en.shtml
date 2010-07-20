@@ -35,7 +35,7 @@
         <div style="clear:both"></div>
       </div>
       
-      <div id="content" class="content fullpage-content">
+      <div id="content" class="content fullpage-content homepage-content">
         <p>JavaScript provides a better navigation experience within EPFL websites. You'll find instructions on how to activate this technology in your browser below.</p>
         <h3><img src="img/explorer6.jpg" alt=""/>Internet Explorer</h3>
         <ol>

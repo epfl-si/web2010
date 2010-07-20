@@ -104,6 +104,10 @@ acronym, abbr {color:#ae0010;}
 .sv{color:#6fba01;}
 .sb{color:#007ba5;}
 .ic{color:#1bb5b5;}
+
+.epfl {background-color: #e2001a; }
+.black { background-color: #000; }
+
 .local-color {background-color: #ae0010; color: #fff;}
 .local-color a { color: #fff; }
 .local-color-text {color:#ae0010;}
@@ -426,16 +430,22 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 
 /******************************* Main content *********************************/
 #main-content{ margin-left: auto; margin-right: auto; width: 980px; }
+.three-cols #tools, .single-col #tools { border-bottom: 1px solid #000; margin-bottom: 4px; }
+.three-cols .content, .single-col .content { border-top: none; padding-top: 0;}
+.three-cols .content { width: 980px;}
+
+
 #tools{ height: 25px; }
+
 .content{
     float: left; width: 652px; overflow: hidden;
 	margin-right:4px; margin-bottom: 20px;
-	border-top: 1px solid #000;
-	padding-top: 4px;
+	border-top: 1px solid #000; padding-top: 4px;
 }
 .right-col{ width: 324px; float:left; padding: 0;}
 .right-col .box {margin-right: 0; }
-
+.content .home-navpanel{float: left; margin-right: 4px;}
+.content .last-col{margin-right: 0;}
 .content p { margin-right: 35px; }
 .content blockquote p{margin-right: 35px; width: auto;}
 
@@ -447,7 +457,9 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .content ol li { background: none; padding: 0; list-style-position: inside; }
 .content-nomenu{ border-top: none}
 .homepage-content{ border-top: none; padding-top: 0;}
-.fullpage-content { width: 980px; margin-right: 0; border: none; }
+.fullpage-content { width: 980px; margin-right: 0;  }
+ 
+
 .content img { margin-bottom: 12px;}
 .content p img {margin-bottom: 8px; margin-top: 0px; }
 
@@ -472,7 +484,8 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .box{ margin-bottom: 40px; margin-right: 4px; width: 324px; }
 .fullbox{ margin-bottom: 40px; margin-right: 4px; width: 644px; }
 
-.content .box{ float: left; }
+.content .box { float: left; }
+
 .box h3, .fullbox h3 {    
     font-family: Impact, "Arial Black","DejaVu Sans", Arial, Helvetica , sans-serif;
     font-weight: normal; font-size:22px; letter-spacing:0.1em; line-height:26px;
@@ -494,11 +507,14 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .box .button { margin-top: 4px; }
 .box blockquote {margin-top: 6px;}
 
-.home-navpanel { margin-bottom: 40px; line-height: 18px;}
+.home-navpanel { margin-bottom: 44px; line-height: 18px;}
 .home-navpanel .unit-col {line-height: 14px; }
 .home-navpanel .unit-col div:first-child {padding-top: 4px; padding-bottom: 5px}
+.homepage-content .home-navpanel .unit-col div:first-child {padding: 2px 8px}
 
-.home-navpanel, .home-navpanel a, .home-navpanel p, .home-navpanel h2, .home-navpanel h3, .home-navpanel h4 {color: #fff; }
+
+.home-navpanel, .home-navpanel a, .home-navpanel p, 
+.home-navpanel h2, .home-navpanel h3, .home-navpanel h4 {color: #fff; }
 .home-navpanel h3 {
     font-family: "Arial black", Arial, Helvetica, sans-serif;
     font-weight: bold; text-transform: none; font-size: 18px; line-height: 20px; letter-spacing: 1px;
@@ -509,11 +525,13 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 
 .unit-col{width: 160px; margin: 0 4px 0 0; padding:0;float: left; font-size: 12px;}
 .unit-col a { background-position: 0 13px; }
-.unit-cell{ margin: 0 0 4px 0; height: 86px; overflow: hidden; padding: 2px 8px;}
-.last-cell{ margin: 0;}
 .last-col{ margin-right: 0;}
+.unit-cell{ margin: 0 0 4px 0; height: 86px; overflow: hidden; padding: 2px 8px;}
 .unit-2-cells{ height: 180px; padding: 2px 8px; margin: 0 0 4px 0; overflow: hidden; }
 .unit-3-cells{ height: 274px; padding: 2px 8px; margin: 0 0 4px 0; overflow: hidden;}
+.last-cell{ margin: 0;}
+
+
 
 /******************************** News block **********************************/
 .teaser-head {
@@ -589,6 +607,16 @@ ul.simple-layout li h2 {line-height: 18px;}
 ul.simple-layout li img.news-img {margin-right:4px; vertical-align: bottom;}
 ul.simple-layout .news-text {float: left; width: 484px; line-height: 18px;}
 ul.simple-layout .news-text p {margin-right: 30px;}
+
+.single-news { float: left; margin: 0 4px 0 0; padding: 0; width: 324px; border-bottom: 1px solid #000;}
+.single-news p { float: none;}
+.single-news .news-text { height: 91px; float: left;}
+.single-news h2 {
+    font-family: "Arial black", Arial, Helvetica, sans-serif;
+    letter-spacing: 1px; font-size: 18px; line-height: 20px;
+    padding-bottom: 4px; margin:0;}
+.single-news .news-img{ float: left; width: 324px; height: 184px; margin-bottom: 2px; padding: 0;}
+
 
 /******************** Search results ****************************/
 ol.search-results li{
@@ -668,8 +696,9 @@ html>body legend {left: -160px;}
      background: url(../img/main-navigation.png); 
 
 }   
+.infoscience_export .img_file {width: 160px; margin-right: 4px; float: left; }
+.infoscience_record {border-bottom: 1px dotted #000; margin-top: 8px; padding-bottom: 7px; }
 
-.infoscience_record {border-bottom: 1px dotted #000; margin-top: 8px; padding-bottom: 7px;}
 
 .infoscience_record h3.infoscience_title { 
     color: #000; font-family: Arial, Helvetica, sans-serif; letter-spacing: 0;
@@ -677,9 +706,10 @@ html>body legend {left: -160px;}
     padding-bottom: 3px; margin: 0; border: none; }
 .infoscience_record p {margin-bottom: 0;}
 .infoscience_bullet { float: left; text-align: right; width: 3em;}
-.infoscience_data { margin-left: 4em; } 
+
+.infoscience_record_bulleted .infoscience_data { margin-left: 4em; } 
 .infoscience_abstract { padding-top: 8px;}
-.infoscience_links {padding-top: 8px; font-size: 11px; letter-spacing: 1px;font-family: Georgia, serif; font-style: italic; }
+.infoscience_links {padding-top: 8px; font-size: 11px; letter-spacing: 1px;font-family: Georgia, serif; font-style: italic;  clear: left;}
 .infoscience_links a {background-position: 0 12px; padding-bottom: 1px; }/*as soon as dashes have been removed... margin-right: 20px;}*/
 
 /*********************************** Footer ***********************************/

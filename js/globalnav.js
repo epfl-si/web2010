@@ -87,7 +87,7 @@ jQuery(document).ready(function(){
     /* Set correct margin to elements */
     jQuery(".box.two-cols div.box-col:even",this).addClass("box-left-col");
     jQuery(".box.two-cols div.box-col:odd", this).addClass("box-right-col");
-    jQuery("#content .box:odd",this).addClass("last-col");
+    jQuery("#content:not(.fullpage-content) .box:odd",this).addClass("last-col");
     
     /* add class .left to images having align="left" and so on. */
     jQuery('img[align]').each(function(){ jQuery(this).addClass(jQuery(this).attr('align')); });

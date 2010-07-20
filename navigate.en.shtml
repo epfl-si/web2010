@@ -45,10 +45,10 @@
         <ul class="topnav">
           <li class="dropdown"></li>
         </ul>
-        <div style="clear:both"></div>
+        <div class="clear"></div>
       </div>
       
-      <div id="content" class="content fullpage-content">
+      <div id="content" class="content fullpage-content homepage-content">
         <p id="jswarning">Javascript is currently disabled by your browser. This technology provides a better navigation experience within EPFL websites. We suggest you to <a href="javascript-help.en.shtml" title="Instructions on how to activate javascript">activate it</a>.</p>
 
         <h2>By community</h2>

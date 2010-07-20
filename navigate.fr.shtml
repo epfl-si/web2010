@@ -49,7 +49,7 @@
         <div style="clear:both"></div>
       </div>
       
-      <div id="content" class="content fullpage-content">
+      <div id="content" class="content fullpage-content homepage-content">
         <p id="jswarning">Javascript est désactivé par votre navigateur. Cette technologie est utilisée pour offrir un plus grand confort de navigation au travers du site de l'EPFL. Nous vous conseillons donc de <a href="javascript-help.fr.shtml" title="Instructions pour l'activation de javascript">l'activer</a>.</p>
 
         <h2>Par public</h2>    

@@ -41,16 +41,62 @@ img.left {margin-bottom:12px}
 */
 a.enac_shortcut {padding-top:10px;}
 a.enac_shortcut p {
-display:none;
-margin:0 auto;
-padding:0;
-width : 165px;
+	display:none;
+	margin:0 auto;
+	padding:0;
+	width : 165px;
 }
 div.enac_shortcut {
-float:left;
-margin:0;
-min-height:140px;
-min-width:165px;
-padding:0;
-width:49%;
+	float:left;
+	margin:0;
+	min-height:140px;
+	min-width:165px;
+	padding:0;
+	width:49%;
 }
+/* MR - 19.07.2010
+	liste des labos
+*/
+.liste_laboratoires pre{    
+	word-wrap: break-word;
+    white-space : pre-wrap;
+    overflow : auto;
+    margin-bottom : 0;
+    font : inherit;
+    font-size : 100%;
+    }
+.liste_laboratoires img{     
+	border:1px solid #AAAAAA;
+    background-color:#faf0e6;
+    padding:3px;
+    }
+.liste_laboratoires table th {
+	background-color: transparent;
+    margin-top: 20px;
+    border: none;
+    border-top: 1px dotted #FFC5A4;
+    color: #CC6633;
+    padding: 10px;
+    text-align: left;
+    white-space: nowrap;
+}
+.liste_laboratoires table tbody td {
+    text-align: left;
+    vertical-align:top;
+}
+.liste_laboratoires table tbody td.texte {
+    background-color: #faf0e6;
+    padding: 10px;
+}
+.liste_laboratoires p img {
+    border:0px solid #AAAAAA;
+    background-color:#faf0e6;
+    padding:0px;
+    margin:0px;
+}
+.liste_laboratoires p {
+    padding : 0px 5px;
+}
+
+
+/*****************/
