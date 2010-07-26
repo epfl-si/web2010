@@ -111,6 +111,7 @@ acronym, abbr {color:#ae0010;}
 .local-color {background-color: #ae0010; color: #fff;}
 .local-color a { color: #fff; }
 .local-color-text {color:#ae0010;}
+.local-color-down{ background-color: #e2001a; }
 .local-color-light{ background-color: #7e000c; }
 .local-color-dark{ background-color: #5d0009; }
 .hidden{ position: absolute; left: -9999em;}
