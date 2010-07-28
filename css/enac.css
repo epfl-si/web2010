@@ -4,13 +4,9 @@ acronym, abbr {color:#ea5e00;}
 
 #main-navigation {background-color:#ea5e00;}
 #main-navigation li {border-color:#ea5e00;}
-#main-navigation li:hover { background-color: #d53c00; }
-
-.tree li { background-color:#ea5e00; }
-.tree li.hover  { background-color: #d53c00; }
-
 .local-color-light {background-color:#d53c00;}
 .local-color-dark {background-color:#b91e00;}
+.local-color-down{ background-color: #A81602; }
 .news-text h2 a:hover {color: #ea5e00;}
 
 .search-results a {color:#ea5e00; }
@@ -29,6 +25,12 @@ acronym, abbr {color:#ea5e00;}
 .question:hover .icon {background-position: -96px -384px; }
 .showall .icon {background-position: -120px -408px; }
 .showall:hover .icon {background-position: -120px -384px; }
+.mail .icon {background-position: -168px -408px; }
+.mail:hover .icon {background-position: -168px -384px; }
+.francais .diet_icon {background-position: -201px -411px;}
+.anglais .diet_icon {background-position: -221px -411px;}
+.winter .little_icon {background-position: -237px -411px;}
+.sun .little_icon {background-position: -257px -411px;}
 
 
 /* MR - 14.07.2010

@@ -4,13 +4,10 @@ acronym, abbr {color:#8972d5;}
 
 #main-navigation {background-color:#8972d5;}
 #main-navigation li {border-color: #8972d5;}
-#main-navigation li:hover { background-color: #5d41a2; }
-
-.tree li { background-color:#8972d5; }
-.tree li.hover  { background-color: #5d41a2; }
 
 .local-color-light {background-color:#5d41a2;}
 .local-color-dark {background-color:#431f7f;}
+.local-color-down{ background-color: #2B1260; }
 .news-text h2 a:hover {color: #8972d5;}
 
 .search-results a {color:#8972d5; }
@@ -29,3 +26,9 @@ acronym, abbr {color:#8972d5;}
 .question:hover .icon {background-position: -96px -240px; }
 .showall .icon {background-position: -120px -264px; }
 .showall:hover .icon {background-position: -120px -240px; }
+.mail .icon {background-position: -168px -264px; }
+.mail:hover .icon {background-position: -168px -240px; }
+.francais .diet_icon {background-position: -201px -267px;}
+.anglais .diet_icon {background-position: -221px -267px;}
+.winter .little_icon {background-position: -237px -267px;}
+.sun .little_icon {background-position: -257px -267px;}

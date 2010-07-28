@@ -4,16 +4,13 @@ acronym, abbr {color:#6fba01;}
 
 #main-navigation {background-color:#6fba01;}
 #main-navigation li {border-color: #6fba01;}
-#main-navigation li:hover { background-color: #439809; }
-
-.tree li { background-color:#6fba01; }
-.tree li.hover  { background-color: #439809; }
 
 .local-color-light {background-color:#439809;}
 .local-color-dark {background-color:#0b7101;}
+.local-color-down{ background-color: #0B4905; }
 .news-text h2 a:hover {color: #6fba01;}
 
-.search-results a {color: #6fba01; }
+.search-results a {color:black;}/*#6fba01; }*/
 .search-results cite {color:#0b7101;}
 .pagination .current {color:#6fba01;}
 
@@ -29,3 +26,9 @@ acronym, abbr {color:#6fba01;}
 .question:hover .icon {background-position: -96px -192px; }
 .showall .icon {background-position: -120px -216px; }
 .showall:hover .icon {background-position: -120px -192px; }
+.mail .icon {background-position: -168px -216px; }
+.mail:hover .icon {background-position: -168px -192px; }
+.francais .diet_icon {background-position: -201px -219px;}
+.anglais .diet_icon {background-position: -221px -219px;}
+.winter .little_icon {background-position: -237px -219px;}
+.sun .little_icon {background-position: -257px -219px;}
