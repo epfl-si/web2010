@@ -4,6 +4,10 @@ acronym, abbr {color:#990165;}
 
 #main-navigation {background-color:#990165;}
 #main-navigation li {border-color: #990165;}
+#main-navigation li:hover { background-color: #740052; }
+
+.tree li { background-color:#990165; }
+.tree li.hover  { background-color: #740052; }
 
 .local-color-light {background-color:#740052;}
 .local-color-dark {background-color:#5d0048;}
