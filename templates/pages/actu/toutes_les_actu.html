@@ -9,7 +9,7 @@
     <script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
     <script type="text/javascript">jQuery.noConflict();</script>
     <script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
-  <link href="../../css/actu.css" rel="stylesheet" type="text/css" />
+  <link href="../../../css/actu.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <!--#include virtual="../fragments/header.fr.html" -->
@@ -133,49 +133,101 @@
           <div class="clear"></div>
         </div>
         <div class="box two-cols">
-          <h3>tri par th&Egrave;me</h3>
+          <h3>filtres</h3>
+          <div class="separation">
+          <h4>par th&egrave;mes</h4>
           <div class="box-col">
-            <div class="radio"><input type="radio" name="group1" value="tous les th&egrave;mes"> Tous les th&egrave;mes</div>
-			<div class="radio"><input type="radio" name="group1" value="Sciences de base"> Sciences de base</div>
-			<div class="radio"><input type="radio" name="group1" value="informatique"> Informatique</div>
-   			<div class="radio"><input type="radio" name="group1" value="ing&eacute;nierie"> Ing&eacute;nierie</div>
+          <ul>
+            <li class="radio"><input type="radio" name="group1" value="Basic">Basic</li>
+			<li class="radio"><input type="radio" name="group1" value="Health">Health</li>
+			<li class="radio"><input type="radio" name="group1" value="Computer">Computer</li>
+   			<li class="radio"><input type="radio" name="group1" value="Engineering">Engineering</li>
+          </ul>
           </div>
           <div class="box-col">
-   			 <div class="radio"><input type="radio" name="group1" value="Environnement"> Environnement</div>
-   			 <div class="radio"><input type="radio" name="group1" value="Architecture/Construction"> Architecture / Construction</div>
-   			 <div class="radio"><input type="radio" name="group1" value="Soci&eacute;t&eacute;/Culture"> Soci&eacute;t&eacute; / Culture</div>
-   			 <div class="radio"><input type="radio" name="group1" value="Economie/Finance"> Economie / Finance</div>
+          <ul>
+   			 <li class="radio"><input type="radio" name="group1" value="Environment">Environment</li>
+   			 <li class="radio"><input type="radio" name="group1" value="Builde">Builde</li>
+   			 <li class="radio"><input type="radio" name="group1" value="Society/Culture">Society/Culture</li>
+   			 <li class="radio"><input type="radio" name="group1" value="Eco/Finance">Eco/Finance</li>
+          </ul>
           </div>
           <div class="clear"></div>
-        </div>
-        
-                <div class="box two-cols">
-          <h3>tri par cath&Eacute;gorie</h3>
-         <div class="box-col">
-            <div class="radio"><input type="radio" name="group2" value="Toutes les cat&eacute;gories"> Toutes les cat&eacute;gories</div>
-			<div class="radio"><input type="radio" name="group2" value="EPFL"> EPFL</div>
-			<div class="radio"><input type="radio" name="group2" value="Enseigenement"> Enseigenement</div>
-   			<div class="radio"><input type="radio" name="group2" value="Recherche"> Recherche</div>
+          </div>
+          <div class="separation">
+          <h4>par Cat&eacute;gories</h4>
+          <div class="box-col">
+          <ul>
+            <li class="radio"><input type="radio" name="group1" value="EPFL">EPFL</li>
+			<li class="radio"><input type="radio" name="group1" value="Education">Education</li>
+			<li class="radio"><input type="radio" name="group1" value="Search">Search</li>
+          </ul>
           </div>
           <div class="box-col">
-   			 <div class="radio"><input type="radio" name="group2" value="Ing&eacute;nierie"> Ing&eacute;nierie</div>
-   			 <div class="radio"><input type="radio" name="group2" value="transfert technologique"> transfert technologique</div>
-   			 <div class="radio"><input type="radio" name="group2" value="Vie sur le campus"> Vie sur le campus</div>
+          <ul>
+		<li class="radio"><input type="radio" name="group1" value="Innovation">Innovation</li>
+		<li class="radio"><input type="radio" name="group1" value="Casmpus Life">Casmpus Life</li>
+          </ul>
           </div>
           <div class="clear"></div>
-        </div>
-        
-                <div class="box two-cols">
-          <h3>tri par date</h3>
-         <div class="box-col">
-            <div class="radio"><input type="radio" name="group3" value="tous les th&egrave;mes"> Tous les jours</div>
-			<div class="radio"><input type="radio" name="group3" value="Sciences de base"> aujourd'hui</div>
+          </div>
+          <div class="separation">
+          <h4>par Coll&egrave;ge &amp; Facult&eacute;</h4>
+          <div class="box-col">
+          <ul>
+            <li class="radio"><input type="radio" name="group1" value="CDH">CDH</li>
+			<li class="radio"><input type="radio" name="group1" value="CDM">CDM</li>
+			<li class="radio"><input type="radio" name="group1" value="ENAC">ENAC</li>
+   			<li class="radio"><input type="radio" name="group1" value="IC">IC</li>
+          </ul>
           </div>
           <div class="box-col">
-   			 <div class="radio"><input type="radio" name="group3" value="7 derniers jours"> 7 derniers jours</div>
-   			 <div class="radio"><input type="radio" name="group3" value="30 derniers jours"> 30 derniers jours</div>
+          <ul>
+   			 <li class="radio"><input type="radio" name="group1" value="SB">SB</li>
+   			 <li class="radio"><input type="radio" name="group1" value="STI">STI</li>
+   			 <li class="radio"><input type="radio" name="group1" value="SV">SV</li>
+          </ul>
           </div>
           <div class="clear"></div>
+          </div>
+          <div class="separation">
+          <h4>par Publics</h4>
+          <div class="box-col">
+          <ul>
+            <li class="radio"><input type="radio" name="group1" value="Prospective Students">Prospective Students</li>
+			<li class="radio"><input type="radio" name="group1" value="Students">Students</li>
+			<li class="radio"><input type="radio" name="group1" value="Collaborators">Collaborators</li>
+          </ul>
+          </div>
+          <div class="box-col">
+          <ul>
+          <li class="radio"><input type="radio" name="group1" value="Industries/partners">Industries/partners</li>
+   			 <li class="radio"><input type="radio" name="group1" value="Public">Public</li>
+   			 <li class="radio"><input type="radio" name="group1" value="Media">Media</li>
+          </ul>
+          </div>
+          <div class="clear"></div>
+          </div>
+          <div class="separation">
+          <h4>par Dates</h4>
+          <div class="box-col">
+          <ul>
+            <li class="radio"><input type="radio" name="group1" value="tous les th&egrave;mes"> Tous les th&egrave;mes</li>
+			<li class="radio"><input type="radio" name="group1" value="Sciences de base"> Sciences de base</li>
+			<li class="radio"><input type="radio" name="group1" value="informatique"> Informatique</li>
+   			<li class="radio"><input type="radio" name="group1" value="ing&eacute;nierie"> Ing&eacute;nierie</li>
+          </ul>
+          </div>
+          <div class="box-col">
+          <ul>
+   			 <li class="radio"><input type="radio" name="group1" value="Environnement"> Environnement</li>
+   			 <li class="radio"><input type="radio" name="group1" value="Architecture/Construction"> Architecture / Construction</li>
+   			 <li class="radio"><input type="radio" name="group1" value="Soci&eacute;t&eacute;/Culture"> Soci&eacute;t&eacute; / Culture</li>
+   			 <li class="radio"><input type="radio" name="group1" value="Economie/Finance"> Economie / Finance</li>
+          </ul>
+          </div>
+          <div class="clear"></div>
+          </div>
         </div>
       </div>
       
