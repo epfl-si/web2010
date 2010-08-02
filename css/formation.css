@@ -1,0 +1,20 @@
+.formation{
+	height:63px;
+	border-bottom:1px dotted #000;
+	padding-bottom:3px;
+	padding-top:10px;
+	}
+.first{
+	padding-top:0;
+	}
+.formatiom .img{
+	width:32px;
+	height:63px;
+	float:left;
+	display:block;
+	}
+.formation .txt{
+	float:left;
+	display:block;
+	height:63px;
+	}
