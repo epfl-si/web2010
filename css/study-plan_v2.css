@@ -34,9 +34,14 @@
 	}
 #content .cours-name{
 	padding-top:3px;
-	width:219px;
 	height:16px;
 	float:left;
+	}
+#content .cours-master{
+	width:193px;
+	height:16px;
+	float:left;
+	font-size:11px;
 	}
 #content .cours-code{
 	width:75px;
@@ -45,7 +50,7 @@
 	}
 #content .cours{
 	height:38px;
-	width:219px;
+	width:220px;
 	float:left;
 	font-size:11px;
 	}
@@ -64,6 +69,16 @@
 	height:38px;
 	float:left;
 	}
+#content .enseignement-master{
+	width:70px;
+	height:38px;
+	float:left;
+	}
+#content .specialisation{
+	width:80px;
+	height:38px;
+	float:left;
+	}
 #content .enseignement-name{
 	height:17px;
 	float:left;
@@ -74,13 +89,24 @@
 	border-left:1px solid #FFF;
 	float:left;
 }
+#content .pdm{
+	width:100px;
+	height:38px;
+	border-left:1px solid #FFF;
+	float:left;
+}
 #content .bachlor-color{
-	width:66px;
 	height:38px;
 	float:left;
 }
 #content .examen{
 	width:80px;
+	height:38px;
+	border-left:1px solid #FFF;
+	float:left;
+	}
+#content .examen-master{
+	width:60px;
 	height:38px;
 	border-left:1px solid #FFF;
 	float:left;
@@ -109,6 +135,9 @@
 	width:20px;
 	text-align:center;
 	float:left;
+	}
+.cep-master{
+	padding:0 6px;
 	}
 .local-color-down{ background-color: #e2001a; }
 .red-color{ 
@@ -163,4 +192,7 @@
 	float:left;
 	width:17px;
 	height:17px;
+	}
+#content .master{
+	width:48px;
 	}
