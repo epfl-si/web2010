@@ -128,6 +128,7 @@ acronym, abbr {color:#ae0010;}
 .button { float: left; margin-right: 20px; cursor: pointer;}
 .diet_icon {float: left; background: url(../img/icons.png) no-repeat; margin-top:2px; height: 17px; width: 9px; margin-right: 0px; border: none;}
 .little_icon {float: left; background: url(../img/icons.png) no-repeat; margin-top:2px; height: 17px; width: 17px; margin-right: 0px; border: none;}
+.large_icon {float: left; background: url(../img/icons.png) no-repeat;  height: 17px; width: 22px; margin-right: 0px; border: none;}
 .icon {float: left; background: url(../img/icons.png) no-repeat; height: 24px; width: 24px; margin-right: 4px; border: none; cursor: pointer;}
 .label {font-family: Georgia, serif; font-size: 11px; letter-spacing: 1px; font-style: italic; background: url(../img/underline.gif) repeat-x 0 14px; cursor: pointer;}
 .button .label {display: block; float: left; margin-top: 3px; }
@@ -151,6 +152,8 @@ acronym, abbr {color:#ae0010;}
 .anglais .diet_icon {background-position: -221px -3px;}
 .winter .little_icon {background-position: -237px -3px;}
 .sun .little_icon {background-position: -257px -3px;}
+.membres .large_icon {background-position: -275px -3px;}
+
 
 
 /**************************** Header definition *******************************/
