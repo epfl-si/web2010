@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!--#include virtual="../fragments/header.sig.html" -->
+<title>LFS - Laboratory of Fictive Science: welcome</title>
+<link href="../../css/epfl.css" media="all" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
+<script type="text/javascript">jQuery.noConflict();</script>
+<script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
+<script type="text/javascript">
+/*
+ 
+ jQuery Tools 1.2.3 Tabs- The basics of UI design.
+
+ NO COPYRIGHTS OR LICENSES. DO WHAT YOU LIKE.
+
+ http://flowplayer.org/tools/tabs/
+
+ Since: November 2008
+ Date:    Mon Jun 7 13:43:53 2010 +0000 
+*/
+(function(c){function p(e,b,a){var d=this,l=e.add(this),h=e.find(a.tabs),i=b.jquery?b:e.children(b),j;h.length||(h=e.children());i.length||(i=e.parent().find(b));i.length||(i=c(b));c.extend(this,{click:function(f,g){var k=h.eq(f);if(typeof f=="string"&&f.replace("#","")){k=h.filter("[href*="+f.replace("#","")+"]");f=Math.max(h.index(k),0)}if(a.rotate){var n=h.length-1;if(f<0)return d.click(n,g);if(f>n)return d.click(0,g)}if(!k.length){if(j>=0)return d;f=a.initialIndex;k=h.eq(f)}if(f===j)return d;
+g=g||c.Event();g.type="onBeforeClick";l.trigger(g,[f]);if(!g.isDefaultPrevented()){o[a.effect].call(d,f,function(){g.type="onClick";l.trigger(g,[f])});j=f;h.removeClass(a.current);k.addClass(a.current);return d}},getConf:function(){return a},getTabs:function(){return h},getPanes:function(){return i},getCurrentPane:function(){return i.eq(j)},getCurrentTab:function(){return h.eq(j)},getIndex:function(){return j},next:function(){return d.click(j+1)},prev:function(){return d.click(j-1)},destroy:function(){h.unbind(a.event).removeClass(a.current);
+i.find("a[href^=#]").unbind("click.T");return d}});c.each("onBeforeClick,onClick".split(","),function(f,g){c.isFunction(a[g])&&c(d).bind(g,a[g]);d[g]=function(k){c(d).bind(g,k);return d}});if(a.history&&c.fn.history){c.tools.history.init(h);a.event="history"}h.each(function(f){c(this).bind(a.event,function(g){d.click(f,g);return g.preventDefault()})});i.find("a[href^=#]").bind("click.T",function(f){d.click(c(this).attr("href"),f)});if(location.hash)d.click(location.hash);else if(a.initialIndex===
+0||a.initialIndex>0)d.click(a.initialIndex)}c.tools=c.tools||{version:"1.2.3"};c.tools.tabs={conf:{tabs:"a",current:"current",onBeforeClick:null,onClick:null,effect:"default",initialIndex:0,event:"click",rotate:false,history:false},addEffect:function(e,b){o[e]=b}};var o={"default":function(e,b){this.getPanes().hide().eq(e).show();b.call()},fade:function(e,b){var a=this.getConf(),d=a.fadeOutSpeed,l=this.getPanes();d?l.fadeOut(d):l.hide();l.eq(e).fadeIn(a.fadeInSpeed,b)},slide:function(e,b){this.getPanes().slideUp(200);
+this.getPanes().eq(e).slideDown(400,b)},ajax:function(e,b){this.getPanes().eq(0).load(this.getTabs().eq(e).attr("href"),b)}},m;c.tools.tabs.addEffect("horizontal",function(e,b){m||(m=this.getPanes().eq(0).width());this.getCurrentPane().animate({width:0},function(){c(this).hide()});this.getPanes().eq(e).animate({width:m},function(){c(this).show();b.call()})});c.fn.tabs=function(e,b){var a=this.data("tabs");if(a){a.destroy();this.removeData("tabs")}if(c.isFunction(b))b={onBeforeClick:b};b=c.extend({},
+c.tools.tabs.conf,b);this.each(function(){a=new p(c(this),e,b);c(this).data("tabs",a)});return b.api?a:this}})(jQuery);
+</script>
+<link href="../../css/people.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<script type="text/javascript">jQuery(document).ready(function(){
+jQuery('#accordion').tabs('#accordion div.pane', {tabs:'div.accordeon', effect:'slide', initialIndex:null});
+});
+</script>
+<!--#include virtual="../fragments/header.fr.html" -->
+<div id="main-content">
+  <ul id="breadcrumbs" title="Navigation dans l'arborescence de l'EPFL">
+    <li><a href="http://www.epfl.ch/" title="Page d'accueil de l'EPFL">EPFL</a></li>
+    <li class="last"><a href="#">l'actualit&eacute;</a></li>
+  </ul>
+  <ul id="languages" title="Choix de la langue">
+    <li><a href="home-en.html">English</a></li>
+    <li class="current">français</li>
+  </ul>
+  <div class="clear"></div>
+  <h1>Martin vetterli</h1>
+  <div id="main-navigation" class="navigation-bar">
+    <ul class="topnav">
+      <li class="dropdown current"><a href="#">Contact</a></li>
+      <li class="dropdown"><a href="#">Biographie &amp; travail en cours</a></li>
+      <li class="dropdown"><a href="#">Recherche &amp; enseignement</a></li>
+      <li class="dropdown"><a href="#">Donnée administratives</a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+  <div id="tools">
+    <div class="button print"><a href="toto.html">
+      <button class="icon"></button>
+      <span class="label">Imprimer</span></a></div>
+  </div>
+  <!--------------------------------------------------------------------------------->
+  <div id="content" class="content">
+    <h2>Contact</h2>
+    <div id="accordion">
+      <div class="current accordeon">
+        <div class="people-title">Vice President for institutional affairs</div>
+        <div class="people-title">Vice Presidency for institutional affairs</div>
+        <div style="clear:both"></div>
+      </div>
+      <div class="pane">
+        <div class="content-people">
+          <!--------------------------------------------------------------------------------->
+          <div class="people-box two-cols">
+            <div class="box-col">
+              <ul>
+                <li class="bold">EPFL VPAI</li>
+                <li>CE 3 301(Centre Est)</li>
+                <li>Station 1</li>
+                <li>CH-1015 Lausanne</li>
+                <li>&nbsp;</li>
+                <li>Office <a href="#">CE 3 301</a></li>
+              </ul>
+            </div>
+            <div class="box-col">
+              <ul>
+                <li>Tel. <a href="#">+41 21 693 14 03</a></li>
+                <li>Fax +41 21 693 14 03</li>
+              </ul>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div style="clear:both"></div>
+      </div>
+      <!--------------------------------------------------------------------------------->
+      <div class="accordeon">
+        <div class="people-title">Full Professor</div>
+        <div class="people-title">Audiovisual Communication Laboratory 1</div>
+        <div style="clear:both"></div>
+      </div>
+      <div class="pane">
+        <div class="content-people">
+          <!--------------------------------------------------------------------------------->
+          <div class="people-box two-cols">
+            <div class="box-col">
+              <ul>
+                <li class="bold">EPFL VPAI</li>
+                <li>CE 3 301(Centre Est)</li>
+                <li>Station 1</li>
+                <li>CH-1015 Lausanne</li>
+                <li>&nbsp;</li>
+                <li>Office <a href="#">CE 3 301</a></li>
+              </ul>
+            </div>
+            <div class="box-col">
+              <ul>
+                <li>Tel. <a href="#">+41 21 693 14 03</a></li>
+                <li>Fax +41 21 693 14 03</li>
+              </ul>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div style="clear:both"></div>
+      </div>
+      <!--------------------------------------------------------------------------------->
+      <div class="accordeon">
+        <div class="people-title">Direteur a.i. du college CDM</div>
+        <div class="people-title">College du Management</div>
+        <div style="clear:both"></div>
+      </div>
+      <div class="pane">
+        <div class="content-people">
+          <!--------------------------------------------------------------------------------->
+          <div class="people-box two-cols">
+            <div class="box-col">
+              <ul>
+                <li class="bold">EPFL VPAI</li>
+                <li>CE 3 301(Centre Est)</li>
+                <li>Station 1</li>
+                <li>CH-1015 Lausanne</li>
+                <li>&nbsp;</li>
+                <li>Office <a href="#">CE 3 301</a></li>
+              </ul>
+            </div>
+            <div class="box-col">
+              <ul>
+                <li>Tel. <a href="#">+41 21 693 14 03</a></li>
+                <li>Fax +41 21 693 14 03</li>
+              </ul>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div style="clear:both"></div>
+      </div>
+      <!--------------------------------------------------------------------------------->
+    </div>
+  </div>
+</div>
+</div>
+<!--------------------------------------------------------------------------------->
+<div class="right-col">
+  <div class="box">
+    <div class="portrait portrait-gauche"><img src="../../img/vetterli.png"/></div>
+    <div class="portrait local-color">
+    <div class="clear"></div>
+    </div>
+    <div class="presentation">
+    <h4>Martin Vetterli</h4>
+    <p>Vice president for internationnal affairs and professor</p>
+    <a href="mailto:martin.vetterli@epfl.ch">martin.vetterli@epfl.ch</a><br>
+    <a href="http://icavwww.epfl.ch/vetterli">http://icavwww.epfl.ch/vetterli</a>
+   <div class="clear"></div>
+</div>
+   <div class="clear"></div>
+  </div>
+   
+   <div class="box">
+      <h3>Comp&Eacute;tence</h3>
+      <ul>
+        <li><a href="#">Theory of wavelets and their applications</a></li>
+        <li><a href="#">Signal processing for telecommunications</a></li>
+        <li><a href="#">Communications systems and multimedia</a></li>
+        <li><a href="#">Sensor networks</a></li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div id="footer">
+  <ul>
+    <li><a href="#">Plan du site</a></li>
+    <li><a href="mailto:webmaster@epfl.ch">Contact</a></li>
+    <li><a href="http://www.epfl.ch/accessibility.fr.shtml">Accessibilité</a></li>
+    <li class="copyright">&copy; 2010 EPFL tous droits réservés</li>
+    <li><a href="#top" class="hidden">Retour en haut de la page</a></li>
+  </ul>
+</div>
+</body>
+</html>
