@@ -22,6 +22,7 @@ jQuery(document).ready(function(){
     /* Navigation: search boxes */ 
     var current_search_base = jQuery('#searchform label.current');
     function change_search_base(radio){
+        jQuery('#search-options').remove();
         rid = radio.attr('id');
         label =  jQuery('label[for=' + rid + ']'); 
         switch (rid){
@@ -40,6 +41,7 @@ jQuery(document).ready(function(){
             case "search-engine-local":
                 jQuery('#searchform').attr('action', 'http://search.epfl.ch/web.do');
                 jQuery('#searchfield').attr('name', 'q');
+                jQuery('#searchform').append('<input type="hidden" id="search-options" name="as_sitesearch" value="' + jQuery.url.attr("host") +'" />' );
                 break;
             default:
                 jQuery('#searchform').attr('action', 'http://search.epfl.ch/web.do');

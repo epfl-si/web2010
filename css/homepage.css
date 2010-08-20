@@ -7,6 +7,9 @@
 	color:#000;
 	letter-spacing: 0px;
 }
+
+.navigation-bar .button .label{ padding-top: 0; }
+
 .dropdown .menu a {letter-spacing: 1px;}
 
 .navigation-bar .group span { height: 19px; float: left; padding-top: 4px; margin-right: 4px;}

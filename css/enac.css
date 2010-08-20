@@ -11,7 +11,6 @@ acronym, abbr {color:#ea5e00;}
 
 .local-color-light {background-color:#d53c00;}
 .local-color-dark {background-color:#b91e00;}
-.local-color-down{ background-color: #A81602; }
 .news-text h2 a:hover {color: #ea5e00;}
 
 .search-results a {color:#ea5e00; }
@@ -46,6 +45,7 @@ acronym, abbr {color:#ea5e00;}
 */
 .content img {margin-bottom : 0}
 img.left {margin-bottom:12px}
+
 /*
 	Liens images (on hover javascript display:none le texte)
 */
@@ -64,10 +64,11 @@ div.enac_shortcut {
 	padding:0;
 	width:49%;
 }
-/* MR - 19.07.2010
+
+/* MR - 22.07.2010
 	liste des labos
 */
-.liste_laboratoires pre{    
+.list_laboratories pre{    
 	word-wrap: break-word;
     white-space : pre-wrap;
     overflow : auto;
@@ -75,12 +76,12 @@ div.enac_shortcut {
     font : inherit;
     font-size : 100%;
     }
-.liste_laboratoires img{     
-	border:1px solid #AAAAAA;
+.list_laboratories img{     
+	border:1px solid #AAA;
     background-color:#faf0e6;
     padding:3px;
     }
-.liste_laboratoires table th {
+.list_laboratories table th {
 	background-color: transparent;
     margin-top: 20px;
     border: none;
@@ -90,23 +91,58 @@ div.enac_shortcut {
     text-align: left;
     white-space: nowrap;
 }
-.liste_laboratoires table tbody td {
+.list_laboratories table tbody td {
     text-align: left;
     vertical-align:top;
 }
-.liste_laboratoires table tbody td.texte {
+.list_laboratories table tbody td.texte {
     background-color: #faf0e6;
     padding: 10px;
 }
-.liste_laboratoires p img {
-    border:0px solid #AAAAAA;
+.list_laboratories p img {
+    border:0px solid #AAA;
     background-color:#faf0e6;
     padding:0px;
     margin:0px;
 }
-.liste_laboratoires p {
-    padding : 0px 5px;
+.list_laboratories p { padding : 0px 5px; }
+
+/* MR - 10.08.2010
+	Domaines de recherche 
+*/
+div.research_field {
+	float : left;
+	height : 130px;
+	width : 160px;
+	padding : 0;
+	margin : 0 3px 3px 0;
+	}
+div.research_field.empty  {
+	width : 150px;
+	padding : 0 5px;
+	color : #fff;
 }
+div.research_field a {
+	left : 5px;
+    color :#fff;
+    position: relative;
+	}
+div.research_field.col1 { background-color : #ea5e00; }
+div.research_field.col2 { background-color : #d53c00; }
+div.research_field.col3 { background-color : #b91e00; }
+div.research_field.col4 { background-color : #000;	margin : 0 3px 0 0; }
 
 
-/*****************/
+/* MR 18.08.2010
+	Page d'affichage des list générée "People"
+	pour l'enac et tous ses labos
+*/
+table.people_list, table#people_list { width:650px; }
+table.people_list td, table#people_list td { padding:5px 0; text-align:center; }
+table.people_list td.photo img, table#people_list td.photo img { width:60px; }
+table.people_list td.profile, table#people_list td.profile, table.people_list td.homepage, table#people_list td.homepage { width:20px; }
+table.people_list td.email, table#people_list td.email { width:25px; }
+table.people_list td.photo, table#people_list td.photo, table.people_list td.function, table#people_list td.function { text-align:left; width:80px; }
+table.people_list td.room, table#people_list td.room, table.people_list td.tdpeople, table#people_list td.tdpeople { width:60px; }
+table.people_list td.phone, table#people_list td.phone { width:140px; }
+table.people_list td.name, table#people_list td.name { text-align:left; width:auto; }
