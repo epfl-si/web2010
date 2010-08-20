@@ -3,8 +3,8 @@
  *
  * Copyright (c) 2010 EPFL
  *
- * Date: 2010-06-07 09:00
- * Revision: 1.1
+ * Date: 2010-08-20 14:15
+ * Revision: 1.2
  */
 jQuery(document).ready(function(){    
     /* Navigation: big panels */
