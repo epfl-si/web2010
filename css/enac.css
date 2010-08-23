@@ -107,7 +107,7 @@ div.enac_shortcut {
 }
 .list_laboratories p { padding : 0px 5px; }
 
-/* MR - 10.08.2010
+/* MR - 10.08.2010 (màj 20.08.2010)
 	Domaines de recherche 
 */
 div.research_field {
@@ -117,20 +117,23 @@ div.research_field {
 	padding : 0;
 	margin : 0 3px 3px 0;
 	}
+
 div.research_field.empty  {
 	width : 150px;
 	padding : 0 5px;
 	color : #fff;
 }
 div.research_field a {
-	left : 5px;
     color :#fff;
     position: relative;
+    background: none;
 	}
-div.research_field.col1 { background-color : #ea5e00; }
-div.research_field.col2 { background-color : #d53c00; }
-div.research_field.col3 { background-color : #b91e00; }
-div.research_field.col4 { background-color : #000;	margin : 0 3px 0 0; }
+div.research_field a span {	left: 3px; position : relative;}
+div.research_field.col1, div.research_field.col1.empty:hover {	background-color : #ea5e00;cursor : default;	}
+div.research_field.col2, div.research_field.col2.empty:hover{	background-color : #d53c00; cursor : default;}
+div.research_field.col3, div.research_field.col3.empty:hover {	background-color : #b91e00;cursor : default; }
+div.research_field.col4, div.research_field.col4.empty:hover {	background-color : #000;cursor : default; }
+div.research_field.col1:hover, div.research_field.col2:hover, div.research_field.col3:hover, div.research_field.col4:hover {	background-color : #ea5e00; cursor:pointer;}
 
 
 /* MR 18.08.2010

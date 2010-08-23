@@ -41,7 +41,9 @@ jQuery(document).ready(function(){
             case "search-engine-local":
                 jQuery('#searchform').attr('action', 'http://search.epfl.ch/web.do');
                 jQuery('#searchfield').attr('name', 'q');
-                jQuery('#searchform').append('<input type="hidden" id="search-options" name="as_sitesearch" value="' + jQuery.url.attr("host") +'" />' );
+                jQuery('#searchform').append(
+                    jQuery("<input/>").attr("type", "hidden").attr("id","search-options").attr("name", "as_sitesearch").attr("value", jQuery.url.attr("host"))
+                );
                 break;
             default:
                 jQuery('#searchform').attr('action', 'http://search.epfl.ch/web.do');
