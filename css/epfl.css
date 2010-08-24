@@ -290,6 +290,7 @@ acronym, abbr {color:#ae0010;}
 #brief-panel acronym { color: #000;}
 #brief-panel h3 { color: red;}
 #brief-panel h3 acronym { color: red;}
+#brief-panel h3 a { color: red;}
 #brief-panel .large { width: 320px; margin-right:0; }
 
 #breadcrumbs, #languages{
