@@ -620,11 +620,15 @@ ul.text-layout { overflow: hidden; width: 656px;}
     float: left; width: 324px; height: 89px; overflow: hidden;
     border-bottom: 1px solid #000;}
 .text-layout li.heading-news .news-text {height: 91px; margin-top: 2px;}
+
 ul.simple-layout li { padding-bottom: 4px; margin-bottom: 4px; border-bottom: 1px dotted #000;} 
 ul.simple-layout li h2 {line-height: 18px;}
 ul.simple-layout li img.news-img {margin-right:4px; vertical-align: bottom;}
 ul.simple-layout .news-text {float: left; width: 484px; line-height: 18px;}
 ul.simple-layout .news-text p {margin-right: 30px;}
+
+ul.home-list-layout { overflow:hidden; width:656px; }
+
 
 .single-news { float: left; margin: 0 4px 0 0; padding: 0; width: 324px; border-bottom: 1px solid #000;}
 .single-news p { float: none;}
