@@ -587,7 +587,7 @@ ul.news-list {
     margin: 0 0 40px 0; padding: 0;
     list-style: none;}
 .news-list li { margin: 0 4px 4px 0; padding: 0; background: none;}
-.news-list img.news-img { width: 160px; float: left; margin: 0}
+.news-list img.news-img { height:90px; width: 160px; float: left; margin: 0}
 .news-list li.heading-news h2 {
     font-family: "Arial black", Arial, Helvetica, sans-serif;
     letter-spacing: 1px; font-size: 18px; line-height: 20px;
