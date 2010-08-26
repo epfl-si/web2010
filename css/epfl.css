@@ -596,7 +596,7 @@ ul.news-list {
 
 ul.list-layout { padding-top: 4px; border-top: 1px solid #000; overflow: hidden; width: 656px; }
 .list-layout li { float:left; width: 324px; height: 90px; }
-.list-layout img.news-img{ height: 90px; margin-right: 6px;}
+.list-layout img.news-img{ margin-right: 6px;}
 .list-layout li.heading-news{ height: 278px;}
 .list-layout li.heading-news img.news-img{ margin: 0}
 .list-layout .news-text { width: 158px; height: 89px; float: left; overflow: hidden; border-bottom: 1px solid #000; }
