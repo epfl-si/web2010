@@ -24,30 +24,17 @@ jQuery(document).ready(function(){
     function change_search_base(radio){
         jQuery('#search-options').remove();
         rid = radio.attr('id');
+        jQuery("#searchform input[type=radio]").removeAttr("checked");
+	    radio.attr('checked','checked');
+
         label =  jQuery('label[for=' + rid + ']'); 
         switch (rid){
-            case "search-engine-person":
-                jQuery('#searchform').attr('action', 'http://search.epfl.ch/compoundDirectory.do');
-                jQuery('#searchfield').attr('name', 'q');
-                break;
-            case "search-engine-place":
-                jQuery('#searchform').attr('action', 'http://plan.epfl.ch/');
-                jQuery('#searchfield').attr('name', 'room');
-                break;
-            case "search-engine-epfl":
-                jQuery('#searchform').attr('action', 'http://search.epfl.ch/web.do');
-                jQuery('#searchfield').attr('name', 'q');
-                break;
             case "search-engine-local":
-                jQuery('#searchform').attr('action', 'http://search.epfl.ch/web.do');
-                jQuery('#searchfield').attr('name', 'q');
                 jQuery('#searchform').append(
                     jQuery("<input/>").attr("type", "hidden").attr("id","search-options").attr("name", "as_sitesearch").attr("value", jQuery.url.attr("host"))
                 );
                 break;
             default:
-                jQuery('#searchform').attr('action', 'http://search.epfl.ch/web.do');
-                jQuery('#searchfield').attr('name', 'q');
                 break;
         }
         if (jQuery('#searchfield').val() === jQuery('#searchform label.current').attr('title')) { jQuery('#searchfield').val(''); }
@@ -62,6 +49,11 @@ jQuery(document).ready(function(){
     if (jQuery.browser.msie) {
         jQuery('#search-box input[type=radio]').click(function(){ change_search_base(jQuery(this)); this.blur(); this.focus(); });
     }
+     /* Make labels clickable under mobile safari*/
+    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)) {
+       jQuery('#search-box label').click(function () { var el = jQuery(this).attr('for'); change_search_base(jQuery('#' + el));});
+    }
+    
     jQuery('#search-box input[type=radio]').change(function(){ change_search_base(jQuery(this)); });
     jQuery('#searchlink').click(function(){ jQuery('#searchfield').focus();});
     jQuery('#searchfield').focus(function(){ if (jQuery(this).val() === current_search_base.attr('title')){ jQuery(this).val('').addClass('focused');} });
@@ -96,7 +88,18 @@ jQuery(document).ready(function(){
     /* add class .left to images having align="left" and so on. */
     jQuery('img[align]').each(function(){ jQuery(this).addClass(jQuery(this).attr('align')); });
     
-    
+   
     /* Google Analytics */
-    jQuery.ga.load("UA-4833294-1");    
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4833294-1']);
+    _gaq.push(['_setDomainName', '.epfl.ch']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    
 });

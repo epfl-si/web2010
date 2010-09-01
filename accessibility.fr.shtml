@@ -18,7 +18,7 @@
         <li class="last">Accessibilité</li>
       </ul>
       <ul id="languages" title="Language">
-        <li><a href="accessibility.en.html">English</a></li>
+        <li><a href="http://www.epfl.ch/accessibility.fr.shtml">English</a></li>
         <li class="current">français</li>
       </ul>
       <div class="clear"></div>
@@ -47,8 +47,8 @@
           <li>3. Navigation dans ce sous-site <acronym title="&Eacute;cole polytechnique f&eacute;d&eacute;rale de Lausanne">EPFL</acronym></li>
           <li>4. Acc&egrave;s au champ de recherche</li>
           <li>5. D&eacute;but du contenu de la page</li>
-          <li>6.</li>
-          <li>7.</li>
+          <li>6.[Non utilisé]</li>
+          <li>7.[Non utilisé]</li>
           <li>8. Plan de ce sous-site</li>
           <li>9. Contact</li>
         </ul>
@@ -82,7 +82,7 @@
         <a target="_blank" href="http://openweb.eu.org/articles/accesskey_essai_non_transforme/">Lire l'article complet</a> paru sur <a href="http://openweb.eu.org/" target="_blank">Openweb</a>. </p>
   
         <h3>Autres formes d'accessibilit&eacute; Web </h3>
-        <p>Pour aider les personnes malvoyants, les raccourcis clavier zoom et dézoom sont utilisables. </p>
+        <p>Pour aider les personnes malvoyantes, les raccourcis clavier zoom et dézoom sont utilisables. </p>
         <ul>
           <li>Pour faire un zoom sur Windows : utiliser <acronym title="Touche contr&ocirc;le du clavier">CTRL</acronym> puis la touche +</li>
           <li>Pour faire un zoom sur Mac : utiliser <acronym title="Touche commande du clavier">CMD</acronym> (pomme) puis la touche +</li>
@@ -111,7 +111,7 @@
     <div id="footer">
       <ul>
         <li><a href="mailto:webmaster@epfl.ch">Contact</a></li>
-        <li><a href="accessibility.en.shtml">Accessibilité</a></li>
+        <li><a href="http://www.epfl.ch/accessibility.fr.shtml">Accessibilité</a></li>
         <li class="copyright">&copy; 2010 EPFL tous droits réservés</li>
         <li><a href="#top" class="hidden">Retour en haut de la page</a></li>
       </ul>
