@@ -47,24 +47,7 @@ acronym, abbr {color:#ea5e00;}
 .content img {margin-bottom : 0}
 img.left {margin-bottom:12px}
 
-/*
-	Liens images (on hover javascript display:none le texte)
-*/
-a.enac_shortcut {padding-top:10px;}
-a.enac_shortcut p {
-	display:none;
-	margin:0 auto;
-	padding:0;
-	width : 165px;
-}
-div.enac_shortcut {
-	float:left;
-	margin:0;
-	min-height:140px;
-	min-width:165px;
-	padding:0;
-	width:49%;
-}
+
 
 /* MR - 22.07.2010
 	liste des labos
