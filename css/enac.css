@@ -39,6 +39,7 @@ acronym, abbr {color:#ea5e00;}
 .printemps .little_icon {background-position: -301px -411px; }
 .automne .little_icon {background-position: -319px -411px; }
 
+.category{ background-image: url(../img/news-categories-bw.png);
 
 /* MR - 14.07.2010
 	Images : le margin bottom touche toutes les images ce qui n'est pas pratique.

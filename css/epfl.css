@@ -331,7 +331,7 @@ acronym, abbr {color:#ae0010;}
     width: 178px;
     position: absolute;
     left: -1px; top: 20px;
-    z-index: 995;
+    z-index: 900;
     padding: 6px 0 2px 0;
     border: 1px solid #b8b8b8;
     background: #fff none;
@@ -575,17 +575,13 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
     color: #000; padding-right: 4px; }
 .news-text p { margin: 0; float: left;}
 .news-text p img{ margin: 0; vertical-align: top;}
-.news-text .epfl { color: #f00; }
-.news-text .innovation { color: #0f0;}
-.news-text .campus { color: #0ff;}
-.news-text .education { color: #ff0;}
-.news-text .research { color: #f0f;}
+.news-text .heading { font-size: 100%; font-weight: normal; }
 
 ul.news-list {
     float: left; width: 652px;
     margin: 0 0 40px 0; padding: 0;
     list-style: none;}
-.news-list li { margin: 0 4px 4px 0; padding: 0; background: none;}
+.news-list li { margin: 0 4px 4px 0; padding: 0; background: none; z-index: 0;}
 .news-list img.news-img { height:90px; width: 160px; float: left; margin: 0}
 .news-list li.heading-news h2 {
     font-family: "Arial black", Arial, Helvetica, sans-serif;
@@ -594,7 +590,7 @@ ul.news-list {
 .news-list li.heading-news .news-img{ width: 324px; height: 184px;}
 
 ul.list-layout { padding-top: 4px; border-top: 1px solid #000; overflow: hidden; width: 656px; }
-.list-layout li { float:left; width: 324px; height: 90px; }
+.list-layout li { float:left; width: 324px; height: 90px; position: relative;}
 .list-layout img.news-img{ margin-right: 6px;}
 .list-layout li.heading-news{ height: 278px;}
 .list-layout li.heading-news img.news-img{ margin: 0}
@@ -602,8 +598,8 @@ ul.list-layout { padding-top: 4px; border-top: 1px solid #000; overflow: hidden;
 .list-layout li.heading-news .news-text { width: 324px; height: 92px; margin-top: 1px; }
 
 ul.grid-layout { overflow: hidden; width: 656px;}
-.grid-layout li{ width: 160px; float:left;}
-.grid-layout li.heading-news{ width: 324px; height: 184px; position: relative;}
+.grid-layout li{ width: 160px; float:left; position: relative;}
+.grid-layout li.heading-news{ width: 324px; height: 184px; }
 .grid-layout li.heading-news .news-text {
     position: absolute; bottom: 0; left: 0; width: 308px;  overflow: hidden;
     padding: 2px 8px;
@@ -613,14 +609,14 @@ ul.grid-layout { overflow: hidden; width: 656px;}
 .grid-layout li.heading-news .news-text a{ color: #fff; }
 
 ul.text-layout { overflow: hidden; width: 656px;}
-.text-layout li {float: left; width: 324px}
+.text-layout li {float: left; width: 324px; position: relative;}
 .text-layout li.heading-news{ height: 278px; }
 .text-layout .news-text {
     float: left; width: 324px; height: 89px; overflow: hidden;
     border-bottom: 1px solid #000;}
 .text-layout li.heading-news .news-text {height: 91px; margin-top: 2px;}
 
-ul.simple-layout li { padding-bottom: 4px; margin-bottom: 4px; border-bottom: 1px dotted #000;} 
+ul.simple-layout li { padding-bottom: 4px; margin-bottom: 4px; border-bottom: 1px dotted #000; position: relative;} 
 ul.simple-layout li h2 {line-height: 18px;}
 ul.simple-layout li img.news-img {margin-right:4px; vertical-align: bottom;}
 ul.simple-layout .news-text {float: left; width: 484px; line-height: 18px;}
@@ -629,7 +625,7 @@ ul.simple-layout .news-text p {margin-right: 30px;}
 ul.home-list-layout { overflow:hidden; width:656px; }
 
 
-.single-news { float: left; margin: 0 4px 0 0; padding: 0; width: 324px; border-bottom: 1px solid #000;}
+.single-news { float: left; margin: 0 4px 0 0; padding: 0; width: 324px; border-bottom: 1px solid #000; position: relative;}
 .single-news p { float: none;}
 .single-news .news-text { height: 91px; float: left;}
 .single-news h2 {
@@ -637,6 +633,23 @@ ul.home-list-layout { overflow:hidden; width:656px; }
     letter-spacing: 1px; font-size: 18px; line-height: 20px;
     padding-bottom: 4px; margin:0;}
 .single-news .news-img{ float: left; width: 324px; height: 184px; margin-bottom: 2px; padding: 0;}
+
+.category{ background-image: url(../img/news-categories.png);
+           background-repeat: no-repeat; 
+           height: 17px; width: 160px; position: absolute; left: 0; top: 0; z-index: 200;}
+.category-research{background-position: -1px -55px;}
+.category-news{background-position: -1px -1px;}
+.category-epfl{background-position: -1px -19px;}
+.category-education{background-position: -1px -37px;}
+.category-innovation{background-position: -1px -73px;}
+.category-campus{background-position: -1px -91px;}
+
+.category-research-white{background-position: -173px -55px; position: relative;}
+.category-news-white{background-position: -173px -1px; position: relative;}
+.category-epfl-white{background-position: -173px -19px; position: relative;}
+.category-education-white{background-position: -173px -37px; position: relative;}
+.category-innovation-white{background-position: -173px -73px; position: relative;}
+.category-campus-white{background-position: -173px -91px; position: relative;}
 
 
 /******************** Search results ****************************/

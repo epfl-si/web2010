@@ -29,3 +29,5 @@ acronym, abbr {color:#895116;}
 .question:hover .icon {background-position: -96px -432px; }
 .showall .icon {background-position: -120px -456px; }
 .showall:hover .icon {background-position: -120px -432px; }
+
+.category{ background-image: url(../img/news-categories-bw.png);
