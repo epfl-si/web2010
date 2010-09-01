@@ -636,24 +636,24 @@ ul.home-list-layout { overflow:hidden; width:656px; }
 
 .category-fr{ background-image: url(../img/news-categories-fr.png);
               background-repeat: no-repeat; 
-              height: 17px; width: 160px; position: absolute; left: 0; top: 0; z-index: 200;}
+              height: 18px; width: 160px; position: absolute; left: 0; top: 0; z-index: 200;}
 .category-en{ background-image: url(../img/news-categories-en.png);
               background-repeat: no-repeat; 
-              height: 17px; width: 160px; position: absolute; left: 0; top: 0; z-index: 200;}
+              height: 18px; width: 160px; position: absolute; left: 0; top: 0; z-index: 200;}
 
-.category-research{background-position: -1px -55px;}
+.category-research{background-position: -1px -58px;}
 .category-news{background-position: -1px -1px;}
-.category-epfl{background-position: -1px -19px;}
-.category-education{background-position: -1px -37px;}
-.category-innovation{background-position: -1px -73px;}
-.category-campus{background-position: -1px -91px;}
+.category-epfl{background-position: -1px -20px;}
+.category-education{background-position: -1px -39px;}
+.category-innovation{background-position: -1px -77px;}
+.category-campus{background-position: -1px -96px;}
 
-.category-research-white{background-position: -173px -55px; position: relative;}
+.category-research-white{background-position: -173px -58px; position: relative;}
 .category-news-white{background-position: -173px -1px; position: relative;}
-.category-epfl-white{background-position: -173px -19px; position: relative;}
-.category-education-white{background-position: -173px -37px; position: relative;}
-.category-innovation-white{background-position: -173px -73px; position: relative;}
-.category-campus-white{background-position: -173px -91px; position: relative;}
+.category-epfl-white{background-position: -173px -20px; position: relative;}
+.category-education-white{background-position: -173px -39px; position: relative;}
+.category-innovation-white{background-position: -173px -77px; position: relative;}
+.category-campus-white{background-position: -173px -96px; position: relative;}
 
 
 /******************** Search results ****************************/
