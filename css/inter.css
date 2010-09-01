@@ -30,4 +30,5 @@ acronym, abbr {color:#895116;}
 .showall .icon {background-position: -120px -456px; }
 .showall:hover .icon {background-position: -120px -432px; }
 
-.category{ background-image: url(../img/news-categories-bw.png);
+.category-en{ background-image: url(../img/news-categories-en-bw.png);
+.category-fr{ background-image: url(../img/news-categories-fr-bw.png);

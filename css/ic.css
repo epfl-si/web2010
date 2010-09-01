@@ -40,4 +40,5 @@ acronym, abbr {color:#1bb5b5;}
 .printemps .little_icon {background-position: -301px -316px; }
 .automne .little_icon {background-position: -319px -316px; }
 
-.category{ background-image: url(../img/news-categories-bw.png);
+.category-en{ background-image: url(../img/news-categories-en-bw.png);
+.category-fr{ background-image: url(../img/news-categories-fr-bw.png);

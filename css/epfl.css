@@ -634,9 +634,13 @@ ul.home-list-layout { overflow:hidden; width:656px; }
     padding-bottom: 4px; margin:0;}
 .single-news .news-img{ float: left; width: 324px; height: 184px; margin-bottom: 2px; padding: 0;}
 
-.category{ background-image: url(../img/news-categories.png);
-           background-repeat: no-repeat; 
-           height: 17px; width: 160px; position: absolute; left: 0; top: 0; z-index: 200;}
+.category-fr{ background-image: url(../img/news-categories-fr.png);
+              background-repeat: no-repeat; 
+              height: 17px; width: 160px; position: absolute; left: 0; top: 0; z-index: 200;}
+.category-en{ background-image: url(../img/news-categories-en.png);
+              background-repeat: no-repeat; 
+              height: 17px; width: 160px; position: absolute; left: 0; top: 0; z-index: 200;}
+
 .category-research{background-position: -1px -55px;}
 .category-news{background-position: -1px -1px;}
 .category-epfl{background-position: -1px -19px;}
