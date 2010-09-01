@@ -575,7 +575,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
     color: #000; padding-right: 4px; }
 .news-text p { margin: 0; float: left;}
 .news-text p img{ margin: 0; vertical-align: top;}
-.news-text .heading { font-size: 100%; font-weight: normal; }
+.news-text .heading { font-size: 12px; font-weight: normal; }
 
 ul.news-list {
     float: left; width: 652px;
