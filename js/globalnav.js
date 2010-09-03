@@ -88,9 +88,29 @@ jQuery(document).ready(function(){
     /* add class .left to images having align="left" and so on. */
     jQuery('img[align]').each(function(){ jQuery(this).addClass(jQuery(this).attr('align')); });
     
+    /* add arrows when news texts are too long */
+    function isTotallyVisible(element) {
+      var parentHeight = element.offsetParent().innerHeight();
+      var elementHeight = element.innerHeight();
+      return element.position().top + elementHeight < parentHeight;
+  	};
+
+    function removeLastWord(element) {
+      var text = element.html();
+      var i = text.lastIndexOf(' ');
+      element.html(text.substring(0, i) + '...');
+      return i != -1;
+    };
+	
+    var textSpans = jQuery(".news-text p .heading");
+    var readMoreLinks = jQuery(".news-text p .read-more");
+    for(var i = 0; i < textSpans.length; i++) {
+      var textSpan = jQuery(textSpans[i]);
+      var readMoreLink = jQuery(readMoreLinks[i]);	
+      while(!isTotallyVisible(readMoreLink) && removeLastWord(textSpan));
+    } 
    
     /* Google Analytics */
-
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-4833294-1']);
     _gaq.push(['_setDomainName', '.epfl.ch']);
