@@ -12,7 +12,6 @@
     <script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
     <script type="text/javascript">jQuery.noConflict();</script> 
     <script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
-    <link href="css/help.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
 <!--#include virtual="templates/fragments/header-no-local-search.en.html" -->
