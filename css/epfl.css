@@ -321,6 +321,7 @@ acronym, abbr {color:#ae0010;}
     border: 1px solid #b8b8b8;
     background: url(../img/homepage-icons.png) no-repeat right -1px;
     position: relative; /* placement of drop menu */
+    z-index: 2000;
 }
 .dropdown:hover { border-color: #000; background: url(../img/dropdown.png) no-repeat right -20px;}
 .dropdown:hover a { color: #fff; }
@@ -413,7 +414,7 @@ acronym, abbr {color:#ae0010;}
 }
 .navigation-bar .group { float: left; margin: 0 24px 0 8px;}
 
-ul.topnav{ float: left; position: relative; padding: 0; }
+ul.topnav{ float: left; position: relative; padding: 0; z-index: 3000;}
 ul.topnav li{ list-style-type: none; position: relative; display: inline; float: left; }
 #main-navigation { background-color:#ae0010; }
 #main-navigation a {
@@ -590,7 +591,7 @@ ul.news-list {
 .news-list li.heading-news .news-img{ width: 324px; height: 184px;}
 
 ul.list-layout { padding-top: 4px; border-top: 1px solid #000; overflow: hidden; width: 656px; }
-.list-layout li { float:left; width: 324px; height: 90px; position: relative;}
+.list-layout li { float:left; width: 324px; height: 90px; position: relative;}/*position: relative;}*/
 .list-layout img.news-img{ margin-right: 6px;}
 .list-layout li.heading-news{ height: 278px;}
 .list-layout li.heading-news img.news-img{ margin: 0}
@@ -636,10 +637,10 @@ ul.home-list-layout { overflow:hidden; width:656px; }
 
 .category-fr{ background-image: url(../img/news-categories-fr.png);
               background-repeat: no-repeat; 
-              height: 18px; width: 160px; position: absolute; left: 0; top: 0; z-index: 200;}
+              height: 18px; width: 160px; position: absolute; left: 0; top: 0;}
 .category-en{ background-image: url(../img/news-categories-en.png);
               background-repeat: no-repeat; 
-              height: 18px; width: 160px; position: absolute; left: 0; top: 0; z-index: 200;}
+              height: 18px; width: 160px; position: absolute; left: 0; top: 0; }
 
 .category-research{background-position: -1px -58px;}
 .category-news{background-position: -1px -1px;}
