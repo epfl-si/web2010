@@ -2,6 +2,8 @@
 .local-color-text{color:#daa521;}
 acronym, abbr {color:#daa521;}
 
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {background:none; color:#b77504;}
+
 #main-navigation {background-color: #daa521;}
 #main-navigation li {border-color: #daa521;}
 #main-navigation li:hover { background-color: #b77504; }
@@ -40,5 +42,5 @@ acronym, abbr {color:#daa521;}
 .printemps .little_icon {background-position: -301px -172px; }
 .automne .little_icon {background-position: -319px -172px; }
 
-.category-en{ background-image: url(../img/news-categories-en-bw.png);
-.category-fr{ background-image: url(../img/news-categories-fr-bw.png);
+.category-en{ background-image: url(../img/news-categories-en-bw.png);}
+.category-fr{ background-image: url(../img/news-categories-fr-bw.png);}

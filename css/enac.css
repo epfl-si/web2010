@@ -2,6 +2,8 @@
 .local-color-text{color:#ea5e00;}
 acronym, abbr {color:#ea5e00;}
 
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {background:none; color:#d53c00;}
+
 #main-navigation {background-color:#ea5e00;}
 #main-navigation li {border-color:#ea5e00;}
 #main-navigation li:hover { background-color: #d53c00; }
@@ -39,15 +41,18 @@ acronym, abbr {color:#ea5e00;}
 .printemps .little_icon {background-position: -301px -411px; }
 .automne .little_icon {background-position: -319px -411px; }
 
-.category-en{ background-image: url(../img/news-categories-en-bw.png);
-.category-fr{ background-image: url(../img/news-categories-fr-bw.png);
+.category-en{ background-image: url(../img/news-categories-en-bw.png);}
+.category-fr{ background-image: url(../img/news-categories-fr-bw.png);}
 
-/* MR - 14.07.2010
-	Images : le margin bottom touche toutes les images ce qui n'est pas pratique.
-*/
-.content img {margin-bottom : 0}
-img.left {margin-bottom:12px}
+/* Benedikt Fasel: Corrigé dans le CSS d'epfl */
 
+    /* MR - 14.07.2010
+    	Images : le margin bottom touche toutes les images ce qui n'est pas pratique.
+    
+    .content img {margin-bottom : 0}
+    img.left {margin-bottom:12px}
+    
+    */
 
 
 /* MR - 22.07.2010
