@@ -11,45 +11,57 @@
     <script type="text/javascript">jQuery.noConflict();</script>
     <script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
     <style type="text/css">
+h3 {
+    clear:both;
+}
+
 ul.bottin {
     list-style-type:outline;
     padding:0px;
+    margin:0px;
 } 
 
 ul.bottin li {
     list-style:none;
-    margin:5px 0px 10px 0px;
     padding:0px;
+    margin:0px;
     line-height:18px;
     float:left;
-    width:200px;
-    height:300px;
-}
-
-ul.bottin div {
-
+    width:160px;
+    height:285px;
 }
 
 ul.bottin div.picture {
-    float:left;
-    margin-right:10px;
-    width:100px;
+    margin:0px 0px 0px 0px;
+    overflow:hidden;
+    text-align:left;
 }
 
-ul.bottin div.person {
-    float:left;
-    margin-right:10px;
-    width:175px;
+ul.bottin div.picture img {
+    width:140px;
+    height:140px;
+    margin:0px 0px 7px 0px;
 }
 
-ul.bottin div.contact {
-    float:left;
-    margin-right:10px;
-    width:225px;
+ul.bottin div.button {
+    width: 23px; margin-right: 5px;
+}
+
+ul.bottin div.name {
+    padding-top:2px;
+    font-weight:bold;
 }
 
 ul.bottin div.more {
-    float:left;
+    clear:both;
+}
+
+ul.bottin table.contact {
+    margin-top:5px;
+}
+
+ul.bottin table.contact td {
+    padding:0px 10px 0px 0px;
 }
 
     </style>
@@ -131,253 +143,320 @@ ul.bottin div.more {
       <h3>Head of Laboratory</h3>
 <ul class="bottin">
 <li>
-  <div class="picture"><a href="http://personnes.epfl.ch/145781"><img src="http://people.epfl.ch/cache/photos/ext/a0e783886e74e64b53b7cac7b4568f45.jpg" width="100px"></a></div>
- 
-  <div class="person">
-    <a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=145781">J&uuml;rgen Brugger</a><br />
-    Associate Professor
-  </div>
+    <div class="picture"><a href="http://personnes.epfl.ch/145781"><img src="http://people.epfl.ch/cache/photos/ext/a0e783886e74e64b53b7cac7b4568f45.jpg"></a></div>
 
-  <div class="contact">
-    E-Mail: <a href="mailto:juergen.brugger@epfl.ch">juergen.brugger@epfl.ch</a><br />
-    Phone: 36573 / 35901<br />
-    Room: <a href="http://plan.epfl.ch/?room=BM3116">BM3116</a>
-  </div>
-  
-  <div class="more">
     <div class="button contact">
-	    <a href="http://people.epfl.ch/145781">
-	      <button class="icon"></button>
-	      <span class="label">more</span>
-	    </a>
-	  </div>
-	</div>
-	<div class="clear">&nbsp;</div>
+        <a href="http://people.epfl.ch/145781">
+        <button class="icon"></button>
+        </a>
+    </div>
+
+    <div class="name">
+        <a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=145781">J&uuml;rgen Brugger</a>
+    </div>
+
+    <div class="more">
+        Associate Professor<br />
+        <a href="mailto:juergen.brugger@epfl.ch">juergen.brugger@epfl.ch</a>
+    </div>
+
+    <table class="contact">
+        <tr>
+            <td style="width:30px;">Phone:</td>
+            <td>36573 / 35901</td>
+        </tr>
+        <tr>
+            <td>Room:</td>
+            <td><a href="http://plan.epfl.ch/?room=BM3116">BM3116</a></td>
+        </tr>
+    </table>
 </li>
 </ul>
-  <!--
+
+<!--
 <li>
-  <div class="picture"></div>
-  
-  <div class="person"></div>
-  
-  <div class="contact"></div>
-  
-  <div class="more">
-    <div class="button question">
-	    <a href="http://people.epfl.ch/145781">
-	      <button class="icon"></button>
-	      <span class="label">more</span>
-	    </a>
-	  </div>
-  </div>
-  <div class="clear">&nbsp;</div>
+    <div class="picture"></div>
+
+    <div class="button contact">
+        <a href="http://people.epfl.ch/[#sciper]">
+        <button class="icon"></button>
+        </a>
+    </div>
+
+    <div class="name"></div>
+
+    <div class="more"></div>
+
+    <table class="contact">
+        <tr>
+            <td style="width:30px;">Phone:</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Room:</td>
+            <td><a href="http://plan.epfl.ch/?room="></a></td>
+        </tr>
+    </table>
 </li>     
 -->
       
 <h3 style="clear:both;">Administrative staff</h3>
 <ul class="bottin">
 <li>
-  <div class="picture"><a href="http://personnes.epfl.ch/105876"><img src="http://people.epfl.ch/images/noprofile.jpg" width="100px" border="0"></a></div>
+  <div class="picture"><a href="http://personnes.epfl.ch/105876"><img src="http://people.epfl.ch/images/noprofile.jpg"></a></div>
   
-  <div class="person">
-  <a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=105876">Ilona&nbsp;Modoux</a><br />
-  Secretary
-  </div>
+    <div class="button contact">
+        <a href="http://people.epfl.ch/105876">
+        <button class="icon"></button>
+        </a>
+    </div>
   
-  <div class="contact">
-  E-mail: <a href="mailto:ilona.modoux@epfl.ch">ilona.modoux@epfl.ch</a><br />
-  Phone: 35901<br />
-  Room: <a href="http://plan.epfl.ch/?room=BM3115">BM3115</a>
-  </div>
+    <div class="name">
+        <a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=105876">Ilona&nbsp;Modoux</a><br />
+    </div>
   
-  <div class="more">&nbsp;</div>
-  <div class="clear">&nbsp;</div>
+    <div class="more">
+        Secretary<br />
+        <a href="mailto:ilona.modoux@epfl.ch">ilona.modoux@epfl.ch</a>
+    </div>
+
+    <table class="contact">
+        <tr>
+            <td style="width:30px;">Phone:</td>
+            <td>35901</td>
+        </tr>
+        <tr>
+            <td>Room:</td>
+            <td><a href="http://plan.epfl.ch/?room=BM3116">BM3115</a></td>
+        </tr>
+    </table>
 </li>
 </ul>
 
 <h3 style="clear:both;">Research staff</h3>
 <ul class="bottin">
 <li>
-  <div class="picture"><a href="http://personnes.epfl.ch/199500"><img src="http://people.epfl.ch/cache/photos/ext/b93ba1aecc2b04401cbf2c90167ffc10.jpg" width="100px" border="0"></a></div>
-  
-  <div class="person">
-  <a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=199500">Vaida&nbsp;Auzelyte</a><br />
-  Scientist
-  </div>
-  
-  <div class="contact">
-  E-Mail: <a href="mailto:vaida.auzelyte@epfl.ch">vaida.auzelyte@epfl.ch</a><br />
-  Phone: 36724<br />
-  Room: <a href="http://plan.epfl.ch/?room=BM3106">BM3106</a>
-  </div>
+    <div class="picture"><a href="http://personnes.epfl.ch/199500"><img src="http://people.epfl.ch/cache/photos/ext/b93ba1aecc2b04401cbf2c90167ffc10.jpg"></a></div>
+
+    <div class="button contact">
+        <a href="http://people.epfl.ch/199500">
+        <button class="icon"></button>
+        </a>
+    </div>
+    
+  <div class="name"><a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=199500">Vaida&nbsp;Auzelyte</a></div>
   
   <div class="more">
-    <div class="button question">
-	    <a href="http://people.epfl.ch/199500">
-	      <button class="icon"></button>
-	      <span class="label">more</span>
-	    </a>
-	  </div>
+  Scientist<br />
+  <a href="mailto:vaida.auzelyte@epfl.ch">vaida.auzelyte@epfl.ch</a>
   </div>
-  <div class="clear">&nbsp;</div>
+  
+  <table class="contact">
+  <tr>
+  <td style="width:30px;">Phone:</td>
+  <td>36724</td>
+  </tr>
+  <tr>
+  <td>Room:</td>
+  <td><a href="http://plan.epfl.ch/?room=BM3106">BM3106</a></td>
+  </tr>
+  </table>
 </li>
 
 <li>
-  <div class="picture"><a href="http://personnes.epfl.ch/190686"><img src="http://people.epfl.ch/cache/photos/camipro/4792aaab8631c535411455bb00bf906b.jpg" width="100px" border="0"></a></div>
-  
-  <div class="person">
-  <a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=190686">Victor Javier&nbsp;Cadarso Busto</a><br />
-  Postdoctoral Researcher
-  </div>
-  
-  <div class="contact">
-  E-mail: <a href="mailto:victor.cadarso@epfl.ch">victor.cadarso@epfl.ch</a><br />
-  Phone: 37818<br />
-  Room: <a href="http://plan.epfl.ch/?room=BM3106">BM3106</a>
-  </div>
+  <div class="picture"><a href="http://personnes.epfl.ch/190686"><img src="http://people.epfl.ch/cache/photos/camipro/4792aaab8631c535411455bb00bf906b.jpg"></a></div>
+
+     <div class="button contact">
+        <a href="http://people.epfl.ch/190686">
+        <button class="icon"></button>
+        </a>
+    </div>
+    
+  <div class="name"><a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=190686">Victor Javier Cadarso Busto</a></div>
   
   <div class="more">
-    <div class="button question">
-	    <a href="http://people.epfl.ch/190686">
-	      <button class="icon"></button>
-	      <span class="label">more</span>
-	    </a>
-	  </div>
+  Postdoctoral Researcher<br />
+  <a href="mailto:victor.cadarso@epfl.ch">victor.cadarso@epfl.ch</a>
   </div>
-  <div class="clear">&nbsp;</div>
+  
+  <table class="contact">
+  <tr>
+  <td style="width:30px;">Phone:</td>
+  <td>37818</td>
+  </tr>
+  <tr>
+  <td>Room:</td>
+  <td><a href="http://plan.epfl.ch/?room=BM3106">BM3106</a></td>
+  </tr>
+  </table>
 </li>
  
 <li>
-  <div class="picture"><a href="http://personnes.epfl.ch/196884"><img src="http://people.epfl.ch/cache/photos/ext/e403a0683465dd40bcf519f81894b3b1.jpg" width="100px" border="0"></a></div>
-  
-  <div class="person">
-  <a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=196884">Rosario Maurizio&nbsp;Gullo</a><br />
-  Scientist
-  </div>
-  
-  <div class="contact">
-  E-Mail: <a href="mailto:maurizio.gullo@epfl.ch">maurizio.gullo@epfl.ch</a><br />
-  Phone: 36409<br />
-  Room: <a href="http://plan.epfl.ch/?room=BM3106">BM3106</a>
-  </div>
+  <div class="picture"><a href="http://personnes.epfl.ch/196884"><img src="http://people.epfl.ch/cache/photos/ext/e403a0683465dd40bcf519f81894b3b1.jpg"></a></div>
+
+    <div class="button contact">
+        <a href="http://people.epfl.ch/196884">
+        <button class="icon"></button>
+        </a>
+    </div>
+    
+  <div class="name"><a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=196884">Rosario Maurizio&nbsp;Gullo</a></div>
   
   <div class="more">
-    <div class="button question">
-	    <a href="http://people.epfl.ch/196884">
-	      <button class="icon"></button>
-	      <span class="label">more</span>
-	    </a>
-	  </div>
+  Scientist<br />
+  <a href="mailto:maurizio.gullo@epfl.ch">maurizio.gullo@epfl.ch</a>
   </div>
-  <div class="clear">&nbsp;</div>
+  
+  <table class="contact">
+  <tr>
+  <td style="width:30px;">Phone:</td>
+  <td>36409</td>
+  </tr>
+  <tr>
+  <td>Room:</td>
+  <td><a href="http://plan.epfl.ch/?room=BM3106">BM3106</a></td>
+  </tr>
+  </table>
 </li>
  
 <li>
-  <div class="picture"><a href="http://personnes.epfl.ch/170900"><img src="http://people.epfl.ch/cache/photos/camipro/9a269f49ecdcbbd1a862d448fe7ccd42.jpg" width="100px" border="0"></a></div>
-  
-  <div class="person"><a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=170900">Thomas&nbsp;Kiefer</a><br />
-  Postdoctoral Researcher
-  </div>
-  
-  <div class="contact">
-  E-Mail: <a href="mailto:thomas.kiefer@epfl.ch">thomas.kiefer@epfl.ch</a><br />
-  Phone: 30925<br />
-  Room: <a href="http://plan.epfl.ch/?room=BM3202">BM3202</a>
-  </div>
+  <div class="picture"><a href="http://personnes.epfl.ch/170900"><img src="http://people.epfl.ch/cache/photos/camipro/9a269f49ecdcbbd1a862d448fe7ccd42.jpg"></a></div>
+
+    <div class="button contact">
+        <a href="http://people.epfl.ch/170900">
+        <button class="icon"></button>
+        </a>
+    </div>
+    
+  <div class="name"><a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=170900">Thomas&nbsp;Kiefer</a></div>
   
   <div class="more">
-    <div class="button question">
-	    <a href="http://people.epfl.ch/170900">
-	      <button class="icon"></button>
-	      <span class="label">more</span>
-	    </a>
-	  </div>
+  Postdoctoral Researcher<br />
+  <a href="mailto:thomas.kiefer@epfl.ch">thomas.kiefer@epfl.ch</a>
   </div>
-  <div class="clear">&nbsp;</div>
+  
+  <table class="contact">
+  <tr>
+  <td style="width:30px;">Phone:</td>
+  <td>30925</td>
+  </tr>
+  <tr>
+  <td>Room:</td>
+  <td><a href="http://plan.epfl.ch/?room=BM3202">BM3202</a></td>
+  </tr>
+  </table>
 </li>
 
 <li>
-  <div class="picture"><a href="http://personnes.epfl.ch/184238"><img src="http://people.epfl.ch/cache/photos/camipro/cad4a3ee73d86a12d7de178b4f6e7754.jpg" width="100px" border="0"></a></div>
-  
-  <div class="person"><a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=184238">Bastien&nbsp;Rachet</a><br />
-  Scientist
+  <div class="picture"><a href="http://people.epfl.ch/184238"><img src="http://people.epfl.ch/cache/photos/camipro/cad4a3ee73d86a12d7de178b4f6e7754.jpg"></a></div>
+
+    <div class="button contact">
+        <a href="http://people.epfl.ch/184238">
+        <button class="icon"></button>
+        </a>
+    </div>
+    
+  <div class="name"><a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=184238">Bastien&nbsp;Rachet</a></div>
+    
+  <div class="more">
+  Scientist<br />
+  <a href="mailto:bastien.rachet@epfl.ch">bastien.rachet@epfl.ch</a>
   </div>
   
-  <div class="contact">
-  E-Mail: <a href="mailto:bastien.rachet@epfl.ch">bastien.rachet@epfl.ch</a><br />
-  Phone: 37012<br />
-  Room: <a href="http://plan.epfl.ch/?room=BM4118">BM4118</a></div>
-  
-  <div class="more">&nbsp;</div>
-  <div class="clear">&nbsp;</div>
+  <table class="contact">
+  <tr>
+  <td style="width:30px;">Phone:</td>
+  <td>37012</td>
+  </tr>
+  <tr>
+  <td>Room:</td>
+  <td><a href="http://plan.epfl.ch/?room=BM4118">BM4118</a></td>
+  </tr>
+  </table>
 </li>
 
 <li>
-  <div class="picture"><a href="http://personnes.epfl.ch/176597"><img src="http://people.epfl.ch/cache/photos/ext/3e30af83de061b13fe1d87471b979d0b.jpg" width="100px" border="0"></a></div>
-  
-  <div class="person"><a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=176597">Andreea Veronica&nbsp;Savu</a><br />
-  Postdoctoral Researcher</div>
-  
-  <div class="contact">
-  E-Mail: <a href="mailto:veronica.savu@epfl.ch">veronica.savu@epfl.ch</a><br />
-  Phone: 30936<br />
-  Room: <a href="http://plan.epfl.ch/?room=BM3202">BM3202</a></div>
-  
+  <div class="picture"><a href="http://personnes.epfl.ch/176597"><img src="http://people.epfl.ch/cache/photos/ext/3e30af83de061b13fe1d87471b979d0b.jpg"></a></div>
+
+    <div class="button contact">
+        <a href="http://people.epfl.ch/176597">
+        <button class="icon"></button>
+        </a>
+    </div>
+    
+  <div class="name"><a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=176597">Andreea Veronica&nbsp;Savu</a></div>
+
   <div class="more">
-    <div class="button question">
-	    <a href="http://people.epfl.ch/176597">
-	      <button class="icon"></button>
-	      <span class="label">more</span>
-	    </a>
-	  </div>
+  Postdoctoral Researcher<br />
+  <a href="mailto:veronica.savu@epfl.ch">veronica.savu@epfl.ch</a>
   </div>
-  <div class="clear">&nbsp;</div>
+  
+  <table class="contact">
+  <tr>
+  <td style="width:30px;">Phone:</td>
+  <td>30936</td>
+  </tr>
+  <tr>
+  <td>Room:</td>
+  <td><a href="http://plan.epfl.ch/?room=BM3202">BM3202</a></td>
+  </tr>
+  </table>
 </li>
  
 <li>
-  <div class="picture"><a href="http://personnes.epfl.ch/169048"><img src="http://people.epfl.ch/cache/photos/ext/8947c8e0a09e332bb4964db1b5ddb2aa.jpg" width="100px" border="0"></a></div>
-  
-  <div class="person"><a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=169048">Oscar&nbsp;Vazquez Mena</a><br />
-  Postdoctoral Researcher</div>
-  
-  <div class="contact">
-  E-Mail: <a href="mailto:oscar.vazquez@epfl.ch">oscar.vazquez@epfl.ch</a><br />
-  Phone: 36741<br />
-  Room: <a href="http://plan.epfl.ch/?room=BM3202">BM3202</a>
-  </div>
-  
+  <div class="picture"><a href="http://personnes.epfl.ch/169048"><img src="http://people.epfl.ch/cache/photos/ext/8947c8e0a09e332bb4964db1b5ddb2aa.jpg"></a></div>
+
+      <div class="button contact">
+        <a href="http://people.epfl.ch/169048">
+        <button class="icon"></button>
+        </a>
+    </div>
+
+  <div class="name"><a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=169048">Oscar&nbsp;Vazquez Mena</a></div>
+
   <div class="more">
-    <div class="button question">
-	    <a href="http://people.epfl.ch/169048">
-	      <button class="icon"></button>
-	      <span class="label">more</span>
-	    </a>
-	  </div>
+  Postdoctoral Researcher<br />
+  <a href="mailto:oscar.vazquez@epfl.ch">oscar.vazquez@epfl.ch</a>
   </div>
-  <div class="clear">&nbsp;</div>
+  
+  <table class="contact">
+  <tr>
+  <td style="width:30px;">Phone:</td>
+  <td>36741</td>
+  </tr>
+  <tr>
+  <td>Room:</td>
+  <td><a href="http://plan.epfl.ch/?room=BM3202">BM3202</a></td>
+  </tr>
+  </table>
 </li>
  
 <li>
-  <div class="picture"><a href="http://personnes.epfl.ch/201009"><img src="http://people.epfl.ch/cache/photos/ext/bb2adfe96dfd360c65c8fc6fd25f998b.jpg" width="100px" border="0"></a></div>
+  <div class="picture"><a href="http://personnes.epfl.ch/201009"><img src="http://people.epfl.ch/cache/photos/ext/bb2adfe96dfd360c65c8fc6fd25f998b.jpg"></a></div>
+
+    <div class="button contact">
+        <a href="http://people.epfl.ch/201009">
+        <button class="icon"></button>
+        </a>
+    </div>
   
-  <div class="person"><a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=201009">Songmei&nbsp;Wu</a><br />
-  Scientist</div>
-  
-  <div class="contact">
-  E-Mail: <a href="mailto:songmei.wu@epfl.ch">songmei.wu@epfl.ch<br />
-  Phone: 30937<br />
-  Room: <a href="http://plan.epfl.ch/?room=BM3202">BM3202</a></div>
-  
+  <div class="name"><a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=201009">Songmei&nbsp;Wu</a></div>
+
   <div class="more">
-    <div class="button question">
-	    <a href="http://people.epfl.ch/201009">
-	      <button class="icon"></button>
-	      <span class="label">more</span>
-	    </a>
-	  </div>
+  Scientist<br />
+  <a href="mailto:songmei.wu@epfl.ch">songmei.wu@epfl.ch</a>
   </div>
-  <div class="clear">&nbsp;</div>
+  
+  <table class="contact">
+  <tr>
+  <td style="width:30px;">Phone:</td>
+  <td>30937</td>
+  </tr>
+  <tr>
+  <td>Room:</td>
+  <td><a href="http://plan.epfl.ch/?room=BM3202">BM3202</a></td>
+  </tr>
+  </table>
 </li>
 </ul>
 
