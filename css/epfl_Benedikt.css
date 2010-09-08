@@ -51,7 +51,7 @@ h3 a:hover {
 
 h4 { color: #000; font-family: Arial, Helvetica, sans-serif; 
      font-weight: bold; font-size: 15px; margin-bottom: 2px;
-     line-height: 19px;}
+     margin-top:15px; line-height: 19px;}
      
 h4 a {
     background-position:bottom;
@@ -62,7 +62,7 @@ h4 a:hover {
     background-image: url(../img/underlineH4-hover.gif);
 }
 
-h5 { color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 13px;}
+h5 { color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 13px; margin-top:5px;}
 h6 { color: #000; font-weight: bold;}
 
 
@@ -113,6 +113,8 @@ acronym, abbr {color:#ae0010;}
 .content table {
     width:100%;
     border-collapse:collapse;
+    margin-bottom:20px;
+    margin-top:10px;
 }
 
 .content table td {
@@ -130,7 +132,7 @@ acronym, abbr {color:#ae0010;}
 }
 
 /* Proposition one */
-.table { border-collapse: collapse; border-spacing: 0; margin-bottom: 40px; width: 100%;}
+.table { border-collapse: collapse; border-spacing: 0; margin-bottom:20px; margin-top:10px; width: 100%;}
 .table th {
     padding: 4px 4px 4px 0; color: #000; font-family: Arial, Helvetica, sans-serif; 
     font-weight: bold; font-size: 13px; line-height: 14px; text-align: left;
@@ -597,8 +599,8 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .fullpage-content { width: 980px; margin-right: 0;  }
  
 
-.content img {margin: 0px 25px 10px 0px;}  /* was margin-bottom:18px;  */
-.content p img {margin: 0px 25px 10px 0px;}  /* was margin-bottom: 8px; margin-top: 0px; */
+.content img {margin: 4px 0px 10px 0px;}  /* was margin-bottom:18px;  */
+.content p img {margin: 4px 0px 10px 0px;}  /* was margin-bottom: 8px; margin-top: 0px; */
 
 .link-list li{
     list-style-type: none;
@@ -614,8 +616,8 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
     text-decoration:none;
     background-position: 0 14px;
 }
-.left {margin-right: 4px; float: left;} 
-.right {margin-left: 4px; float: right;} 
+.left {margin-right: 25px; float: left;}
+.right {margin-left: 25px; float: right;}
 
 /* New */
 img.left {
