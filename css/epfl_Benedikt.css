@@ -197,6 +197,10 @@ acronym, abbr {color:#ae0010;}
 .button .label {display: block; float: left; margin-top: 3px; }
 .button:hover .label { background-image: url(../img/underline-hover.png); } 
 
+/* To be removed and included in the general icon part */
+.contact:hover .icon {background-image: url(../img/icon_contact-hover.png);}
+.contact .icon {background-image: url(../img/icon_contact.png);}
+
 .print .icon {background-position: 0 0; }
 .print:hover .icon {background-position: 0 -24px;}
 .feed .icon {background-position: -24px 0; }
@@ -576,15 +580,15 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .content ul li, .content ul li ul li, .content ol li ul li {
     list-style-position:outside;
     list-style-image: url(../img/dot.png);
-    margin:0px 0px 3px 15px;
-    padding-left:3px;
+    margin:0px 0px 3px 14px;
+    padding-left:5px;
     line-height:18px;
 }
 
 .content ol li, .content ul li ol li,  .content ol li ol li {
     list-style-position:outside;
     list-style-image:none;
-    margin:0px 0px 3px 18px;
+    margin:0px 0px 3px 19px;
     line-height:18px;
 }
 

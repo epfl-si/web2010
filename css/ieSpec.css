@@ -1,0 +1,9 @@
+/* CSS Hack for older IE */
+
+.content ul, .content ol {
+    padding-left:5px;
+}
+
+.content ol, .content ul {
+    padding-left:5px;
+}
