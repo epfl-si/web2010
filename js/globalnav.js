@@ -80,6 +80,9 @@ jQuery(document).ready(function(){
         function(e) { e.stopPropagation(); jQuery(this).parent().removeClass("hover");}
     );
     
+    /* activate togglers */
+    jQuery('.toggler').click(function(){ jQuery(this).toggleClass("toggled-active").next().slideToggle("slow"); return false;});  
+    
     /* Set correct margin to elements */
     jQuery(".box.two-cols div.box-col:even",this).addClass("box-left-col");
     jQuery(".box.two-cols div.box-col:odd", this).addClass("box-right-col");
@@ -114,6 +117,7 @@ jQuery(document).ready(function(){
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-4833294-1']);
     _gaq.push(['_setDomainName', '.epfl.ch']);
+    _gaq.push(['_setAllowHash', false]);
     _gaq.push(['_trackPageview']);
 
     (function() {
