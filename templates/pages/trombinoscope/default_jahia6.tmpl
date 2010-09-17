@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Trombinoscope Test</title>
+    <link href="http://localhost/web2010/trunk/css/epfl_Benedikt.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="http://www.epfl.ch/css/sb.css" media="all" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
+    <script type="text/javascript">jQuery.noConflict();</script>
+    <script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
+    <style type="text/css">
+h3 {
+    clear:both;
+}
+
+ul.bottin {
+    list-style-type:outline;
+    padding:0px;
+    margin:0px;
+}
+
+ul.bottin li {
+    list-style:none;
+    padding:0px;
+    margin:0px 3px 0px 0px;
+    line-height:18px;
+    float:left;
+    width:160px;
+    height:290px;
+}
+
+ul.bottin div.picture {
+    margin:0px 0px 0px 0px;
+    overflow:hidden;
+    text-align:left;
+}
+
+ul.bottin div.picture img {
+    height:140px;
+    /*max-height:140px;*/
+    margin:0px 0px 7px 0px;
+}
+
+ul.bottin div.button {
+    width: 23px; margin-right: 5px;
+}
+
+ul.bottin div.name {
+    padding-top:2px;
+    font-weight:bold;
+}
+
+ul.bottin div.function {
+    clear:both;
+}
+
+ul.bottin table.contact {
+    margin-top:5px;
+    border-collapse:collapse;
+}
+
+ul.bottin table.contact td {
+    padding:0px;
+    margin:0px;
+    vertical-align:top;
+}
+
+body, table {margin:0px; padding:0px;}
+</style>
+
+</head>
+
+<body>
+
+<TMPL_IF NAME="serrMsg">
+  <p style="color:red">** error ** <TMPL_VAR NAME="serrMsg"></p>
+</TMPL_IF>
+
+
+<TMPL_LOOP NAME="sOutLoop">
+
+<TMPL_IF NAME="sGroupLabel">
+<h3 style="clear:both;"><TMPL_VAR NAME="sGroupLabel"></h3>
+<ul class="bottin">
+
+<TMPL_LOOP NAME="sInnerLoop">
+<li>
+    <div class="picture">
+        <a href="http://people.epfl.ch/<TMPL_VAR NAME="sSCIPER">"><img src="<TMPL_VAR NAME="sPhotoURL">" alt="Portrait Picture" /></a>
+    </div>
+
+    <TMPL_IF NAME="sMail">
+    <div class="button mail">
+        <a href="mailto:<TMPL_VAR NAME=sMailID>@epfl.ch"><button class="icon"></button></a>
+    </div>
+
+    <TMPL_ELSE>
+    <div class="button contact">
+        <a href="http://www.epfl.ch/cgi-bin/csoldap/simple?sciper=<TMPL_VAR NAME="sSCIPER">">
+        <button class="icon"></button>
+        </a>
+    </div>
+    </TMPL_IF>
+        
+
+
+    <div class="name">
+        <a href="http://people.epfl.ch/<TMPL_VAR NAME="sSCIPER">"><TMPL_VAR NAME="sNom"> <TMPL_VAR NAME="sPNom"></a>
+    </div>
+
+    <div class="function">
+        <TMPL_IF NAME="sFunction">
+        <TMPL_VAR NAME="sFunction">
+        <TMPL_ELSE>
+
+        </TMPL_IF>
+    </div>
+
+    <table class="contact">
+        <TMPL_IF NAME="sPhones">
+        <tr>
+            <td style="width:45px;">Phone:</td>
+            <td><TMPL_VAR NAME="sPhones"></td>
+
+        </tr>
+        </TMPL_IF>
+        <TMPL_IF NAME="sRoomsLoop">
+        <tr>
+            <td style="width:45px;">Room:</td>
+            <td>
+            <TMPL_LOOP NAME="sRoomsLoop">
+                <a href="http://plan.epfl.ch/?room=<TMPL_VAR NAME="sRoom">"><TMPL_VAR NAME="sRoom"></a><br />
+            </TMPL_LOOP>
+            </td>
+        </tr>
+        </TMPL_IF>
+    </table>
+</li>
+</TMPL_LOOP>
+</ul>
+</TMPL_IF>
+</TMPL_LOOP>
+
+</body>
+</html>

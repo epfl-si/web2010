@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Trombinoscope Test</title>
+    <link href="http://localhost/web2010/trunk/css/epfl_Benedikt.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="http://www.epfl.ch/css/sb.css" media="all" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
+    <script type="text/javascript">jQuery.noConflict();</script>
+    <script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
+    <style type="text/css">
+h3.people-list-title {
+    padding-top:30px;
+    padding-bottom:5px;
+    clear:both;
+}
+
+
+body, table {margin:0px; padding:0px;}
+</style>
+
+</head>
+
+<body>
+
+<TMPL_IF NAME="serrMsg">
+  <p style="color:red">** error ** <TMPL_VAR NAME="serrMsg"></p>
+</TMPL_IF>
+
+
+<TMPL_LOOP NAME="sOutLoop">
+
+<TMPL_IF NAME="sGroupLabel">
+<h3 class="people-list-title"><TMPL_VAR NAME="sGroupLabel"></h3>
+<ol class="people-list">
+
+<TMPL_LOOP NAME="sInnerLoop">
+<li>
+    <div class="name">
+        <a href="http://people.epfl.ch/<TMPL_VAR NAME="sSCIPER">"><TMPL_VAR NAME="sNom"> <TMPL_VAR NAME="sPNom"></a>
+    </div>
+    
+    <div class="role">
+        <TMPL_IF NAME="sFunction">
+        <TMPL_VAR NAME="sFunction">
+        <TMPL_ELSE>
+        &nbsp;
+        </TMPL_IF>
+    </div>
+
+    <div class="place">
+        <TMPL_IF NAME="sRoomsLoop">
+        <TMPL_LOOP NAME="sRoomsLoop">
+        <a href="http://plan.epfl.ch/?room=<TMPL_VAR NAME="sRoom">"><TMPL_VAR NAME="sRoom"></a><br />
+        </TMPL_LOOP>
+        <TMPL_ELSE>
+        &nbsp;
+        </TMPL_IF>
+    </div>
+    
+    <div class="phone">
+        <TMPL_IF NAME="sPhones">
+        <TMPL_VAR NAME="sPhones">
+        <TMPL_ELSE>
+        &nbsp;
+        </TMPL_IF>
+    </div>
+    
+    <div class="clear"></div>
+</li>
+</TMPL_LOOP>
+</ol>
+</TMPL_IF>
+</TMPL_LOOP>
+
+</body>
+</html>
