@@ -9,7 +9,8 @@
     <style type="text/css">
 .menus { border-bottom:1px solid black;  margin-bottom: 28px}
 .menus ul { padding: 0; margin: 0 0 28px 0; }
-.menus li {list-style-type: none; background: none; padding: 0;}
+.menus li {list-style-type: none; background: none; padding: 0; list-style-image:none;}
+.menus li li {list-style-type:none; list-style-image:none;}
 .menus a{ font-family: Arial, helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing:.05em; background: none;}
 .menus a:hover { text-decoration: underline;}
 .menus h3 {
@@ -71,7 +72,7 @@
                     <li><a href="http://sac.epfl.ch/page-18710-fr.html">Calendrier académique</a></li>
                   </ul>
                 </li>
-                <li class="group-2-cols last">
+                <li class="group-2-cols">
                   <h3><a href="http://recherche.epfl.ch/">Chercheur</a></h3>
                   <ul>
                     <li><a href="http://grantsoffice.epfl.ch/">Financement de la recherche</a></li>
@@ -92,7 +93,7 @@
                     <li><a href="http://vpiv.epfl.ch/page-23023-fr.html">Quartier de l'innovation</a></li>
                   </ul>
                 </li>
-                <li class="group-2-cols last">
+                <li class="group-2-cols">
                   <h3><a href="http://medias.epfl.ch/">Média</a></h3>
                   <ul>
                     <li><a href="http://actu.epfl.ch/">Communiqués de presse, Reflex, Flash</a></li>
@@ -131,7 +132,7 @@
                     <li><a href="http://sb.epfl.ch/physics">Physique</a></li>
                   </ul>
                 </li>
-                <li class="group-2-cols last">
+                <li class="group-2-cols">
                   <h3><a href="http://sti.epfl.ch/" class="sti">Sciences et Techniques de l'Ingénieur <acronym title="Sciences et Techniques de l’Ingénieur">STI</acronym></a></h3>
                   <ul>
                     <li><a href="http://sti.epfl.ch/page-1545-fr.html">Génie électrique et électronique</a></li>
@@ -157,7 +158,7 @@
                     <li><a href="http://sv.epfl.ch/page-37991.html">Cancer</a></li>
                   </ul>
                 </li>
-                <li class="group-2-cols last">
+                <li class="group-2-cols">
                   <h3><a href="http://cdm.epfl.ch/" class="cdm">Collège du Management de la Technologie <acronym title="Collège du Management de la Technologie">CDM</acronym></a></h3>
                   <ul>
                     <li><a href="http://mtei.epfl.ch">Management de la Technologie</a></li>
@@ -199,7 +200,7 @@
                     <li><a href="http://continuing-education.epfl.ch">Formation continue</a> (Fondation EPFL-UNIL)</li>
                   </ul>
                 </li>
-                <li class="group-2-cols last">
+                <li class="group-2-cols">
                   <h3><a href="http://recherche.epfl.ch">Recherche</a></h3>
                   <ul>
                     <li><a href="http://vpiv.epfl.ch/page-22996-fr.html">Centres interdisciplinaires</a></li>
