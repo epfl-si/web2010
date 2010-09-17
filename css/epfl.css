@@ -19,7 +19,7 @@ h1{ font-family: Impact, "Arial Black","DejaVu Sans", Arial, Helvetica , sans-se
     text-transform:uppercase;
 }
 h1 a { background: none; text-decoration: none; }
-h1 a:hover {background: none;}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {background:none; color:#ae0010;}
 h2 {
     font-family: "Arial Black", Arial, Helvetica, sans-serif;
     font-weight: bold;

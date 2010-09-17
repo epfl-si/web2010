@@ -2,7 +2,7 @@
 .local-color-text{color:#1bb5b5;}
 acronym, abbr {color:#1bb5b5;}
 
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {background:none; color:#007f87;}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {background:none; color:#1bb5b5;}
 
 #main-navigation {background-color:#1bb5b5;}
 #main-navigation li {border-color: #1bb5b5;}

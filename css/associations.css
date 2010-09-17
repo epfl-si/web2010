@@ -2,7 +2,7 @@
 .local-color-text{color:#aebd00;}
 acronym, abbr {color:#aebd00;}
 
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {background:none; color:#8d9c00;}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {background:none; color:#aebd00;}
 
 #main-navigation {background-color:#aebd00;}
 #main-navigation li {border-color: #aebd00;}
@@ -13,6 +13,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {backgrou
 
 .local-color-light {background-color:#8d9c00;}
 .local-color-dark {background-color:#707f00;}
+.local-color-down{ background-color: #723C07; }   /* Changer, couleur pas trouvée... */
 .news-text h2 a:hover {color: #aebd00;}
 
 .search-results a {color:#aebd00; }
@@ -31,3 +32,17 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {backgrou
 .question:hover .icon {background-position: -96px -48px; }
 .showall .icon {background-position: -120px -72px; }
 .showall:hover .icon {background-position: -120px -48px; }
+
+/* Changer à partir d'ici */
+.mail .icon {background-position: -168px -168px; }
+.mail:hover .icon {background-position: -168px -144px; }
+.francais .diet_icon {background-position: -201px -172px;}
+.anglais .diet_icon {background-position: -221px -172px;}
+.winter .little_icon {background-position: -237px -172px;}
+.sun .little_icon {background-position: -257px -172px;}
+.membres .large_icon {background-position: -275px -172px;}
+.printemps .little_icon {background-position: -301px -172px; }
+.automne .little_icon {background-position: -319px -172px; }
+
+.category-en{ background-image: url(../img/news-categories-en-bw.png);}
+.category-fr{ background-image: url(../img/news-categories-fr-bw.png);}
