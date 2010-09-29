@@ -18,14 +18,12 @@ h1{ font-family: Impact, "Arial Black","DejaVu Sans", Arial, Helvetica , sans-se
     margin-bottom: 6px;
     text-transform:uppercase;
 }
-h1 a { background: none; text-decoration: none; }
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {background:none; color:#ae0010;}
 h2 {
     font-family: "Arial Black", Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 20pt;    /* was: 34px */
+    font-size: 27px;
     color: #000;
-    letter-spacing: 0px;   /* was: 0.05em */
+    letter-spacing: 0;
     line-height: 38px;
     margin-bottom: 6px;
  }
@@ -39,48 +37,30 @@ h3 {
     padding-bottom:0px;
 	  margin-bottom:0px;
 }
-
 .content h3 {
 margin: 20px 35px 4px 0px; /* New */
 }
-
-h3 a {
-    background-position:bottom;
-    background-image: url(../img/underlineH3.gif);
-}
-
-h3 a:hover {
-  background-image: url(../img/underlineH3-hover.gif);
-}
-
 h4 { color: #000; font-family: Arial, Helvetica, sans-serif;
      font-weight: bold; font-size: 15px; margin-bottom: 0px;
      line-height: 19px; padding-bottom:0px;}
-
-.content h4 {
-margin-top:15px;
-}
-
-h4 a {
-    background-position:bottom;
-    background-image: url(../img/underlineH4.gif);
-}
-
-h4 a:hover {
-    background-image: url(../img/underlineH4-hover.gif);
-}
-
+.content h4 { margin-top:15px; }
 h5 { color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 13px; margin-top: 5px;}
 h6 { color: #000; font-weight: bold;}
 
 
 p { margin-bottom: 9px; margin-top:9px; color: #454545; }
 form { margin-bottom: 18px;}
+
 a { text-decoration: none; color: #000; background: url(../img/underline.gif) repeat-x 0 14px; }
 a:hover { background-image: url(../img/underline-hover.png); }
+
+h1 a { background: none; text-decoration: none; }
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { background: none; color:#ae0010;}
+h3 a { background-position: 0 22px; }
+h4 a { background-position: 0 16px; }
+
 b, strong { color: #000; font-weight: bold;}
 i, em { font-style: italic; }
-/*ul { padding-left: 0;}*/
 hr { color: #000; background-color: #000; height: 1px; border: none; padding: 0; margin: 20px 0 20px 0;}
 blockquote img {
     width: 50px;
@@ -96,9 +76,7 @@ blockquote p {
     line-height:18px;
     top: -1px;
     position: relative;
-    /* float: left;  */
     display: block;
-    /* width: 266px; */
     color: #000;
 }
 pre, code {
@@ -118,6 +96,7 @@ sup, sub { font-size: 11px; }
 acronym, abbr {color:#ae0010;}
 
 /* Standard format for tables */
+
 .content table {
     width:100%;
     border-collapse:collapse;
@@ -146,36 +125,39 @@ acronym, abbr {color:#ae0010;}
     margin-top:8px;
 }
 
+table.table-cours td {padding: 0 2px 0px 2px;}
+table.table-cours th {padding: 0 2px 0px 2px;}
+
 /* Proposition one */
-.table { border-collapse: collapse; border-spacing: 0; margin-bottom:20px; margin-top:10px; width: 100%;}
-.table th {
+.content .table { border-collapse: collapse; border-spacing: 0; margin-bottom:20px; margin-top:10px; width: 100%;}
+.content .table th {
     padding: 4px 4px 4px 0; color: #000; font-family: Arial, Helvetica, sans-serif;
     font-weight: bold; font-size: 13px; line-height: 14px; text-align: left;
     border-bottom: 1px solid #000;}
-.table td { padding: 3px 4px 3px 0; vertical-align: top;
+.content .table td { padding: 4px 4px 7px 0; vertical-align: top;
             background: url(../img/underline.gif) repeat-x 0 bottom;
             line-height: 14px}
 
 /* Proposition two */
-.table2 {
+.content .table2 {
     margin:0px;
     border-collapse:collapse;
     width:100%;
 }
-.table2 th {
-    padding: 3px;
+.content .table2 th {
+    padding: 3px 3px 3px 5px;
     color:black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight:bold;
     text-align:left;
-    border:solid 1px #000000;
+    border:solid 1px #000;
     line-height:18px;
 }
-.table2 td {
-    padding: 3px;
+.content .table2 td {
+    padding: 3px 3px 3px 5px;
     vertical-align:top;
     line-height:18px;
-    border:dotted 1px #000000;
+    border:dotted 1px #000;
 }
 
 .sti{ color:#8972d5;}
@@ -257,7 +239,7 @@ acronym, abbr {color:#ae0010;}
 
 #nav-logo {
     float: left; height: 73px; width: 160px; position: relative; margin: 0 4px 0 0;
-    background: url(../img/epfl.png) no-repeat 0 5px; border-bottom: 1px solid #474e52; /* darker gray */ }
+    background: url(../img/epfl.png) no-repeat 0 7px; border-bottom: 1px solid #474e52; /* darker gray */ }
 #nav-logo a{ display: block; width: 160px; height: 73px;}
 #main-menus { list-style: none; padding: 0; margin: 0;}
 #main-menus li.menu { float: left; height: 74px; width: 160px; position: relative; cursor: pointer; }
@@ -298,10 +280,10 @@ acronym, abbr {color:#ae0010;}
     display: block;
     float: left;
     width:77px;
-    height:25px;
-    padding-top: 2px;
+    height:28px;
+    padding-top: 3px;
     margin-right: 0;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
     overflow:hidden;
     text-align:center;
     text-decoration: none;
@@ -393,16 +375,6 @@ acronym, abbr {color:#ae0010;}
     padding-right: 12px;
 }
 #breadcrumbs li.last{ background: none; }
-
-/*
-#breadcrumbs a, #languages, #languages a{ color: #000; background: none;}
-#breadcrumbs a:hover, #languages a:hover { text-decoration: underline}
-#breadcrumbs .last a, #languages li { color:#454545; background: none }
-#languages a { color:#000; background: none }
-#languages{ color:#000; float: right;}
-#languages li { display:inline; padding:0 0 0 20px;}
-#languages{text-align:right;}     */
-
 #breadcrumbs a { color: #000; background: none;}
 #breadcrumbs a:hover, #languages a:hover { text-decoration: underline}
 #breadcrumbs .last a {color:black; font-weight:bold; background: none }
@@ -583,12 +555,12 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .three-cols .content { width: 980px;}
 
 
-#tools{ height: 25px; }
+#tools{ height: 28px; }
 
 .content{
     float: left; width: 652px; overflow: hidden;
 	margin-right:4px; margin-bottom: 20px;
-	border-top: 1px solid #000; padding-top: 0px; /* was padding-top:4px; */
+	border-top: 1px solid #000; padding-top: 0px;
 }
 .right-col{ width: 324px; float:left; padding: 0;}
 .right-col .box {margin-right: 0; }
@@ -597,19 +569,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .content p { margin-right: 35px;}
 .content blockquote p{margin-right: 35px;}
 
-
-/* GF BACKUP
-.content ol, .content ul { margin-bottom: 18px; margin-right: 35px;}
-.content li {
-    background: url(../img/dot.png) no-repeat 0 5px;
-    padding-left: 12px; margin-bottom: 2px; line-height: 16px;}
-.content ol li { background: none; padding: 0; list-style-position: inside; } */
-
-
-.content ol, .content ul {
-    margin: 5px 35px 0px 0px;
-    display:block;
-}
+.content ol, .content ul { margin: 5px 35px 0px 0px; display:block;}
 
 .content li ol, .content li ul {
     margin: 5px 0px 0px 0px;
@@ -618,7 +578,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 
 .content li, .content li li, .content ol li ul li {
     list-style-image: url(../img/dot.png);
-    margin:0px 0px 3px 15px;
+    margin:0px 0px 1px 15px;
     *margin-left:17px; /* IE Hack */
     padding-left:3px;
     *padding-left:5px; /* IE Hack */
@@ -638,18 +598,9 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .homepage-content{ border-top: none; padding-top: 0;}
 .fullpage-content { width: 980px; margin-right: 0;  }
 
+.content img {margin: 4px 0 10px 0;} 
+.content p img {margin: 4px 0 10px 0;} 
 
-.content img {margin: 4px 0 10px 0;}  /* was margin-bottom:18px;  */
-.content p img {margin: 4px 0 10px 0;}  /* was margin-bottom: 8px; margin-top: 0px; */
-
-/*No longer needed
-.link-list li{
-    list-style-type: none;
-    margin-bottom: 2px;
-    line-height: 16px;
-    list-style-image: url(../img/dot.png);
-    padding: 0px;
-    margin:0px; }*/
 .link-list a {
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 13px;
@@ -661,7 +612,6 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .left {margin-right: 25px; float: left;}
 .right {margin-left: 25px; float: right;}
 
-/* New */
 img.left { margin-right:25px; }
 img.right { margin-left:25px; }
 
@@ -676,7 +626,7 @@ img.right { margin-left:25px; }
     font-weight: normal; font-size:22px; letter-spacing:0.1em; line-height:26px;
     color: #000;
     text-transform: uppercase;
-    padding-bottom:5px;
+    padding: 1px 0 4px;
     border-bottom:1px solid #000;
     margin: 0 0 10px 0;}
 .fullbox h3 { margin-bottom: 4px; }
@@ -685,8 +635,6 @@ img.right { margin-left:25px; }
 .box h6, .fullbox h6 {font-size: 13px; margin: 0;}
 .box p, .fullbox p { margin-bottom:2px; padding-top: 0;}
 .box ul, .fullbox ul { list-style-type: none; padding-top: 3px; margin-right: 0;}
-/* Backup GF
-.box.two-cols li, .box .two-cols li, .fullbox.two-cols li, .fullbox .two-cols li{ float: left; width: 144px; padding-right: 4px;}*/
 
 .two-cols li {
     float:left;
@@ -701,13 +649,8 @@ img.right { margin-left:25px; }
 }
 
 /* For the right box link list */
-.box.two-cols li {
-    margin:0 4px 0 0;
-    width:157px; /*157 */
-}
-.right-col .two-cols.link-list li {
-width:160px;
-}
+.box.two-cols li { margin:0 4px 0 0; width:157px; }
+.right-col .two-cols.link-list li { width:160px;}
 
 .box.two-cols div.box-col, .box .two-cols div.box-col,
 .fullbox.two-cols div.box-col, .fullbox .two-cols div.box-col { float: left; width: 160px; }
@@ -729,7 +672,8 @@ width:160px;
     border: none; margin-top:3px; /* new margin-top:3px; */
 }
 .home-navpanel a { background-image: url(../img/underline-white.gif); }
-.box-flat-panel { padding: 8px; width: 308px;} /* could be done as .box.home-navpanel. Say thanks to MSIE6 buggy selectors */
+.box-flat-panel { padding: 6px 8px 8px 8px; width: 308px;} /* could be done as .box.home-navpanel. Say thanks to MSIE6 buggy selectors */
+.box-flat-panel h3 { padding: 0; margin: 0 0 2px 0; }
 
 .unit-col{width: 160px; margin: 0 4px 0 0; padding:0;float: left; font-size: 12px;}
 .unit-col a { background-position: 0 13px; }
@@ -739,7 +683,6 @@ width:160px;
 .unit-3-cells{ height: 274px; padding: 2px 8px; margin: 0 0 4px 0; overflow: hidden;}
 .last-cell{ margin: 0;}
 .unit-3-cells ul {padding-top:5px;}
-
 
 
 /******************************** News block **********************************/
@@ -799,7 +742,8 @@ ul.grid-layout { overflow: hidden; width: 656px;}
     padding: 2px 8px;
     color: #fff; border: none;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* invalid trick, http://css-tricks.com/rgba-browser-support/ */ }
+    background: rgba(0, 0, 0, 0.5); /* invalid trick, http://css-tricks.com/rgba-browser-support/ */ 
+}
 .grid-layout li.heading-news .news-text a{ color: #fff; }
 
 ul.text-layout { overflow: hidden; width: 656px;}
@@ -817,7 +761,6 @@ ul.text-layout { overflow: hidden; width: 656px;}
   _top:-20px;
   *top:-20px;
 }
-
 .simple-layout .news-text p {
   top:0px;
   position:relative;
@@ -918,11 +861,6 @@ html>body legend {left: -160px;}
 .left-aligned label { display:block; float: left; clear:left; width: 160px; text-align: left;}
 .left-aligned input, .left-aligned textarea {  margin-left: 4px; width: 324px;}
 .left-aligned fieldset label {display: inline; width: auto; float: none;}
-
-/*.left-aligned label { float: left; text-align:left; width:160px; }
-.left-aligned input, .left-aligned textarea { margin-left: 164px; width: 320px; }
-.left-aligned label.check, .left-aligned label.radio { position:relative; text-align:left; }*/
-
 
 /****************************** Publications **********************************/
 

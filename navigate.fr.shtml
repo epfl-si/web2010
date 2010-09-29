@@ -13,12 +13,13 @@
 .menus li {list-style-type: none; background: none; padding: 0; list-style-image:none;}
 .menus li li {list-style-type:none; list-style-image:none; margin-left:0px;}
 .menus a{ font-family: Arial, helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing:.05em; background: none;}
-.menus a:hover { text-decoration: underline;}
+.menus a:hover {text-decoration: underline; }
 .menus h3 {
     margin:0 0 4px 0; padding:0;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:13px; line-height:14px; font-weight: bold; letter-spacing:.05em;
 }
+.menus h3 a:hover {background: none;}
 .menus .group-3-cols { float: left; width: 305px; margin-right: 4px; margin-left:0px; }
 .menus .last { margin: 0; }
 .public h3 a { color: red;}
