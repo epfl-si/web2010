@@ -8,17 +8,21 @@
  */
 jQuery(document).ready(function(){    
     /* Navigation: big panels */
-    function togglePanel(panel){
-        if (panel.is('.hidden')) { jQuery("#header").expose({color: '#000', opacity: 0.6, loadSpeed: 0, closeSpeed: 0}); }
-        else { jQuery.mask.close(); }
-        panel.toggleClass("hidden");   
+    function showPanel() {
+        jQuery("#header").expose({color: '#000', opacity: 0.6, loadSpeed: 0, closeSpeed: 0});
+        jQuery('.navigation-panel').addClass("hidden");
+        jQuery(this).children('.navigation-panel').removeClass('hidden');
     }
-    jQuery('#main-menus .menu').each(function(){
-        var panel = jQuery(this).children('.navigation-panel');
-        jQuery(this).mouseleave(function() { panel.addClass("hidden"); jQuery.mask.close(); });
-        jQuery(this).click(function(){ togglePanel(panel); return true; });
-        jQuery(this).children('.main-link').click(function(){ togglePanel(panel); return false; });
-    });
+    function hidePanel() {
+    }
+    jQuery('#header').mouseleave(function(){ 
+        jQuery.mask.close();
+        jQuery('.navigation-panel').addClass("hidden");
+    } );
+    var config = { over: showPanel, out: hidePanel, timeout: 500 };
+    jQuery("#main-menus .main-link").click(function(){ return false; });
+    jQuery('#main-menus .menu').hoverIntent(config);
+    
     /* Navigation: search boxes */ 
     var current_search_base = jQuery('#searchform label.current');
     function change_search_base(radio){
