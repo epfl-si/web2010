@@ -34,6 +34,23 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {color:#8
 .showall:hover .icon {background-position: -120px -240px; }
 .mail .icon {background-position: -168px -264px; }
 .mail:hover .icon {background-position: -168px -240px; }
+.contact .icon {background-position: -362px -264px; }
+.contact:hover .icon {background-position: -362px -240px; }
+.gototop .icon {background-position: -386px -264px; }
+.gototop:hover .icon {background-position: -386px -240px; }
+.previous .icon {background-position: -410px -264px; }
+.previous:hover .icon {background-position: -410px -240px; }
+.checkmark .icon {background-position: -434px -264px; }
+.checkmark:hover .icon {background-position: -434px -240px; }
+.cross .icon {background-position: -458px -264px; }
+.cross:hover .icon {background-position: -458px -240px; }
+.comment .icon {background-position: -482px -264px; }
+.comment:hover .icon {background-position: -482px -240px; }
+.edit .icon {background-position: -506px -264px; }
+.edit:hover .icon {background-position: -506px -240px; }
+.file .icon {background-position: -530px -264px; }
+.file:hover .icon {background-position: -530px -240px; }
+
 .francais .diet_icon {background-position: -201px -267px;}
 .anglais .diet_icon {background-position: -221px -267px;}
 .winter .little_icon {background-position: -237px -267px;}

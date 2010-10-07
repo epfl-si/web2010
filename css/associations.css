@@ -32,6 +32,24 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {backgrou
 .question:hover .icon {background-position: -96px -48px; }
 .showall .icon {background-position: -120px -72px; }
 .showall:hover .icon {background-position: -120px -48px; }
+.contact .icon {background-position: -362px -72px; }
+.contact:hover .icon {background-position: -362px -48px; }
+.gototop .icon {background-position: -386px -72px; }
+.gototop:hover .icon {background-position: -386px -48px; }
+.previous .icon {background-position: -410px -72px; }
+.previous:hover .icon {background-position: -410px -48px; }
+.checkmark .icon {background-position: -434px -72px; }
+.checkmark:hover .icon {background-position: -434px -48px; }
+.cross .icon {background-position: -458px -72px; }
+.cross:hover .icon {background-position: -458px -48px; }
+.comment .icon {background-position: -482px -72px; }
+.comment:hover .icon {background-position: -482px -48px; }
+.edit .icon {background-position: -506px -72px; }
+.edit:hover .icon {background-position: -506px -48px; }
+.file .icon {background-position: -530px -72px; }
+.file:hover .icon {background-position: -530px -48px; }
+
+
 
 /* Changer à partir d'ici */
 .mail .icon {background-position: -168px -168px; }

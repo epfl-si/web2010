@@ -197,10 +197,6 @@ table.table-cours th {padding: 0 2px 0px 2px;}
 .button .label {display: block; float: left; margin-top: 3px; }
 .button:hover .label { background-image: url(../img/underline-hover.png); }
 
-/* To be removed and included in the general icon part */
-.contact:hover .icon {background-image: url(../img/icon_contact-hover.png);}
-.contact .icon {background-image: url(../img/icon_contact.png);}
-
 .print .icon {background-position: 0 0; }
 .print:hover .icon {background-position: 0 -24px;}
 .feed .icon {background-position: -24px 0; }
@@ -215,6 +211,31 @@ table.table-cours th {padding: 0 2px 0px 2px;}
 .showall:hover .icon {background-position: -120px -24px; }
 .mail .icon {background-position: -168px 0; }
 .mail:hover .icon {background-position: -168px -24px; }
+.podcast .icon {background-position: -338px 0; }
+.podcast:hover .icon {background-position: -338px -24px; }
+.contact .icon {background-position: -362px 0; }
+.contact:hover .icon {background-position: -362px -24px; }
+.gototop .icon {background-position: -386px 0; }
+.gototop:hover .icon {background-position: -386px -24px; }
+.previous .icon {background-position: -410px 0; }
+.previous:hover .icon {background-position: -410px -24px; }
+.checkmark .icon {background-position: -434px 0; }
+.checkmark:hover .icon {background-position: -434px -24px; }
+.cross .icon {background-position: -458px 0; }
+.cross:hover .icon {background-position: -458px -24px; }
+.comment .icon {background-position: -482px 0; }
+.comment:hover .icon {background-position: -482px -24px; }
+.edit .icon {background-position: -506px 0; }
+.edit:hover .icon {background-position: -506px -24px; }
+.file .icon {background-position: -530px 0; }
+.file:hover .icon {background-position: -530px -24px; }
+.pdffile .icon {background-position: -554px 0; }
+.pdffile:hover .icon {background-position: -554px -24px; }
+.ok .icon {background-position: -578px 0; }
+.ok:hover .icon {background-position: -578px -24px; }
+.stats .icon {background-position: -602px 0; }
+.stats:hover .icon {background-position: -602px -24px; }
+
 .francais .diet_icon {background-position: -201px -3px;}
 .anglais .diet_icon {background-position: -221px -3px;}
 .winter .little_icon {background-position: -237px -3px;}
@@ -496,15 +517,6 @@ table.table-cours th {padding: 0 2px 0px 2px;}
 .toggled-active {background-position: -55px;}
 
 
-/* Sitemap, */
-#epfl_sitemap li {
-    list-style-type:none;
-    list-style-image:none;
-    margin:0 0 0 5px;
-    padding:1px 0 3px 16px;
-}
-
-
 /******************************** Navigation **********************************/
 .navigation-bar {
 	width: 980px;
@@ -538,8 +550,8 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 #main-navigation .dropdown.inpath, #main-navigation .dropdown.current { border-color: #fff; background-color: #000; }
 #main-navigation .dropdown a{padding: 0; color: #fff; }
 #main-navigation .dropdown:hover a{ color: #fff;  }
-#main-navigation .dropdown .menu {left: 0; top: 24px; padding-bottom: 4px; padding-top:6px; width: 320px; border-color: #000; border-top: none;}
-#main-navigation .dropdown .menu li {border: none; margin-bottom:2px;}
+#main-navigation .dropdown .menu {left: 0; top: 24px; padding-bottom: 4px; padding-top:12px; width: 320px; border-color: #000; border-top: none;}
+#main-navigation .dropdown .menu li {border: none; margin-bottom:1px;}
 #main-navigation .dropdown .menu li:hover {background: none;}
 #main-navigation .dropdown .menu li.current a { color: #fff; background-color: #000;}
 #main-navigation .dropdown .menu.hidden {left: -999em;}
@@ -614,6 +626,11 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 
 img.left { margin-right:25px; }
 img.right { margin-left:25px; }
+/* Sitemap, */
+#epfl_sitemap li {
+    list-style-type:none; list-style-image:none;
+    margin:0 0 0 5px; padding:1px 0 3px 16px; }
+
 
 /********************************** Boxes *************************************/
 .box{ margin-bottom: 40px; margin-right: 4px; width: 324px; }

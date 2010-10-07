@@ -32,6 +32,24 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {color:#8
 .question:hover .icon {background-position: -96px -432px; }
 .showall .icon {background-position: -120px -456px; }
 .showall:hover .icon {background-position: -120px -432px; }
+.contact .icon {background-position: -362px -456px; }
+.contact:hover .icon {background-position: -362px -432px; }
+.gototop .icon {background-position: -386px -456px; }
+.gototop:hover .icon {background-position: -386px -432px; }
+.previous .icon {background-position: -410px -456px; }
+.previous:hover .icon {background-position: -410px -432px; }
+.checkmark .icon {background-position: -434px -456px; }
+.checkmark:hover .icon {background-position: -434px -432px; }
+.cross .icon {background-position: -458px -456px; }
+.cross:hover .icon {background-position: -458px -432px; }
+.comment .icon {background-position: -482px -456px; }
+.comment:hover .icon {background-position: -482px -432px; }
+.edit .icon {background-position: -506px -456px; }
+.edit:hover .icon {background-position: -506px -432px; }
+.file .icon {background-position: -530px -456px; }
+.file:hover .icon {background-position: -530px -432px; }
+
+
 
 .category-en{ background-image: url(../img/news-categories-en-bw.png);
 .category-fr{ background-image: url(../img/news-categories-fr-bw.png);
