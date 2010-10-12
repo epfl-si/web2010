@@ -108,14 +108,14 @@ jQuery(document).ready(function(){
       element.html(text.substring(0, i) + '...');
       return i != -1;
     };
-	
+
     var textSpans = jQuery(".news-text p .heading");
     var readMoreLinks = jQuery(".news-text p .read-more");
-    for(var i = 0; i < textSpans.length; i++) {
-      var textSpan = jQuery(textSpans[i]);
-      var readMoreLink = jQuery(readMoreLinks[i]);	
-      while(!isTotallyVisible(readMoreLink) && removeLastWord(textSpan));
-    } 
+    if(textSpans.length == readMoreLinks.length)
+        textSpans.each(function(i, textSpan) {
+	    var readMoreLink = jQuery(readMoreLinks[i]);
+            while(!isTotallyVisible(readMoreLink) && removeLastWord(textSpan));
+        });
    
     /* Google Analytics */
     jQuery.jGoogleAnalytics('UA-4833294-1', {topLevelDomain: '.epfl.ch'} );
