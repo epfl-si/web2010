@@ -114,7 +114,7 @@ jQuery(document).ready(function(){
     if(textSpans.length == readMoreLinks.length)
         textSpans.each(function(i, textSpan) {
 	    var readMoreLink = jQuery(readMoreLinks[i]);
-            while(!isTotallyVisible(readMoreLink) && removeLastWord(textSpan));
+            while(!isTotallyVisible(readMoreLink) && removeLastWord(jQuery(textSpan)));
         });
    
     /* Google Analytics */
