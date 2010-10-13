@@ -610,8 +610,8 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .homepage-content{ border-top: none; padding-top: 0;}
 .fullpage-content { width: 980px; margin-right: 0;  }
 
-.content img {margin: 4px 0 10px 0;} 
-.content p img {margin: 4px 0 10px 0;} 
+.content img {margin: 4px 0 10px 0;}
+.content p img {margin: 4px 0 10px 0;}
 
 .link-list a {
     font-family:  Arial, Helvetica, sans-serif;
@@ -759,7 +759,7 @@ ul.grid-layout { overflow: hidden; width: 656px;}
     padding: 2px 8px;
     color: #fff; border: none;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* invalid trick, http://css-tricks.com/rgba-browser-support/ */ 
+    background: rgba(0, 0, 0, 0.5); /* invalid trick, http://css-tricks.com/rgba-browser-support/ */
 }
 .grid-layout li.heading-news .news-text a{ color: #fff; }
 
@@ -851,19 +851,7 @@ p.results-count{border-top: 1px solid #000; margin-top: 20px; margin-right: 0;}
 .pagination .current, .pagination-position { font-weight: normal;}
 .pagination .current { color:#ae0010; }
 
-ol.people-list li {
-    list-style-type: none;
-    border-bottom:1px dotted #000;
-    margin: 8px 0;
-    padding-bottom:8px;
-    line-height:18px;
-}
-ol.people-list div { float: left; margin-right: 4px;}
-ol.people-list div.clear { float: none; }
-ol.people-list .name { font-weight: bold; width:240px;}
-ol.people-list .role { width: 200px; }
-ol.people-list .place { width: 90px; }
-ol.people-list .phone { width: 110px; margin-right: 0;}
+
 
 /******************************** Forms ***************************************/
 fieldset { border-left: 1px solid #000; margin: 20px 0 20px 160px; position: relative; padding-left: 4px;}
@@ -915,7 +903,23 @@ html>body legend {left: -160px;}
 .infoscience_links {padding-top: 8px; font-size: 11px; letter-spacing: 1px;font-family: Georgia, serif; font-style: italic;  clear: left;}
 .infoscience_links a {background-position: 0 12px; padding-bottom: 1px; }/*as soon as dashes have been removed... margin-right: 20px;}*/
 
+
 /*********************************** Trombinoscope *************************************/
+ol.people-list li {
+    list-style-type: none;
+    border-bottom:1px dotted #000;
+    margin: 8px 0;
+    padding-bottom:8px;
+    line-height:18px;
+}
+
+ol.people-list div { float: left; margin-right: 4px;}
+ol.people-list div.clear { float: none; }
+ol.people-list .name { font-weight: bold; width:210px;}
+ol.people-list .role { width: 180px; }
+ol.people-list .place { width: 90px; }
+ol.people-list .phone { width: 110px; margin-right: 0;}
+
 ul.bottin {
     list-style-type:outline;
     padding:0px;
@@ -925,11 +929,11 @@ ul.bottin {
 ul.bottin li {
     list-style:none;
     padding:0px;
-    margin:0px;
+    margin:0px 3px 0px 0px;
     line-height:18px;
     float:left;
     width:160px;
-    height:285px;
+    height:290px;
 }
 
 ul.bottin div.picture {
@@ -939,8 +943,8 @@ ul.bottin div.picture {
 }
 
 ul.bottin div.picture img {
-    width:140px;
     height:140px;
+    /*max-height:140px;*/
     margin:0px 0px 7px 0px;
 }
 
@@ -953,16 +957,19 @@ ul.bottin div.name {
     font-weight:bold;
 }
 
-ul.bottin div.more {
+ul.bottin div.function {
     clear:both;
 }
 
 ul.bottin table.contact {
     margin-top:5px;
+    border-collapse:collapse;
 }
 
 ul.bottin table.contact td {
-    padding:0px 10px 0px 0px;
+    padding:0px;
+    margin:0px;
+    vertical-align:top;
 }
 
 
