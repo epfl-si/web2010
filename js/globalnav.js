@@ -96,11 +96,9 @@ jQuery(document).ready(function(){
     jQuery('img[align]').each(function(){ jQuery(this).addClass(jQuery(this).attr('align')); });
     
     /* add arrows when news texts are too long */
-    function isTotallyVisible(element) {
-      var parentHeight = element.offsetParent().innerHeight();
-      var elementHeight = element.innerHeight();
-      return element.position().top + elementHeight < parentHeight;
-  	};
+    function isTotallyVisible(parent, element) {
+	return element.position().top + element.outerHeight() + 2 < parent.position().top + parent.innerHeight();
+    };
 
     function removeLastWord(element) {
       var text = element.html();
@@ -109,14 +107,15 @@ jQuery(document).ready(function(){
       return i != -1;
     };
 
-    var textSpans = jQuery(".news-text p .heading");
-    var readMoreLinks = jQuery(".news-text p .read-more");
-    if(textSpans.length == readMoreLinks.length)
-        textSpans.each(function(i, textSpan) {
-	    var readMoreLink = jQuery(readMoreLinks[i]);
-            while(!isTotallyVisible(readMoreLink) && removeLastWord(jQuery(textSpan)));
-        });
-   
+    var newsDivs = jQuery("div.news-text");
+    newsDivs.each(function(i, news) {
+	news = jQuery(news);
+	var newsText = news.find("p span.heading");
+	var newsLink = news.find("p span.read-more");
+	if(newsText.length && newsLink.length)
+		while(!isTotallyVisible(news, newsLink) && removeLastWord(newsText));
+    });
+
     /* Google Analytics */
     jQuery.jGoogleAnalytics('UA-4833294-1', {topLevelDomain: '.epfl.ch'} );
     
