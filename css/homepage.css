@@ -49,3 +49,16 @@
 ul.list-layout { padding-top: 0; border-top: none; }
 
 #form_sondage p { margin-bottom : 2px; }
+
+
+/* cattani for J. Grosse */
+#form_sondage .footer input[type="submit"] {
+background:none repeat-x scroll 0 50% #696F6E;
+border:1px solid #24282A;
+color:#FFFFFF;
+display:block;
+font-size:90%;
+font-weight:normal;
+height:18px;
+padding:0 9px;
+}
