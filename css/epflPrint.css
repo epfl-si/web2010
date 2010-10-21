@@ -1,0 +1,103 @@
+/* ************************* Page Formating ********************************* */
+@page :left { margin-left:1.5cm; margin-right:2cm  }
+@page :right { margin-left:2cm; margin-right:1.5cm  }
+
+* { overflow: visible !important; }
+
+
+/* ************************* Hide elements ********************************** */
+
+/* Header */
+#accessibility, #nav-menus, #nav-search, #languages, #main-navigation, #tools {
+    display:none;
+}
+
+/* Right Navigation Menu */
+div.right-col ul.tree {
+    display:none;
+}
+
+
+
+/* ************************* Change Styles ************************************ */
+
+#header, #main-content, #footer {
+    width:100%;
+    padding-left:0px;
+}
+
+#nav-logo {
+    width:100%;
+}
+
+#content {
+    float:none;
+    width:100%;
+    border-top-style:none;
+    margin-bottom:2cm;
+}
+
+.box.two-cols div.box-left-col, .box .two-cols div.box-left-col, .box.two-cols div.box-right-col, .box .two-cols div.box-right-col, .box.two-cols li {
+    width:48%;
+}
+
+.local-color {
+    background-color:white;
+    color:#454545;
+}
+
+.right-col {
+    width:100%;
+}
+
+.right-col .box, .right-col .local-color {
+    width:48%;
+    float:left;
+    margin-right:7px;
+    margin-bottom:0px;
+    min-height:200px;
+    color:black;
+    background-color:white;
+    padding:0px;
+}
+
+.local-color h3, .right-col h3 {
+    font-family: Impact, "Arial Black","DejaVu Sans", Arial, Helvetica , sans-serif !important;
+    font-weight: normal; font-size:22px !important; letter-spacing:0.1em; line-height:26px;
+    color: #000 !important;
+    text-transform: uppercase;
+    padding: 1px 0 4px;
+    border-bottom:1px solid #000 !important;
+    margin: 0 0 10px 0;
+}
+
+#breadcrumbs {
+    font-size:7pt;
+}
+
+#footer li {
+    display: none;
+}
+
+#footer li.copyright {
+    display:block;
+    font-size:7pt;
+}
+
+body, table {
+    font-size:9pt;
+    line-height:15pt;
+}
+
+h1 {
+    font-size:16pt;
+}
+
+h2 {
+    font-size:15pt;
+    line-height:22pt;
+}
+
+p, .content p, ol, .content ol, ul, .content ul, dd, .content dd {
+    margin-right:0px;
+}

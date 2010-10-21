@@ -14,8 +14,8 @@ h1{ font-family: Impact, "Arial Black","DejaVu Sans", Arial, Helvetica , sans-se
     color: #000;
     line-height: 32px;
     letter-spacing:.08em;
-    margin-top:29px;
-    margin-bottom: 6px;
+    padding-top:29px;
+    padding-bottom: 6px;
     text-transform:uppercase;
 }
 h2 {
@@ -25,7 +25,7 @@ h2 {
     color: #000;
     letter-spacing: 0;
     line-height: 38px;
-    margin-bottom: 6px;
+    padding-bottom: 6px;
  }
 h3 {
     font-family: "Arial Black", Arial, Helvetica, sans-serif;
@@ -33,9 +33,9 @@ h3 {
     color: #000;
     font-size:18px;
     letter-spacing:1px;
-	  line-height:22px;
+	line-height:22px;
     padding-bottom:0px;
-	  margin-bottom:0px;
+	margin-bottom:0px;
 }
 .content h3 {
 margin: 20px 35px 4px 0px; /* New */
@@ -186,7 +186,7 @@ table.table-cours th {padding: 0 2px 0px 2px;}
 }
 .heading a{ background-position: 0 14px; }
 
-.clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0;}
+.clear {clear:both; display:block; visibility:hidden; width:0; height:0;}
 
 .button { float: left; margin-right: 20px; cursor: pointer;}
 .diet_icon {float: left; background: url(../img/icons.png) no-repeat; margin-top:2px; height: 17px; width: 9px; margin-right: 0px; border: none;}
@@ -946,6 +946,12 @@ ul.bottin div.picture img {
     height:140px;
     /*max-height:140px;*/
     margin:0px 0px 7px 0px;
+}
+
+ul.bottin div.picture a {
+    background-image:none;
+    border-style:none;
+    border-width:0px;
 }
 
 ul.bottin div.button {
