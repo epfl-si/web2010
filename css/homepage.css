@@ -48,8 +48,22 @@
 
 ul.list-layout { padding-top: 0; border-top: none; }
 
-#form_sondage p { margin-bottom : 2px; }
+/* corrections 26.10.10 */
+#form_sondage p { margin-bottom : 6px; margin-top:0;}
+#form_sondage form p { margin-bottom: 0px;}
 
+#form_sondage input {margin: 0; }
+#form_sondage label {line-height:16px;}
+.unit-col h3 {
+    font-size: 13px; line-height:14px;
+    letter-spacing: 0;
+    padding-bottom: 4px;
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bold;
+}
+#form_sondage .footer { margin-top: 5px;}
+.unit-cell ul { margin-top: 3px; }
+.unit-3-cells ul { margin-top: 3px; padding-top: 0;}
 
 /* cattani for J. Grosse */
 #form_sondage .footer input[type="submit"] {
@@ -62,3 +76,4 @@ font-weight:normal;
 height:18px;
 padding:0 9px;
 }
+
