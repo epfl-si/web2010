@@ -845,11 +845,21 @@ ol.search-results li{
 .search-results cite {color:#999c98;}
 p.results-count{border-top: 1px solid #000; margin-top: 20px; margin-right: 0;}
 
-.pagination ul {float: left;}
+
+.pagination {
+    font-family: Georgia, serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 11px;
+    font-weight: normal;}
+.pagination ul {float: left; padding: 0; margin: 9px 0 0 0;}
+
 .pagination p {float: right;}
-.pagination li {display: inline; margin-right: 20px; background: none; padding: 0;}
-.pagination .current, .pagination-position { font-weight: normal;}
-.pagination .current { color:#ae0010; }
+.pagination li {display: inline; margin: 0 8px 0 0; background: none; padding: 0 0 10px 0;}
+.pagination a {background-position: 0 11px; padding-bottom: 2px;}
+
+/*.pagination .current, .pagination-position { font-weight: normal;}*/
+.pagination .current { background-color: #000; color:#fff; padding: 0 6px 2px 6px; font-weight: bold;}
 
 
 

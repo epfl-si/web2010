@@ -19,7 +19,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {color:#0
 
 .search-results a {color:#007ba5; }
 .search-results cite {color:#003047;}
-.pagination .current {color:#007ba5;}
 
 .print .icon {background-position: 0 -360px; }
 .print:hover .icon {background-position: 0 -336px;}
