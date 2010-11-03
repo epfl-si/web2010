@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Page non trouvée</title>
+    <link href="http://www.epfl.ch/css/epfl.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.epfl.ch/css/404.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
+    <script type="text/javascript">jQuery.noConflict();</script> 
+    <script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script> 
+  </head>
+  <body>
+    <a name="top"></a>
+    <div id="accessibility" class="hidden" title="École Polytechnique Fédérale de Lausanne - Accès rapide">
+      <ul>
+        <li><a href="http://www.epfl.ch/accessibility.fr.shtml" title="Accès spécifique pour personnes handicapées" accesskey="0">Accessibilité</a></li>
+        <li><a href="http://www.epfl.ch/" title="Page d'accueil de l'EPFL"  accesskey="1">Accueil</a></li>
+        <li><a href="#search" id="searchlink" accesskey="4">Accès au champ de recherche</a></li>
+        <li><a href="mailto:webmaster@epfl.ch" accesskey="9">Contact technique</a></li>
+      </ul>
+    </div>
+  
+    <div id="main-content">
+      <ul class="middle">
+        <li class="top404"></li>
+        <li class="left404"></li>
+        <li class="search404">
+          <div class="local-color" id="nav-search">
+            <div id="search-box">
+              <a name="search" id="search"></a>
+                <form name="search" action="http://search.epfl.ch/process_web2010" id="searchform">
+                <input class="hidden" type="radio" name="engine" id="search-engine-person" value="person" checked="checked" title="Chercher une personne" />
+                <label for="search-engine-person" class="current" title="Chercher une personne">Personne</label>
+                <input class="hidden" type="radio" name="engine" id="search-engine-place" value="place" title="Chercher un lieu"/>
+                <label for="search-engine-place" title="Chercher un lieu">Lieu</label>
+                <input class="hidden" type="radio" name="engine" id="search-engine-epfl" value="epfl" title="Chercher dans toute l'EPFL"/>
+                <label for="search-engine-epfl" title="Chercher dans toute l'EPFL">Web <acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></label>
+                <input class="hidden" type="radio" name="engine" id="search-engine-local" value="local"  title="Chercher dans ce site"/>
+                <label for="search-engine-local" title="Chercher dans ce site">Sur ce site</label>
+                <input type="hidden" name="lang" value="fr" />
+                <input type="text" class="search" name="q" value="" id="searchfield" /><button type="submit" class="search-button"  title="Rechercher">Rechercher</button>
+              </form>
+            </div>
+          </div> 
+          <div class="clear"></div>
+        </li>
+        <li class="right-link404"></li>
+        <li class="right404"></li>
+        <li class="center404"></li>
+        <li class="bottom404"></li>
+      </ul>
+      <div class="clear"></div>
+    
+      <div id="footer" class="space404">
+        <ul>
+          <li>En cas de problème veuillez <a href="mailto:webmaster@epfl.ch">contacter webmaster@epfl.ch</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
