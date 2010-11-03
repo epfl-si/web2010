@@ -1,0 +1,15 @@
+
+# Contact info submission
+
+url: epfl.ch/
+site_owner: Ecole Polytechnique Federale de Lausanne
+address1: Pierre Mellier, DIT-KIS, CP 121
+address2: 
+city: CH-1015 Lausanne
+state: 
+country: SWITZERLAND
+postal_code: 
+phone_number: 
+display_email: pierre.mellier@epfl.ch
+site_name: Swiss Federal Institute of Technology, Lausanne (EPFL)
+site_description: Official site. News and events, information about administration, campus life, courses, and research.
