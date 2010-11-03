@@ -115,7 +115,8 @@ jQuery(document).ready(function(){
 	if(newsText.length && newsLink.length)
 		while(!isTotallyVisible(news, newsLink) && removeLastWord(newsText));
     });
-
+    jQuery("img[rel]").overlay();
+    
     /* Google Analytics */
     jQuery.jGoogleAnalytics('UA-4833294-1', {topLevelDomain: '.epfl.ch'} );
     
