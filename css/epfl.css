@@ -516,6 +516,29 @@ table.table-cours th {padding: 0 2px 0px 2px;}
 .toggler:hover a{background-image: url(../img/underline-hover.png);}
 .toggled-active {background-position: -55px;}
 
+.modal-window {
+    /* must be initially hidden */
+	display:none;
+	
+	/* place overlay on top of other elements */
+	z-index:10000;
+	border:1px solid #666;
+	background-color: #fff;
+	padding: 4px;
+	min-height: 20px;
+}
+
+/* close button positioned on upper right corner */
+.modal-window .close {
+	position:absolute;
+	right:-15px;
+	top:-15px;
+	cursor:pointer;
+	height:35px;
+	width:35px;
+	background: url(../img/close.png) 0 0;
+
+}
 
 /******************************** Navigation **********************************/
 .navigation-bar {
