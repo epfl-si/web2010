@@ -99,7 +99,15 @@ jQuery(document).ready(function(){
     function isTotallyVisible(parent, element) {
 	return element.position().top + element.outerHeight() + 2 < parent.position().top + parent.innerHeight();
     };
-
+    
+    /* Jahia specific */
+    jQuery("ul").each(function(){ 
+        var elem = jQuery(this);
+        if(elem.children().length==0){
+            elem.remove();
+        }
+    });
+    
     function removeLastWord(element) {
       var text = element.html();
       var i = text.lastIndexOf(' ');
