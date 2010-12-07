@@ -69,7 +69,7 @@ blockquote img {
     float: left;
 }
 blockquote p {
-    font-family: Georgia, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
     font-style:italic;
     font-weight:bold;
@@ -90,7 +90,7 @@ dl dt { position: relative; left: 0; top: 16px; width: 160px;
 dl dd { border-left: 1px solid #000; margin-left: 160px; padding-left: 4px; margin-right:35px;}
 
 object { z-index: 0; }
-cite { font-family: Georgia, serif; font-style: italic; letter-spacing: 1px; font-size: 11px;}
+cite { font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; letter-spacing: 1px; font-size: 11px;}
 
 sup, sub { font-size: 11px; }
 acronym, abbr {color:#ae0010;}
@@ -193,7 +193,7 @@ table.table-cours th {padding: 0 2px 0px 2px;}
 .little_icon {float: left; background: url(../img/icons.png) no-repeat; margin-top:2px; height: 17px; width: 17px; margin-right: 0px; border: none;}
 .large_icon {float: left; background: url(../img/icons.png) no-repeat;  height: 17px; width: 22px; margin-right: 0px; border: none;}
 .icon {float: left; background: url(../img/icons.png) no-repeat; height: 24px; width: 24px; margin-right: 4px; border: none; cursor: pointer;}
-.label {font-family: Georgia, serif; font-size: 11px; letter-spacing: 1px; font-style: italic; background: url(../img/underline.gif) repeat-x 0 14px; cursor: pointer;}
+.label {font-family: Georgia, 'Times New Roman', Times, serif; font-size: 11px; letter-spacing: 1px; font-style: italic; background: url(../img/underline.gif) repeat-x 0 14px; cursor: pointer;}
 .button .label {display: block; float: left; margin-top: 3px; }
 .button:hover .label { background-image: url(../img/underline-hover.png); }
 
@@ -383,7 +383,7 @@ table.table-cours th {padding: 0 2px 0px 2px;}
 
 #breadcrumbs, #languages{
     padding: 2px 0 0 0;
-    font-family: Georgia, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     letter-spacing: 1px;
     font-size: 11px;
@@ -746,7 +746,7 @@ img.right { margin-left:25px; }
 .news-text .read-more { background: url(../img/arrow-more.png) no-repeat 0 4px; width: 12px; height: 12px; margin-left: 4px; display: inline-block; }
 
 .news-text span.date {
-    font-family:  Georgia, serif; font-size: 12px; font-style: italic; font-weight: bold;
+    font-family:  Georgia, 'Times New Roman', Times, serif; font-size: 12px; font-style: italic; font-weight: bold;
     color: #000; padding-right: 4px; }
 .news-text p { margin: 0; float: left;}
 .news-text p img{ margin: 0; vertical-align: top;}
@@ -862,7 +862,7 @@ ol.search-results li{
     margin: 0; padding: 0; border:none;}
 .search-results a { background-position: 0 14px; font-weight: bold; letter-spacing: 0;}
 .search-results p { margin:0; line-height: 18px;}
-.search-results .date {font-family: georgia; font-style: italic; font-weight: normal; color: #999C98; color: #454545; letter-spacing:1px;}
+.search-results .date {font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; font-weight: normal; color: #999C98; color: #454545; letter-spacing:1px;}
 .search-results .date a {background-position: 0 14px; font-weight: normal;}
 .search-results .highlight {padding: 0 4px; background-color:#000; color: #fff;}
 .search-results cite {color:#999c98;}
@@ -870,7 +870,7 @@ p.results-count{border-top: 1px solid #000; margin-top: 20px; margin-right: 0;}
 
 
 .pagination {
-    font-family: Georgia, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     letter-spacing: 1px;
     font-size: 11px;
@@ -933,7 +933,7 @@ html>body legend {left: -160px;}
 
 .infoscience_record_bulleted .infoscience_data { margin-left: 4em; }
 .infoscience_abstract { padding-top: 8px;}
-.infoscience_links {padding-top: 8px; font-size: 11px; letter-spacing: 1px;font-family: Georgia, serif; font-style: italic;  clear: left;}
+.infoscience_links {padding-top: 8px; font-size: 11px; letter-spacing: 1px;font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic;  clear: left;}
 .infoscience_links a {background-position: 0 12px; padding-bottom: 1px; }/*as soon as dashes have been removed... margin-right: 20px;}*/
 
 
@@ -1018,7 +1018,7 @@ ul.bottin table.contact td {
     width: 980px;
     margin: 0 auto 0 auto;
     border-bottom: 1px solid #000;
-    font-family: Georgia, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 11px;
     letter-spacing: 1px;
