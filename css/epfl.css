@@ -187,6 +187,7 @@ table.table-cours th {padding: 0 2px 0px 2px;}
 .heading a{ background-position: 0 14px; }
 
 .clear {clear:both; display:block; visibility:hidden; width:0; height:0;}
+.noSpacing, .content .noSpacing {padding:0px; margin:0px;}
 
 .button { float: left; margin-right: 20px; cursor: pointer;}
 .diet_icon {float: left; background: url(../img/icons.png) no-repeat; margin-top:2px; height: 17px; width: 9px; margin-right: 0px; border: none;}
@@ -623,7 +624,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .content ol li, .content ul li ol li,  .content ol li ol li {
     list-style-position:outside;
     list-style-image:none;
-    margin:0px 0px 3px 19px;
+    margin:0px 0px 3px 25px;
     *margin-left:23px; /* IE Hack */
     padding:0px;
     line-height:18px;
