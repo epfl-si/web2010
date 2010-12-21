@@ -951,63 +951,27 @@ ol.people-list .role { width: 180px; }
 ol.people-list .place { width: 90px; }
 ol.people-list .phone { width: 110px; margin-right: 0;}
 
-ul.bottin {
-    list-style-type:outline;
-    padding:0px;
-    margin:0px;
-}
-
-ul.bottin li {
+ul.bottin { list-style-type:outline;  padding:0; margin:0; }
+ul.bottin li { 
     list-style:none;
-    padding:0px;
-    margin:0px 3px 0px 0px;
-    line-height:18px;
-    float:left;
+    padding:0; margin:0 3px 0 0;
+    line-height:18px; float:left;
     width:160px;
     height:290px;
 }
 
 ul.bottin div.picture {
-    margin:0px 0px 0px 0px;
+    margin:0; height:140px;
     overflow:hidden;
     text-align:left;
 }
-
-ul.bottin div.picture img {
-    height:140px;
-    /*max-height:140px;*/
-    margin:0px 0px 7px 0px;
-}
-
-ul.bottin div.picture a {
-    background-image:none;
-    border-style:none;
-    border-width:0px;
-}
-
-ul.bottin div.button {
-    width: 23px; margin-right: 5px;
-}
-
-ul.bottin div.name {
-    padding-top:2px;
-    font-weight:bold;
-}
-
-ul.bottin div.function {
-    clear:both;
-}
-
-ul.bottin table.contact {
-    margin-top:5px;
-    border-collapse:collapse;
-}
-
-ul.bottin table.contact td {
-    padding:0px;
-    margin:0px;
-    vertical-align:top;
-}
+ul.bottin div.picture img {height:140px;margin:0 0 7px 0; border: none }
+ul.bottin div.picture a { background-image:none; }
+ul.bottin div.button {width: 23px; margin-right: 5px; }
+ul.bottin div.name { padding-top:2px; font-weight:bold;}
+ul.bottin div.function { clear:both; }
+ul.bottin table.contact { margin-top:5px; border-collapse:collapse; }
+ul.bottin table.contact td { padding:0; margin:0; vertical-align:top; }
 
 
 /*********************************** Footer ***********************************/
