@@ -402,22 +402,19 @@ table.table-cours th {padding: 0 2px 0px 2px;}
 #breadcrumbs .last a {color:black; font-weight:bold; background: none }
 #breadcrumbs .last {color:black; font-weight:bold;}
 
-#languages {
-    float:right;
-    background:none;
-}
-#languages li {
-    background:none;
-    display:inline;
-    padding:0px 0px 0px 20px;
-}
-#languages .current {
-    font-weight:bold;
-    color:black;
-}
-#languages a {
-    background:none;
-}
+#languages { float:right; background:none; }
+#languages li { background:none; display:inline; padding:0 0 0 20px; }
+#languages .current { font-weight:bold; color:black; }
+#languages a { background:none; }
+
+#social-networks { float:right; margin-right:8px; }
+#social-networks .icon {
+    width:16px; height:16px; 
+    margin: 4px 0 1px 2px;
+    background: url(../img/social-networks.png);}
+#social-networks .facebook {background-position: 0 0;}
+#social-networks .twitter {background-position: 16px 0;}
+#social-networks .youtube {background-position: 32px 0;}
 
 
 /****************************** Interface Elements ****************************/
