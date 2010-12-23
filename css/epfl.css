@@ -34,15 +34,13 @@ h3 {
     font-size:18px;
     letter-spacing:1px;
 	line-height:22px;
-    padding-bottom:0px;
-	margin-bottom:0px;
+    padding-bottom:0;
+	margin-bottom:0;
 }
-.content h3 {
-margin: 20px 35px 4px 0px; /* New */
-}
+.content h3 { margin: 20px 35px 4px 0;}
 h4 { color: #000; font-family: Arial, Helvetica, sans-serif;
-     font-weight: bold; font-size: 15px; margin-bottom: 0px;
-     line-height: 19px; padding-bottom:0px;}
+     font-weight: bold; font-size: 15px; margin-bottom: 0;
+     line-height: 19px; padding-bottom:0;}
 .content h4 { margin-top:15px; }
 h5 { color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 13px; margin-top: 5px;}
 h6 { color: #000; font-weight: bold;}
@@ -97,17 +95,12 @@ acronym, abbr {color:#ae0010;}
 
 /* Standard format for tables */
 
-.content table {
-    width:100%;
-    border-collapse:collapse;
-}
-
+.content table { width:100%; border-collapse:collapse; }
 .content table td {
     vertical-align:top;
     line-height:18px;
     padding:1px 3px 1px 3px;
 }
-
 .content table th {
     font-weight:bold;
     color:black;
@@ -125,8 +118,8 @@ acronym, abbr {color:#ae0010;}
     margin-top:8px;
 }
 
-table.table-cours td {padding: 0 2px 0px 2px;}
-table.table-cours th {padding: 0 2px 0px 2px;}
+table.table-cours td {padding: 0 2px 0 2px;}
+table.table-cours th {padding: 0 2px 0 2px;}
 
 /* Proposition one */
 .content .table { border-collapse: collapse; border-spacing: 0; margin-bottom:20px; margin-top:10px; width: 100%;}
@@ -134,13 +127,15 @@ table.table-cours th {padding: 0 2px 0px 2px;}
     padding: 4px 4px 4px 0; color: #000; font-family: Arial, Helvetica, sans-serif;
     font-weight: bold; font-size: 13px; line-height: 14px; text-align: left;
     border-bottom: 1px solid #000;}
-.content .table td { padding: 4px 4px 7px 0; vertical-align: top;
-            background: url(../img/underline.gif) repeat-x 0 bottom;
-            line-height: 14px}
+.content .table td { 
+    padding: 4px 4px 7px 0; vertical-align: top;
+    background: url(../img/underline.gif) repeat-x 0 bottom;
+    line-height: 14px;
+}
 
 /* Proposition two */
 .content .table2 {
-    margin:0px;
+    margin: 0;
     border-collapse:collapse;
     width:100%;
 }
@@ -187,12 +182,12 @@ table.table-cours th {padding: 0 2px 0px 2px;}
 .heading a{ background-position: 0 14px; }
 
 .clear {clear:both; display:block; visibility:hidden; width:0; height:0;}
-.noSpacing, .content .noSpacing {padding:0px; margin:0px;}
+.noSpacing, .content .noSpacing {padding:0; margin:0;}
 
 .button { float: left; margin-right: 20px; cursor: pointer;}
-.diet_icon {float: left; background: url(../img/icons.png) no-repeat; margin-top:2px; height: 17px; width: 9px; margin-right: 0px; border: none;}
-.little_icon {float: left; background: url(../img/icons.png) no-repeat; margin-top:2px; height: 17px; width: 17px; margin-right: 0px; border: none;}
-.large_icon {float: left; background: url(../img/icons.png) no-repeat;  height: 17px; width: 22px; margin-right: 0px; border: none;}
+.diet_icon {float: left; background: url(../img/icons.png) no-repeat; margin-top:2px; height: 17px; width: 9px; margin-right: 0; border: none;}
+.little_icon {float: left; background: url(../img/icons.png) no-repeat; margin-top:2px; height: 17px; width: 17px; margin-right: 0; border: none;}
+.large_icon {float: left; background: url(../img/icons.png) no-repeat;  height: 17px; width: 22px; margin-right: 0; border: none;}
 .icon {float: left; background: url(../img/icons.png) no-repeat; height: 24px; width: 24px; margin-right: 4px; border: none; cursor: pointer;}
 .label {font-family: Georgia, 'Times New Roman', Times, serif; font-size: 11px; letter-spacing: 1px; font-style: italic; background: url(../img/underline.gif) repeat-x 0 14px; cursor: pointer;}
 .button .label {display: block; float: left; margin-top: 3px; }
@@ -286,26 +281,17 @@ table.table-cours th {padding: 0 2px 0px 2px;}
 #brief-menu-link { font-weight: normal}
 #nav-search {
     float: left;
-    height: 74px;
-    width: 324px;
-    margin: 0;
+    height: 74px; width: 324px; margin: 0;
     position: relative;
 }
-#search-box {
-    margin: 0 8px;
-    padding: 0;
-    position: absolute;
-    bottom: 8px;
-}
+#search-box { margin: 0 8px; padding: 0; position: absolute; bottom: 8px; }
 #search-box acronym { color: #fff; }
 #searchform label{
     display: block;
     float: left;
-    width:77px;
-    height:28px;
+    width:77px; height:28px;
     padding-top: 3px;
-    margin-right: 0;
-    margin-bottom: 5px;
+    margin-right: 0; margin-bottom: 5px;
     overflow:hidden;
     text-align:center;
     text-decoration: none;
@@ -330,8 +316,7 @@ table.table-cours th {padding: 0 2px 0px 2px;}
 }
 #searchform button{
     background: url(../img/search.png) no-repeat top left;
-    width: 22px;
-    height: 22px;
+    width: 22px; height: 22px;
     cursor: pointer;
     border: none;
     vertical-align: bottom;
@@ -460,7 +445,7 @@ table.table-cours th {padding: 0 2px 0px 2px;}
 .tree li.hover { background-color: #7e000c; }
 .tree li.current.hover { background-color:#000; color: #fff; }
 .tree a { background: none; display: block; clear: right;
-          margin: 0 0 0 20px; padding: 1px 0 0px 0;
+          margin: 0 0 0 20px; padding: 1px 0 0 0;
           position: relative; width: 298px; }
 .tree a:hover {background: none;} /*MSIE 6*/
 .tree li a{left: 0;}
@@ -593,7 +578,8 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .content{
     float: left; width: 652px; overflow: hidden;
 	margin-right:4px; margin-bottom: 20px;
-	border-top: 1px solid #000; padding-top: 0px;
+	border-top: 1px solid #000; padding-top: 0;
+	min-height: 400px;
 }
 .right-col{ width: 324px; float:left; padding: 0;}
 .right-col .box {margin-right: 0; }
@@ -602,16 +588,16 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .content p { margin-right: 35px;}
 .content blockquote p{margin-right: 35px;}
 
-.content ol, .content ul { margin: 5px 35px 0px 0px; display:block;}
+.content ol, .content ul { margin: 5px 35px 0 0; display:block;}
 
 .content li ol, .content li ul {
-    margin: 5px 0px 0px 0px;
+    margin: 5px 0 0 0;
     display:block;
 }
 
 .content li, .content li li, .content ol li ul li {
     list-style-image: url(../img/dot.png);
-    margin:0px 0px 1px 15px;
+    margin:0 0 1px 15px;
     *margin-left:17px; /* IE Hack */
     padding-left:3px;
     *padding-left:5px; /* IE Hack */
@@ -621,9 +607,9 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 .content ol li, .content ul li ol li,  .content ol li ol li {
     list-style-position:outside;
     list-style-image:none;
-    margin:0px 0px 3px 25px;
+    margin:0 0 3px 25px;
     *margin-left:23px; /* IE Hack */
-    padding:0px;
+    padding:0;
     line-height:18px;
 }
 
@@ -677,13 +663,13 @@ img.right { margin-left:25px; }
 .two-cols li {
     float:left;
     width:140px;
-    padding:0px 0px 0px 1px;
+    padding:0 0 0 1px;
     /* IE Hack to display bullets */
-    *margin-left:0px;
+    *margin-left:0;
     *padding-left:15px;
     *background-image:url(../img/dot.png);
     *background-repeat:no-repeat;
-    *background-position:0px 7px;
+    *background-position:0 7px;
 }
 
 /* For the right box link list */
@@ -750,9 +736,9 @@ img.right { margin-left:25px; }
 .news-text p img{ margin: 0; vertical-align: top;}
 .news-text .heading { font-size: 12px; font-weight: normal; }
 
-ol.all_actu h4, ul.all_actu h4 { margin-top:0px; padding-top:0px;}
+ol.all_actu h4, ul.all_actu h4 { margin-top:0; padding-top:0;}
 
-.content .all_actu li { padding:0px; margin:0px;}
+.content .all_actu li { padding:0; margin:0;}
 
 ul.news-list { float: left; width: 652px; margin: 0 0 40px 0; padding: 0;}
 .news-list li { margin: 0 4px 4px 0; padding: 0; list-style-image:none; list-style-type:none;}
@@ -794,13 +780,13 @@ ul.text-layout { overflow: hidden; width: 656px;}
 
 /* Correction for IE6&7 but not standard conform...*/
 .simple-layout li h2 {
-  top:0px;
+  top:0;
   position:relative;
   _top:-20px;
   *top:-20px;
 }
 .simple-layout .news-text p {
-  top:0px;
+  top:0;
   position:relative;
   _top:-20px;
   *top:-20px;
@@ -823,7 +809,7 @@ ul.home-list-layout { overflow:hidden; width:656px; padding-top:4px;}
     font-family: "Arial black", Arial, Helvetica, sans-serif;
     letter-spacing: 1px; font-size: 18px; line-height: 20px;
     padding-bottom: 4px; margin:0;}
-.single-news .news-img{ float: left; width: 324px; height: 184px; margin-bottom: 2px; padding: 0; margin-top:0px;}
+.single-news .news-img{ float: left; width: 324px; height: 184px; margin-bottom: 2px; padding: 0; margin-top:0;}
 
 .category-fr{ background-image: url(../img/news-categories-fr.png);
               background-repeat: no-repeat;
@@ -961,18 +947,18 @@ ul.bottin li {
 }
 
 ul.bottin div.picture {
-    margin:0; height:140px;
+    margin:0 0 4px 0; height:140px;
     overflow:hidden;
     text-align:left;
 }
-ul.bottin div.picture img {height:140px;margin:0 0 7px 0; border: none }
+ul.bottin div.picture img { height:140px; margin:0 0 7px 0; border: none }
 ul.bottin div.picture a { background-image:none; }
 ul.bottin div.button {width: 23px; margin-right: 5px; }
 ul.bottin div.name { padding-top:2px; font-weight:bold;}
 ul.bottin div.function { clear:both; }
 ul.bottin table.contact { margin-top:5px; border-collapse:collapse; }
 ul.bottin table.contact td { padding:0; margin:0; vertical-align:top; }
-
+ul.bottin .photo_box {padding: 0 10px 0 0; float: left; overflow: hidden; width:125px;}
 
 /*********************************** Footer ***********************************/
 #footer{
@@ -984,7 +970,7 @@ ul.bottin table.contact td { padding:0; margin:0; vertical-align:top; }
     font-style: italic;
     font-size: 11px;
     letter-spacing: 1px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 
 }
 #footer a{ color: #000; background: none; font-weight: normal; }
