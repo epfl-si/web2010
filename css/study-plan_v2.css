@@ -1,5 +1,3 @@
-@charset "utf-8";
-/* CSS Document */ 
 #content .line-up{
 	border-top: 1px solid #000;
 	padding-top:1px;
@@ -9,7 +7,7 @@
 	padding-top:1px;
 	}	
 #content .first-line{
-	background: url(../img/main-navigation.png) repeat ;
+	background: url('../img/main-navigation.png') repeat ;
 	margin-bottom:4px;
 	margin-top:1px;
 	height:38px;
@@ -18,7 +16,6 @@
 #content .line{
 	margin-bottom:3px;
 	margin-top:2px;
-	height:38px;
 	width:100%;
 	}
 #content .langue{
@@ -29,92 +26,88 @@
 	}
 #content .cours-title{
 	width:75px;
-	height:38px;
 	float:left;
 	}
 #content .cours-name{
 	padding-top:3px;
 	width:220px;
-	height:16px;
 	float:left;
 	}
 #content .cours-master{
 	width:193px;
-	height:16px;
 	float:left;
 	font-size:11px;
 	}
 #content .cours-code{
 	width:75px;
-	height:17px;
 	float:left;
 	}
 #content .cours{
-	height:38px;
 	width:220px;
 	float:left;
 	font-size:11px;
 	}
 #content .section{
 	width:60px;
-	height:38px;
 	float:left;
 	}
 #content .section-name{
 	width:60px;
-	height:17px;
 	float:left;
 	}
 #content .enseignement{
 	width:85px;
-	height:38px;
 	float:left;
 	}
 #content .enseignement-master{
 	width:70px;
-	height:38px;
 	float:left;
 	}
 #content .specialisation{
 	width:80px;
-	height:38px;
+	min-height:38px;
 	float:left;
-	}
+}
+#content .specialisation img {
+    margin:4px 0px 4px 0px;
+}
+	
 #content .enseignement-name{
-	height:17px;
 	float:left;
+    line-height:13px;
+    margin-bottom: 2px;
+    width:85px;
 	}
 #content .bachlor{
-	width:66px;
-	height:38px;
+	width:70px;
+	height:100%;
 	border-left:1px solid #FFF;
 	float:left;
 }
 #content .pdm{
 	width:100px;
-	height:38px;
+    height:100%;
 	border-left:1px solid #FFF;
 	float:left;
 }
 #content .bachlor-color{
-	height:38px;
 	float:left;
 }
 #content .examen{
 	width:80px;
-	height:38px;
 	border-left:1px solid #FFF;
 	float:left;
+	font-size:11px;
 	}
 #content .examen-master{
 	width:60px;
-	height:38px;
 	border-left:1px solid #FFF;
 	float:left;
+	font-size:11px;
 	}
 #content .credit{
 	width:66px;
-	height:38px;
+	height:100%;
 	border-left: 1px solid #FFF;
 	float:left;
 	}
@@ -140,31 +133,32 @@
 .cep-master{
 	padding:0 6px;
 	}
-.local-color-down{ background-color: #e2001a; }
 .red-color{ 
 	background-color: #e2001a;
 	color:#FFF;
 	width:68px;
-	height:38px;
 	float:left;
 	padding-left:1px;
 }
 .credit-time{
 	text-align:right;
 	padding-right:10px;
-	padding-bottom:2px;
 	margin-top:18px;
 	font-weight:bold;
 	font-size:11px;
 		}
-.exam-icone{
-	text-align:left;
-	padding-left:2px;
-	padding-bottom:2px;
-	margin-top:18px;
-	font-weight:bold;
-	font-size:11px;
-		}
+
+.exam-icon {
+    width: 18px;
+    margin-left: 3px;
+    min-height: 38px;
+    float:left;
+}
+
+.exam-icon .little_icon {
+    margin-right:2px;
+}
+
 .bachlor-text{
 	text-align:center;
 	padding-bottom:2px;
@@ -175,10 +169,10 @@
 #content .cours-name a {
 	font-size:13px;
 	font-weight:bold;
-	text-decoration: none; color: #000; background: url(../img/underline.gif) repeat-x 0 14px; 
+	text-decoration: none; color: #000; background: url('../img/underline.gif') repeat-x 0 14px;
 	}
 #content .cours-name a:hover { 
-	background-image: url(../img/underline-hover.png); 
+	background-image: url('../img/underline-hover.png');
 	}
 .legende{
 	font-family:"Georgia", Times New Roman, Times, serif;

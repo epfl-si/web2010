@@ -33,9 +33,9 @@ h3 {
     color: #000;
     font-size:18px;
     letter-spacing:1px;
-	line-height:22px;
+    line-height:22px;
     padding-bottom:0;
-	margin-bottom:0;
+    margin-bottom:0;
 }
 .content h3 { margin: 20px 35px 4px 0;}
 h4 { color: #000; font-family: Arial, Helvetica, sans-serif;
@@ -325,19 +325,19 @@ table.table-cours th {padding: 0 2px 0 2px;}
 .navigation-panel {
     position: absolute;
     top: 74px;
-	width: 980px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 60px 8px 0 8px;
-	border: none;
-	background-color: #fff;
-	z-index: 1; /* was 999 */
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 8px 0 8px;
+    border: none;
+    background-color: #fff;
+    z-index: 1; /* was 999 */
 }
 .navigation-panel .group {
-	float: left;
-	width: 160px;
-	margin-right: 4px;
-	padding: 0;
+    float: left;
+    width: 160px;
+    margin-right: 4px;
+    padding: 0;
 }
 
 .navigation-panel ul { list-style: none; padding: 0; margin-bottom: 28px; }
@@ -345,8 +345,8 @@ table.table-cours th {padding: 0 2px 0 2px;}
 .navigation-panel a:hover { text-decoration: underline;}
 .navigation-panel h3 {
     margin:0 0 4px 0; padding:0;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size:13px; line-height:14px; font-weight: bold; letter-spacing:.05em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px; line-height:14px; font-weight: bold; letter-spacing:.05em;
 }
 .navigation-panel .group-2-cols { float: left; width: 324px; margin-right: 4px; }
 .navigation-panel .last { margin: 0; }
@@ -501,36 +501,36 @@ table.table-cours th {padding: 0 2px 0 2px;}
 
 .modal-window {
     /* must be initially hidden */
-	display:none;
-	
-	/* place overlay on top of other elements */
-	z-index:10000;
-	border:1px solid #666;
-	background-color: #fff;
-	padding: 4px;
-	min-height: 20px;
+    display:none;
+    
+    /* place overlay on top of other elements */
+    z-index:10000;
+    border:1px solid #666;
+    background-color: #fff;
+    padding: 4px;
+    min-height: 20px;
 }
 
 /* close button positioned on upper right corner */
 .modal-window .close {
-	position:absolute;
-	right:-15px;
-	top:-15px;
-	cursor:pointer;
-	height:35px;
-	width:35px;
-	background: url(../img/close.png) 0 0;
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+    background: url(../img/close.png) 0 0;
 
 }
 
 /******************************** Navigation **********************************/
 .navigation-bar {
-	width: 980px;
-	margin-bottom: 5px;
+    width: 980px;
+    margin-bottom: 5px;
     font-family: Arial,Helvetica,sans-serif;
     font-size: 13px;
-	color: #fff;
-	font-weight: bold;
+    color: #fff;
+    font-weight: bold;
 }
 .navigation-bar .group { float: left; margin: 0 24px 0 8px;}
 
@@ -577,9 +577,9 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 
 .content{
     float: left; width: 652px; overflow: hidden;
-	margin-right:4px; margin-bottom: 20px;
-	border-top: 1px solid #000; padding-top: 0;
-	min-height: 400px;
+    margin-right:4px; margin-bottom: 20px;
+    border-top: 1px solid #000; padding-top: 0;
+    min-height: 400px;
 }
 .right-col{ width: 324px; float:left; padding: 0;}
 .right-col .box {margin-right: 0; }
@@ -892,9 +892,9 @@ html>body legend {left: -160px;}
     color: #000;
     font-size:18px;
     letter-spacing:1px;
-	line-height:22px;
-	margin-bottom: 8px;
-	margin-top: 15px;
+    line-height:22px;
+    margin-bottom: 8px;
+    margin-top: 15px;
 }
 .infoscience_header2 { color: #000; font-family: Arial, Helvetica, sans-serif;
      font-weight: bold; font-size: 13px; margin-bottom: 8px; margin-top: 1px;
@@ -959,6 +959,74 @@ ul.bottin div.function { clear:both; }
 ul.bottin table.contact { margin-top:5px; border-collapse:collapse; }
 ul.bottin table.contact td { padding:0; margin:0; vertical-align:top; }
 ul.bottin .photo_box {padding: 0 10px 0 0; float: left; overflow: hidden; width:125px;}
+
+
+/********************************* Study plan *********************************/
+#content .line-up{ border-top: 1px solid #000; padding-top:1px; }
+#content .line-down{ border-bottom: 1px dotted #000; padding-top:1px;}
+#content .first-line{
+    background: url('../img/main-navigation.png') repeat ;
+    margin-bottom:4px; margin-top:1px;
+    height:38px; width:100%;
+}
+#content .line{ margin-bottom: 3px; margin-top:2px; width:100%; }
+#content .langue{ width:15px; height:38px; display:block; float:left;}
+#content .cours-title{ width:75px; float:left;}
+#content .cours-name{ padding-top:3px; width:220px;float:left;}
+#content .cours-master{ width:193px;float:left;font-size:11px;}
+#content .cours-code{ width:75px;float:left;}
+#content .cours{ width:220px; float:left; font-size:11px;}
+#content .section{ width:60px; float:left;}
+#content .section-name{ width:60px; float:left; }
+#content .enseignement{ width:85px; float:left;}
+#content .enseignement-master{ width:70px; float:left;}
+#content .specialisation{ width:80px; min-height:38px; float:left; }
+#content .specialisation img { margin:4px 0 4px 0; }    
+#content .enseignement-name{ float:left;line-height:13px; margin-bottom:2px; width:85px;}
+#content .bachlor{ width:70px; height:100%; border-left:1px solid #fff; float:left;}
+#content .pdm{ width:100px; height:100%; border-left:1px solid #fff; float:left;}
+#content .bachlor-color{ float:left;}
+#content .examen{ width:80px; border-left:1px solid #fff; float:left; font-size:11px;}
+#content .examen-master{ width:60px; border-left:1px solid #fff; float:left; font-size:11px;}
+#content .credit{ width:66px; height:100%; border-left: 1px solid #fff; float:left;}
+.titre{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic; font-size:11px;
+}
+.titre_bachlor{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic; font-size:11px; text-align:center;
+}
+.bold{ font-weight:bold; }
+.cep{ width:20px; text-align:center; float:left;}
+.cep-master{padding: 0 6px; }
+.red-color{ 
+    background-color: #e2001a; color:#fff;
+    width: 68px; float:left; padding-left:1px;
+}
+.credit-time{
+    text-align: right;
+    padding-right: 10px; margin-top: 18px;
+    font-weight: bold; font-size: 11px;
+}
+.exam-icon { width: 18px; margin-left: 3px; min-height: 38px; float:left;}
+.exam-icon .little_icon { margin-right:2px;}
+.bachlor-text{  text-align: center;
+    padding-bottom:2px; margin-top:18px;
+    color:#fff; font-size:11px;
+}
+#content .cours-name a { 
+    font-size:13px; font-weight:bold;
+    text-decoration: none; color: #000; background: url('../img/underline.gif') repeat-x 0 14px;
+    }
+#content .cours-name a:hover { background-image: url('../img/underline-hover.png'); }
+.legende{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic; font-size: 12px; font-weight:bold;
+    width: 5px; float:left; padding-right: 10px;
+}
+.img_legende{ float:left; width:17px; height:17px; }
+#content .master{ width:48px;}
 
 /*********************************** Footer ***********************************/
 #footer{
