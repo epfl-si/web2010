@@ -736,6 +736,9 @@ img.right { margin-left:25px; }
 .news-text p img{ margin: 0; vertical-align: top;}
 .news-text .heading { font-size: 12px; font-weight: normal; }
 
+.news-video-overlay { background: url("../img/icon_video.png") no-repeat scroll center center transparent; position: absolute; width: 160px; height: 90px; left:0; top:0; }
+.heading-news .news-video-overlay { width: 324px; height: 184px; }
+
 ol.all_actu h4, ul.all_actu h4 { margin-top:0; padding-top:0;}
 
 .content .all_actu li { padding:0; margin:0;}
