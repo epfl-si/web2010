@@ -166,12 +166,12 @@ table.table-cours th {padding: 0 2px 0 2px;}
 .black { background-color: #000; }
 
 .local-color {background-color: #ae0010; color: #fff;}
-.local-color a { color: #fff; }
-.local-color strong {color:white;}
+.local-color a, .local-color-down a, .local-color-light a, .local-color-dark a { color: #fff; }
+.local-color strong {color:#fff;}
 .local-color-text {color:#ae0010;}
-.local-color-down{ background-color: #e2001a; }
-.local-color-light{ background-color: #7e000c; }
-.local-color-dark{ background-color: #5d0009; }
+.local-color-down{ background-color: #e2001a; color: #fff; }
+.local-color-light{ background-color: #7e000c; color: #fff; }
+.local-color-dark{ background-color: #5d0009; color: #fff; }
 .hidden{ position: absolute; left: -999em;}
 .heading {
     margin-bottom: 18px;
@@ -183,6 +183,7 @@ table.table-cours th {padding: 0 2px 0 2px;}
 
 .clear {clear:both; display:block; visibility:hidden; width:0; height:0;}
 .noSpacing, .content .noSpacing {padding:0; margin:0;}
+.noSpacing a, .content .noSpacing a {background:none;}
 
 .button { float: left; margin-right: 20px; cursor: pointer;}
 .diet_icon {float: left; background: url(../img/icons.png) no-repeat; margin-top:2px; height: 17px; width: 9px; margin-right: 0; border: none;}
@@ -234,6 +235,7 @@ table.table-cours th {padding: 0 2px 0 2px;}
 
 .francais .diet_icon {background-position: -201px -3px;}
 .anglais .diet_icon {background-position: -221px -3px;}
+.allemand .diet_icon {background-position: -201px -3px;}
 .winter .little_icon {background-position: -237px -3px;}
 .sun .little_icon {background-position: -257px -3px;}
 .membres .large_icon {background-position: -275px -3px;}
@@ -795,7 +797,6 @@ ul.text-layout { overflow: hidden; width: 656px;}
   *top:-20px;
 }
 
-
 .simple-layout li { padding-bottom: 4px; padding-top:1px;
                       border-bottom: 1px dotted #000;
                       list-style-image:none; list-style-type:none;}
@@ -854,7 +855,6 @@ ol.search-results li{
 .search-results .highlight {padding: 0 4px; background-color:#000; color: #fff;}
 .search-results cite {color:#999c98;}
 p.results-count{border-top: 1px solid #000; margin-top: 20px; margin-right: 0;}
-
 
 .pagination {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -1030,6 +1030,70 @@ ul.bottin .photo_box {padding: 0 10px 0 0; float: left; overflow: hidden; width:
 }
 .img_legende{ float:left; width:17px; height:17px; }
 #content .master{ width:48px;}
+
+
+
+/********************* Fiches de cours ****************************************/
+div.link-to-pdf {
+    font-size:12pt;
+    padding-top:5px;
+    font-weight:bold;
+}
+div.link-to-pdf a { background-image: none; }
+
+img.pdf-icon { position:relative; top:2px; }
+
+/*** Boîte "semaine de référence" ***/
+table.semaineDeRef { border-collapse:collapse; }
+table.semaineDeRef a, table.semaineDeRef a:hover {
+    background-image: none !important;
+    background-color: transparent;
+}
+table.semaineDeRef th {
+    font-weight:bold; text-align:center; color:#000;
+    background: url(../img/main-navigation.png) repeat scroll 0 0 transparent;
+    border-right: solid 1px #fff;
+}
+table.semaineDeRef td { border-bottom: dotted 1px #000; }
+table.semaineDeRef .time {
+    width:50px; 
+    font-weight:bold; text-align:center; color:#000;
+}
+table.semaineDeRef .day { width:60px; }
+table.semaineDeRef .taken {
+    vertical-align:middle;
+    text-align:center;
+    font-weight: 400; font-style:italic; font-size:9pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*** Boîte "Dans les sections" ***/
+ul.noNav { background-color: #fff; color: #000;}
+ul.noNav a {
+    display:inline; left: 0; margin: 0; padding: 0;
+    text-decoration: none; color: #000;
+    background: url(../img/underline.gif) repeat-x 0 14px;
+}
+ul.noNav a:hover { background-image: url(../img/underline-hover.png); }
+ul.noNav a.hover, ul.noNav li.hover { 
+    background-image:none; background-color:transparent !important;
+}
+ul.noNav .expandable-hitarea { background-position: -32px -1px; }
+ul.noNav .collapsable-hitarea { background-position: -48px -1px; }
+ul.noNav .hitarea { left: -4px;}
+ul.noNav li {
+    background-color:#fff; color: #000; border:none; 
+    clear:both; float:none; padding-top:20px;
+}
+ul.noNav li:first-child { border-top: none; padding-top: 0; }
+ul.noNav ul li {
+    color: #000; font-weight:300; text-align:left; border:none;
+    margin-top: 4px; padding-top: 0; width: 160px; float:left; clear:right;
+}
+ul.noNav ul li strong { color: #000; }
+ul.noNav .underline { border-bottom: 1px solid #000; }
+
+span.nbCredits { color: red; font-weight: bold;}
 
 /*********************************** Footer ***********************************/
 #footer{
