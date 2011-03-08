@@ -1,20 +1,62 @@
 /*
  * EPFL navigation
  *
- * Copyright (c) 2010 EPFL
+ * Copyright (c) 2010-2011 EPFL
  *
- * Date: 2010-08-20 14:15
- * Revision: 1.2
+ * Date: 2011-03-08 11:38
+ * Revision: 1.3
  */
-jQuery(document).ready(function(){    
+ 
+var current_search_base = null;
+function change_search_base(radio){
+    jQuery('#search-options').remove();
+    jQuery("#searchform input[type=radio]").removeAttr("checked");    
+    var rid = radio.attr('id');
+    var label =  jQuery('label[for=' + rid + ']'); 
+    switch (rid){
+        case "search-engine-local":
+            jQuery('#searchform').append(
+                jQuery("<input/>").attr("type", "hidden").attr("id","search-options").attr("name", "as_sitesearch").attr("value", jQuery.url.attr("host"))
+            );
+            break;
+        default:
+            break;
+    }
+    if (jQuery('#searchfield').val() === jQuery('#searchform label.current').attr('title')) { jQuery('#searchfield').val(''); }
+    if (jQuery('#searchfield').val() === '') { jQuery('#searchfield').val(label.attr('title')); }
+    current_search_base.toggleClass('current');
+    current_search_base = label;
+    current_search_base.toggleClass('current');
+    radio.attr('checked','checked');
+    radio.blur();
+    radio.focus();
+}
+
+function showPanel() {
+    jQuery("#header").expose({color: '#000', opacity: 0.6, loadSpeed: 0, closeSpeed: 0});
+    jQuery('.navigation-panel').addClass("hidden");
+    jQuery(this).children('.navigation-panel').removeClass('hidden');
+}
+function hidePanel(){
+}
+
+function removeLastWord(element) {
+  var text = element.html();
+  var i = text.lastIndexOf(' ');
+  element.html(text.substring(0, i) + '...');
+  return i !== -1;
+}
+
+/* add arrows when news texts are too long */
+function isTotallyVisible(parent, element) {
+  return element.position().top + element.outerHeight() + 2 < parent.position().top + parent.innerHeight();
+}
+
+jQuery(document).ready(function(){
+    current_search_base = jQuery('#searchform label.current');
+    change_search_base(jQuery("#search-engine-person"));
+    
     /* Navigation: big panels */
-    function showPanel() {
-        jQuery("#header").expose({color: '#000', opacity: 0.6, loadSpeed: 0, closeSpeed: 0});
-        jQuery('.navigation-panel').addClass("hidden");
-        jQuery(this).children('.navigation-panel').removeClass('hidden');
-    }
-    function hidePanel() {
-    }
     jQuery('#header').mouseleave(function(){ 
         jQuery.mask.close();
         jQuery('.navigation-panel').addClass("hidden");
@@ -24,32 +66,6 @@ jQuery(document).ready(function(){
     jQuery('#main-menus .menu').hoverIntent(config);
     
     /* Navigation: search boxes */ 
-    var current_search_base = jQuery('#searchform label.current');
-    function change_search_base(radio){
-        jQuery('#search-options').remove();
-        rid = radio.attr('id');
-        jQuery("#searchform input[type=radio]").removeAttr("checked");
-	    radio.attr('checked','checked');
-
-        label =  jQuery('label[for=' + rid + ']'); 
-        switch (rid){
-            case "search-engine-local":
-                jQuery('#searchform').append(
-                    jQuery("<input/>").attr("type", "hidden").attr("id","search-options").attr("name", "as_sitesearch").attr("value", jQuery.url.attr("host"))
-                );
-                break;
-            default:
-                break;
-        }
-        if (jQuery('#searchfield').val() === jQuery('#searchform label.current').attr('title')) { jQuery('#searchfield').val(''); }
-        if (jQuery('#searchfield').val() === '') { jQuery('#searchfield').val(label.attr('title')); }
-        current_search_base.toggleClass('current');
-        current_search_base = label;
-        current_search_base.toggleClass('current');
-        radio.blur();
-        radio.focus();
-    }
-    change_search_base(jQuery("#search-engine-person"));
     if (jQuery.browser.msie) {
         jQuery('#search-box input[type=radio]').click(function(){ change_search_base(jQuery(this)); this.blur(); this.focus(); });
     }
@@ -57,12 +73,11 @@ jQuery(document).ready(function(){
     if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)) {
        jQuery('#search-box label').click(function () { var el = jQuery(this).attr('for'); change_search_base(jQuery('#' + el));});
     }
-    
     jQuery('#search-box input[type=radio]').change(function(){ change_search_base(jQuery(this)); });
     jQuery('#searchlink').click(function(){ jQuery('#searchfield').focus();});
     jQuery('#searchfield').focus(function(){ if (jQuery(this).val() === current_search_base.attr('title')){ jQuery(this).val('').addClass('focused');} });
     jQuery('#searchfield').blur(function() { if (jQuery(this).val() === '') { jQuery(this).val(jQuery('#searchform label.current').attr('title')).removeClass('focused');} });
-    jQuery('#searchfield').keypress(function(e){ if (e.which == 13) { jQuery(this).parent('form').submit();} });
+    jQuery('#searchfield').keypress(function(e){ if (e.which === 13) { jQuery(this).parent('form').submit();} });
     
     /* navigation: Dropdown menus */
     jQuery('.dropdown').click(function(){ jQuery(this).children('ul').toggleClass('hidden'); });
@@ -95,33 +110,24 @@ jQuery(document).ready(function(){
     /* add class .left to images having align="left" and so on. */
     jQuery('img[align]').each(function(){ jQuery(this).addClass(jQuery(this).attr('align')); });
     
-    /* add arrows when news texts are too long */
-    function isTotallyVisible(parent, element) {
-	return element.position().top + element.outerHeight() + 2 < parent.position().top + parent.innerHeight();
-    };
     
     /* Jahia specific */
     jQuery("ul").each(function(){ 
         var elem = jQuery(this);
-        if(elem.children().length==0){
+        if(elem.children().length === 0){
             elem.remove();
         }
     });
     
-    function removeLastWord(element) {
-      var text = element.html();
-      var i = text.lastIndexOf(' ');
-      element.html(text.substring(0, i) + '...');
-      return i != -1;
-    };
 
     var newsDivs = jQuery("div.news-text");
     newsDivs.each(function(i, news) {
-	news = jQuery(news);
-	var newsText = news.find("p span.heading");
-	var newsLink = news.find("p span.read-more");
-	if(newsText.length && newsLink.length)
-		while(!isTotallyVisible(news, newsLink) && removeLastWord(newsText));
+	  news = jQuery(news);
+	  var newsText = news.find("p span.heading");
+	  var newsLink = news.find("p span.read-more");
+	  if (newsText.length && newsLink.length) {
+        while (!isTotallyVisible(news, newsLink) && removeLastWord(newsText)){ void(0); }
+      }
     });
     jQuery("img[rel]").overlay();
     
