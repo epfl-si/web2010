@@ -48,6 +48,8 @@
 
 ul.list-layout { padding-top: 0; border-top: none; }
 
+h2 a:hover { color: #000000; }
+
 /* corrections 26.10.10 */
 #form_sondage p { margin-bottom : 6px; margin-top:0;}
 #form_sondage form p { margin-bottom: 0px;}
