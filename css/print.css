@@ -26,6 +26,10 @@ p, .content p, ol, .content ol, ul, .content ul, dd, .content dd {
 }
 /* Right Navigation Menu */
 div.right-col ul.tree { display:none;}
+
+/* But show study plan options */
+div.right-col ul.noNav { display:block !important;}
+
 /* Hide as long as there is no content */
 .home-navpanel .portal, .last-col .last-cell { display:none; }
 
@@ -52,7 +56,7 @@ div.right-col ul.tree { display:none;}
 .content { min-height:100px; }
 
 .box.two-cols div.box-left-col, .box .two-cols div.box-left-col, .box.two-cols div.box-right-col, .box .two-cols div.box-right-col, .box.two-cols li {
-    width:48%;
+    /* width:48%;  */
 }
 
 .local-color, .local-color-light, .local-color-dark, .local-color-down, .local-color a, .local-color-light a, .local-color-dark a, .home-navpanel a, .portal, .school, .short, .home-navpanel, .home-navpanel p, .home-navpanel h2, .home-navpanel h3, .home-navpanel h4, strong {
@@ -63,7 +67,7 @@ div.right-col ul.tree { display:none;}
 .right-col {
     width:100%;
 }
-.right-col .box, .right-col .local-color {
+.right-col .box, .right-col {
     width:48%;
     float:left;
     margin-right:7px;
@@ -93,11 +97,9 @@ div#form_sondage { padding-top:50px;}
     margin: 0 0 10px 0;
 }
 
-#breadcrumbs { /*font-size:7pt;*/ }
-
 #footer { padding-top:0.5cm; }
 #footer li { display: none; }
-#footer li.copyright { display:block; /*font-size:7pt;*/}
+#footer li.copyright { display:block; }
 
 #news, #news .content p {
     width:100% !important;
@@ -127,7 +129,5 @@ div#form_sondage { padding-top:50px;}
 
 
 /********************************** Study plan *******************************/
-.red-color, .bachlor-text {
-    background-color:#fff !important;
-    color:#000 !important;
-}
+.red-color, .bachlor-text { background-color:#fff !important; color:#000 !important; }
+.taken {  border:1px solid black; }
