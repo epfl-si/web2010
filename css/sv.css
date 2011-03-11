@@ -31,6 +31,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {color:#6
 .question:hover .icon {background-position: -96px -192px; }
 .showall .icon {background-position: -120px -216px; }
 .showall:hover .icon {background-position: -120px -192px; }
+.forward .icon {background-position: -144px -216px; }
+.forward:hover .icon {background-position: -144px -192px; }
 .mail .icon {background-position: -168px -216px; }
 .mail:hover .icon {background-position: -168px -192px; }
 .contact .icon {background-position: -362px -216px; }
@@ -49,9 +51,22 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {color:#6
 .edit:hover .icon {background-position: -506px -192px; }
 .file .icon {background-position: -530px -216px; }
 .file:hover .icon {background-position: -530px -192px; }
+.pdffile .icon {background-position: -554px -216px; }
+.pdffile:hover .icon {background-position: -554px -192px; }
+.ok .icon {background-position: -578px -216px; }
+.ok:hover .icon {background-position: -578px -192px; }
+.stats .icon {background-position: -602px -216px; }
+.stats:hover .icon {background-position: -602px -192px; }
+.gotostart .icon {background-position: -626px -216px;}
+.gotostart:hover .icon {background-position: -626px -192px;}
+.square .icon {background-position: -651px -216px;}
+.square:hover .icon {background-position: -651px -192px;}
+.down .icon {background-position: -698px -216px;}
+.down:hover .icon {background-position: -698px -192px;}
 
 .francais .diet_icon {background-position: -201px -219px;}
 .anglais .diet_icon {background-position: -221px -219px;}
+.allemand .diet_icon {background-position: -684px -219px;}
 .winter .little_icon {background-position: -237px -219px;}
 .sun .little_icon {background-position: -257px -219px;}
 .membres .large_icon {background-position: -275px -219px;}

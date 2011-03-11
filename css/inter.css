@@ -31,6 +31,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {color:#8
 .question:hover .icon {background-position: -96px -432px; }
 .showall .icon {background-position: -120px -456px; }
 .showall:hover .icon {background-position: -120px -432px; }
+.forward .icon {background-position: -144px -456px; }
+.forward:hover .icon {background-position: -144px -432px; }
+.mail .icon {background-position: -168px -456px; }
+.mail:hover .icon {background-position: -168px -432px; }
 .contact .icon {background-position: -362px -456px; }
 .contact:hover .icon {background-position: -362px -432px; }
 .gototop .icon {background-position: -386px -456px; }
@@ -47,8 +51,27 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {color:#8
 .edit:hover .icon {background-position: -506px -432px; }
 .file .icon {background-position: -530px -456px; }
 .file:hover .icon {background-position: -530px -432px; }
+.pdffile .icon {background-position: -554px -456px; }
+.pdffile:hover .icon {background-position: -554px -432px; }
+.ok .icon {background-position: -578px -456px; }
+.ok:hover .icon {background-position: -578px -432px; }
+.stats .icon {background-position: -602px -456px; }
+.stats:hover .icon {background-position: -602px -432px; }
+.gotostart .icon {background-position: -626px -456px;}
+.gotostart:hover .icon {background-position: -626px -432px;}
+.square .icon {background-position: -651px -456px;}
+.square:hover .icon {background-position: -651px -432px;}
+.down .icon {background-position: -698px -456px;}
+.down:hover .icon {background-position: -698px -432px;}
 
+.francais .diet_icon {background-position: -201px -461px;}
+.anglais .diet_icon {background-position: -221px -461px;}
+.allemand .diet_icon {background-position: -684px -460px;}
+.winter .little_icon {background-position: -237px -461px;}
+.sun .little_icon {background-position: -257px -461px;}
+.membres .large_icon {background-position: -275px -461px;}
+.printemps .little_icon {background-position: -301px -461px; }
+.automne .little_icon {background-position: -319px -461px; }
 
-
-.category-en{ background-image: url(../img/news-categories-en-bw.png);
-.category-fr{ background-image: url(../img/news-categories-fr-bw.png);
+.category-en{ background-image: url(../img/news-categories-en-bw.png) };
+.category-fr{ background-image: url(../img/news-categories-fr-bw.png) };
