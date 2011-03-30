@@ -31,7 +31,7 @@ div.right-col ul.tree { display:none;}
 div.right-col ul.noNav { display:block !important;}
 
 /* Hide as long as there is no content */
-.home-navpanel .portal, .last-col .last-cell { display:none; }
+.home-navpanel .portal, .last-col { display:none; }
 
 
 /* ************************* Change Styles ************************************ */

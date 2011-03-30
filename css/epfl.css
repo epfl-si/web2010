@@ -206,6 +206,8 @@ table.table-cours th {padding: 0 2px 0 2px;}
 .question:hover .icon {background-position: -96px -24px; }
 .showall .icon {background-position: -120px 0; }
 .showall:hover .icon {background-position: -120px -24px; }
+.forward .icon {background-position: -144px 0; }
+.forward:hover .icon {background-position: -144px -24px; }
 .mail .icon {background-position: -168px 0; }
 .mail:hover .icon {background-position: -168px -24px; }
 .podcast .icon {background-position: -338px 0; }
@@ -232,10 +234,16 @@ table.table-cours th {padding: 0 2px 0 2px;}
 .ok:hover .icon {background-position: -578px -24px; }
 .stats .icon {background-position: -602px 0; }
 .stats:hover .icon {background-position: -602px -24px; }
+.gotostart .icon {background-position: -626px 0;}
+.gotostart:hover .icon {background-position: -626px -24px;}
+.square .icon {background-position: -651px 0;}
+.square:hover .icon {background-position: -651px -24px;}
+.down .icon {background-position: -698px 0;}
+.down:hover .icon {background-position: -698px -24px;}
 
 .francais .diet_icon {background-position: -201px -3px;}
 .anglais .diet_icon {background-position: -221px -3px;}
-.allemand .diet_icon {background-position: -201px -3px;}
+.allemand .diet_icon {background-position: -684px -3px;}
 .winter .little_icon {background-position: -237px -3px;}
 .sun .little_icon {background-position: -257px -3px;}
 .membres .large_icon {background-position: -275px -3px;}
@@ -815,6 +823,31 @@ ul.home-list-layout { overflow:hidden; width:656px; padding-top:4px;}
     padding-bottom: 4px; margin:0;}
 .single-news .news-img{ float: left; width: 324px; height: 184px; margin-bottom: 2px; padding: 0; margin-top:0;}
 
+.onethird-news {
+    width:324px;
+    height:282px;
+    margin:28px 4px 0 0;
+    padding 0;
+    float:left;
+}
+
+.onethird-news li {
+    border-bottom: solid black 1px;
+    height:69px;
+    margin:0;
+    padding:0;
+    list-style:none outside none;
+}
+
+.right-col .onethird-news li { height:95px; border-bottom: none; }
+.onethird-news ul { margin:5px 0; padding:0; width:324px; border-top:none; }
+.onethird-news h3 { margin-bottom:0px; }
+.onethird-news h4 { margin:4px 0 0 0; padding-bottom: 3px; font-size: 13px; line-height: 14px; letter-spacing: 0;}
+.onethird-news .no-image .news-text { height:73px; }
+.onethird-news .no-image .heading {line-height:16px; letter-spacing:0;}
+
+
+
 .category-fr{ background-image: url(../img/news-categories-fr.png);
               background-repeat: no-repeat;
               height: 18px; width: 160px; position: absolute; left: 0; top: 0;}
@@ -1043,7 +1076,7 @@ div.link-to-pdf a { background-image: none; }
 
 img.pdf-icon { position:relative; top:2px; }
 
-/*** Boîte "semaine de référence" ***/
+/*** Boite "semaine de reference" ***/
 table.semaineDeRef { border-collapse:collapse; }
 table.semaineDeRef a, table.semaineDeRef a:hover {
     background-image: none !important;
@@ -1067,7 +1100,7 @@ table.semaineDeRef .taken {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/*** Boîte "Dans les sections" ***/
+/*** Boite "Dans les sections" ***/
 ul.noNav { background-color: #fff; color: #000;}
 ul.noNav a {
     display:inline; left: 0; margin: 0; padding: 0;

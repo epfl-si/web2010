@@ -1,0 +1,676 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>EPFL | Discovery Projects</title>
+    <script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
+    <script type="text/javascript">jQuery.noConflict();</script>
+
+    <link href="../../css/epfl.css" media="all" rel="stylesheet" type="text/css"/>
+
+    <style>
+        /* Custom formatting for the 4 colon image box */
+        .unit-3-cells {  padding: 0; }
+    	.home-navpanel h3 { padding-left:8px; margin-top: 0px; }
+    	.content p img { margin: 23px 0 10px; }
+    </style>
+
+    <meta name="headerversion" content="1.75"/>
+    <meta name="headerdate" content="2010-11-19"/>
+    <link href="/templates/epfl/css/jahia.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="../../css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
+</head>
+<body>	<div id="actualContent">
+<a name="top"></a>
+
+
+        <a name="top"></a>
+<div id="accessibility" class="hidden" title="École Polytechnique Fédérale de Lausanne - Quick access">
+  <ul>
+    <li><a href="http://www.epfl.ch/accessibility.en.shtml" title="Specific informations for persons with disabilities" accesskey="0">Accessibility</a></li>
+
+    <li><a href="http://www.epfl.ch/" title="EPFL's homepage"  accesskey="1">Homepage</a></li>
+    <li><a href="#navigation" accesskey="2">Navigation within EPFL sites</a></li>
+    <li><a href="#main-navigation" accesskey="3">Navigation within this site</a></li>
+    <li><a href="#search" id="searchlink" accesskey="4">Jump to search field</a></li>
+    <li><a href="#content" accesskey="5">Jump to page content</a></li>
+    <li><a href="mailto:webmaster@epfl.ch" accesskey="9">Technical contact</a></li>
+
+  </ul>
+</div>
+<div id="header">
+  <div id="nav-logo"><a href="http://www.epfl.ch" title="EPFL's homepage"></a></div>
+  <div id="nav-menus">
+    <a name="navigation" id="navigation"></a>
+    <ul id="main-menus">
+      <li class="portal menu" id="public-menu-link">
+        <a class="main-link" href="http://www.epfl.ch/navigate.en.shtml" title="Navigate by profile">You are</a>
+
+        <div class="navigation-panel hidden" id="public-panel">
+          <ul>
+            <li class="group-2-cols">
+              <h3><a href="http://futuretudiant.epfl.ch/">Prospective student</a></h3>
+              <ul>
+                <li><a href="http://www.epfl.ch/epfl-virtual-tour/virtual-tour.html">EPFL Virtual tour</a></li>
+                <li><a href="http://sae.epfl.ch/page-27094-en.html">Exchange student</a></li>
+
+              </ul>
+            </li>
+            <li class="group-2-cols">
+              <h3><a href="http://studying.epfl.ch/">Students</a></h3>
+              <ul>
+                <li><a href="http://studying.epfl.ch/student_desk">Student services</a></li>
+                <li><a href="http://sac.epfl.ch/academic-calendar">Academic calendar</a></li>
+
+              </ul>
+            </li>
+            <li class="group-2-cols last">
+              <h3><a href="http://recherche.epfl.ch/">Researcher</a></h3>
+              <ul>
+                <li><a href="http://grantsoffice.epfl.ch/">Research funding</a></li>
+                <li><a href="http://phd.epfl.ch/page-19491-en.html">Doctorate at EPFL</a></li>
+
+              </ul>
+            </li>
+            <li class="group-2-cols">
+              <h3><a href="http://working.epfl.ch/">Staff</a></h3>
+              <ul>
+                <li><a href="http://rh.epfl.ch">Human resources</a></li>
+                <li><a href="http://help.epfl.ch">Help</a></li>
+
+              </ul>
+            </li>
+            <li class="group-2-cols">
+              <h3><a href="http://entreprises.epfl.ch/">Business</a></h3>
+              <ul>
+                <li><a href="http://vpiv.epfl.ch/">Innovation &amp; Tech Transfer</a></li>
+                <li><a href="http://vpiv.epfl.ch/page-23023-en.html">Innovation Square</a></li>
+
+              </ul>
+            </li>
+            <li class="group-2-cols last">
+              <h3><a href="http://medias.epfl.ch/">Mediacorner</a></h3>
+              <ul>
+                <li><a href="http://actu.epfl.ch/">Press releases, Reflex, Flash</a></li>
+                <li><a href="http://mediatheque.epfl.ch/">Image library</a></li>
+
+              </ul>
+            </li>
+            <li class="group-2-cols">
+              <h3><a href="http://a3.epfl.ch/">Alumni A3-EPFL</a></h3>
+              <ul>
+                <li><a href="http://www2.epfl.ch/a3/page77902-en.html">Become a member</a></li>
+                <li><a href="http://www2.epfl.ch/a3/page74871-en.html">A3 agenda</a></li>
+
+              </ul>
+            </li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </li>
+      <li class="school menu" id="school-menu-link">
+        <a class="main-link" href="http://www.epfl.ch/navigate.en.shtml" title="Navigate by school"><span>By</span> school</a>
+
+        <div class="navigation-panel hidden" id="school-panel">
+          <ul>
+            <li class="group-2-cols">
+              <h3><a href="http://enac.epfl.ch/" class="enac">Architecture, Civil and Environmental Engineering <acronym title="Environnement Naturel, Architectural et Construit">ENAC</acronym></a></h3>
+              <ul>
+                <li><a href="http://enac.epfl.ch/page-2444.html">Architecture</a></li>
+                <li><a href="http://enac.epfl.ch/page-2445.html">Civil Engineering</a></li>
+
+                <li><a href="http://enac.epfl.ch/page-2446.html">Environmental Engineering</a></li>
+                <li><a href="http://enac.epfl.ch/page-2447.html">Urban Planning</a></li>
+              </ul>
+            </li>
+            <li class="group-2-cols">
+              <h3><a href="http://sb.epfl.ch/" class="sb">Basic Sciences <acronym title="Sciences de Base">SB</acronym></a></h3>
+              <ul>
+
+                <li><a href="http://sb.epfl.ch/chemistry">Chemistry</a></li>
+                <li><a href="http://sb.epfl.ch/mathematics">Mathematics</a></li>
+                <li><a href="http://sb.epfl.ch/physics">Physics</a></li>
+              </ul>
+            </li>
+            <li class="group-2-cols last">
+                  <h3><a href="http://sti.epfl.ch/" class="sti">Engineering <acronym title="Sciences et Techniques de l'Ingénieur">STI</acronym></a></h3>
+
+              <ul>
+                <li><a href="http://sti.epfl.ch/page-1545.html">Electrical Engineering</a></li>
+                <li><a href="http://sti.epfl.ch/page-1592.html">Mechanical Engineering</a></li>
+                <li><a href="http://sti.epfl.ch/page-1617.html">Materials Science and Engineering</a></li>
+                <li><a href="http://sti.epfl.ch/page-1674.html">Microengineering</a></li>
+                <li><a href="http://ibi.epfl.ch/">Bioengineering</a></li>
+
+              </ul>
+            </li>
+            <li class="group-2-cols">
+              <h3><a href="http://ic.epfl.ch/" class="ic">Computer &amp; Communication Sciences <acronym title="Informatique &amp; Communications">I&amp;C</acronym></a></h3>
+              <ul>
+                <li><a href="http://ic.epfl.ch/computer-science">Computer Science</a></li>
+
+                    <li><a href="http://ic.epfl.ch/communication-systems">Communication Systems</a></li>
+              </ul>
+            </li>
+            <li class="group-2-cols">
+              <h3><a href="http://sv.epfl.ch/" class="sv">Life Sciences <acronym title="Sciences de la Vie">SV</acronym></a></h3>
+              <ul>
+                <li><a href="http://sv.epfl.ch/page-37989.html">Bioengineering</a></li>
+
+                <li><a href="http://sv.epfl.ch/page-26599.html">Neuroscience Brain Mind &amp; Blue Brain</a></li>
+                <li><a href="http://sv.epfl.ch/page-37990.html">Global Health</a></li>
+                <li><a href="http://sv.epfl.ch/page-37991.html">Cancer</a></li>
+              </ul>
+            </li>
+            <li class="group-2-cols last">
+
+              <h3><a href="http://cdm.epfl.ch/" class="cdm">Management of Technology <acronym title="Collège du Management de la Technologie">CDM</acronym></a></h3>
+              <ul>
+                <li><a href="http://mtei.epfl.ch">Management of Technology</a></li>
+                <li><a href="http://sfi.epfl.ch">Financial Engineering</a></li>
+              </ul>
+            </li>
+            <li class="group-2-cols" style="clear:left">
+
+              <h3><a href="http://cdh.epfl.ch/" class="cdh">College of Humanities <acronym title="Collège des Humanités">CDH</acronym></a></h3>
+              <ul>
+                <li><a href="http://cdh.epfl.ch/page-37081.html">Human and Social Science</a></li>
+                <li><a href="http://cdh.epfl.ch/page-25502.html">Area &amp; Cultural Studies</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </li>
+      <li class="short menu" id="brief-menu-link">
+        <a class="main-link" href="http://www.epfl.ch/navigate.en.shtml"><span>about</span> <acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></a>
+        <div class="navigation-panel hidden" id="brief-panel">
+          <ul>
+
+            <li class="group-2-cols">
+              <h3><a href="http://presentation.epfl.ch"><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></a></h3>
+              <ul>
+                <li><a href="http://direction.epfl.ch/">Direction</a></li>
+                <li><a href="http://www.epfl.ch/organigrammes">EPFL Structure</a></li>
+                <li><a href="http://information.epfl.ch/">Information desk</a></li>
+                <li><a href="http://library.epfl.ch/">Library</a></li>
+
+                <li><a href="http://www5.epfl.ch/emplois/">Job offers</a></li>
+                <li><a href="http://vpai.epfl.ch/page-33793-en.html">National collaborations</a></li>
+              </ul>
+            </li>
+            <li class="group-2-cols">
+              <h3><a href="http://formation.epfl.ch">Education</a></h3>
+              <ul>
+
+                <li><a href="http://cms.epfl.ch/">Preparatory course <acronym title="Cours de Mathématiques Spéciales">CMS</acronym></a></li>
+                <li><a href="http://bachelor.epfl.ch/">Bachelor</a></li>
+                <li><a href="http://master.epfl.ch/">Master</a></li>
+                <li><a href="http://phd.epfl.ch/">PhD</a></li>
+                <li><a href="http://continuing-education.epfl.ch">Continuing education</a> (EPFL-UNIL Foundation)</li>
+
+              </ul>
+            </li>
+            <li class="group-2-cols last">
+              <h3><a href="http://recherche.epfl.ch/">Research</a></h3>
+              <ul>
+                <li><a href="http://vpiv.epfl.ch/page-22996-en.html">Transdisciplinary Centers</a></li>
+                <li><a href="http://grantsoffice.epfl.ch/">Grants office</a></li>
+
+                <li><a href="http://commission-recherche.epfl.ch/page-25053-en.html">Research Commission</a></li>
+                <li><a href="http://infoscience.epfl.ch/?ln=en"><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym> Publications</a></li>
+              </ul>
+            </li>
+            <li class="group-2-cols" style="clear: left;">
+              <h3><a href="http://vpiv.epfl.ch">Innovation &amp; Tech Transfer</a></h3>
+
+              <ul>
+                <li><a href="http://vpiv.epfl.ch/page-22997-en.html">Partnerships</a></li>
+                <li><a href="http://vpiv.epfl.ch/page-22998-en.html">Start-up</a></li>
+                <li><a href="http://www.alliance-tt.ch">Industrial liaison</a></li>
+                <li><a href="http://sri.epfl.ch/">Technology transfer, patents</a></li>
+              </ul>
+            </li>
+
+            <li class="group-2-cols">
+              <h3><a href="http://vpai.epfl.ch/page-33792-en.html">International</a></h3>
+              <ul>
+                <li><a href="http://middleeast.epfl.ch">EPFL Middle East</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="clear"></div>
+
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="local-color" id="nav-search">
+    <div id="search-box">
+      <a name="search"></a>
+      <form name="search" action="http://search.epfl.ch/process_web2010" id="searchform">
+
+        <input class="hidden" type="radio" name="engine" id="search-engine-person" value="person" checked="checked" title="Find a person" />
+        <label for="search-engine-person" class="current" title="Find a person">Person</label>
+        <input class="hidden" type="radio" name="engine" id="search-engine-place" value="place" title="Find a place"/>
+        <label for="search-engine-place" title="Find a place">Place</label>
+        <input class="hidden" type="radio" name="engine" id="search-engine-epfl" value="epfl" title="Search within EPFL sites"/>
+        <label for="search-engine-epfl" title="Search within EPFL sites"><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym> Web</label>
+
+        <input class="hidden" type="radio" name="engine" id="search-engine-local" value="local"  title="Search within this site"/>
+        <label for="search-engine-local" title="Search within this site">On this site</label>
+        <input type="hidden" name="lang" value="en" />
+        <input type="text" class="search" name="q" value="" id="searchfield" /><button type="submit" class="search-button"  title="Search">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="clear"></div>
+
+</div>
+
+<div id="main-content" class="three-cols">
+            <ul id="breadcrumbs" title="EPFL breadcrumb">
+    <li>
+            <a href="http://www.epfl.ch" title="EPFL Homepage">EPFL</a>
+        </li>
+
+<li>
+                <!-- cache:include src="http://discovery.epfl.ch/cms/site/discovery/pid/42799?ctnid=0&cacheKey=_ctnListName_cid218744_siteKey_discovery" --><span class="externallink"><a href="http://vpiv.epfl.ch" target="_blank">VPIV</a>
+
+</span><!-- /cache:include -->
+</li>
+<li
+             class="last">
+            Discovery Projects</li>
+            </ul>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        jQuery("#dropdown0").addClass("inpath");
+        if (42799 == 0) {
+            jQuery("#dropdown0").addClass("current");
+        }
+        jQuery("#updatesubmenu").addClass("inpath");
+        jQuery("#deletesubmenu").addClass("inpath");
+    });
+</script>
+<div id="level2PageId" style="display:none"></div>
+<ul id="languages" title="Choose language">
+   <li >
+            <a title="Switch to selected language" href="/page-42799-fr.html">français</a>
+
+                </li>
+    <li class='current'>
+            <span>English</span>
+                </li>
+    </ul>
+
+<div class="clear"></div>
+
+<!-- cache:include src="http://discovery.epfl.ch/cms/site/discovery/pid/42799?ctnid=218617&cacheKey=siteName42799___absolute___" -->
+<a class="hidden" id="ctn98405_218617" name="ctn98405_218617"></a><h1>
+            <a href="/page-42799-en.html;jsessionid=9FA988ECA01C3F37AA81FFD57C5E34DA" title="Discovery Projects ">Discovery projects&nbsp;<acronym
+                title="Discovery projects" class="local-color-text">EPFL</acronym></a>
+
+        </h1>
+<!-- /cache:include -->
+<div class="clear"></div>
+
+        <div id="main-navigation" class="navigation-bar">
+            <ul class="topnav">
+<!-- cache:include src="http://discovery.epfl.ch/cms/site/discovery/pid/42799?ctnid=0&cacheKey=topnav_siteId_7475_ctnListName_navigationList_maxDepth_4" --><ul class="menu hidden"><li id="dropdown43714"><a  href="http://discovery.epfl.ch/page-42799-en.html">Discovery Projects</a></li><li id="dropdown43679"><a  href="/page-43679-en.html">History of the collaboration</a></li><li id="dropdown43680"><a  href="/page-43680-en.html">Areas of research</a></li><li id="dropdown43704"><a  href="/page-43704-en.html">> Structures and materials</a></li><li id="dropdown43706"><a  href="/page-43706-en.html">> Video imaging</a></li><li id="dropdown43707"><a  href="/page-43707-en.html">> Optimization of energy systems</a></li><li id="dropdown43708"><a  href="/page-43708-en.html">> Measuring environmental parameters</a></li><li id="dropdown43936"><a  href="/page-43936-en.html">Laboratories involved</a></li></ul><ul class="menu hidden"><li id="dropdown45385"><a  href="http://alinghi.epfl.ch/en/index.html">Alinghi</a></li><li id="dropdown45386"><a  href="http://solar-impulse.epfl.ch/en/index.html">Solar Impulse</a></li><li id="dropdown45387"><a  href="http://hydroptere.epfl.ch/en/index.html">l&#39;Hydroptère</a></li><li id="dropdown45384"><a  href="http://discovery.epfl.ch/page-43664-en.html">Rivages</a></li></ul><!-- /cache:include -->
+
+</ul>
+
+    <div style="clear:both"></div>
+        </div>
+        <div id="tools">
+            <div class='button share'><a class='addthis_button_compact' href='http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4c1a9d5b3161cf7a'><button class='icon'></button><span class='label'>Share</span></a></div>
+            <div class="button print"><a href="javaScript:window.print()"><button class="icon"></button><span class="label">Print</span></a></div>
+
+        </div>
+
+        <div id="content" class="content hompage-content">
+
+<!-- ==================================================================================================== -->
+
+<div class="onethird-news box">
+<h3>News</h3>
+
+<ul>
+
+<li class="no-image" title="The memory uncovers the secret of its fuel">
+    <a href="/news/the-memory-uncovers-the-secret-of-its-fuel/">
+    <div class="news-text">
+        <h4>The memory uncovers the secret of its &quot;fuel&quot;</h4>
+        <p>
+            <span class="date">today</span>
+            <span class="heading">- Researchers from the Brain Mind Institute at EPFL and the Mount Sinai School of Medicine in New York have highlighted the crucial role played by a by-product of glucose &ndash; lactate &ndash; in the formation of long-term memory. This could lead to new therapeutic perspectives for some neurological disorders. </span>
+            <span class="read-more"></span>
+        </p>
+    </div>
+    </a>
+</li>
+
+<li class="no-image" title="Eight professors appointed at EPFL">
+    <a href="/news/eight-professors-appointed-at-epfl/">
+    <div class="news-text">
+        <h4>Eight professors appointed at EPFL</h4>
+        <p>
+            <span class="date">04.03.11</span>
+            <span class="heading">- During the session of March 2nd and 3rd 2011, the ETH Board announced three appointments concerning EPFL, among which were three new scientific personalities who will work at the Ecublens campus.</span>
+            <span class="read-more"></span>
+        </p>
+    </div>
+    </a>
+</li>
+
+<li class="no-image" title="Getting your sight back – thanks to an artificial retina">
+    <a href="/news/getting-your-sight-back-thanks-to-an-artificial-re/">
+    <div class="news-text">
+        <h4>Getting your sight back – thanks to an artificial retina</h4>
+        <p>
+            <span class="date">03.03.11</span>
+            <span class="heading">- A new prosthetic retina enables those patients blinded by the disease &quot;retinitis pigmentosa&quot; to regain some form of vision. The company Second Sight, whose European branch is hosted by EPFL&rsquo;s Science Park, has just received authorization to commercialize the product in Europe.</span>
+            <span class="read-more"></span>
+        </p>
+    </div>
+    </a>
+</li>
+
+</ul>
+
+</div>
+
+ 
+
+<!-- ============================================================================================= -->
+
+
+<div class="home-navpanel">
+    <div class="unit-col">
+        <div class="unit-3-cells local-color-down last-cell">
+
+<!-- cache:include src="http://discovery.epfl.ch/cms/site/discovery/pid/42799?ctnid=235131&cacheKey=" -->
+
+<div class="" style="">
+            <h3>Alinghi</h3>
+
+<p style="text-align: center;"><a href="http://alinghi.epfl.ch/en/index.html"><img height="224" width="160" src="http://discovery.epfl.ch/files/content/sites/discovery/files/discovery_alinghi.jpg" alt="" /><br />
+	</a>
+</p>
+<div class="clear"></div>
+
+<div class="clear"></div>
+
+<div class="clear"></div>
+</div>
+<!-- /cache:include -->
+<div class="clear"></div>
+
+    </div>
+    </div>
+    <div class="unit-col last-col">
+        <div class="unit-3-cells local-color last-cell">
+
+<!-- cache:include src="http://discovery.epfl.ch/cms/site/discovery/pid/42799?ctnid=221876&cacheKey=" -->
+<div class="" style="">
+            <h3>SolarImpulse</h3>
+
+<p style="text-align: center;"><a href="http://solar-impulse.epfl.ch/en/index.html"><img height="224" width="160" src="http://discovery.epfl.ch//files/content/sites/discovery/files/discovery_solarimpulse.jpg" alt="" /><br />
+	</a>
+
+</p>
+<div class="clear"></div>
+
+<div class="clear"></div>
+
+<div class="clear"></div>
+</div>
+<!-- /cache:include -->
+<div class="clear"></div>
+    </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="home-navpanel last-col">
+    <div class="unit-col">
+        <div class="unit-3-cells short last-cell">
+
+<!-- cache:include src="http://discovery.epfl.ch/cms/site/discovery/pid/42799?ctnid=221877&cacheKey=" -->
+<div class="" style="">
+            <h3>l'Hydroptère</h3>
+
+<p style="text-align: center;"><a href="http://hydroptere.epfl.ch/en/index.html"><img height="224" width="160" src="http://discovery.epfl.ch//files/content/sites/discovery/files/discovery_hydroptere.jpg" alt="" /><br />
+	</a>
+</p>
+<div class="clear"></div>
+
+
+<div class="clear"></div>
+
+<div class="clear"></div>
+</div>
+<!-- /cache:include -->
+<div class="clear"></div>
+    </div>
+    </div>
+    <div class="unit-col last-col">
+        <div class="unit-3-cells black last-cell">
+
+<!-- cache:include src="http://discovery.epfl.ch/cms/site/discovery/pid/42799?ctnid=221878&cacheKey=" -->
+
+<div class="" style="">
+            <h3>Rivages</h3>
+
+<p style="text-align: center;"><a href="http://rivages.epfl.ch/page-57180-en.html"><img height="224" width="160" alt="" src="http://discovery.epfl.ch//files/content/sites/discovery/files/discovery_rivages.jpg" /><br />
+	</a>
+</p>
+<div class="clear"></div>
+
+<div class="clear"></div>
+
+<div class="clear"></div>
+<div class="clear"></div>
+
+<div class="clear"></div>
+
+
+<div class="clear"></div>
+</div>
+<!-- /cache:include -->
+<div class="clear"></div>
+    </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+
+<div class="box">
+
+
+<!-- cache:include src="http://discovery.epfl.ch/cms/site/discovery/pid/42799?ctnid=223422&cacheKey=" -->
+<div class="" style="">
+            <h3>EPFL's role</h3>
+
+<ul class="link-list">
+            <li >
+                    <a href="http://rivages.epfl.ch/page-57374-en.html"
+
+                           title="">
+                            Scientific advisor</a>
+                    <div class="clear"></div>
+                </li>
+
+<li >
+                    <a href="http://rivages.epfl.ch/page-57374-en.html"
+
+                           title="">
+                            The dynamics of collaboration</a>
+                    <div class="clear"></div>
+                </li>
+</ul>
+        </div>
+<!-- /cache:include -->
+<div class="clear"></div>
+    </div>
+
+<div class="box" style="margin-right: 4px;">
+
+<!-- cache:include src="http://discovery.epfl.ch/cms/site/discovery/pid/42799?ctnid=223041&cacheKey=" -->
+<div class="" style="">
+            <h3>Laboratories involved</h3>
+
+<table width="320" cellspacing="0" cellpadding="0" border="0" align="left">
+	<tbody>
+		<tr>
+			<td style="width: 49px;"><a title="Chaire de mod&eacute;lisation et calcul scientifique  " href="http://cmcs.epfl.ch/">CMCS</a></td>
+
+			<td style="width: 49px;"><a href="http://cclab.epfl.ch/" title="Laboratoire de construction en composites  ">CCLAB</a><span> <br />
+				</span>
+			</td>
+			<td style="width: 45px;"><a href="http://leso.epfl.ch/" title="Laboratoire d'&eacute;nergie solaire et physique du b&acirc;timent  ">LESO-PB</a></td>
+			<td style="width: 45px;"><a href="http://vrlab.epfl.ch/" title="Laboratoire de r&eacute;alit&eacute; virtuelle  ">VRLAB</a></td>
+		</tr>
+		<tr>
+
+			<td><a href="http://cvlab.epfl.ch/" title="Laboratoire de vision par ordinateur  ">CVLAB</a></td>
+			<td><a href="http://ltc.epfl.ch/" title="Laboratoire de technologie des composites et polym&egrave;res  ">LTC</a></td>
+			<td><a href="http://eflum.epfl.ch/" title="Laboratoire de m&eacute;canique des fluides de l'environnement  ">EFLUM</a></td>
+			<td><a href="http://lawww.epfl.ch/" title="Laboratoire d'automatique - commun  ">LA-CO</a></td>
+		</tr>
+		<tr>
+			<td><a href="http://lmaf.epfl.ch/" title="Laboratoire de m&eacute;canique appliqu&eacute;e et d'analyse de fiabilit&eacute;  ">LMAF</a></td>
+
+			<td><a href="http://lcav.epfl.ch/" title="Laboratoire d'optique appliqu&eacute;e">LCAV</a></td>
+			<td><a href="http://ltcm.epfl.ch/" title="Laboratoire de transfert de chaleur et de masse  ">LTCM</a></td>
+			<td><a href="http://lis.epfl.ch/" title="Laboratoire de syst&egrave;mes intelligents  ">LIS</a></td>
+		</tr>
+		<tr>
+			<td><a href="http://bigwww.epfl.ch/" title="Laboratoire d'imagerie biom&eacute;dicale  ">LIB</a></td>
+			<td><a href="http://apl.epfl.ch/" title="Laboratoire d'optique appliqu&eacute;e">LOA</a></td>
+
+			<td><a href="http://icom.epfl.ch/" title="Laboratoire de la construction m&eacute;tallique  ">ICOM</a></td>
+			<td><a href="http://lin.epfl.ch/" title="Laboratoire d'ing&eacute;nierie num&eacute;rique  ">LIN</a></td>
+		</tr>
+		<tr>
+			<td><a href="http://lai.epfl.ch/" title="Laboratoire d'actionneurs int&eacute;gr&eacute;s  ">LAI</a></td>
+			<td><a href="http://lei.epfl.ch/" title="Laboratoire d'&eacute;lectronique industrielle  ">LEI</a></td>
+			<td><a href="http://ima.epfl.ch/prob/" title="Chaire de probabilit&eacute;s  ">PROB</a></td>
+
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="http://pvlab.epfl.ch/" title="Laboratoire de photovolta&iuml;que et couches minces &eacute;lectroniques  ">PV-LAB</a></td>
+			<td><a href="http://isic.epfl.ch/lpi" title="Laboratoire de photonique et interfaces  ">LPI</a><span> <br />
+				</span>
+			</td>
+
+			<td><a href="http://lmh.epfl.ch/" title="Laboratoire de machines hydrauliques  ">LMH</a></td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<!--
+	<div><a href="http://cmcs.epfl.ch/" title="Chaire de mod&eacute;lisation et calcul scientifique  ">CMCS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a title="Laboratoire de construction en composites  " href="http://cclab.epfl.ch/">CCLAB</a><span>&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a title="Laboratoire d'&eacute;nergie solaire et physique du b&acirc;timent  " href="http://leso.epfl.ch/">LESO-PB</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a title="Laboratoire de r&eacute;alit&eacute; virtuelle  " href="http://vrlab.epfl.ch/">VRLAB</a></div>
+	<div><a title="Laboratoire de vision par ordinateur  " href="http://cvlab.epfl.ch/">CVLAB</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a title="Laboratoire de technologie des composites et polym&egrave;res  " href="http://ltc.epfl.ch/">LTC</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a title="Laboratoire de m&eacute;canique des fluides de l'environnement  " href="http://eflum.epfl.ch/">EFLUM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a title="Laboratoire d'automatique - commun  " href="http://lawww.epfl.ch/">LA-CO</a></div>
+	<div><a title="Laboratoire de m&eacute;canique appliqu&eacute;e et d'analyse de fiabilit&eacute;  " href="http://lmaf.epfl.ch/">LMAF</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a title="Laboratoire d'optique appliqu&eacute;e" href="http://lcav.epfl.ch/">LCAV</a><a title="Laboratoire d'&eacute;lectronique industrielle  " href="http://lei.epfl.ch/">&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a title="Laboratoire de transfert de chaleur et de masse  " href="http://ltcm.epfl.ch/">LTCM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a title="Laboratoire de syst&egrave;mes intelligents  " href="http://lis.epfl.ch/">LIS</a></div>
+	<div><a title="Laboratoire d'imagerie biom&eacute;dicale  " href="http://bigwww.epfl.ch/">LIB</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a title="Laboratoire d'optique appliqu&eacute;e" href="http://apl.epfl.ch/">LOA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a title="Laboratoire de la construction m&eacute;tallique  " href="http://icom.epfl.ch/">ICOM</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span><a title="Laboratoire d'ing&eacute;nierie num&eacute;rique  " href="http://lin.epfl.ch/">LIN</a></span></div>
+	<div><a title="Laboratoire d'actionneurs int&eacute;gr&eacute;s  " href="http://lai.epfl.ch/">LAI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a title="Laboratoire d'&eacute;lectronique industrielle  " href="http://lei.epfl.ch/">LEI</a><a title="Laboratoire de photonique et interfaces  " href="http://isic.epfl.ch/lpi">&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a title="Chaire de probabilit&eacute;s  " href="http://ima.epfl.ch/prob/">PROB</a></div>
+	<div><a title="Laboratoire de photovolta&iuml;que et couches minces &eacute;lectroniques  " href="http://pvlab.epfl.ch/">PV-LAB</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a title="Laboratoire de photonique et interfaces  " href="http://isic.epfl.ch/lpi">LPI</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><a title="Laboratoire de machines hydrauliques  " href="http://lmh.epfl.ch/">LMH</a></div>
+	<div><span><br />
+	-->
+<div class="clear"></div>
+
+<div class="clear"></div>
+
+<div class="clear"></div>
+</div>
+
+<!-- /cache:include -->
+<div class="clear"></div>
+    </div>
+
+<div class="box last-col">
+
+<!-- cache:include src="http://discovery.epfl.ch/cms/site/discovery/pid/42799?ctnid=223043&cacheKey=" -->
+<div class="" style="">
+            <h3>External links</h3>
+
+<ul class="link-list">
+            <li >
+                    <a href="http://http://www.alinghi.com"
+
+                                        target="_blank"
+
+                           title="">
+
+                            Alinghi</a>
+                    <div class="clear"></div>
+                </li>
+<li >
+                    <a href="http://solarimpulse.com"
+
+                                        target="_blank"
+
+                           title="">
+                            Solar Impulse</a>
+                    <div class="clear"></div>
+                </li>
+
+<li >
+                    <a href="http://www.hydroptere.com"
+
+                                        target="_blank"
+
+                           title="">
+                            l&#039;Hydroptère</a>
+                    <div class="clear"></div>
+                </li>
+<li >
+                    <a href="http://www.rivages2012.com/"
+
+                                        target="_blank"
+
+                           title="">
+                            Rivages</a>
+
+                    <div class="clear"></div>
+                </li>
+</ul>
+        </div>
+<!-- /cache:include -->
+<div class="clear"></div>
+    </div>
+<div class="clear"></div>
+                    </div>
+            <div class="clear"></div>
+        <div id="footer">
+
+            <ul>
+
+<a class="hidden" id="ctn98375_218616" name="ctn98375_218616"></a><li>
+                <!-- cache:include src="http://discovery.epfl.ch/cms/site/discovery/pid/42799?ctnid=0&cacheKey=_ctnListName_cid218616_siteKey_discovery" --><span class="link"><a href="/page-42800.html;jsessionid=9FA988ECA01C3F37AA81FFD57C5E34DA">Sitemap</a>
+</span><!-- /cache:include -->
+</li>
+<li><a href="http://www.epfl.ch/accessibility.en.shtml">Accessibility</a></li>
+    <li><a href="#top" class="hidden">Top of the page</a></li>
+    <li class="copyright">© 2010 EPFL All rights reserved</li>
+
+    <li class="login">
+            <a href="/cms/engineName/tequila_login/site/discovery/pid/42799">Login</a>
+        </li>
+
+</ul>
+
+</div>
+
+	</div>
+
+</body>
+
+</html>
