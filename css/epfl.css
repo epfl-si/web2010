@@ -843,7 +843,7 @@ ul.home-list-layout { overflow:hidden; width:656px; padding-top:4px;}
 .onethird-news ul { margin:5px 0; padding:0; width:324px; border-top:none; }
 .onethird-news h3 { margin-bottom:0px; }
 .onethird-news h4 { margin:4px 0 0 0; padding-bottom: 3px; font-size: 13px; line-height: 14px; letter-spacing: 0;}
-.onethird-news .no-image .news-text { height:73px; }
+.onethird-news .no-image .news-text { height:73px; overflow: hidden;}
 .onethird-news .no-image .heading {line-height:16px; letter-spacing:0;}
 
 
