@@ -634,7 +634,7 @@ a.caldisabled {
 .modal form {margin: 0;}
 .modal .modal-content { padding: 4px 8px; }
 .modal .navigation-bar{ margin: 20px 0 0 0; width: auto; }
-.modal .right { float: right; margin-right: 4px; }
+.modal .navigation-bar .right { float: right; margin-right: 4px; }
 .modal .default { font-weight: bold; }
 
 /******************************** Navigation **********************************/
