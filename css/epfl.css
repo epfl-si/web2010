@@ -614,6 +614,29 @@ a.caldisabled {
    left: 10px; 
 }
 
+.modal {
+    display:none;
+    border: 1px solid #474e52;
+    background-color: #fff;
+	min-width: 324px;
+	padding: 0;
+}
+
+.modal h3 {
+    margin: 0 0 20px 0; 
+	background-color:#474e52; 
+	color: #fff; 
+	padding: 2px 8px 2px 8px; 
+	font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 15px; 
+	line-height: 19px; 
+}
+    
+.modal form {margin: 0;}
+.modal .modal-content { padding: 4px 8px; }
+.modal .navigation-bar{ margin: 20px 0 0 0; width: auto; }
+.modal .right { float: right; margin-right: 4px; }
+.modal .default { font-weight: bold; }
+
 /******************************** Navigation **********************************/
 .navigation-bar {
     width: 980px;
