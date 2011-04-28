@@ -102,6 +102,9 @@ jQuery(document).ready(function(){
     /* activate togglers */
     jQuery('.toggler').click(function(){ jQuery(this).toggleClass("toggled-active").next().slideToggle("slow"); return false;});  
     
+    /* modal windows */
+    jQuery(".modal-opener[rel]").overlay({ mask: { color: '#000', opacity: 0.6, loadSpeed: 200}, closeOnClick: false});
+    
     /* Set correct margin to elements */
     jQuery(".box.two-cols div.box-col:even",this).addClass("box-left-col");
     jQuery(".box.two-cols div.box-col:odd", this).addClass("box-right-col");
