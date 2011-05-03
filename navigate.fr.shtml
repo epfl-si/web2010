@@ -180,54 +180,56 @@
 
         <h2>EPFL en bref</h2>
         <div class="menus bref">
+          <ul>
+            <li class="group-2-cols">
+              <h3><a href="http://information.epfl.ch/page-16430-fr.html"><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></a></h3>
               <ul>
-                <li class="group-2-cols">
-                  <h3><a href="http://presentation.epfl.ch"><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></a></h3>
-                  <ul>
-                    <li><a href="http://direction.epfl.ch">Direction</a></li>
-                    <li><a href="http://www.epfl.ch/organigrammes">Structure EPFL</a></li>
-                    <li><a href="http://information.epfl.ch">Accueil et Information</a></li>
-                    <li><a href="http://library.epfl.ch">Bibliothèque</a></li>
-                    <li><a href="http://emploi.epfl.ch/">Offres d'emploi</a></li>
-                    <li><a href="http://vpai.epfl.ch/page-33793.html">Collaborations nationales</a></li>
-                  </ul>
-                </li>
-                <li class="group-2-cols">
-                  <h3><a href="http://formation.epfl.ch">Formations</a></h3>
-                  <ul>
-                    <li><a href="http://cms.epfl.ch"><acronym title="Cours de Mathématiques Spéciales">CMS</acronym> Cours Préparatoire</a></li>
-                    <li><a href="http://bachelor.epfl.ch">Bachelor</a></li>
-                    <li><a href="http://master.epfl.ch">Master</a></li>
-                    <li><a href="http://phd.epfl.ch">École doctorale</a></li>
-                    <li><a href="http://continuing-education.epfl.ch">Formation continue</a> (Fondation EPFL-UNIL)</li>
-                  </ul>
-                </li>
-                <li class="group-2-cols last">
-                  <h3><a href="http://recherche.epfl.ch">Recherche</a></h3>
-                  <ul>
-                    <li><a href="http://vpiv.epfl.ch/page-22996-fr.html">Centres interdisciplinaires</a></li>
-                    <li><a href="http://grantsoffice.epfl.ch/">Grants office</a></li>
-                    <li><a href="http://commission-recherche.epfl.ch/page-25053-fr.html">Commission de la recherche</a></li>
-                    <li><a href="http://infoscience.epfl.ch/?ln=fr">Publications <acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></a></li>
-                  </ul>
-                </li>
-                <li class="group-2-cols" style="clear: left;">
-                  <h3><a href="http://vpiv.epfl.ch">Innovation &amp; Valorisation</a></h3>
-                  <ul>
-                    <li><a href="http://vpiv.epfl.ch/page-22997-fr.html">Partenariats</a></li>
-                    <li><a href="http://vpiv.epfl.ch/page-22998-fr.html">Soutien aux start-ups</a></li>
-                    <li><a href="http://www.alliance-tt.ch">Liaison industrielle</a></li>
-                    <li><a href="http://sri.epfl.ch/">Transfert de technologies, brevets</a></li>
-                  </ul>
-                </li>
-                <li class="group-2-cols" >
-                  <h3><a href="http://vpai.epfl.ch/page-33792-fr.html">International</a></h3>
-                  <ul>
-                    <li><a href="http://www.epfl.ae">EPFL Middle East</a></li>
-                  </ul>
-                </li>
+                <li><a href="http://direction.epfl.ch">Direction</a></li>
+                <li><a href="http://www.epfl.ch/organigrammes">Structure EPFL</a></li>
+                <li><a href="http://information.epfl.ch/page-16430-fr.html">Information et présentation</a></li>
+                <li><a href="http://library.epfl.ch">Bibliothèque</a></li>
+                <li><a href="http://emploi.epfl.ch/">Offres d'emploi</a></li>
+                <li><a href="http://information.epfl.ch/page-60921-fr.html">Collaborations nationales</a></li>
               </ul>
-              <div class="clear"></div>
+            </li>
+            <li class="group-2-cols">
+              <h3><a href="http://formation.epfl.ch">Formations</a></h3>
+              <ul>
+                <li><a href="http://cms.epfl.ch"><acronym title="Cours de Mathématiques Spéciales">CMS</acronym> Cours Préparatoire</a></li>
+                <li><a href="http://bachelor.epfl.ch">Bachelor</a></li>
+                <li><a href="http://master.epfl.ch">Master</a></li>
+                <li><a href="http://phd.epfl.ch">École doctorale</a></li>
+                <li><a href="http://www.formation-continue-unil-epfl.ch/">Formation continue</a> (Fondation EPFL-UNIL)</li>
+              </ul>
+            </li>
+            <li class="group-2-cols last">
+              <h3><a href="http://recherche.epfl.ch">Recherche</a></h3>
+              <ul>
+                <li><a href="http://vpiv.epfl.ch/page-22996-fr.html">Centres interdisciplinaires</a></li>
+                <li><a href="http://grantsoffice.epfl.ch/">Grants office</a></li>
+                <li><a href="http://commission-recherche.epfl.ch/page-25053-fr.html">Commission de la recherche</a></li>
+                <li><a href="http://infoscience.epfl.ch/?ln=fr">Publications <acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></a></li>
+              </ul>
+            </li>
+            <li class="group-2-cols" style="clear: left;">
+              <h3><a href="http://vpiv.epfl.ch">Innovation &amp; Valorisation</a></h3>
+              <ul>
+                <li><a href="http://vpiv.epfl.ch/page-22997-fr.html">Partenariats</a></li>
+                <li><a href="http://vpiv.epfl.ch/page-22998-fr.html">Soutien aux start-ups</a></li>
+                <li><a href="http://www.alliance-tt.ch">Liaison industrielle</a></li>
+                <li><a href="http://sri.epfl.ch/">Transfert de technologies, brevets</a></li>
+              </ul>
+            </li>
+            <li class="group-2-cols" >
+              <h3><a href="http://information.epfl.ch/page-60920-fr.html">International</a></h3>
+              <ul>
+                <li><a href="http://www.epfl.ae">EPFL Middle East</a></li>
+                <li><a href="http://cooperation.epfl.ch/page-8942-fr.html">Coopération</a></li>
+                <li><a href="http://cooperation.epfl.ch/rescif">Réseau d'excellence RESCIF</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="clear"></div>
         </div>
       </div>
     </div>
