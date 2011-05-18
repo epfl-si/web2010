@@ -270,6 +270,7 @@ table.table-cours th {padding: 0 2px 0 2px;}
 #nav-logo a{ display: block; width: 160px; height: 73px;}
 #main-menus { list-style: none; padding: 0; margin: 0;}
 #main-menus li.menu { float: left; height: 74px; width: 160px; position: relative; cursor: pointer; }
+#main-menus li.menu:hover { border-bottom: 1px solid #fff; margin-bottom: -1px;} /* bug FF4 */
 #main-menus li.menu .navigation-panel {cursor: default;}
 #nav-menus{ margin-right: 4px; padding: 0; float: left;}
 #nav-menus li.menu:hover { background-color: #fff; color: #000;}
@@ -665,6 +666,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
     margin-right: 0; padding: 4px 8px 0 8px;
     background: none;
 }
+#main-navigation .dropdown:hover { border-bottom: 1px solid #fff; margin-bottom: -1px;} /* bug FF4 */
 #main-navigation:first-child .dropdown { border-left: none;}
 #main-navigation li:hover { border-color: #fff; background-color: #7e000c; }
 #main-navigation .dropdown.inpath, #main-navigation .dropdown.current { border-color: #fff; background-color: #000; }
