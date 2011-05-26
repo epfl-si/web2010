@@ -1027,6 +1027,8 @@ html>body legend {left: -160px;}
 .left-aligned fieldset label {display: inline; width: auto; float: none;}
 
 /****************************** Publications **********************************/
+.infoscience_export li.infoscience_record{ list-style-image: none; margin: 0 0 4px 0; padding: 0 0 4px 0;}
+
 
 .infoscience_header1 {
     font-family: "Arial Black", Arial, Helvetica, sans-serif;
@@ -1039,7 +1041,7 @@ html>body legend {left: -160px;}
     margin-top: 15px;
 }
 .infoscience_header2 { color: #000; font-family: Arial, Helvetica, sans-serif;
-     font-weight: bold; font-size: 13px; margin-bottom: 8px; margin-top: 1px;
+     font-weight: bold; font-size: 13px; margin-bottom: 8px; margin-top: 4px;
      line-height: 19px;
      padding-left: 8px;
      padding-bottom: 1px;
@@ -1048,7 +1050,7 @@ html>body legend {left: -160px;}
 }
 .infoscience_export .img_file {width: 160px; margin-right: 4px; float: left; }
 .infoscience_record {border-bottom: 1px dotted #000; margin-top: 8px; padding-bottom: 7px; }
-
+.infoscience_export ul li:last-child {border-bottom: none; }
 
 .infoscience_record h3.infoscience_title {
     color: #000; font-family: Arial, Helvetica, sans-serif; letter-spacing: 0;
