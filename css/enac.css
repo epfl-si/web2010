@@ -13,6 +13,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {color:#e
 
 .local-color-light {background-color:#d53c00;}
 .local-color-dark {background-color:#b91e00;}
+.local-color-down {background-color:#952000;}
 .news-text h2 a:hover {color: #ea5e00;}
 
 .search-results a {color:#ea5e00; }
@@ -112,12 +113,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {color:#e
     padding: 10px;
 }
 .list_laboratories p img {
-    border:0px solid #AAA;
+    border:0 solid #AAA;
     background-color:#faf0e6;
-    padding:0px;
-    margin:0px;
+    padding:0;
+    margin:0;
 }
-.list_laboratories p { padding : 0px 5px; }
+.list_laboratories p { padding : 0 5px; }
 
 /* MR - 10.08.2010 (màj 20.08.2010)
 	Domaines de recherche 
