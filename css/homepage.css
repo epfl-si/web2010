@@ -14,54 +14,138 @@
 
 .navigation-bar .group span { height: 19px; float: left; padding-top: 4px; margin-right: 4px;}
 .navigation-bar ul.topnav{ top: 1px; }
-#grid-icon {
-    background: url(../img/homepage-icons.png) no-repeat 0 0;
-	height:22px;
-	width: 36px;
-	display:block;
-}
-#grid-icon.current { background-position: 0 -22px;}
-#list-icon { 
-    background:url(../img/homepage-icons.png) no-repeat -36px 0;
-	height:22px;
-	width:36px;
-	display:block;
-}
-#list-icon.current { background-position: -36px -22px;}
-#text-icon { 
-    background:url(../img/homepage-icons.png) no-repeat -72px 0;
-	height:22px;
-	width:36px;
-	display:block;
-}
-#text-icon.current { background-position: -72px -22px;}
-
-.home-navpanel .unit-col div:first-child {padding-top: 2px; padding-bottom: 2px;}
+.home-navpanel .unit-col div:first-child {padding-top: 2px; padding-bottom: 2px; margin-right:0;}
 #nav-search { background-color: #ae0010;}
 
-/* colors */
-.local-color {background-color: #e2001a; color: #fff;}
-.local-color-text {color:#e2001a;}
-.local-color-light{ background-color: #ae0010; }
-.local-color-dark{ background-color: #33383d; }
+/* ajouts redesign 2011  */
 
+h1 {border-bottom:black 1px solid; margin-bottom:4px;}
+
+/* Three column design and coloring */
+.unit-col, .unit-col li {line-height:16px; }
+.unit-col .large {width:308px;}
+.navigation-bar {background:none; margin-top:4px; }
+.light-gray {background-color: #b2b4b1; }
+.mid-gray {background-color: #848682; }
+.gray {background-color: #494e4f; }
+.dark-gray {background-color: #2c3136; }
+.red1 {background-color: #7e000c; }
+.red2 {background-color: #80000c; }
+.red3 {background-color: #a3000f; }
+.red4 {background-color: #bd0016; }
+.red5 {background-color: #e3001b; }
+.red6 {background-color: #fd001e; }
+.epfl-images {background-image:url('http://actu.epfl.ch/image/4852/160x90.jpg');}
+
+.alumni {background-image:url('../img/homepage-alumni.png'); background-repeat:no-repeat; padding:0 0 4px 6px;}
+.startup, .banner {padding:0 10px 4px 6px;}
+.alumni table, .startup table, .banner table {height:100%; width:100%; padding-bottom:2px;}
+.alumni table td, .startup table td, .banner table td {vertical-align:bottom;}
+
+.startup-icon {margin-right:0px;}
+.startup-icon .icon {background-image:url('../img/homepage-icons.png'); background-position:-52px -1px; height:16px; width:21px; margin:0; padding:0; position:relative; top:5px;}
+.alumni-icon .icon {background-image:url('../img/homepage-icons.png'); background-position:-6px -1px; height:16px; width:19px; margin:0; padding:0; position:relative; top:4px;}
+.science-icon .icon {background-image:url('../img/homepage-icons.png'); background-position:-26px -1px; height:18px; width:25px; margin:0; padding:0; position:relative; top:1px;}
+
+
+.epfl-images .news-video-overlay {height:86px; width:144px; }
+.epfl-images a {position:relative;}
+
+/* News Feed */
+#news-homepage {width:324px; padding-right:4px; margin:0px;}
+#news-homepage a, #news-homepage a:hover {background:none; position:relative;}
+#news-homepage .heading-news .news-video-overlay {top:-172px;}
+.news-text {height:85px; line-height:16px;}
+.news-text h2 {margin:0px; display:inline; position:relative; top:3px; line-height:16px;}
+.news-list li.heading-news h2 {top:-2px; line-height:22px;}
+.news-text p {float:none; margin: 6px 0; line-height:16px;}
+.news-list li.heading-news .news-img, .news-list li img.news-img {float:none;}
+.news-list li.heading-news {float:none; width:100%; height:278px; line-height:16px;}
+.news-list li.last {margin:0;}
+.news-list li {float:left; width:160px; height:182px; border-bottom:solid black 1px; line-height:12px;}
+.category-en, .category-fr {float:left; height:15px; width:60px;}
+
+.category-en-news{width:48px;}
+.category-en-epfl{width:39px;}
+.category-en-education{width:84px;}
+.category-en-research{width:78px;}
+.category-en-innovation{width:91px;}
+.category-en-campus{width:63px;}
+
+
+/* Calendar */
+table.two-dates {float:left; width:30px; padding-right:8px;}
+table.two-dates td {font-family: Impact,"Arial Black","DejaVu Sans",Arial,Helvetica,sans-serif; text-align:center;}
+table.two-dates .day {font-size:22px; letter-spacing:1px; line-height:22px;}
+table.two-dates .month {font-size:14px; text-transform: uppercase; letter-spacing:0px;}
+table.two-dates .lower-border {border-bottom:4px white solid; padding-bottom: 3px;}
+.event {line-height:16px; margin-top:2px;}
+
+
+#calendar-nav #calroot {background-color:transparent; width:144px; -moz-box-shadow:none; -webkit-box-shadow:none; border:none 0px; margin-top:8px; margin-bottom:12px; padding:0;}
+#calendar-nav #calhead, #calendar-nav #calbody {width:140px;}
+#calnext, #calprev {height:16px; width:10px;}
+#calnext {background-position:-7px -1px;}
+#calprev {background-position:-100px -1px;}
+#calendar-nav .calweek a {background-image:none; background-color:transparent; width:19px; height:14px; font-size:12px; line-height:14px; border-radius:0;}
+#calendar-nav #caldays {border:none; height:16px; font-weight:bold; width:140px;}
+#calendar-nav #calweeks {background-color:transparent; width:140px; margin-top:0px;}
+#calendar-nav .calweek  {height:14px;}
+#calendar-nav .calweek:first-child {padding:0;}
+#calendar-nav #calcurrent {background-color:black;}
+#calendar-nav .calweek a:hover, .calfocus {background-color:#7e000c;}
+#calendar-nav .calweek a.caloff {visibility:hidden;}
+#calendar-nav #caldays span {width:19px; margin-left:1px; font-size:12px;}
+#calendar-nav #caltitle {width:120px; font-size:14px;}
+#calendar-nav .calweek a:nth-child(6):not(.caloff), #calendar-nav .calweek a:nth-child(7):not(.caloff) {}
+
+
+/* Links to social networks, RSS, all news, ... */
+.home-navpanel {margin-bottom:4px; line-height:16px;}
+.navigation-bar {font-weight:normal;}
+.navigation-bar .group {margin:0px;}
+.navigation-bar .group .button {width:144px;}
+#social-networks {margin-right:0px; }
+#social-networks img {margin-top:4px;}
+
+
+/* Bottom Part */
+.homepage-bottom {margin-top:35px;}
+.homepage-bottom .box {float:left;}
+.homepage-bottom .last {margin:0px;}
+.homepage-bottom .box h3 {
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:0px;
+    line-height:13px;
+    padding:0 0 3px;
+}
+
+.homepage-bottom .box ul {padding-top:0px;}
+.homepage-bottom .box ul li {padding-left:1px;}
+.expert-question img {margin:0;}
+.expert-question img.expert-picture {float:left; width:50px; height:50px; margin: 0 8px 2px 0;}
+.expert-question .question-text {font-family:Georgia, "Times New Roman", Times, serif; font-weight:bold; color:black; font-style:italic; margin-top:-4px;}
+.expert-question .quote {font-size:20px; line-height:13px;}
 
 ul.list-layout { padding-top: 0; border-top: none; }
 
 h2 a:hover { color: #000000; }
 
-/* corrections 26.10.10 */
-#form_sondage p { margin-bottom : 6px; margin-top:0;}
-#form_sondage form p { margin-bottom: 0px;}
+
+#form_sondage p { margin-bottom:6px; margin-top:0; line-height:16px; letter-spacing:0.3px;}
+#form_sondage form p { margin-bottom: 0px; font-weight:normal;}
 
 #form_sondage input {margin: 0; }
 #form_sondage label {line-height:16px;}
 .unit-col h3 {
-    font-size: 13px; line-height:14px;
+    font-size: 13px; line-height:16px;
     letter-spacing: 0;
     padding-bottom: 4px;
     font-family: arial, helvetica, sans-serif;
     font-weight: bold;
+    width:144px;
 }
 #form_sondage .footer { margin-top: 5px;}
 .unit-cell ul { margin-top: 3px; }

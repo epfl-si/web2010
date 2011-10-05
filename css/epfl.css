@@ -241,6 +241,11 @@ table.table-cours th {padding: 0 2px 0 2px;}
 .down .icon {background-position: -698px 0;}
 .down:hover .icon {background-position: -698px -24px;}
 
+.comment-start {padding:0; margin:0; float:none; display:inline;}
+.comment-start .icon {background-position: -29px -555px; width:14px; height:16px; margin:0; float:none;}
+.comment-end {padding:0; margin:0; float:none; display:inline; position:relative; top:-2px;}
+.comment-end .icon {background-position: -4px -554px; width:14px; height:16px; margin:0; float:none;}
+
 .francais .diet_icon {background-position: -201px -3px;}
 .anglais .diet_icon {background-position: -221px -3px;}
 .allemand .diet_icon {background-position: -684px -3px;}
@@ -266,8 +271,9 @@ table.table-cours th {padding: 0 2px 0 2px;}
 
 #nav-logo {
     float: left; height: 73px; width: 160px; position: relative; margin: 0 4px 0 0;
-    background: url(../img/epfl.png) no-repeat 0 7px; border-bottom: 1px solid #474e52; /* darker gray */ }
+    border-bottom: 1px solid #474e52; /* darker gray */ }
 #nav-logo a{ display: block; width: 160px; height: 73px;}
+#nav-logo img{ margin-top:7px; height:60px; width:121px; }
 #main-menus { list-style: none; padding: 0; margin: 0;}
 #main-menus li.menu { float: left; height: 74px; width: 160px; position: relative; cursor: pointer; }
 #main-menus li.menu:hover { border-bottom: 1px solid #fff; margin-bottom: -1px;} /* bug FF4 */
@@ -699,6 +705,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 }
 .right-col{ width: 324px; float:left; padding: 0;}
 .right-col .box {margin-right: 0; }
+.centre-col {width: 324px; float:left; padding: 0 4px 0 0;}
 .content .home-navpanel{float: left; margin-right: 4px;}
 .content .last-col{margin-right: 0;}
 .content p { margin-right: 35px;}
@@ -711,7 +718,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
     display:block;
 }
 
-.content li, .content li li, .content ol li ul li {
+.content li, .content li li, .content ol li ul li, .homepage-bottom .box ul li {
     list-style-image: url(../img/dot.png);
     margin:0 0 1px 15px;
     *margin-left:17px; /* IE Hack */
@@ -799,7 +806,7 @@ img.right { margin-left:25px; }
 .box blockquote {margin-top: 6px;}
 
 .home-navpanel { margin-bottom: 44px; line-height: 18px;}
-.home-navpanel .unit-col {line-height: 14px; }
+.home-navpanel .unit-col {line-height: 14px; position:relative;}
 .home-navpanel .unit-col div:first-child {padding-top: 4px; padding-bottom: 5px}
 .homepage-content .home-navpanel .unit-col div:first-child {padding: 2px 8px}
 
@@ -811,7 +818,7 @@ img.right { margin-left:25px; }
     font-weight: bold; text-transform: none; font-size: 18px; line-height: 20px; letter-spacing: 1px;
     border: none; margin-top:3px; /* new margin-top:3px; */
 }
-.home-navpanel a { background-image: url(../img/underline-white.gif); }
+.home-navpanel a { background-image: url(../img/underline-white.gif); line-height: 16px;}
 .box-flat-panel { padding: 6px 8px 8px 8px; width: 308px;} /* could be done as .box.home-navpanel. Say thanks to MSIE6 buggy selectors */
 .box-flat-panel h3 { padding: 0; margin: 0 0 2px 0; }
 
@@ -933,7 +940,7 @@ ul.home-list-layout { overflow:hidden; width:656px; padding-top:4px;}
     width:324px;
     height:282px;
     margin:28px 4px 0 0;
-    padding 0;
+    padding:0;
     float:left;
 }
 
@@ -1081,9 +1088,8 @@ ol.people-list .role { width: 180px; }
 ol.people-list .place { width: 90px; }
 ol.people-list .phone { width: 110px; margin-right: 0;}
 
-ul.bottin { list-style-type:outline;  padding:0; margin:0; }
+ul.bottin {list-style-position:outside; list-style-type:none; padding:0; margin:0; }
 ul.bottin li { 
-    list-style:none;
     padding:0; margin:0 3px 0 0;
     line-height:18px; float:left;
     width:160px;
