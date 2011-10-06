@@ -242,7 +242,7 @@ table.table-cours th {padding: 0 2px 0 2px;}
 .down:hover .icon {background-position: -698px -24px;}
 
 .comment-start {padding:0; margin:0; float:none; display:inline;}
-.comment-start .icon {background-position: -29px -555px; width:14px; height:10px; margin:-3px 0; float:none; position:relative; top:-3px;}
+.comment-start .icon {background-position: -29px -555px; width:14px; height:10px; margin:-4px 0; float:none; position:relative; top:-3px;}
 .comment-end {padding:0; margin:0; float:none; display:inline;}
 .comment-end .icon {background-position: -4px -554px; width:14px; height:10px; margin:-3px 0; float:none; position:relative; top:-4px;}
 

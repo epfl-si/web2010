@@ -60,7 +60,7 @@ h1 {border-bottom:black 1px solid; margin-bottom:4px;}
 .news-list li.heading-news h2 {top:-2px; line-height:22px;}
 .news-text p {float: none; height: 40px; line-height: 16px; margin: 6px 0 0;}
 .news-text .heading {margin-bottom:0px;}
-.news-list li.heading-news .news-img, .news-list li img.news-img {float:none;}
+.news-list li.heading-news .news-img, .news-list li img.news-img {float:none; margin-bottom:4px;}
 .news-list li.heading-news {float:none; width:100%; height:278px; line-height:16px;}
 .news-list li.last {margin:0;}
 .news-list li {float:left; width:160px; height:182px; border-bottom:solid black 1px; line-height:12px;}
