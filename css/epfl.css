@@ -975,12 +975,15 @@ ul.home-list-layout { overflow:hidden; width:656px; padding-top:4px;}
 .category-innovation{background-position: -1px -77px;}
 .category-campus{background-position: -1px -96px;}
 
-.category-research-white{background-position: -208px -58px; position: relative;}
-.category-news-white{background-position: -208px -1px; position: relative;}
-.category-epfl-white{background-position: -208px -20px; position: relative;}
-.category-education-white{background-position: -208px -39px; position: relative;}
-.category-innovation-white{background-position: -208px -77px; position: relative;}
-.category-campus-white{background-position: -208px -96px; position: relative;}
+.category-fr.category-research-white{background-position: -209px -58px; position: relative; width:77px;}
+.category-en.category-research-white{background-position: -209px -58px; position: relative; width:68px;}
+.category-fr.category-news-white{background-position: -209px -1px; position: relative; width:34px;}
+.category-en.category-news-white{background-position: -209px -1px; position: relative; width:38px;}
+.category-epfl-white{background-position: -209px -20px; position: relative; width:30px;}
+.category-fr.category-education-white{background-position: -209px -39px; position: relative; width:99px;}
+.category-en.category-education-white{background-position: -209px -39px; position: relative; width:75px;}
+.category-innovation-white{background-position: -209px -77px; position: relative; width:82px;}
+.category-campus-white{background-position: -209px -96px; position: relative; width:55px;}
 
 
 /******************** Search results ****************************/

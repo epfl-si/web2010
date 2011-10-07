@@ -37,16 +37,16 @@ h1 {border-bottom:black 1px solid; margin-bottom:4px;}
 .red6 {background-color: #fd001e; }
 .epfl-images {background-image:url('http://actu.epfl.ch/image/4852/160x90.jpg');}
 
-.alumni {background-image:url('../img/homepage-alumni.png'); background-repeat:no-repeat; padding:0 0 4px 6px;}
+.alumni {padding:0 0 4px 6px; position:relative;}
 .startup, .banner {padding:0 10px 4px 6px;}
-.alumni table, .startup table, .banner table {height:100%; width:100%; padding-bottom:2px;}
-.alumni table td, .startup table td, .banner table td {vertical-align:bottom;}
 
-.startup-icon {margin-right:0px;}
-.startup-icon .icon {background-image:url('../img/homepage-icons.png'); background-position:-52px -1px; height:16px; width:21px; margin:0; padding:0; position:relative; top:5px;}
-.alumni-icon .icon {background-image:url('../img/homepage-icons.png'); background-position:-6px -1px; height:16px; width:19px; margin:0; padding:0; position:relative; top:4px;}
-.science-icon .icon {background-image:url('../img/homepage-icons.png'); background-position:-26px -1px; height:18px; width:25px; margin:0; padding:0; position:relative; top:1px;}
+.banner {position:relative;}
+.banner img {margin-left: -6px;}
+.banner .bottom-frame {width:154px;}
 
+.startup h3 {background:url('../img/homepage-icons.png') no-repeat 0 -48px; text-indent: 19px;}
+.alumni h3 {background:url('../img/homepage-icons.png') no-repeat 0 0; text-indent: 16px;}
+.alumni img {margin-left: -6px;}
 
 .epfl-images .news-video-overlay {height:86px; width:144px; }
 .epfl-images a {position:relative;}
@@ -64,7 +64,7 @@ h1 {border-bottom:black 1px solid; margin-bottom:4px;}
 .news-list li.heading-news {float:none; width:100%; height:278px; line-height:16px;}
 .news-list li.last {margin:0;}
 .news-list li {float:left; width:160px; height:182px; border-bottom:solid black 1px; line-height:12px; position:relative;}
-.category-en, .category-fr {float:left; height:15px; width:60px;}
+.category-en, .category-fr {float:left; height:15px; margin-right: 4px;}
 
 .category-en-news{width:48px;}
 .category-en-epfl{width:39px;}
@@ -73,8 +73,12 @@ h1 {border-bottom:black 1px solid; margin-bottom:4px;}
 .category-en-innovation{width:91px;}
 .category-en-campus{width:63px;}
 
+.bottom-frame {position:absolute; bottom:0; padding-bottom: 4px;}
 
 /* Calendar */
+.memento .date {width:25px; margin-right: 8px; display:inline-block; float:left; font-size:22px; letter-spacing:1px; line-height:22px; font-family: Impact,"Arial Black","DejaVu Sans",Arial,Helvetica,sans-serif; text-align:center;}
+.memento .month {font-size:14px; text-transform: uppercase; letter-spacing:0px;}
+
 table.two-dates {float:left; width:30px; padding-right:8px;}
 table.two-dates td {font-family: Impact,"Arial Black","DejaVu Sans",Arial,Helvetica,sans-serif; text-align:center;}
 table.two-dates .day {font-size:22px; letter-spacing:1px; line-height:22px;}
@@ -83,7 +87,7 @@ table.two-dates .lower-border {border-bottom:4px white solid; padding-bottom: 3p
 .event {line-height:16px; margin-top:2px;}
 
 
-#calendar-nav #calroot {background-color:transparent; width:144px; -moz-box-shadow:none; -webkit-box-shadow:none; border:none 0px; margin-top:8px; margin-bottom:12px; padding:0;}
+#calendar-nav #calroot {background-color:transparent; width:144px; -moz-box-shadow:none; -webkit-box-shadow:none; border:none 0px; margin-top:8px; margin-bottom:12px; padding:0;z-index:0;}
 #calendar-nav #calhead, #calendar-nav #calbody {width:140px;}
 #calnext, #calprev {height:16px; width:10px;}
 #calnext {background-position:-7px -1px;}
@@ -140,6 +144,8 @@ h2 a:hover { color: #000000; }
 
 #form_sondage input {margin: 0; }
 #form_sondage label {line-height:16px;}
+#form_sondage h3 { background:url('../img/homepage-icons.png') no-repeat 0 -95px; text-indent: 25px; }
+
 .unit-col h3 {
     font-size: 13px; line-height:16px;
     letter-spacing: 0;
