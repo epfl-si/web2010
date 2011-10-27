@@ -49,7 +49,7 @@ h1 {border-bottom:black 1px solid; margin-bottom:4px;}
 .alumni img {margin-left: -6px;}
 
 .epfl-images .news-video-overlay {height:86px; width:144px; }
-.epfl-images a {position:relative;}
+.epfl-images a {position:relative; background: none;}
 
 /* News Feed */
 #news-homepage {width:324px; padding-right:4px; margin:0px;}
@@ -73,7 +73,7 @@ h1 {border-bottom:black 1px solid; margin-bottom:4px;}
 .category-en-innovation{width:91px;}
 .category-en-campus{width:63px;}
 
-.bottom-frame {position:absolute; bottom:0; padding-bottom: 4px;}
+.bottom-frame {position:absolute; bottom:0; left:6px; padding-bottom: 4px;}
 
 /* Calendar */
 .memento .date {width:25px; margin-right: 8px; display:inline-block; float:left; font-size:22px; letter-spacing:1px; line-height:22px; font-family: Impact,"Arial Black","DejaVu Sans",Arial,Helvetica,sans-serif; text-align:center;}
@@ -86,13 +86,13 @@ table.two-dates .month {font-size:14px; text-transform: uppercase; letter-spacin
 table.two-dates .lower-border {border-bottom:4px white solid; padding-bottom: 3px;}
 .event {line-height:16px; margin-top:2px;}
 
-
-#calendar-nav #calroot {background-color:transparent; width:144px; -moz-box-shadow:none; -webkit-box-shadow:none; border:none 0px; margin-top:8px; margin-bottom:12px; padding:0;z-index:0;}
+#calendar-nav {margin-top: 18px;}
+#calendar-nav #calroot {background-color:transparent; width:144px; -moz-box-shadow:none; -webkit-box-shadow:none; border:none 0px; margin-top:8px; margin-bottom:4px; padding:0;z-index:0;}
 #calendar-nav #calhead, #calendar-nav #calbody {width:140px;}
 #calnext, #calprev {height:16px; width:10px;}
 #calnext {background-position:-7px -1px;}
 #calprev {background-position:-100px -1px;}
-#calendar-nav .calweek a {background-image:none; background-color:transparent; width:19px; height:14px; font-size:12px; line-height:14px; border-radius:0;}
+#calendar-nav .calweek a {background-image:none; background-color:transparent; width:19px; height:14px; font-size:12px; line-height:12px; border-radius:0;}
 #calendar-nav #caldays {border:none; height:16px; font-weight:bold; width:140px;}
 #calendar-nav #calweeks {background-color:transparent; width:140px; margin-top:0px;}
 #calendar-nav .calweek  {height:14px;}
@@ -109,7 +109,7 @@ table.two-dates .lower-border {border-bottom:4px white solid; padding-bottom: 3p
 .home-navpanel {margin-bottom:4px; line-height:16px;}
 .navigation-bar {font-weight:normal;}
 .navigation-bar .group {margin:0px;}
-.navigation-bar .group .button {width:144px;}
+.navigation-bar .group .button {width:160px; margin-right:4px;}
 #social-networks {margin-right:0px; }
 #social-networks img {margin-top:4px;}
 
@@ -144,7 +144,7 @@ h2 a:hover { color: #000000; }
 
 #form_sondage input {margin: 0; }
 #form_sondage label {line-height:16px;}
-#form_sondage h3 { background:url('../img/homepage-icons.png') no-repeat 0 -95px; text-indent: 25px; }
+#form_sondage h3 { background:url('../img/homepage-icons.png') no-repeat 0 -95px; padding-left: 25px; width: 119px;}
 
 .unit-col h3 {
     font-size: 13px; line-height:16px;
@@ -158,6 +158,8 @@ h2 a:hover { color: #000000; }
 .unit-cell ul { margin-top: 3px; }
 .unit-3-cells ul { margin-top: 3px; padding-top: 0;}
 
+.navigation-bar .comment .label, .navigation-bar .feed .label {letter-spacing: 0;}
+	
 /* cattani for J. Grosse */
 #form_sondage .footer input[type="submit"] {
 background:none repeat-x scroll 0 50% #696F6E;
