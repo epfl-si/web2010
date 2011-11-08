@@ -279,8 +279,7 @@ table.table-cours th {padding: 0 2px 0 2px;}
     position: absolute;
     bottom: 8px; left: 8px; padding-right: 12px;
     font-family: Impact, "Arial Black","DejaVu Sans", Arial, Helvetica , sans-serif;
-    font-size: 22px; letter-spacing: 0.1em; text-transform: uppercase; 
-    line-height:18px; font-weight:normal;}
+    font-size: 22px; letter-spacing: 0.1em; text-transform: uppercase; }
 #nav-menus a.main-link acronym { color: #fff; }
 #nav-menus li.menu:hover a.main-link { background-image: url(../img/arrow-menu-on.gif); color: #000;}
 #nav-menus li.menu:hover a.main-link acronym{ color: #000;}
