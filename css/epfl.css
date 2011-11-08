@@ -241,11 +241,6 @@ table.table-cours th {padding: 0 2px 0 2px;}
 .down .icon {background-position: -698px 0;}
 .down:hover .icon {background-position: -698px -24px;}
 
-.comment-start {padding:0; margin:0; float:none; display:inline;}
-.comment-start .icon {background-position: -29px -555px; width:14px; height:10px; margin:-4px 0; float:none; position:relative; top:-3px;}
-.comment-end {padding:0; margin:0; float:none; display:inline;}
-.comment-end .icon {background-position: -4px -554px; width:14px; height:10px; margin:-3px 0; float:none; position:relative; top:-4px;}
-
 .francais .diet_icon {background-position: -201px -3px;}
 .anglais .diet_icon {background-position: -221px -3px;}
 .allemand .diet_icon {background-position: -684px -3px;}
@@ -271,9 +266,8 @@ table.table-cours th {padding: 0 2px 0 2px;}
 
 #nav-logo {
     float: left; height: 73px; width: 160px; position: relative; margin: 0 4px 0 0;
-    border-bottom: 1px solid #474e52; /* darker gray */ }
+    background: url(../img/epfl.png) no-repeat 0 7px; border-bottom: 1px solid #474e52; /* darker gray */ }
 #nav-logo a{ display: block; width: 160px; height: 73px;}
-#nav-logo img{ margin-top:7px; height:60px; width:121px; }
 #main-menus { list-style: none; padding: 0; margin: 0;}
 #main-menus li.menu { float: left; height: 74px; width: 160px; position: relative; cursor: pointer; }
 #main-menus li.menu:hover { border-bottom: 1px solid #fff; margin-bottom: -1px;} /* bug FF4 */
@@ -286,8 +280,7 @@ table.table-cours th {padding: 0 2px 0 2px;}
     bottom: 8px; left: 8px; padding-right: 12px;
     font-family: Impact, "Arial Black","DejaVu Sans", Arial, Helvetica , sans-serif;
     font-size: 22px; letter-spacing: 0.1em; text-transform: uppercase; 
-    line-height:18px; font-weight:normal;
-}
+    line-height:18px; font-weight:normal;}
 #nav-menus a.main-link acronym { color: #fff; }
 #nav-menus li.menu:hover a.main-link { background-image: url(../img/arrow-menu-on.gif); color: #000;}
 #nav-menus li.menu:hover a.main-link acronym{ color: #000;}
@@ -543,15 +536,15 @@ table.table-cours th {padding: 0 2px 0 2px;}
 
 /* calendar root element (http://flowplayer.org/tools/dateinput/index.html#skinning) */
 #calroot {
-	z-index:10000;
-	margin-top:-1px;
-	width:198px;
-	padding:2px;
-	background-color:#fff;
-	font-size:11px;
-	border:1px solid #ccc;
-	-moz-box-shadow: 0 0 15px #666;
-	-webkit-box-shadow: 0 0 15px #666;	
+    z-index:10000;
+    margin-top:-1px;
+    width:198px;
+    padding:2px;
+    background-color:#fff;
+    font-size:11px;
+    border:1px solid #ccc;
+    -moz-box-shadow: 0 0 15px #666;
+    -webkit-box-shadow: 0 0 15px #666;  
 }
 #calhead {padding: 2px 0; height:22px; } 
 #caltitle {
@@ -560,35 +553,35 @@ table.table-cours th {padding: 0 2px 0 2px;}
 }
 #calnext, #calprev {
     background: url(../img/vertical-nav.gif) no-repeat -65px 0; 
-	display:block; width:20px; height:20px;
-	float:left;
-	cursor:pointer;
+    display:block; width:20px; height:20px;
+    float:left;
+    cursor:pointer;
 }
 #calnext { background-position: -34px 0; float:right; }
-#calprev.caldisabled, #calnext.caldisabled { visibility:hidden;	}
+#calprev.caldisabled, #calnext.caldisabled { visibility:hidden; }
 #caltitle select { font-size:10px;}
 #caldays { height:14px; border-bottom:1px solid #ddd; }
 #caldays span {
-	display:block; float:left; width:28px;
-	text-align:center;
+    display:block; float:left; width:28px;
+    text-align:center;
 }
 #calweeks { background-color:#fff; margin-top:4px; }
 .calweek { clear:left; height:22px;}
 .calweek a {
-	display:block; float:left; width:27px; height:20px;
-	margin-left:1px;
-	text-align:center; color:#666;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	background:none;
+    display:block; float:left; width:27px; height:20px;
+    margin-left:1px;
+    text-align:center; color:#666;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    background:none;
 } 
 .calweek a:hover, .calfocus { background-color:#ddd; }
 a.calsun { color:#e2001a;}
 a.caloff { color:#ccc; }
 a.caloff:hover { background-color: #f5f5fa;}
 a.caldisabled {
-	background-color:#efefef !important;
-	color:#ccc	!important; cursor:default;
+    background-color:#efefef !important;
+    color:#ccc  !important; cursor:default;
 }
 #calcurrent { background-color: #000; color: #fff; }
 #caltoday { border: 1px solid #aaa; height: 18px; }
@@ -604,10 +597,10 @@ a.caldisabled {
     -moz-box-shadow: 2px 2px 3px #999c98;
     -webkit-box-shadow: 2px 2px 3px #999c98;
     box-shadow: 2px 2px 3px #999c98;
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999c98')";
-	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999c98');
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999c98')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999c98');
     position:relative;
 }
 .tooltip.bottom:after {
@@ -627,17 +620,17 @@ a.caldisabled {
     display:none;
     border: 1px solid #474e52;
     background-color: #fff;
-	min-width: 324px;
-	padding: 0;
+    min-width: 324px;
+    padding: 0;
 }
 
 .modal h3 {
     margin: 0 0 20px 0; 
-	background-color:#474e52; 
-	color: #fff; 
-	padding: 2px 8px 2px 8px; 
-	font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 15px; 
-	line-height: 19px; 
+    background-color:#474e52; 
+    color: #fff; 
+    padding: 2px 8px 2px 8px; 
+    font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 15px; 
+    line-height: 19px; 
 }
     
 .modal form {margin: 0;}
@@ -707,7 +700,6 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 }
 .right-col{ width: 324px; float:left; padding: 0;}
 .right-col .box {margin-right: 0; }
-.centre-col {width: 324px; float:left; padding: 0 4px 0 0;}
 .content .home-navpanel{float: left; margin-right: 4px;}
 .content .last-col{margin-right: 0;}
 .content p { margin-right: 35px;}
@@ -720,7 +712,7 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
     display:block;
 }
 
-.content li, .content li li, .content ol li ul li, .homepage-bottom .box ul li {
+.content li, .content li li, .content ol li ul li {
     list-style-image: url(../img/dot.png);
     margin:0 0 1px 15px;
     *margin-left:17px; /* IE Hack */
@@ -808,7 +800,7 @@ img.right { margin-left:25px; }
 .box blockquote {margin-top: 6px;}
 
 .home-navpanel { margin-bottom: 44px; line-height: 18px;}
-.home-navpanel .unit-col {line-height: 14px; position:relative;}
+.home-navpanel .unit-col {line-height: 14px; }
 .home-navpanel .unit-col div:first-child {padding-top: 4px; padding-bottom: 5px}
 .homepage-content .home-navpanel .unit-col div:first-child {padding: 2px 8px}
 
@@ -820,7 +812,7 @@ img.right { margin-left:25px; }
     font-weight: bold; text-transform: none; font-size: 18px; line-height: 20px; letter-spacing: 1px;
     border: none; margin-top:3px; /* new margin-top:3px; */
 }
-.home-navpanel a { background-image: url(../img/underline-white.gif); line-height: 16px;}
+.home-navpanel a { background-image: url(../img/underline-white.gif); }
 .box-flat-panel { padding: 6px 8px 8px 8px; width: 308px;} /* could be done as .box.home-navpanel. Say thanks to MSIE6 buggy selectors */
 .box-flat-panel h3 { padding: 0; margin: 0 0 2px 0; }
 
@@ -942,7 +934,7 @@ ul.home-list-layout { overflow:hidden; width:656px; padding-top:4px;}
     width:324px;
     height:282px;
     margin:28px 4px 0 0;
-    padding:0;
+    padding 0;
     float:left;
 }
 
@@ -977,15 +969,12 @@ ul.home-list-layout { overflow:hidden; width:656px; padding-top:4px;}
 .category-innovation{background-position: -1px -77px;}
 .category-campus{background-position: -1px -96px;}
 
-.category-fr.category-research-white{background-position: -209px -58px; position: relative; width:77px;}
-.category-en.category-research-white{background-position: -209px -58px; position: relative; width:68px;}
-.category-fr.category-news-white{background-position: -209px -1px; position: relative; width:34px;}
-.category-en.category-news-white{background-position: -209px -1px; position: relative; width:38px;}
-.category-epfl-white{background-position: -209px -20px; position: relative; width:30px;}
-.category-fr.category-education-white{background-position: -209px -39px; position: relative; width:99px;}
-.category-en.category-education-white{background-position: -209px -39px; position: relative; width:75px;}
-.category-innovation-white{background-position: -209px -77px; position: relative; width:82px;}
-.category-campus-white{background-position: -209px -96px; position: relative; width:55px;}
+.category-research-white{background-position: -208px -58px; position: relative;}
+.category-news-white{background-position: -208px -1px; position: relative;}
+.category-epfl-white{background-position: -208px -20px; position: relative;}
+.category-education-white{background-position: -208px -39px; position: relative;}
+.category-innovation-white{background-position: -208px -77px; position: relative;}
+.category-campus-white{background-position: -208px -96px; position: relative;}
 
 
 /******************** Search results ****************************/
@@ -1093,8 +1082,9 @@ ol.people-list .role { width: 180px; }
 ol.people-list .place { width: 90px; }
 ol.people-list .phone { width: 110px; margin-right: 0;}
 
-ul.bottin {list-style-position:outside; list-style-type:none; padding:0; margin:0; }
+ul.bottin { list-style-type:outline;  padding:0; margin:0; }
 ul.bottin li { 
+    list-style:none;
     padding:0; margin:0 3px 0 0;
     line-height:18px; float:left;
     width:160px;
