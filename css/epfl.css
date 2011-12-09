@@ -173,6 +173,7 @@ table.table-cours th {padding: 0 2px 0 2px;}
 .local-color-light{ background-color: #7e000c; color: #fff; }
 .local-color-dark{ background-color: #5d0009; color: #fff; }
 .hidden{ position: absolute; left: -999em;}
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 .heading {
     margin-bottom: 18px;
     font-weight: bold;
