@@ -20,59 +20,46 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {color:#0
 .search-results a {color:#007ba5; }
 .search-results cite {color:#003047;}
 
-.print .icon {background-position: 0 -360px; }
-.print:hover .icon {background-position: 0 -336px;}
-.feed .icon {background-position: -24px -360px; }
-.feed:hover .icon {background-position: -24px -336px; }
-.share .icon {background-position: -48px -360px; }
-.share:hover .icon {background-position: -48px -336px; }
-.information .icon {background-position: -72px -360px; }
-.information:hover .icon {background-position: -72px -336px; }
-.question .icon {background-position: -96px -360px; }
-.question:hover .icon {background-position: -96px -336px; }
-.showall .icon {background-position: -120px -360px; }
-.showall:hover .icon {background-position: -120px -336px; }
-.forward .icon {background-position: -144px -360px; }
-.forward:hover .icon {background-position: -144px -336px; }
-.mail .icon {background-position: -168px -360px; }
-.mail:hover .icon {background-position: -168px -336px; }
-.contact .icon {background-position: -362px -360px; }
-.contact:hover .icon {background-position: -362px -336px; }
-.gototop .icon {background-position: -386px -360px; }
-.gototop:hover .icon {background-position: -386px -336px; }
-.previous .icon {background-position: -410px -360px; }
-.previous:hover .icon {background-position: -410px -336px; }
-.checkmark .icon {background-position: -434px -360px; }
-.checkmark:hover .icon {background-position: -434px -336px; }
-.cross .icon {background-position: -458px -360px; }
-.cross:hover .icon {background-position: -458px -336px; }
-.comment .icon {background-position: -482px -360px; }
-.comment:hover .icon {background-position: -482px -336px; }
-.edit .icon {background-position: -506px -360px; }
-.edit:hover .icon {background-position: -506px -336px; }
-.file .icon {background-position: -530px -360px; }
-.file:hover .icon {background-position: -530px -336px; }
-.pdffile .icon {background-position: -554px -360px; }
-.pdffile:hover .icon {background-position: -554px -336px; }
-.ok .icon {background-position: -578px -360px; }
-.ok:hover .icon {background-position: -578px -336px; }
-.stats .icon {background-position: -602px -360px; }
-.stats:hover .icon {background-position: -602px -336px; }
-.gotostart .icon {background-position: -626px -360px;}
-.gotostart:hover .icon {background-position: -626px -336px;}
-.square .icon {background-position: -651px -360px;}
-.square:hover .icon {background-position: -651px -336px;}
-.down .icon {background-position: -698px -360px;}
-.down:hover .icon {background-position: -698px -336px;}
+.print .icon {background-position-y: -360px;}
+.print:hover .icon {background-position-y: -336px;}
+.feed .icon  {background-position-y: -360px;}
+.feed:hover .icon {background-position-y: -336px;}
+.share .icon  {background-position-y: -360px;}
+.share:hover .icon {background-position-y: -336px;}
+.information .icon {background-position-y: -360px;}
+.information:hover .icon {background-position-y: -336px;}
+.question .icon {background-position-y: -360px;}
+.question:hover .icon {background-position-y: -336px;}
+.contact .icon {background-position-y: -360px;}
+.contact:hover .icon {background-position-y: -336px;}
+.comment .icon {background-position-y: -360px;}
+.comment:hover .icon {background-position-y: -336px;}
+.mail .icon {background-position-y: -360px;}
+.mail:hover .icon {background-position-y: -336px;}
+.first .icon {background-position-y: -360px;}
+.first:hover .icon {background-position-y: -336px;}
+.last .icon {background-position-y: -360px;}
+.last:hover .icon  {background-position-y: -336px;}
+.previous .icon, .gotostart .icon {background-position-y: -360px;}
+.previous:hover .icon, .gotostart:hover .icon {background-position-y: -336px;}
+.forward .icon, .showall .icon {background-position-y: -360px;}
+.forward:hover .icon, .showall:hover .icon {background-position-y: -336px;}
+.up .icon, .gototop .icon {background-position-y: -360px;}
+.up:hover .icon, .gototop:hover .icon {background-position-y: -336px;}
+.down .icon {background-position-y: -360px;}
+.down:hover .icon {background-position-y: -336px;}
+.file .icon {background-position-y: -360px;}
+.file:hover .icon {background-position-y: -336px;}
+.pdffile .icon {background-position-y: -360px;}
+.pdffile:hover .icon {background-position-y: -336px;}
 
-.francais .diet_icon {background-position: -201px -364px;}
-.anglais .diet_icon {background-position: -221px -364px;}
-.allemand .diet_icon {background-position: -684px -364px;}
-.winter .little_icon {background-position: -237px -364px;}
-.sun .little_icon {background-position: -257px -364px;}
-.membres .large_icon {background-position: -275px -364px;}
-.printemps .little_icon {background-position: -301px -364px; }
-.automne .little_icon {background-position: -319px -364px; }
+
+.francais .diet_icon, .anglais .diet_icon, .allemand .diet_icon, 
+.winter .little_icon, .sun .little_icon, .printemps .little_icon, 
+.automne .little_icon  {background-position-y: -216px;}
+
+.members .icon{ background-position-x: -216px;}
+
 
 .category-en{ background-image: url(../img/news-categories-en-bw.png);}
 .category-fr{ background-image: url(../img/news-categories-fr-bw.png);}

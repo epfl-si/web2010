@@ -1,0 +1,33 @@
+/* Applications */
+.cross .icon {background: url(../img/icons-applications.png) no-repeat 0 0; }
+.cross:hover .icon {background-position-y: -24px; }
+.checkmark .icon {background: url(../img/icons-applications.png) no-repeat -24px 0; }
+.checkmark:hover .icon {background-position-y: -24px; }
+.plus .icon {background: url(../img/icons-applications.png) no-repeat -48px 0; }
+.plus:hover .icon {background-position-y: -24px; }
+.stats .icon {background: url(../img/icons-applications.png) no-repeat -72px 0; }
+.stats:hover .icon {background-position-y: -24px; }
+.edit .icon {background: url(../img/icons-applications.png) no-repeat -96px 0; }
+.edit:hover .icon {background-position-y: -24px; }
+.ok .icon {background: url(../img/icons-applications.png) no-repeat -120px 0; }
+.ok:hover .icon {background-position-y: -24px; }
+.time .icon {background: url(../img/icons-applications.png) no-repeat -144px 0; }
+.time:hover .icon {background-position-y: -24px; }
+.url .icon {background: url(../img/icons-applications.png) no-repeat -168px 0; }
+.url:hover .icon {background-position-y: -24px; }
+.multiple .icon {background: url(../img/icons-applications.png) no-repeat -192px 0; }
+.multiple:hover .icon {background-position-y: -24px; }
+.out .icon {background: url(../img/icons-applications.png) no-repeat -216px 0; }
+.out:hover .icon {background-position-y: -24px; }
+.reload .icon {background: url(../img/icons-applications.png) no-repeat -240px 0; }
+.reload:hover .icon {background-position-y: -24px; }
+.hierarchy .icon {background: url(../img/icons-applications.png) no-repeat -264px 0; }
+.hierarchy:hover .icon {background-position-y: -24px; }
+.administration .icon {background: url(../img/icons-applications.png) no-repeat -288px 0; }
+.administration:hover .icon {background-position-y: -24px; }
+.podcast .icon {background: url(../img/icons-applications.png) no-repeat -312px 0; }
+.podcast:hover .icon {background-position-y: -24px; }
+.length .icon {background: url(../img/icons-applications.png) no-repeat -336px 0; }
+.length:hover .icon {background-position-y: -24px; }
+.area .icon {background: url(../img/icons-applications.png) no-repeat -360px 0; }
+.area:hover .icon {background-position-y: -24px; }

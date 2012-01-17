@@ -186,14 +186,14 @@ table.table-cours th {padding: 0 2px 0 2px;}
 .noSpacing, .content .noSpacing {padding:0; margin:0;}
 .noSpacing a, .content .noSpacing a {background:none;}
 
-.button { float: left; margin-right: 20px; cursor: pointer;}
-.diet_icon {float: left; background: url(../img/icons.png) no-repeat; margin-top:2px; height: 17px; width: 9px; margin-right: 0; border: none;}
-.little_icon {float: left; background: url(../img/icons.png) no-repeat; margin-top:2px; height: 17px; width: 17px; margin-right: 0; border: none;}
-.large_icon {float: left; background: url(../img/icons.png) no-repeat;  height: 17px; width: 22px; margin-right: 0; border: none;}
-.icon {float: left; background: url(../img/icons.png) no-repeat; height: 24px; width: 24px; margin-right: 4px; border: none; cursor: pointer;}
 .label {font-family: Georgia, 'Times New Roman', Times, serif; font-size: 11px; letter-spacing: 1px; font-style: italic; background: url(../img/underline.gif) repeat-x 0 14px; cursor: pointer;}
+.button { float: left; margin-right: 20px; cursor: pointer;}
 .button .label {display: block; float: left; margin-top: 3px; }
 .button:hover .label { background-image: url(../img/underline-hover.png); }
+
+
+
+.icon {float: left; background: url(../img/icons-all.png) no-repeat; height: 24px; width: 24px; margin-right: 4px; border: none; cursor: pointer;}
 
 .print .icon {background-position: 0 0; }
 .print:hover .icon {background-position: 0 -24px;}
@@ -205,55 +205,65 @@ table.table-cours th {padding: 0 2px 0 2px;}
 .information:hover .icon {background-position: -72px -24px; }
 .question .icon {background-position: -96px 0; }
 .question:hover .icon {background-position: -96px -24px; }
-.showall .icon {background-position: -120px 0; }
-.showall:hover .icon {background-position: -120px -24px; }
-.forward .icon {background-position: -144px 0; }
-.forward:hover .icon {background-position: -144px -24px; }
+.contact .icon {background-position: -120px 0; }
+.contact:hover .icon {background-position: -120px -24px; }
+.comment .icon {background-position: -144px 0; }
+.comment:hover .icon {background-position: -144px -24px; }
 .mail .icon {background-position: -168px 0; }
 .mail:hover .icon {background-position: -168px -24px; }
-.podcast .icon {background-position: -338px 0; }
-.podcast:hover .icon {background-position: -338px -24px; }
-.contact .icon {background-position: -362px 0; }
-.contact:hover .icon {background-position: -362px -24px; }
-.gototop .icon {background-position: -386px 0; }
-.gototop:hover .icon {background-position: -386px -24px; }
-.previous .icon {background-position: -410px 0; }
-.previous:hover .icon {background-position: -410px -24px; }
-.checkmark .icon {background-position: -434px 0; }
-.checkmark:hover .icon {background-position: -434px -24px; }
-.cross .icon {background-position: -458px 0; }
-.cross:hover .icon {background-position: -458px -24px; }
-.comment .icon {background-position: -482px 0; }
-.comment:hover .icon {background-position: -482px -24px; }
-.edit .icon {background-position: -506px 0; }
-.edit:hover .icon {background-position: -506px -24px; }
-.file .icon {background-position: -530px 0; }
-.file:hover .icon {background-position: -530px -24px; }
-.pdffile .icon {background-position: -554px 0; }
-.pdffile:hover .icon {background-position: -554px -24px; }
-.ok .icon {background-position: -578px 0; }
-.ok:hover .icon {background-position: -578px -24px; }
-.stats .icon {background-position: -602px 0; }
-.stats:hover .icon {background-position: -602px -24px; }
-.gotostart .icon {background-position: -626px 0;}
-.gotostart:hover .icon {background-position: -626px -24px;}
-.square .icon {background-position: -651px 0;}
-.square:hover .icon {background-position: -651px -24px;}
-.down .icon {background-position: -698px 0;}
-.down:hover .icon {background-position: -698px -24px;}
+.first .icon {background-position: -192px 0; }
+.first:hover .icon {background-position: -192px -24px; }
+.last .icon {background-position: -216px 0; }
+.last:hover .icon {background-position: -216px -24px; }
+.previous .icon, .gotostart .icon {background-position: -240px 0; }
+.previous:hover .icon, .gotostart:hover .icon {background-position: -240px -24px; }
+.forward .icon, .showall .icon {background-position: -264px 0; }
+.forward:hover .icon, .showall:hover .icon {background-position: -264px -24px; }
+.up .icon, .gototop .icon {background-position: -288px 0; }
+.up:hover .icon, .gototop:hover .icon {background-position: -288px -24px; }
+.down .icon {background-position: -312px 0;}
+.down:hover .icon {background-position: -312px -24px;}
+.file .icon {background-position: -336px 0; }
+.file:hover .icon {background-position: -336px -24px; }
+.pdffile .icon {background-position: -360px 0; }
+.pdffile:hover .icon {background-position: -360px -24px; }
 
-.francais .diet_icon {background-position: -201px -3px;}
-.anglais .diet_icon {background-position: -221px -3px;}
-.allemand .diet_icon {background-position: -684px -3px;}
-.winter .little_icon {background-position: -237px -3px;}
-.sun .little_icon {background-position: -257px -3px;}
-.membres .large_icon {background-position: -275px -3px;}
-.bs .icon {background-position: -193px -24px; }
-.ms .icon {background-position: -217px -24px; }
-.phd .icon {background-position: -241px -24px; }
-.printemps .little_icon {background-position: -301px -3px; }
-.automne .little_icon {background-position: -319px -3px; }
+.bs .icon {background-position: 0 -480px; }
+.ms .icon {background-position: -24px -480px; }
+.phd .icon {background-position: -48px -480px; }
 
+.associations .icon {background-position-y: -72px;}
+.associations:hover .icon {background-position-y: -48px;}
+.cdm .icon {background-position-y: -120px;}
+.cdm:hover .icon {background-position-y: -96px;}
+.cdh .icon {background-position-y: -168px;}
+.cdh:hover .icon {background-position-y: -144px;}
+.sv .icon{background-position-y: -216px;}
+.sv:hover .icon {background-position-y: -192px;}
+.sti .icon {background-position-y: -264px;}
+.sti:hover .icon {background-position-y: -240px;}
+.ic .icon {background-position-y: -312px;}
+.ic:hover .icon {background-position-y: -288px;}
+.sb .icon {background-position-y: -360px;}
+.sb:hover .icon {background-position-y: -336px;}
+.enac .icon {background-position-y: -408px;}
+.enac:hover .icon {background-position-y: -384px;}
+.inter .icon {background-position-y: -456px;}
+.inter:hover .icon {background-position-y: -432px;}
+
+.members .icon{ background-position: -72px -480px;}
+
+/* Study plan icons */
+.diet_icon {float: left; background: url(../img/icons-plancours.png) no-repeat; height: 18px; width: 9px; margin-right: 0; border: none;}
+.little_icon {float: left; background: url(../img/icons-plancours.png) no-repeat;  height: 17px; width: 17px; margin-right: 0; border: none;}
+
+.francais .diet_icon {background-position: -90px 0;}
+.anglais .diet_icon {background-position: -108px 0;}
+.allemand .diet_icon {background-position: -72px 0;}
+.winter .little_icon {background-position: -54px 0;}
+.sun .little_icon {background-position: -18px 0;}
+.printemps .little_icon {background-position: 0 0; }
+.automne .little_icon {background-position: -36px 0; }
 
 
 /**************************** Header definition *******************************/
