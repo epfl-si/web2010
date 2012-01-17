@@ -31,3 +31,24 @@
 .length:hover .icon {background-position-y: -24px; }
 .area .icon {background: url(../img/icons-applications.png) no-repeat -360px 0; }
 .area:hover .icon {background-position-y: -24px; }
+.bullseye .icon {background: url(../img/icons-applications.png) no-repeat -384px 0; }
+.bullseye:hover .icon {background-position-y: -24px; }
+
+.associations .icon {background-position-y: -72px;}
+.associations:hover .icon {background-position-y: -48px;}
+.cdm .icon {background-position-y: -120px;}
+.cdm:hover .icon {background-position-y: -96px;}
+.cdh .icon {background-position-y: -168px;}
+.cdh:hover .icon {background-position-y: -144px;}
+.sv .icon{background-position-y: -216px;}
+.sv:hover .icon {background-position-y: -192px;}
+.sti .icon {background-position-y: -264px;}
+.sti:hover .icon {background-position-y: -240px;}
+.ic .icon {background-position-y: -312px;}
+.ic:hover .icon {background-position-y: -288px;}
+.sb .icon {background-position-y: -360px;}
+.sb:hover .icon {background-position-y: -336px;}
+.enac .icon {background-position-y: -408px;}
+.enac:hover .icon {background-position-y: -384px;}
+.inter .icon {background-position-y: -456px;}
+.inter:hover .icon {background-position-y: -432px;}
