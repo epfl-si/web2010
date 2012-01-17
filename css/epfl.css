@@ -253,7 +253,9 @@ table.table-cours th {padding: 0 2px 0 2px;}
 
 .members .icon{ background-position: -72px -480px;}
 
-/* Study plan icons */
+/* Study plan icons 
+to be removed when jahia automaticvally includes plancours.css
+*/
 .diet_icon {float: left; background: url(../img/icons-plancours.png) no-repeat; height: 18px; width: 9px; margin-right: 0; border: none;}
 .little_icon {float: left; background: url(../img/icons-plancours.png) no-repeat;  height: 17px; width: 17px; margin-right: 0; border: none;}
 
