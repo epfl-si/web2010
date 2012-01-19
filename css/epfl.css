@@ -257,7 +257,8 @@ table.table-cours th {padding: 0 2px 0 2px;}
 to be removed when jahia automaticvally includes plancours.css
 */
 .diet_icon {float: left; background: url(../img/icons-plancours.png) no-repeat; height: 18px; width: 9px; margin-right: 0; border: none;}
-.little_icon {float: left; background: url(../img/icons-plancours.png) no-repeat;  height: 17px; width: 17px; margin-right: 0; border: none;}
+.little_icon {float: left; background: url(../img/icons-plancours.png) no-repeat;  height: 18px; width: 18px; margin-right: 1px; border: none;}
+.img_legende{ margin-right: 2px;}
 
 .francais .diet_icon {background-position: -90px 0;}
 .anglais .diet_icon {background-position: -108px 0;}
@@ -1181,7 +1182,7 @@ ul.bottin .photo_box {padding: 0 10px 0 0; float: left; overflow: hidden; width:
 .legende{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style:italic; font-size: 12px; font-weight:bold;
-    width: 5px; float:left; padding-right: 10px;
+    width: 5px; float:left; padding-right: 6px;
 }
 .img_legende{ float:left; width:17px; height:17px; }
 #content .master{ width:48px;}

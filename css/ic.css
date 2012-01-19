@@ -19,44 +19,48 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {color:#1
 .search-results a {color:#1bb5b5; }
 .search-results cite {color:#004d59;}
 
-.print .icon {background-position-y: -312px;}
-.print:hover .icon {background-position-y: -288px;}
-.feed .icon  {background-position-y: -312px;}
-.feed:hover .icon {background-position-y: -288px;}
-.share .icon  {background-position-y: -312px;}
-.share:hover .icon {background-position-y: -288px;}
-.information .icon {background-position-y: -312px;}
-.information:hover .icon {background-position-y: -288px;}
-.question .icon {background-position-y: -312px;}
-.question:hover .icon {background-position-y: -288px;}
-.contact .icon {background-position-y: -312px;}
-.contact:hover .icon {background-position-y: -288px;}
-.comment .icon {background-position-y: -312px;}
-.comment:hover .icon {background-position-y: -288px;}
-.mail .icon {background-position-y: -312px;}
-.mail:hover .icon {background-position-y: -288px;}
-.first .icon {background-position-y: -312px;}
-.first:hover .icon {background-position-y: -288px;}
-.last .icon {background-position-y: -312px;}
-.last:hover .icon  {background-position-y: -288px;}
-.previous .icon, .gotostart .icon {background-position-y: -312px;}
-.previous:hover .icon, .gotostart:hover .icon {background-position-y: -288px;}
-.forward .icon, .showall .icon {background-position-y: -312px;}
-.forward:hover .icon, .showall:hover .icon {background-position-y: -288px;}
-.up .icon, .gototop .icon {background-position-y: -312px;}
-.up:hover .icon, .gototop:hover .icon {background-position-y: -288px;}
-.down .icon {background-position-y: -312px;}
-.down:hover .icon {background-position-y: -288px;}
-.file .icon {background-position-y: -312px;}
-.file:hover .icon {background-position-y: -288px;}
-.pdffile .icon {background-position-y: -312px;}
-.pdffile:hover .icon {background-position-y: -288px;}
+.print .icon {background-position: 0 -312px; }
+.print:hover .icon {background-position: 0 -288px;}
+.feed .icon {background-position: -24px -312px; }
+.feed:hover .icon {background-position: -24px -288px; }
+.share .icon {background-position: -48px -312px; }
+.share:hover .icon {background-position: -48px -288px; }
+.information .icon {background-position: -72px -312px; }
+.information:hover .icon {background-position: -72px -288px; }
+.question .icon {background-position: -96px -312px; }
+.question:hover .icon {background-position: -96px -288px; }
+.contact .icon {background-position: -120px -312px; }
+.contact:hover .icon {background-position: -120px -288px; }
+.comment .icon {background-position: -144px -312px; }
+.comment:hover .icon {background-position: -144px -288px; }
+.mail .icon {background-position: -168px -312px; }
+.mail:hover .icon {background-position: -168px -288px; }
+.first .icon {background-position: -192px -312px; }
+.first:hover .icon {background-position: -192px -288px; }
+.last .icon {background-position: -216px -312px; }
+.last:hover .icon {background-position: -216px -288px; }
+.previous .icon, .gotostart .icon {background-position: -240px -312px; }
+.previous:hover .icon, .gotostart:hover .icon {background-position: -240px -288px; }
+.forward .icon, .showall .icon {background-position: -264px -312px; }
+.forward:hover .icon, .showall:hover .icon {background-position: -264px -288px; }
+.up .icon, .gototop .icon {background-position: -288px -312px; }
+.up:hover .icon, .gototop:hover .icon {background-position: -288px -288px; }
+.down .icon {background-position: -312px -312px;}
+.down:hover .icon {background-position: -312px -288px;}
+.file .icon {background-position: -336px -312px; }
+.file:hover .icon {background-position: -336px -288px; }
+.pdffile .icon {background-position: -360px -312px; }
+.pdffile:hover .icon {background-position: -360px -288px; }
 
-.francais .diet_icon, .anglais .diet_icon, .allemand .diet_icon, 
-.winter .little_icon, .sun .little_icon, .printemps .little_icon, 
-.automne .little_icon  {background-position-y: -180px;}
+.francais .diet_icon {background-position: -90px -180px;}
+.anglais .diet_icon {background-position: -108px -180px;}
+.allemand .diet_icon {background-position: -72px -180px;}
+.winter .little_icon {background-position: -54px -180px;}
+.sun .little_icon {background-position: -18px -180px;}
+.printemps .little_icon {background-position: 0 -180px;}
+.automne .little_icon {background-position: -36px -180px;}
 
-.members .icon{ background-position-x: -192px;}
+.members .icon{ background-position: -192px -480px;}
 
 
 
