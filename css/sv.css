@@ -19,8 +19,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {color:#6
 .search-results a {color:black;}/*#6fba01; }*/
 .search-results cite {color:#0b7101;}
 
-.print .icon {background-position-y: -216px;}
-.print:hover .icon {background-position-y: -192px;}
+.print .icon {background-position: 0 -216px;}
+.print:hover .icon {background-position: 0 -192px;}
 .feed .icon {background-position: -24px -216px; }
 .feed:hover .icon {background-position: -24px -192px; }
 .share .icon {background-position: -48px -216px; }
