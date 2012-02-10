@@ -118,11 +118,10 @@
                 </li>
               </ul>
               <div class="clear"></div>
-            </div>
-          </li>
-          <li class="school menu" id="school-menu-link">
-            <a class="main-link" href="http://www.epfl.ch/navigate.fr.shtml" title="Navigation par faculté EPFL"><span>Par</span> faculté</a>
-            <div class="navigation-panel hidden" id="school-panel">
+        </div>
+        
+        <h2>Par faculté</h2>
+        <div class="menus fac">
               <ul>
                 <li class="group-2-cols">
                   <h3><a href="http://enac.epfl.ch/page-1922-fr.html" class="enac">Environnement Naturel, Architectural et Construit <acronym title="Environnement Naturel, Architectural et Construit">ENAC</acronym></a></h3>
@@ -184,11 +183,10 @@
                 </li>
               </ul>
               <div class="clear"></div>
-            </div>
-          </li>
-          <li class="short menu" id="brief-menu-link">
-            <a class="main-link" href="http://www.epfl.ch/navigate.fr.shtml" title="Navigation dans la structure de l'EPFL"><span><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></span> en bref</a>
-            <div class="navigation-panel hidden" id="brief-panel">
+          
+          </div>
+          <h2>EPFL en bref</h2>
+          <div class="menu bref">
               <ul>
                 <li class="group-2-cols">
                   <h3><a href="http://information.epfl.ch/page-16430-fr.html"><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></a></h3>
@@ -238,8 +236,9 @@
                 </li>
               </ul>
               <div class="clear"></div>
-        </div>
-      </div>
+
+          </div>
+        
     </div>
     <div id="footer">
       <ul>
