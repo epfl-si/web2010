@@ -3,7 +3,7 @@
 .cross:hover .icon {background-position-y: -24px; }
 .checkmark .icon {background: url(../img/icons-applications.png) no-repeat -24px 0; }
 .checkmark:hover .icon {background-position-y: -24px; }
-.plus .icon {background: url(../img/icons-applications.png) no-repeat -48px 0; }
+.plus .icon {background: url(../img/icons-applications.png) no-repeat -48px 0;}
 .plus:hover .icon {background-position-y: -24px; }
 .stats .icon {background: url(../img/icons-applications.png) no-repeat -72px 0; }
 .stats:hover .icon {background-position-y: -24px; }
@@ -33,11 +33,11 @@
 .area:hover .icon {background-position-y: -24px; }
 .bullseye .icon {background: url(../img/icons-applications.png) no-repeat -384px 0; }
 .bullseye:hover .icon {background-position-y: -24px; }
-.accred.icon {background: url(../img/icons-applications.png) no-repeat -408px 0; }
+.accred .icon {background: url(../img/icons-applications.png) no-repeat -408px 0; }
 .accred:hover .icon {background-position-y: -24px; }
 .mailinglist .icon {background: url(../img/icons-applications.png) no-repeat -432px 0; }
 .mailinglist:hover .icon {background-position-y: -24px; }
-.group.icon {background: url(../img/icons-applications.png) no-repeat -456px 0; }
+.group .icon {background: url(../img/icons-applications.png) no-repeat -456px 0; }
 .group:hover .icon {background-position-y: -24px; }
 
 .associations .icon {background-position-y: -72px;}
