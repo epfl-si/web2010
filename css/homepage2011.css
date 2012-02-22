@@ -75,7 +75,7 @@ h1 {border-bottom:black 1px solid; margin-bottom:4px;}
 .bottom-frame {position:absolute; bottom:0; left:8px; padding-bottom: 6px;}
 
 /* Calendar */
-.memento .date {width:25px; margin-right: 8px; display:inline-block; float:left; font-size:22px; letter-spacing:1px; line-height:22px; font-family: Impact,"Arial Black","DejaVu Sans",Arial,Helvetica,sans-serif; text-align:center;}
+.memento .date {width:25px;height:52px; margin-right: 8px; display:inline-block; float:left; font-size:22px; letter-spacing:1px; line-height:22px; font-family: Impact,"Arial Black","DejaVu Sans",Arial,Helvetica,sans-serif; text-align:center;}
 .memento .month {font-size:14px; text-transform: uppercase; letter-spacing:1px;}
 .memento .date .to { border-top:4px solid white; padding-top: 2px; }
 table.two-dates {float:left; width:30px; padding-right:8px;}
