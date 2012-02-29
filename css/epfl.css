@@ -943,6 +943,31 @@ ul.home-list-layout { overflow:hidden; width:656px; padding-top:4px;}
     letter-spacing: 1px; font-size: 18px; line-height: 20px;
     padding-bottom: 4px; margin:0;}
 .single-news .news-img{ float: left; width: 324px; height: 184px; margin-bottom: 2px; padding: 0; margin-top:0;}
+ 
+ /*2012.03.01 new template for news without image*/   
+	.single-news ul {
+    margin:5px 0;
+    padding:0;
+    width:324px;
+    }
+    .single-news li {
+    border-bottom:1px solid black;
+    height:69px;
+    margin:0;
+    padding:0 0 1px 0;
+    list-style:none;
+    }
+    .single-news .no-image .news-text {
+    height:73px;
+    overflow:hidden;
+    }
+    .single-news h4 {
+    margin:4px 0 0 0;
+    padding-bottom:3px;
+    font-size:13px;
+    line-height:14px;
+    letter-spacing:0;
+    }
 
 .onethird-news {
     width:324px;
