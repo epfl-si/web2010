@@ -135,7 +135,7 @@ table.two-dates .lower-border {border-bottom:4px white solid; padding-bottom: 3p
 .homepage-bottom .box ul li {padding-left:1px; list-style-image: url(../img/dot.png); margin: 0 0 1px 15px; }
 .expert-question img {margin:0;}
 .expert-question img.expert-picture {float:left; width:50px; height:50px; margin: 0 8px 2px 0;}
-.expert-question .question-text {font-family:Georgia, "Times New Roman", Times, serif; font-weight:bold; color:black; font-style:italic; margin-top:-4px;}
+.expert-question .question-text {font-family:Georgia, "Times New Roman", Times, serif; font-weight:bold; color:black; font-style:italic; margin-top:-4px; float:left; width:266px;}
 .expert-question .quote {font-size:20px; line-height:13px; padding-right: 4px; position: relative; top: 8px;}
 
 ul.list-layout { padding-top: 0; border-top: none; }
