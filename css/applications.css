@@ -39,6 +39,8 @@
 .mailinglist:hover .icon {background-position: -432px -24px; }
 .group .icon {background: url(../img/icons-applications.png) no-repeat -456px 0; }
 .group:hover .icon {background-position: -456px -24px; }
+.vcard .icon {background: url(../img/icons-applications.png) no-repeat -480px 0; }
+.vcard:hover .icon {background-position: -480px -24px; }
 
 .associations .icon {background-position-y: -72px;}
 .associations:hover .icon {background-position-y: -48px;}
