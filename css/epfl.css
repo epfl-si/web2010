@@ -697,6 +697,31 @@ ul.topnav li{ list-style-type: none; position: relative; display: inline; float:
 #main-navigation .dropdown .menu ul {margin-bottom: 12px;}
 #main-navigation .dropdown .menu a:hover { color: #000; background-color: #cfd0ca;}
 
+/* autocomplete dropdown */
+#searchfield {z-index: 9999; position: relative; }
+#searchform .ui-autocomplete {
+    top : 57px ;
+    width:306px ;
+    cursor: pointer;
+}
+
+.ui-menu {
+    display: block; position: absolute; float: left;
+    list-style: none outside none;
+    margin:0; padding: 12px 0 4px 0;
+    
+    background-color: #fff;
+    border: 1px solid #000; border-top: none;
+}
+.ui-menu a {color: #000; padding-left: 7px; display: block;}
+#ui-active-menuitem, #ui-active-menuitem .highlight,.ui-menu .ui-menu-item #ui-active-menuitem {
+    background-color: #cfd0ca;
+}
+
+
+
+
+
 /******************************* Main content *********************************/
 #main-content{ margin-left: auto; margin-right: auto; width: 980px; }
 .three-cols #tools, .single-col #tools { border-bottom: 1px solid #000; margin-bottom: 4px; }

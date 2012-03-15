@@ -1,19 +1,24 @@
 /*
  * EPFL navigation
  *
- * Copyright (c) 2010-2011 EPFL
+ * Copyright (c) 2010-2012 EPFL
  *
- * Date: 2011-03-08 11:38
- * Revision: 1.3
+ * Date: 2012-02-27 14:00
+ * Revision: 1.4
  */
- 
 var current_search_base = null;
+
 function change_search_base(radio){
     jQuery('#search-options').remove();
     jQuery("#searchform input[type=radio]").removeAttr("checked");    
     var rid = radio.attr('id');
-    var label =  jQuery('label[for=' + rid + ']'); 
+    var label =  jQuery('label[for=' + rid + ']');
+    jQuery("#searchfield").autocomplete({ disabled: true });
+    
     switch (rid){
+        case "search-engine-person":
+            getPeopleAutocomplete();
+            break;
         case "search-engine-local":
             jQuery('#searchform').append(
                 jQuery("<input/>").attr("type", "hidden").attr("id","search-options").attr("name", "as_sitesearch").attr("value", jQuery.url.attr("host"))
@@ -39,104 +44,140 @@ function showPanel() {
     jQuery('.navigation-panel').addClass("hidden");
     jQuery(this).children('.navigation-panel').removeClass('hidden');
 }
-function hidePanel(){
-}
+
+function hidePanel(){}
 
 function removeLastWord(element) {
-  var text = element.html();
-  var i = text.lastIndexOf(' ');
-  element.html(text.substring(0, i) + '...');
-  return i !== -1;
+    var text = element.html();
+    var i = text.lastIndexOf(' ');
+    element.html(text.substring(0, i) + '...');
+    return i !== -1;
 }
 
 /* add arrows when news texts are too long */
 function isTotallyVisible(parent, element) {
-  return element.position().top + element.outerHeight() + 2 < parent.position().top + parent.innerHeight();
+    return element.position().top + element.outerHeight() + 2 < parent.position().top + parent.innerHeight();
 }
 
-jQuery(document).ready(function(){
-    current_search_base = jQuery('#searchform label.current');
-    change_search_base(jQuery("#search-engine-person"));
+function getPeopleAutocomplete(){
+    var field = jQuery("#searchfield");
+    field.autocomplete({
+        source: function(request, response) {
+            jQuery.ajax({
+                         url: "http://search.epfl.ch/json/autocompletename.action",
+                         dataType: 'jsonp',
+                         data: { maxRows: 15, term: request.term },
+                         success: function(data){
+                             response(jQuery.map(data.result, function(item) {
+                                return {
+                                        label: item.name + ', ' + item.firstname, 
+                                        value: item.firstname + ' ' + item.name
+                                        }
+                              }));
+                    
+                         }
+            });
+        },
+        appendTo: jQuery('#searchform'),
+        disabled: false,
+        minLength: 3,
+        select: function(event, ui) {
+            if (ui.item) { field.val(ui.item.value);}
+            jQuery('#searchform').submit();
+        }      
+    });
+}
+
+
+jQuery(document).ready(function($){
+    current_search_base = $('#searchform label.current');
+    change_search_base($("#search-engine-person"));
+    $('#search-box input[type=radio]').change(function(){ change_search_base($(this)); });
+    $('#searchlink').click(function(){ $('#searchfield').focus();});
+    $('#searchfield').focus(function(){ if ($(this).val() === current_search_base.attr('title')){ $(this).val('').addClass('focused');} });
+    $('#searchfield').blur(function() { if ($(this).val() === '') { $(this).val($('#searchform label.current').attr('title')).removeClass('focused');} });
+    $('#searchfield').keypress(function(e){ if (e.which === 13) { $(this).parent('form').submit();} });
+
     
     /* Navigation: big panels */
-    jQuery('#header').mouseleave(function(){ 
-        jQuery.mask.close();
-        jQuery('.navigation-panel').addClass("hidden");
+    $('#header').mouseleave(function(){ 
+        $.mask.close();
+        $('.navigation-panel').addClass("hidden");
     } );
     var config = { over: showPanel, out: hidePanel, timeout: 500 };
-    jQuery("#main-menus .main-link").click(function(){ return false; });
-    jQuery('#main-menus .menu').hoverIntent(config);
-    
-    /* Navigation: search boxes */ 
-    if (jQuery.browser.msie) {
-        jQuery('#search-box input[type=radio]').click(function(){ change_search_base(jQuery(this)); this.blur(); this.focus(); });
-    }
-     /* Make labels clickable under mobile safari*/
-    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)) {
-       jQuery('#search-box label').click(function () { var el = jQuery(this).attr('for'); change_search_base(jQuery('#' + el));});
-    }
-    jQuery('#search-box input[type=radio]').change(function(){ change_search_base(jQuery(this)); });
-    jQuery('#searchlink').click(function(){ jQuery('#searchfield').focus();});
-    jQuery('#searchfield').focus(function(){ if (jQuery(this).val() === current_search_base.attr('title')){ jQuery(this).val('').addClass('focused');} });
-    jQuery('#searchfield').blur(function() { if (jQuery(this).val() === '') { jQuery(this).val(jQuery('#searchform label.current').attr('title')).removeClass('focused');} });
-    jQuery('#searchfield').keypress(function(e){ if (e.which === 13) { jQuery(this).parent('form').submit();} });
+    $("#main-menus .main-link").click(function(){ return false; });
+    $('#main-menus .menu').hoverIntent(config);
     
     /* navigation: Dropdown menus */
-    jQuery('.dropdown').click(function(){ jQuery(this).children('ul').toggleClass('hidden'); });
-    jQuery('.dropdown').mouseleave(function(){ jQuery(this).children('ul').addClass('hidden'); });
-    jQuery('#main-navigation .dropdown').hoverIntent(
-        function(){ jQuery(this).children('ul').removeClass('hidden');}, 
-        function(){ jQuery(this).children('ul').addClass('hidden');});
-    jQuery('#main-navigation .dropdown').click(function(){ return true;});
-    
+    $('.dropdown').click(function(){ $(this).children('ul').toggleClass('hidden'); });
+    $('.dropdown').mouseleave(function(){ $(this).children('ul').addClass('hidden'); });
+    $('#main-navigation .dropdown').hoverIntent(
+        function(){ $(this).children('ul').removeClass('hidden');}, 
+        function(){ $(this).children('ul').addClass('hidden');});
+    $('#main-navigation .dropdown').click(function(){ return true;});
+
     /* navigation: tree */
-    jQuery(".tree li.inpath").addClass('open');
-    jQuery(".tree").treeview({ 'collapsed': true, 'unique': false });
-    jQuery(".tree").children().addClass('local-color');
-    jQuery(".tree li a").hover(
+    $(".tree li.inpath").addClass('open');
+    $(".tree").treeview({ 'collapsed': true, 'unique': false });
+    $(".tree").children().addClass('local-color');
+    $(".tree li a").hover(
         function(e) { e.stopPropagation(); 
-                      jQuery('.tree li').removeClass("hover");
-                      jQuery(this).parent().addClass('hover');
+                      $('.tree li').removeClass("hover");
+                      $(this).parent().addClass('hover');
                       },
-        function(e) { e.stopPropagation(); jQuery(this).parent().removeClass("hover");}
+        function(e) { e.stopPropagation(); $(this).parent().removeClass("hover");}
     );
-    
+
+    /* Navigation: search boxes */ 
+    if ($.browser.msie) {
+        $('#search-box input[type=radio]').click(function(){ change_search_base($(this)); this.blur(); this.focus(); });
+    }
+
+
     /* activate togglers */
-    jQuery('.toggler').click(function(){ jQuery(this).toggleClass("toggled-active").next().slideToggle("slow"); return false;});  
+    $('.toggler').click(function(){ $(this).toggleClass("toggled-active").next().slideToggle("slow"); return false;});  
     
     /* modal windows */
-    jQuery(".modal-opener[rel]").overlay({ mask: { color: '#000', opacity: 0.6, loadSpeed: 200}, closeOnClick: false});
-    
-    /* Set correct margin to elements */
-    jQuery(".box.two-cols div.box-col:even",this).addClass("box-left-col");
-    jQuery(".box.two-cols div.box-col:odd", this).addClass("box-right-col");
-    jQuery("#content:not(.fullpage-content) .box:odd",this).addClass("last-col");
-    
-    /* add class .left to images having align="left" and so on. */
-    jQuery('img[align]').each(function(){ jQuery(this).addClass(jQuery(this).attr('align')); });
-    
-    
-    /* Jahia specific */
-    jQuery("ul").each(function(){ 
-        var elem = jQuery(this);
-        if(elem.children().length === 0){
-            elem.remove();
-        }
-    });
-    
+    $(".modal-opener[rel]").overlay({ mask: { color: '#000', opacity: 0.6, loadSpeed: 200}, closeOnClick: false});
 
-    var newsDivs = jQuery("div.news-text");
+    /* Set correct margin to elements */
+    $(".box.two-cols div.box-col:even",this).addClass("box-left-col");
+    $(".box.two-cols div.box-col:odd", this).addClass("box-right-col");
+    $("#content:not(.fullpage-content) .box:odd",this).addClass("last-col");
+
+    /* add class .left to images having align="left" and so on. */
+    $('img[align]').each(function(){ $(this).addClass($(this).attr('align')); });
+
+    /* Make labels clickable under mobile safari*/
+    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)) {
+       $('#search-box label').click(function () { var el = $(this).attr('for'); change_search_base($('#' + el));});
+    }
+    
+    /* Overlay */
+    $("img[rel]").overlay();
+    
+    /* News (actu.epfl.ch) */
+    var newsDivs = $("div.news-text");
     newsDivs.each(function(i, news) {
-	  news = jQuery(news);
+	  news = $(news);
 	  var newsText = news.find("p span.heading");
 	  var newsLink = news.find("p span.read-more");
 	  if (newsText.length && newsLink.length) {
         while (!isTotallyVisible(news, newsLink) && removeLastWord(newsText)){ void(0); }
       }
     });
-    jQuery("img[rel]").overlay();
+    
     
     /* Google Analytics */
-    jQuery.jGoogleAnalytics('UA-4833294-1', {topLevelDomain: '.epfl.ch'} );
-    
+    $.jGoogleAnalytics('UA-4833294-1', {topLevelDomain: '.epfl.ch'} );
+
+
+    /* Jahia specific */
+    $("#main-content ul").each(function(){ 
+        var elem = $(this);
+        if(elem.children().length === 0){
+            elem.remove();
+        }
+    });
+
 });
