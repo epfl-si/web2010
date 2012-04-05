@@ -256,13 +256,18 @@ table.table-cours th {padding: 0 2px 0 2px;}
 /* Study plan icons 
 to be removed when jahia automaticvally includes plancours.css
 */
-.diet_icon {float: left; background: url(../img/icons-plancours.png) no-repeat; height: 18px; width: 9px; margin-right: 0; border: none;}
+.diet_icon {float: left; background: url(../img/icons-plancours.png) no-repeat; height: 18px; width: 14px; margin-right: 0; border: none;}
 .little_icon {float: left; background: url(../img/icons-plancours.png) no-repeat;  height: 18px; width: 18px; margin-right: 1px; border: none;}
 .img_legende{ margin-right: 2px;}
 
 .francais .diet_icon {background-position: -90px 0;}
 .anglais .diet_icon {background-position: -108px 0;}
 .allemand .diet_icon {background-position: -72px 0;}
+.italien .diet_icon {background-position: -148px 0;}
+.franglais .diet_icon {background-position: -166px 0;}
+
+
+
 .winter .little_icon {background-position: -54px 0;}
 .sun .little_icon {background-position: -18px 0;}
 .printemps .little_icon {background-position: 0 0; }
