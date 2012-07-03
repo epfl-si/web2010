@@ -888,7 +888,8 @@ img.right { margin-left:25px; }
     padding-bottom: 3px;
 }
 .news-text a{ background:none; }
-.news-text .read-more { background: url(../img/arrow-more.png) no-repeat 0 4px; width: 12px; height: 12px; margin-left: 4px; display: inline-block; }
+.news-text .read-more, .memento .read-more { background: url(../img/arrow-more.gif) no-repeat 0 4px; width: 12px; height: 12px; margin-left: 4px; display: inline-block; }
+.memento .read-more { background-image: url(../img/arrow-more-white.gif); }
 
 .news-text span.date {
     font-family:  Georgia, 'Times New Roman', Times, serif; font-size: 12px; font-style: italic; font-weight: bold;
