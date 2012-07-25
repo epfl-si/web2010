@@ -125,12 +125,12 @@ table.table-cours th {padding: 0 2px 0 2px;}
 .content .table { border-collapse: collapse; border-spacing: 0; margin-bottom:20px; margin-top:10px; width: 100%;}
 .content .table th {
     padding: 4px 4px 4px 0; color: #000; font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold; font-size: 13px; line-height: 14px; text-align: left;
+    font-weight: bold; font-size: 13px; line-height: 15px; text-align: left;
     border-bottom: 1px solid #000;}
 .content .table td { 
     padding: 4px 4px 7px 0; vertical-align: top;
     background: url(../img/underline.gif) repeat-x 0 bottom;
-    line-height: 14px;
+    line-height: 15px;
 }
 
 /* Proposition two */
