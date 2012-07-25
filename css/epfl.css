@@ -974,6 +974,7 @@ ul.home-list-layout { overflow:hidden; width:656px; padding-top:4px;}
     letter-spacing: 1px; font-size: 18px; line-height: 20px;
     padding-bottom: 4px; margin:0;}
 .single-news .news-img{ float: left; width: 324px; height: 184px; margin-bottom: 2px; padding: 0; margin-top:0;}
+.single-news .news-video-overlay { width: 324px; height: 184px; }
  
  /*2012.03.01 new template for news without image*/   
 	.single-news ul {
