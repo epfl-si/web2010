@@ -29,6 +29,7 @@ function change_search_base(radio){
     }
     if (jQuery('#searchfield').val() === jQuery('#searchform label.current').attr('title')) { jQuery('#searchfield').val(''); }
     if (jQuery('#searchfield').val() === '') { jQuery('#searchfield').val(label.attr('title')); }
+    
     current_search_base.toggleClass('current');
     current_search_base = label;
     current_search_base.toggleClass('current');
@@ -90,6 +91,9 @@ function getPeopleAutocomplete(){
 
 
 jQuery(document).ready(function($){
+    $('#searchform').submit(function() {
+	return $('#searchfield').val() !== $('#searchform label.current').attr('title');
+    });
     current_search_base = $('#searchform label.current');
     change_search_base($("#search-engine-person"));
     $('#search-box input[type=radio]').change(function(){ change_search_base($(this)); });
