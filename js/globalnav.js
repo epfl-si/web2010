@@ -92,7 +92,9 @@ function getPeopleAutocomplete(){
 
 jQuery(document).ready(function($){
     $('#searchform').submit(function() {
-	return $('#searchfield').val() !== $('#searchform label.current').attr('title');
+	if ($('#searchfield').val() === $('#searchform label.current').attr('title')) {
+		$('#searchfield').val('');
+	}
     });
     current_search_base = $('#searchform label.current');
     change_search_base($("#search-engine-person"));
