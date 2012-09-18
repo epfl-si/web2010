@@ -77,7 +77,7 @@
                 <li class="group-2-cols last">
                   <h3><a href="http://recherche.epfl.ch/page-36159-fr.html">Portail Chercheurs</a></h3>
                   <ul>
-                    <li><a href="http://grantsoffice.epfl.ch/">Financement de la recherche</a></li>
+                    <li><a href="http://dar.epfl.ch/page-69195-fr.html">Financement de la recherche</a></li>
                     <li><a href="http://phd.epfl.ch/page-19491-fr.html">Doctorat à l'EPFL</a></li>
                   </ul>
                 </li>
@@ -110,10 +110,10 @@
                   </ul>
                 </li>
                 <li class="group-2-cols">
-                  <h3><a href="http://a3.epfl.ch/">Portail Alumni A3-EPFL</a></h3>
+                  <h3><a href="http://epflalumni.ch/">Portail Alumni A3-EPFL</a></h3>
                   <ul>
-                    <li><a href="http://www.epflalumni.ch/page/devenir-membre-1">Devenir membre</a></li>
-                    <li><a href="http://www.epflalumni.ch/events">Agenda A3</a></li>
+                    <li><a href="http://www.epflalumni.ch/page/devenir-membre">Devenir membre</a></li>
+                    <li><a href="http://epflalumni.ch/nos-evenements/">Agenda A3</a></li>
                   </ul>
                 </li>
               </ul>
@@ -182,6 +182,7 @@
                   </ul>
                 </li>
               </ul>
+
               <div class="clear"></div>
           
           </div>
@@ -205,15 +206,16 @@
                     <li><a href="http://bachelor.epfl.ch/etudes">Bachelor</a></li>
                     <li><a href="http://master.epfl.ch/page-21270-fr.html">Master</a></li>
                     <li><a href="http://phd.epfl.ch/page-19488-fr.html">École doctorale</a></li>
-                    <li><a href="http://www.formation-continue-unil-epfl.ch/">Formation continue</a> (Fondation EPFL-UNIL)</li>
+                    <li><a href="http://www.formation-continue-unil-epfl.ch/">Formation continue</a> (EPFL-UNIL)</li>
                   </ul>
                 </li>
                 <li class="group-2-cols last">
-                  <h3><a href="http://recherche.epfl.ch/page-36159-fr.html">Recherche</a></h3>
+                  <h3><a href="http://dar.epfl.ch/page-69195-fr.html">Recherche</a></h3>
                   <ul>
                     <li><a href="http://vpiv.epfl.ch/page-22996-fr.html">Centres interdisciplinaires</a></li>
+					<li><a href="http://commission-recherche.epfl.ch/page-25053-fr.html">Commission de la recherche</a></li>
                     <li><a href="http://grantsoffice.epfl.ch/">Grants office</a></li>
-                    <li><a href="http://commission-recherche.epfl.ch/page-25053-fr.html">Commission de la recherche</a></li>
+					<li><a href="http://spi.epfl.ch/fr">Projets interinstitutionnels</a></li>
                     <li><a href="http://infoscience.epfl.ch/?ln=fr">Publications <acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></a></li>
                   </ul>
                 </li>
@@ -229,7 +231,7 @@
                 <li class="group-2-cols" >
                   <h3><a href="http://international.epfl.ch/page-42781-fr.html">Portail international</a></h3>
                   <ul>
-                    <li><a href="http://daia.epfl.ch/page-21112-fr.html">Relations internationales</a></li>
+                    <li><a href="http://ri.epfl.ch/page-21112-fr.html">Relations internationales</a></li>
                     <li><a href="http://www.epfl.ae">EPFL Middle East</a></li>
                     <li><a href="http://cooperation.epfl.ch/page-8942-fr.html">Coopération</a></li>
                   </ul>
@@ -244,7 +246,7 @@
       <ul>
         <li><a href="mailto:webmaster@epfl.ch">Contact</a></li>
         <li><a href="http://www.epfl.ch/accessibility.fr.shtml">Accessibilité</a></li>
-        <li class="copyright">&copy; 2011 EPFL tous droits réservés</li>
+        <li class="copyright">&copy; 2012 EPFL tous droits réservés</li>
         <li><a href="#top" class="hidden">Retour en haut de la page</a></li>
       </ul>
     </div>

@@ -77,7 +77,7 @@
                 <li class="group-2-cols last">
                   <h3><a href="http://recherche.epfl.ch/page-36159-en.html">Researchers portal</a></h3>
                   <ul>
-                    <li><a href="http://grantsoffice.epfl.ch/">Research funding</a></li>
+                    <li><a href="http://dar.epfl.ch/page-69195-en.html">Research funding</a></li>
                     <li><a href="http://phd.epfl.ch/page-19491-en.html">Doctorate at EPFL</a></li>
                   </ul>
                 </li>
@@ -109,10 +109,10 @@
                   </ul>
                 </li>
                 <li class="group-2-cols">
-                  <h3><a href="http://a3.epfl.ch/">Alumni Portal</a></h3>
+                  <h3><a href="http://epflalumni.ch/">Alumni Portal</a></h3>
                   <ul>
-                    <li><a href="http://www.epflalumni.ch/page/devenir-membre-1">Become a member</a></li>
-                    <li><a href="http://www.epflalumni.ch/events">A3 agenda</a></li>
+                    <li><a href="http://www.epflalumni.ch/page/devenir-membre">Become a member</a></li>
+                    <li><a href="http://epflalumni.ch/nos-evenements/">A3 agenda</a></li>
                   </ul>
                 </li>
               </ul>
@@ -193,7 +193,7 @@
                   <ul>
                     <li><a href="http://direction.epfl.ch/page-30791-en.html">Direction</a></li>
                     <li><a href="http://www.epfl.ch/organigrammes">EPFL Structure</a></li>
-                    <li><a href="http://information.epfl.ch/">General information</a></li>
+                    <li><a href="http://information.epfl.ch/page-16430-en.html">General information</a></li>
                     <li><a href="http://library.epfl.ch/">Library</a></li>
                     <li><a href="http://emploi.epfl.ch/page-31605-en.html">Job offers</a></li>
                   </ul>
@@ -205,17 +205,18 @@
                     <li><a href="http://bachelor.epfl.ch/studies">Bachelor</a></li>
                     <li><a href="http://master.epfl.ch/page-21270-en.html">Master</a></li>
                     <li><a href="http://phd.epfl.ch/page-19488-en.html">PhD</a></li>
-                    <li><a href="http://www.formation-continue-unil-epfl.ch/en">Continuing education</a> (EPFL-UNIL Foundation)</li>
+                    <li><a href="http://www.formation-continue-unil-epfl.ch/en">Continuing education</a> (EPFL-UNIL)</li>
                   </ul>
                 </li>
                 <li class="group-2-cols last">
-                  <h3><a href="http://recherche.epfl.ch/page-36159-en.html">Research</a></h3>
+                  <h3><a href="http://dar.epfl.ch/page-69195-en.html">Research</a></h3>
                   <ul>
-                    <li><a href="http://vpiv.epfl.ch/page-22996-en.html">Transdisciplinary Centers</a></li>
                     <li><a href="http://grantsoffice.epfl.ch/">Grants office</a></li>
-                    <li><a href="http://commission-recherche.epfl.ch/page-25053-en.html">Research Commission</a></li>
+					<li><a href="http://spi.epfl.ch/en">Interinstitutional projects</a></li>
                     <li><a href="http://infoscience.epfl.ch/?ln=en"><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym> Publications</a></li>
-                  </ul>
+					<li><a href="http://commission-recherche.epfl.ch/page-25053-en.html">Research Commission</a></li>
+					<li><a href="http://vpiv.epfl.ch/page-22996-en.html">Transdisciplinary Centers</a></li>
+				  </ul>
                 </li>
                 <li class="group-2-cols" style="clear: left;">
                   <h3><a href="http://vpiv.epfl.ch/page-22990-en.html">Innovation &amp; Tech Transfer</a></h3>
@@ -223,13 +224,13 @@
                     <li><a href="http://vpiv.epfl.ch/page-22997-en.html">Partnerships</a></li>
                     <li><a href="http://vpiv.epfl.ch/page-22998-en.html">Start-up</a></li>
                     <li><a href="http://www.alliance-tt.ch">Industrial liaison</a></li>
-                    <li><a href="http://sri.epfl.ch/">Technology transfer, patents</a></li>
+                    <li><a href="http://tto.epfl.ch/hompage_eng">Technology transfer, patents</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
                   <h3><a href="http://international.epfl.ch/page-42781-en.html">International portal</a></h3>
                   <ul>
-                    <li><a href="http://daia.epfl.ch/page-21112-en.html">International Relations</a></li>
+                    <li><a href="http://ri.epfl.ch/page-21112-en.html">International Relations</a></li>
                     <li><a href="http://www.epfl.ae">EPFL Middle East</a></li>
                     <li><a href="http://cooperation.epfl.ch/page-8942-en.html">Cooperation</a></li>
                   </ul>
@@ -243,7 +244,7 @@
       <ul>
         <li><a href="mailto:webmaster@epfl.ch">Contact</a></li>
         <li><a href="http://www.epfl.ch/accessibility.en.shtml">Accessibility</a></li>
-        <li class="copyright">&copy; 2011 EPFL all rights reserved</li>
+        <li class="copyright">&copy; 2012 EPFL all rights reserved</li>
         <li><a href="#top" class="hidden">Jump to top of the page</a></li>
       </ul>
     </div>
