@@ -916,7 +916,8 @@ ul.news-list { float: left; width: 652px; margin: 0 0 40px 0; padding: 0;}
 .news-list li.heading-news h2 {
     font-family: "Arial black", Arial, Helvetica, sans-serif;
     letter-spacing: 1px; font-size: 18px; line-height: 20px;
-    padding-bottom: 2px;}
+    padding-bottom: 2px;
+    font-weight: normal;}
 .news-list li.heading-news .news-img{ width: 324px; height: 184px;}
 
 ul.list-layout { padding-top: 4px; border-top: 1px solid #000; overflow: hidden; width: 656px; }
