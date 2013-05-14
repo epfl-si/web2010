@@ -431,6 +431,9 @@ to be removed when jahia automaticvally includes plancours.css
 #social-networks .facebook {background-position: 0 0;}
 #social-networks .twitter {background-position: 16px 0;}
 #social-networks .youtube {background-position: 32px 0;}
+#social-networks .googleplus {background-position: 48px 0;}
+#social-networks .linkedin {background-position:64px 0;}
+
 
 
 /****************************** Interface Elements ****************************/
