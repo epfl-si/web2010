@@ -15,8 +15,6 @@
 .navigation-bar .group span { height: 19px; float: left; padding-top: 4px; margin-right: 4px;letter-spacing: 1px;}
 .navigation-bar ul.topnav{ top: 1px; }
 .home-navpanel .unit-col div:first-child {padding-top: 2px; padding-bottom: 2px; margin-right:0;}
-#nav-search { background-color: #ae0010;}
-
 /* ajouts redesign 2011  */
 
 h1 {border-bottom:black 1px solid; margin-bottom:4px;}
