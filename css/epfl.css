@@ -303,6 +303,55 @@ to be removed when jahia automaticvally includes plancours.css
     color: #000; margin-bottom: 7px; display: block;
 }
 
+#infoscience-searchform  {margin: 0;}
+#header2013 #searchform input.search{
+    width: 22px;
+    height: 23px;
+    line-height: 23px;
+    padding: 0 8px 0 8px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #b8b8b8;
+    border-right: none;
+    float: left;
+}
+#header2013 #searchform .search-filter {
+    float: left;
+    width: 130px; height: 23px;
+    border-top: 1px solid #b8b8b8;
+    border-bottom: 1px solid #b8b8b8;
+    background: #fff url(/media/img/sprites.png) no-repeat 0 0;
+    padding-left: 0;
+    line-height: 23px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+#header2013 #searchform .search-button{
+    background: url(http://www.epfl.ch/img/search.png) no-repeat 0 0;
+    width: 25px; height: 25px;
+    cursor: pointer;
+    border: none;
+    vertical-align: bottom;
+    text-indent: -999em;
+    border: 1px solid #b8b8b8;
+    float: left;
+}
+#header2013 #searchform #selected-field {
+  display: block;
+  padding-left: 8px;
+  background: url(/media/img/sprites.png) no-repeat -251px 0;
+}
+#header2013 #searchform #selected-field:hover {
+    background: #000 url(/media/img/sprites.png) no-repeat -251px -25px;
+    color: #fff;
+}
+
+
+
+#infoscience-searchform #selected-field {width: 122px;}
+
+
 
 /**************************** Header definition *******************************/
 #header{ margin-left: auto; margin-right: auto; width: 980px; padding: 0 8px; background-color: #fff;}

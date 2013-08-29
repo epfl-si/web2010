@@ -234,14 +234,26 @@
         <div id="search-box">
           <a name="search"></a>
           <form name="search" action="http://search.epfl.ch/process_web2010" id="searchform">
-            <input class="hidden" type="radio" name="engine" id="search-engine-person" value="person" checked="checked" title="Chercher une personne" />
-            <label for="search-engine-person" class="current" title="Chercher une personne">Personne</label>
-            <input class="hidden" type="radio" name="engine" id="search-engine-place" value="place" title="Chercher un lieu"/>
-            <label for="search-engine-place" title="Chercher un lieu">Lieu</label>
-            <input class="hidden" type="radio" name="engine" id="search-engine-epfl" value="epfl" title="Chercher dans toute l'EPFL"/>
-            <label for="search-engine-epfl" title="Chercher dans toute l'EPFL">Web <acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></label>
+            <input type="text" class="search" name="q" value="" id="searchfield" />
             <input type="hidden" name="lang" value="fr" />
-            <input type="text" class="search" name="q" value="" id="searchfield" /><button type="submit" class="search-button"  title="Rechercher">Rechercher</button>
+            <div class="search-filter">
+              <a href="#" id="selected-field">Tous les champs</a>
+              <ul class="menu hidden">
+                <li>
+                  <input class="hidden" type="radio" name="engine" id="search-engine-person" value="person" checked="checked" title="Chercher une personne" />
+                  <label for="search-engine-person" class="current" title="Chercher une personne">Personne</label>
+                </li>
+                <li>
+                  <input class="hidden" type="radio" name="engine" id="search-engine-place" value="place" title="Chercher un lieu"/>
+                  <label for="search-engine-place" title="Chercher un lieu">Lieu</label>
+                </li>
+                <li>
+                  <input class="hidden" type="radio" name="engine" id="search-engine-epfl" value="epfl" title="Chercher dans toute l'EPFL"/>
+                  <label for="search-engine-epfl" title="Chercher dans toute l'EPFL">Web <acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></label>
+                </li>
+                
+              </ul>
+                                    <button type="submit" class="search-button"  title="Rechercher">Rechercher</button>
           </form>
         </div>
       </div>
