@@ -111,8 +111,40 @@ jQuery(document).ready(function($){
         $('.navigation-panel').addClass("hidden");
     } );
     var config = { over: showPanel, out: hidePanel, timeout: 500 };
-    $("#main-menus .main-link").click(function(){ return false; });
-    $('#main-menus .menu').hoverIntent(config);
+    $('#header .menu').hoverIntent(config);
+    $("#header .main-link").click(function(){ return false; });
+    
+    
+    var showPane = function(pane){
+      $('.navigation-panel').addClass("hidden"); // close all
+      $(pane).removeClass('hidden');
+      $('#header2013').expose({color: '#000', opacity: 0.6, loadSpeed: 0, closeSpeed: 0});
+    }
+    var closePane = function(pane){
+      $(pane).addClass("hidden");
+      $.mask.close();
+    }
+    
+    $("#header2013 .menu").click(function(){ 
+        var pane = $('.navigation-panel', this);
+        if (pane.hasClass('hidden')){
+          showPane(pane);
+        } else {
+          closePane(pane);
+        }
+        return false; // do not propagate
+    });
+    $('#header').mouseleave(function(){ 
+        $.mask.close();
+        $('.navigation-panel').addClass("hidden");
+    } );
+    $('html').click(function() {
+        $.mask.close();
+        $('.navigation-panel').addClass("hidden");
+    });
+    $('#header2013 .navigation-panel').click(function(event){
+        event.stopPropagation();
+    });
     
     /* navigation: Dropdown menus */
     $('.dropdown').click(function(){ $(this).children('ul').toggleClass('hidden'); });

@@ -279,22 +279,46 @@ to be removed when jahia automaticvally includes plancours.css
 #header2013 {
     margin-left: auto; margin-right: auto; width: 980px; padding: 0 8px; background-color: #fff;
 }
+#header2013 a{ background: none; }
+
 #header2013 #nav-logo {background: none; height:66px; border-bottom: none; padding-top: 8px}
 #header2013 #nav-logo a {background: none;}
 #header2013 #main-menus li{
     background-color: #fff;
 }
 #header2013 #main-menus li.menu {
-    
+    height: 35px;
+    padding-bottom: 25px;
 }
 #header2013 #nav-menus a.main-link {
     color: #000;
     font: bold 14px/10px Arial, helvetica, sans-serif;
     top: 8px; bottom: auto;
     border-left: 4px solid black;
-    
+    background: none;
     padding-left: 8px;
+    position: absolute;
 }
+#header2013 #nav-menus a.main-link:after{
+    content:'\00A0'; height:6px; width:6px;
+    background:url(../img/sprites-arrow.png) no-repeat; 
+    position:absolute; bottom:0; right:2px;
+}
+/*#header2013 #nav-menus li.menu:hover a.main-link:after{
+    background:url(../img/sprites-arrow.png) no-repeat 0 -8px; 
+}
+
+#header2013 #nav-menus li.menu:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#header2013 #nav-menus li.menu:hover > a, 
+#header2013 #nav-menus li.menu:hover > a > acronym{
+    color: #fff;
+}*/
+
+
 #header2013 #nav-menus a.main-link span {
     font-size: inherit;
     margin-bottom: 7px; 
@@ -342,17 +366,19 @@ to be removed when jahia automaticvally includes plancours.css
 #header2013 #searchform #selected-field {
   display: block;
   padding-left: 8px;
-  background: url(/media/img/sprites.png) no-repeat -251px 0;
+  background: url(../img/sprites.png) no-repeat -286px 0;
 }
 #header2013 #searchform #selected-field:hover {
-    background: #000 url(../img/sprites.png) no-repeat -251px -25px;
+    background: #000 url(../img/sprites.png) no-repeat -286px -25px;
     color: #fff;
 }
 
 #header2013 #search-box { bottom: auto;}
 
-
-#infoscience-searchform #selected-field {width: 122px;}
+#header2013 .navigation-panel {
+  top: 60px;
+  padding-top: 40px;
+}
 
 
 
@@ -482,8 +508,7 @@ to be removed when jahia automaticvally includes plancours.css
 
 #breadcrumbs, #languages{
     padding: 2px 0 0 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
+    font-family: Arial, helvetica, sans-serif;
     letter-spacing: 1px;
     font-size: 11px;
     font-weight: normal;
@@ -493,6 +518,7 @@ to be removed when jahia automaticvally includes plancours.css
     display:inline;
     background: url(../img/separator.png) no-repeat right center;
     padding-right: 12px;
+    font-size: 11px;
 }
 #breadcrumbs li.last{ background: none; }
 #breadcrumbs a { color: #000; background: none;}
@@ -501,9 +527,22 @@ to be removed when jahia automaticvally includes plancours.css
 #breadcrumbs .last {color:black; font-weight:bold;}
 
 #languages { float:right; background:none; }
-#languages li { background:none; display:inline; padding:0 0 0 20px; }
-#languages .current { font-weight:bold; color:black; }
-#languages a { background:none; }
+#languages li { background:none; display:inline; padding:0 0 0 20px; font-size: 13px; position: relative;}
+#languages li:after {
+    content:'\00A0'; height:11px; width:11px;
+    background:url(../img/slash.png) no-repeat; 
+    position:absolute; bottom:2px; right:-17px;
+
+}
+#languages li:last-child:after {
+    content:''; 
+    background: none;
+}
+
+
+#languages a { background:none; color: #696f6e;}
+#languages .current { color:black; }
+
 
 #social-networks { float:right; margin-right:8px; }
 #social-networks .icon {
