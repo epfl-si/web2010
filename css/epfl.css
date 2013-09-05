@@ -304,6 +304,11 @@ to be removed when jahia automaticvally includes plancours.css
     background:url(../img/sprites-arrow.png) no-repeat; 
     position:absolute; bottom:0; right:2px;
 }
+#header2013 .navigation-panel {
+  top: 60px;
+  padding-top: 40px;
+}
+
 /*#header2013 #nav-menus li.menu:hover a.main-link:after{
     background:url(../img/sprites-arrow.png) no-repeat 0 -8px; 
 }
@@ -318,7 +323,6 @@ to be removed when jahia automaticvally includes plancours.css
     color: #fff;
 }*/
 
-
 #header2013 #nav-menus a.main-link span {
     font-size: inherit;
     margin-bottom: 7px; 
@@ -327,10 +331,10 @@ to be removed when jahia automaticvally includes plancours.css
     color: #000; margin-bottom: 7px; display: block;
 }
 
-#header2013 #search-box {margin: 10px 0 0 0;}
+#header2013 #search-box { margin: 10px 0 0 0;  bottom: auto;}
 
-#header2013 #searchform input.search{
-    width: 189px;
+#header2013 input.search{
+    width: 162px;
     height: 23px;
     line-height: 23px;
     padding: 0 8px 0 8px;
@@ -340,9 +344,9 @@ to be removed when jahia automaticvally includes plancours.css
     border-right: none;
     float: left;
 }
-#header2013 #searchform .search-filter {
+#header2013 .search-filter {
     float: left;
-    width: 93px; height: 23px;
+    width: 120px; height: 23px;
     border-color: #000;
     border-top: 1px solid;
     border-bottom: 1px solid;
@@ -354,7 +358,7 @@ to be removed when jahia automaticvally includes plancours.css
     font-weight: bold;
     position: relative;
 }
-#header2013 #searchform .search-button{
+#header2013 .search-button{
     background-image: url(../img/magnifier.png);
     width: 25px; height: 25px;
     cursor: pointer;
@@ -363,22 +367,44 @@ to be removed when jahia automaticvally includes plancours.css
     border: none;
     float: left;
 }
-#header2013 #searchform #selected-field {
+#header2013 .selected-field {
   display: block;
   padding-left: 8px;
-  background: url(../img/sprites.png) no-repeat -286px 0;
+  background: url(../img/sprites.png) no-repeat -261px 0;
 }
-#header2013 #searchform #selected-field:hover {
-    background: #000 url(../img/sprites.png) no-repeat -286px -25px;
+#header2013 .selected-field:hover {
+    background: #000 url(../img/sprites.png) no-repeat -261px -25px;
     color: #fff;
 }
 
-#header2013 #search-box { bottom: auto;}
-
-#header2013 .navigation-panel {
-  top: 60px;
-  padding-top: 40px;
+#header2013 .search-filter .menu {
+    width: 117px;
+    position: absolute;
+    left: -1px; top: 24px;
+    z-index: 9999;
+    padding: 4px 0 4px 0;
+    border: 1px solid #b8b8b8;
+    border-top: none;
+    background: #fff none;
+    list-style-type: none;
+    line-height: 18px;
+    font-weight: normal;
 }
+#header2013 .search-filter .menu { font-weight: normal; color: #000;}
+#header2013 .search-filter .menu label { display: block; padding: 3px 7px; cursor: pointer;}
+#header2013 .search-filter .menu label:hover, 
+#header2013 .search-filter .menu label:hover abbr, 
+#header2013 .search-filter .menu label:hover acronym { background-color: #000; color: #fff; }
+#header2013 .search-filter .menu.hidden{ position: absolute; left: -999em;}
+#header2013 .search-filter .menu li { 
+    display: list-item; float: none; margin-bottom: 0;
+    border-bottom: 1px solid #fff; /* MSIE 6 */
+    list-style-image: none;
+    margin-left: 0;}
+#header2013 .search-filter .menu input { margin-right: 4px; }
+
+
+
 
 
 
@@ -528,15 +554,12 @@ to be removed when jahia automaticvally includes plancours.css
 
 #languages { float:right; background:none; }
 #languages li { background:none; display:inline; padding:0 0 0 20px; font-size: 13px; position: relative;}
-#languages li:after {
-    content:'\00A0'; height:11px; width:11px;
-    background:url(../img/slash.png) no-repeat; 
-    position:absolute; bottom:2px; right:-17px;
-
+#languages li:before {
+    content:'\2571'; font-size: 11px;
+    position:absolute; left:2px;
 }
-#languages li:last-child:after {
+#languages li:first-child:before {
     content:''; 
-    background: none;
 }
 
 

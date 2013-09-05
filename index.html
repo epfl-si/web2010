@@ -22,7 +22,7 @@
   <body>
 
     
-            <a name="top"></a>
+    <a name="top"></a>
     <div id="accessibility" class="hidden" title="École Polytechnique Fédérale de Lausanne - Accès rapide">
       <ul>
         <li><a href="http://www.epfl.ch/accessibility.fr.shtml" title="Accès spécifique pour personnes handicapées" accesskey="0">Accessibilité</a></li>
@@ -233,24 +233,40 @@
       <div id="nav-search">
         <div id="search-box">
           <a name="search"></a>
-          <form name="search" action="http://search.epfl.ch/process_web2010" id="searchform">
+          <form name="search" action="http://search.epfl.ch/process_web2010" class="searchform">
             <input type="text" class="search" name="q" value="" id="searchfield" />
             <input type="hidden" name="lang" value="fr" />
             <div class="search-filter">
-              <a href="#" id="selected-field">Personnes</a>
+              <a href="#" class="selected-field">Personnes</a>
               <ul class="menu hidden">
                 <li>
-                  <input class="hidden" type="radio" name="engine" id="search-engine-person" value="person" checked="checked" title="Chercher une personne" />
-                  <label for="search-engine-person" class="current" title="Chercher une personne">Personnes</label>
+                  <input class="hidden" type="radio" name="f" id="search-engine-person" value="directory" checked="checked" title="Chercher une personne" />
+                  <label for="search-engine-person" class="current" title="Chercher une personne">Annuaire</label>
                 </li>
                 <li>
-                  <input class="hidden" type="radio" name="engine" id="search-engine-place" value="place" title="Chercher un lieu"/>
+                  <input class="hidden" type="radio" name="f" id="search-engine-place" value="place" title="Chercher un lieu"/>
                   <label for="search-engine-place" title="Chercher un lieu">Lieu</label>
                 </li>
                 <li>
-                  <input class="hidden" type="radio" name="engine" id="search-engine-epfl" value="epfl" title="Chercher dans toute l'EPFL"/>
-                  <label for="search-engine-epfl" title="Chercher dans toute l'EPFL">Web <acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></label>
+                  <input class="hidden" type="radio" name="f" id="search-engine-epfl" value="epfl" title="Chercher dans toute l'EPFL"/>
+                  <label for="search-engine-epfl" title="Chercher dans toute l'EPFL">Sites web EPFL</label>
                 </li>
+                <li>
+                  <input class="hidden" type="radio" name="f" id="search-engine-eduweb" value="eduweb" title="Chercher des cours"/>
+                  <label for="search-engine-eduweb" title="Chercher des cours">Cours</label>
+                </li>
+                <li>
+                  <input class="hidden" type="radio" name="f" id="search-engine-publication" value="publication" title="Chercher des publications"/>
+                  <label for="search-engine-publication" title="Chercher des publications">Publications</label>
+                </li>                
+                <li>
+                  <input class="hidden" type="radio" name="f" id="search-engine-actuweb" value="actuweb" title="Chercher des actualités"/>
+                  <label for="search-engine-actuweb" title="Chercher des actualités">Actualités</label>
+                </li> 
+                <li>
+                  <input class="hidden" type="radio" name="f" id="search-engine-unit" value="unit" title="Chercher des unités EPFL"/>
+                  <label for="search-engine-unit" title="Chercher des unités EPFL">Unités EPFL</label>
+                </li>                 
                 
               </ul>
             </div>  
