@@ -281,7 +281,7 @@ to be removed when jahia automaticvally includes plancours.css
 }
 #header2013 a{ background: none; }
 
-#header2013 #nav-logo {background: none; height:66px; border-bottom: none; padding-top: 8px}
+#header2013 #nav-logo {background: none; height:46px; border-bottom: none; padding-top: 8px; margin-bottom: 17px;}
 #header2013 #nav-logo a {background: none;}
 #header2013 #main-menus li{
     background-color: #fff;
@@ -331,6 +331,7 @@ to be removed when jahia automaticvally includes plancours.css
     color: #000; margin-bottom: 7px; display: block;
 }
 
+#header2013 #nav-search { height: 60px;}
 #header2013 #search-box { margin: 10px 0 0 0;  bottom: auto;}
 
 #header2013 input.search{
@@ -564,7 +565,7 @@ to be removed when jahia automaticvally includes plancours.css
 
 
 #languages a { background:none; color: #696f6e;}
-#languages .current { color:black; }
+#languages .current { color:black; font-weight: bold;}
 
 
 #social-networks { float:right; margin-right:8px; }
@@ -1158,7 +1159,7 @@ ul.home-list-layout { overflow:hidden; width:656px; padding-top:4px;}
     width:324px;
     height:282px;
     margin:28px 4px 0 0;
-    padding 0;
+    padding: 0;
     float:left;
 }
 
