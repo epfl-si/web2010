@@ -281,7 +281,7 @@ to be removed when jahia automaticvally includes plancours.css
 }
 #header2013 a{ background: none; }
 
-#header2013 #nav-logo {background: none; height:46px; border-bottom: none; padding-top: 8px; margin-bottom: 17px;}
+#header2013 #nav-logo {background: none; height:46px; border-bottom: none; padding-top: 8px; margin-bottom: 13px;}
 #header2013 #nav-logo a {background: none;}
 #header2013 #main-menus li{
     background-color: #fff;
@@ -403,7 +403,11 @@ to be removed when jahia automaticvally includes plancours.css
     list-style-image: none;
     margin-left: 0;}
 #header2013 .search-filter .menu input { margin-right: 4px; }
-
+#header2013 #header_searchform .ui-autocomplete {
+    top : 57px ;
+    width:297px ;
+    cursor: pointer;
+}
 
 
 
@@ -539,13 +543,13 @@ to be removed when jahia automaticvally includes plancours.css
     letter-spacing: 1px;
     font-size: 11px;
     font-weight: normal;
+    margin-top: 4px;
 }
 #breadcrumbs { float: left; }
 #breadcrumbs li{
     display:inline;
     background: url(../img/separator.png) no-repeat right center;
     padding-right: 12px;
-    font-size: 11px;
 }
 #breadcrumbs li.last{ background: none; }
 #breadcrumbs a { color: #000; background: none;}
@@ -554,13 +558,15 @@ to be removed when jahia automaticvally includes plancours.css
 #breadcrumbs .last {color:black; font-weight:bold;}
 
 #languages { float:right; background:none; }
-#languages li { background:none; display:inline; padding:0 0 0 20px; font-size: 13px; position: relative;}
+#languages li { background:none; display:inline; padding:0 0 0 20px;  position: relative;}
 #languages li:before {
-    content:'\2571'; font-size: 11px;
-    position:absolute; left:2px;
+    content:'\00A0'; width: 11px; height: 11px;
+    position:absolute; left:2px; bottom: 1px;
+    background: url(../img/slash.png) no-repeat;
+    
 }
 #languages li:first-child:before {
-    content:''; 
+    content:''; background: none;
 }
 
 
@@ -1468,10 +1474,8 @@ span.nbCredits { color: red; font-weight: bold;}
     width: 980px;
     margin: 0 auto 0 auto;
     border-bottom: 1px solid #000;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
+    font-family: Arial, helvetica, sans-serif;
     font-size: 11px;
-    letter-spacing: 1px;
     padding-bottom: 0;
 
 }
@@ -1479,7 +1483,10 @@ span.nbCredits { color: red; font-weight: bold;}
 #footer a:hover { text-decoration: underline}
 
 #footer ul{  padding: 0; margin: 0; }
-#footer li { list-style: none; display: inline; margin-right: 16px; }
+#footer li { list-style: none; display: inline; margin-right: 8px; }
+#footer li:before { content: '|'; margin-right: 8px; }
+#footer li:first-child:before,
+#footer li.login:before { content: ''; margin: 0; }
 
 .copyright { color:#454545}
 #footer li.login {

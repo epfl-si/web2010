@@ -14,7 +14,7 @@
     
     <div id="header2013">
       <div id="nav-logo">
-        <a href="http://www.epfl.ch" title="Page d'accueil de l'EPFL"><img src="https://www.epfl.ch/img/epfl_small.png" /></a></div>
+        <a href="http://www.epfl.ch" title="Page d'accueil de l'EPFL"><img src="//www.epfl.ch/img/epfl_small.png" /></a></div>
       <div id="nav-menus">
         <a name="navigation"></a>
         <ul id="main-menus">
@@ -209,7 +209,7 @@
       <div id="nav-search">
         <div id="search-box">
           <a name="search"></a>
-          <form name="search" action="//kissrv72.epfl.ch/process_web2010" class="searchform">
+          <form name="search" action="//kissrv72.epfl.ch/process_web2010" class="searchform" id="header_searchform">
             <input type="hidden" name="lang" value="fr" />
             <input type="hidden" name="as_site_search" value="" id="header_local_site" />
             <input type="text" class="search" name="q" value="" id="header_searchfield" />
@@ -221,12 +221,12 @@
                   <label for="search-engine-person" class="current" title="Chercher une personne">Annuaire</label>
                 </li>
                 <li>
-                  <input class="hidden" type="radio" name="engine" id="search-engine-place" value="place" title="Chercher un lieu"/>
-                  <label for="search-engine-place" title="Chercher un lieu">Lieu</label>
-                </li>
-                <li>
                   <input class="hidden" type="radio" name="engine" id="search-engine-epfl" value="epfl" title="Chercher dans toute l'EPFL"/>
                   <label for="search-engine-epfl" title="Chercher dans toute l'EPFL">Sites web EPFL</label>
+                </li>
+                <li>
+                  <input class="hidden" type="radio" name="engine" id="search-engine-place" value="place" title="Chercher un lieu"/>
+                  <label for="search-engine-place" title="Chercher un lieu">Lieu</label>
                 </li>
                 <li>
                   <input class="hidden" type="radio" name="engine" id="search-engine-local" value="local"  title="Chercher sur ce site"/>
