@@ -1,10 +1,10 @@
 /*
  * EPFL navigation
  *
- * Copyright (c) 2010-2012 EPFL
+ * Copyright (c) 2010-2013 EPFL
  *
- * Date: 2012-02-27 14:00
- * Revision: 1.4
+ * Date: 2013-09-06 16:00
+ * Revision: 1.5
  */
 var current_search_base = null;
 
@@ -27,6 +27,7 @@ function change_search_base(radio){
         default:
             break;
     }
+    
     if (jQuery('#searchfield').val() === jQuery('#searchform label.current').attr('title')) { jQuery('#searchfield').val(''); }
     if (jQuery('#searchfield').val() === '') { jQuery('#searchfield').val(label.attr('title')); }
     
@@ -88,31 +89,124 @@ function getPeopleAutocomplete(){
         }      
     });
 }
-
-
+jQuery.fn.exists = function(){ return this.length>0; };
 jQuery(document).ready(function($){
-    $('#searchform').submit(function() {
-	if ($('#searchfield').val() === $('#searchform label.current').attr('title')) {
-		$('#searchfield').val('');
-	}
-    });
-    current_search_base = $('#searchform label.current');
-    change_search_base($("#search-engine-person"));
-    $('#search-box input[type=radio]').change(function(){ change_search_base($(this)); });
-    $('#searchlink').click(function(){ $('#searchfield').focus();});
-    $('#searchfield').focus(function(){ if ($(this).val() === current_search_base.attr('title')){ $(this).val('').addClass('focused');} });
-    $('#searchfield').blur(function() { if ($(this).val() === '') { $(this).val($('#searchform label.current').attr('title')).removeClass('focused');} });
-    $('#searchfield').keypress(function(e){ if (e.which === 13) { $(this).parent('form').submit();} });
-
-    
-    /* Navigation: big panels */
-    $('#header').mouseleave(function(){ 
+    if ($('#header').exists()){
+      /* Header - Web 2010 */
+      
+      // Big panels
+      $('#header').mouseleave(function(){ 
         $.mask.close();
         $('.navigation-panel').addClass("hidden");
-    } );
-    var config = { over: showPanel, out: hidePanel, timeout: 500 };
-    $("#main-menus .main-link").click(function(){ return false; });
-    $('#main-menus .menu').hoverIntent(config);
+      });
+      var config = { over: showPanel, out: hidePanel, timeout: 500 };
+        $('#header .menu').hoverIntent(config);
+        $("#header .main-link").click(function(){ return false; });
+        $('#header').mouseleave(closePane);
+
+      // Search box
+      $('#searchform').submit(function() {
+	    if ($('#searchfield').val() === $('#searchform label.current').attr('title')) {
+		  $('#searchfield').val('');
+	    }
+      });
+      current_search_base = $('#header #searchform label.current');
+      change_search_base($("#header #search-engine-person"));      
+      $('#search-box input[type=radio]').change(function(){ change_search_base($(this)); });
+      $('#searchfield').focus(function(){ if ($(this).val() === current_search_base.attr('title')){ $(this).val('').addClass('focused');} });
+      if ($.browser.msie) {
+        $('#search-box input[type=radio]').click(function(){ change_search_base($(this)); this.blur(); this.focus(); });
+      }
+      /* Make labels clickable under mobile safari*/
+      if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)) {
+        $('#search-box label').click(function () { var el = $(this).attr('for'); change_search_base($('#' + el));});
+      }
+
+    } else {
+      /* Header - Web 2013 */
+      
+      // Big panels
+      var showPane = function(pane){
+        $('.navigation-panel').addClass("hidden"); // close all
+        $(pane).removeClass('hidden');
+        $('#header2013').expose({color: '#000', opacity: 0.6, loadSpeed: 0, closeSpeed: 0});
+      }
+      var closePane = function(){
+        $('.navigation-panel').addClass("hidden");
+        $.mask.close();
+      }
+      $("#header2013 #nav-menus .menu").click(function(){ 
+          var pane = $('.navigation-panel', this);
+          if (pane.hasClass('hidden')){
+            showPane(pane);
+          } else {
+            closePane();
+          }
+          return false; // do not propagate
+      });
+      $('#header2013 .navigation-panel').click(function(event){
+          event.stopPropagation();
+      });
+      $(document).keyup(function(e){
+        if (e.keyCode == 27) { // escape key 
+          closePane();
+        }
+      });
+      $('html').click(closePane);
+    
+      // Search box
+      $('#header2013 .selected-field').click(function(){ $(this).siblings('ul').toggleClass('hidden'); });
+      $('#header2013 .search-filter').mouseleave(function(){ $(this).children('ul').addClass('hidden'); });
+      $('#header2013  #nav-search input[type="radio"]').click(function(){
+        $(this).parent().parent().addClass('hidden');
+      });
+      var setAutoComplete = function(){
+        $("#header2013 #header_searchfield").autocomplete({
+            source: function(request, response) {
+                $.ajax({url: "http://search.epfl.ch/json/autocompletename.action",
+                        dataType: 'jsonp',
+                        data: { maxRows: 15, term: request.term },
+                        success: function(data){
+                          response($.map(data.result, function(item) {
+                            return {label: item.name + ', ' + item.firstname, 
+                                    value: item.firstname + ' ' + item.name}
+                          }));
+                        }
+                });
+            },
+            appendTo: $('#header_searchform'),
+            disabled: false,
+            minLength: 3,
+            select: function(event, ui) {
+                if (ui.item) { $(this).val(ui.item.value);}
+                $('#header2013 #header_searchform').submit();
+            }      
+        });
+      }
+      var unsetAutoComplete = function(){
+        $("#header2013 #header_searchfield").autocomplete({ disabled: true });
+      }
+      $('#header2013 input[type="radio"]').change(function(event){
+        var label =  $('label[for=' + $(this).attr('id') + ']'); 
+        $('#search-box .selected-field').text(label.text());
+        
+        if ($(this).is('#search-engine-person')){
+          setAutoComplete();
+        } else{ 
+          unsetAutoComplete();
+        }
+      });
+      setAutoComplete();
+      $('#header2013 #search-engine-local').change(function(event){
+        $('#header_local_site').attr("value", jQuery.url.attr("host"));
+      });
+    } // end Web2010/2013
+
+
+    $('#searchfield').blur(function() { if ($(this).val() === '') { $(this).val($('#searchform label.current').attr('title')).removeClass('focused');} });
+    $('#searchfield').keypress(function(e){ if (e.which === 13) { $(this).parent('form').submit();} });       
+    $('#searchlink').click(function(){ $('#searchfield').focus();});
+    
     
     /* navigation: Dropdown menus */
     $('.dropdown').click(function(){ $(this).children('ul').toggleClass('hidden'); });
@@ -134,11 +228,7 @@ jQuery(document).ready(function($){
         function(e) { e.stopPropagation(); $(this).parent().removeClass("hover");}
     );
 
-    /* Navigation: search boxes */ 
-    if ($.browser.msie) {
-        $('#search-box input[type=radio]').click(function(){ change_search_base($(this)); this.blur(); this.focus(); });
-    }
-
+    
 
     /* activate togglers */
     $('.toggler').click(function(){ $(this).toggleClass("toggled-active").next().slideToggle("slow"); return false;});  
@@ -154,11 +244,7 @@ jQuery(document).ready(function($){
     /* add class .left to images having align="left" and so on. */
     $('img[align]').each(function(){ $(this).addClass($(this).attr('align')); });
 
-    /* Make labels clickable under mobile safari*/
-    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)) {
-       $('#search-box label').click(function () { var el = $(this).attr('for'); change_search_base($('#' + el));});
-    }
-    
+        
     /* Overlay */
     $("img[rel]").overlay();
     
@@ -172,7 +258,6 @@ jQuery(document).ready(function($){
         while (!isTotallyVisible(news, newsLink) && removeLastWord(newsText)){ void(0); }
       }
     });
-    
     
     /* Jahia specific */
     $("#main-content ul").each(function(){ 
