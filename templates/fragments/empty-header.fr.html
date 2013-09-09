@@ -11,35 +11,65 @@
       </ul>
     </div>
     <div id="header">
-      <div id="nav-logo"><a href="http://www.epfl.ch" title="Page d'accueil de l'EPFL"></a></div>
+      <div id="nav-logo">
+        <a href="http://www.epfl.ch" title="Page d'accueil de l'EPFL"><img src="//www.epfl.ch/img/epfl_small.png" /></a>
+      </div>
       <div id="nav-menus">
         <a name="navigation"></a>
         <ul id="main-menus">
-          <li class="portal" style="float: left; height: 74px; width: 160px; position: relative; margin-right: 4px;">
+          <li class="portal" style="float: left; height: 60px; width: 160px; position: relative; margin-right: 4px;">
           </li>
-          <li class="school" style="float: left; height: 74px; width: 160px; position: relative; margin-right: 4px;">
+          <li class="school" style="float: left; height: 60px; width: 160px; position: relative; margin-right: 4px;">
           </li>
-          <li class="short" style="float: left; height: 74px; width: 160px; position: relative;">
+          <li class="short" style="float: left; height: 60px; width: 160px; position: relative;">
           </li>
         </ul>
       </div>
 
-      <div class="local-color" id="nav-search">
+      <div id="nav-search">
         <div id="search-box">
           <a name="search"></a>
-          <form name="search" action="http://search.epfl.ch/process_web2010" id="searchform">
-            <input class="hidden" type="radio" name="engine" id="search-engine-person" value="person" checked="checked" title="Chercher une personne" />
-            <label for="search-engine-person" class="current" title="Chercher une personne">Personne</label>
-            <input class="hidden" type="radio" name="engine" id="search-engine-place" value="place" title="Chercher un lieu"/>
-            <label for="search-engine-place" title="Chercher un lieu">Lieu</label>
-            <input class="hidden" type="radio" name="engine" id="search-engine-epfl" value="epfl" title="Chercher dans toute l'EPFL"/>
-            <label for="search-engine-epfl" title="Chercher dans toute l'EPFL">Web <acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></label>
-            <input class="hidden" type="radio" name="engine" id="search-engine-local" value="local"  title="Chercher dans ce site"/>
-            <label for="search-engine-local" title="Chercher dans ce site">Sur ce site</label>
+          <form name="search" action="//kissrv72.epfl.ch/process_web2010" class="searchform" id="header_searchform">
             <input type="hidden" name="lang" value="fr" />
-            <input type="text" class="search" name="q" value="" id="searchfield" /><button type="submit" class="search-button"  title="Rechercher">Rechercher</button>
+            <input type="hidden" name="as_site_search" value="" id="header_local_site" />
+            <input type="text" class="search" name="q" value="" id="header_searchfield" />
+            <div class="search-filter">
+              <a href="#" class="selected-field">Personnes</a>
+              <ul class="menu hidden">
+                <li>
+                  <input class="hidden" type="radio" name="engine" id="search-engine-person" value="person" checked="checked" title="Chercher une personne" />
+                  <label for="search-engine-person" class="current" title="Chercher une personne">Annuaire</label>
+                </li>
+                <li>
+                  <input class="hidden" type="radio" name="engine" id="search-engine-epfl" value="epfl" title="Chercher dans toute l'EPFL"/>
+                  <label for="search-engine-epfl" title="Chercher dans toute l'EPFL">Sites web EPFL</label>
+                </li>
+                <li>
+                  <input class="hidden" type="radio" name="engine" id="search-engine-place" value="place" title="Chercher un lieu"/>
+                  <label for="search-engine-place" title="Chercher un lieu">Lieu</label>
+                </li>
+                <li>
+                  <input class="hidden" type="radio" name="engine" id="search-engine-eduweb" value="eduweb" title="Chercher des cours"/>
+                  <label for="search-engine-eduweb" title="Chercher des cours">Cours</label>
+                </li>
+                <li>
+                  <input class="hidden" type="radio" name="engine" id="search-engine-publication" value="publication" title="Chercher des publications"/>
+                  <label for="search-engine-publication" title="Chercher des publications">Publications</label>
+                </li>                
+                <li>
+                  <input class="hidden" type="radio" name="engine" id="search-engine-actuweb" value="actuweb" title="Chercher des actualités"/>
+                  <label for="search-engine-actuweb" title="Chercher des actualités">Actualités</label>
+                </li> 
+                <li>
+                  <input class="hidden" type="radio" name="engine" id="search-engine-unit" value="unit" title="Chercher des unités EPFL"/>
+                  <label for="search-engine-unit" title="Chercher des unités EPFL">Unités EPFL</label>
+                </li>                 
+                
+              </ul>
+            </div>  
+            <button type="submit" class="search-button local-color"  title="Rechercher">Rechercher</button>
           </form>
         </div>
-      </div> 
+      </div>
       <div class="clear"></div>
     </div>

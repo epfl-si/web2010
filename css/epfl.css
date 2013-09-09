@@ -274,6 +274,145 @@ to be removed when jahia automaticvally includes plancours.css
 .automne .little_icon {background-position: -36px 0; }
 
 
+
+/***************************** Header 2013 **************************************/
+#header2013 {
+    margin-left: auto; margin-right: auto; width: 980px; padding: 0 8px; background-color: #fff;
+}
+#header2013 a{ background: none; }
+
+#header2013 #nav-logo {background: none; height:46px; border-bottom: none; padding-top: 8px; margin-bottom: 13px;}
+#header2013 #nav-logo a {background: none;}
+#header2013 #main-menus li{
+    background-color: #fff;
+}
+#header2013 #main-menus li.menu {
+    height: 35px;
+    padding-bottom: 25px;
+}
+#header2013 #nav-menus a.main-link {
+    color: #000;
+    font: bold 14px/10px Arial, helvetica, sans-serif;
+    top: 8px; bottom: auto;
+    border-left: 4px solid black;
+    background: none;
+    padding-left: 8px;
+    position: absolute;
+}
+#header2013 #nav-menus a.main-link:after{
+    content:'\00A0'; height:6px; width:6px;
+    background:url(../img/sprites-arrow.png) no-repeat; 
+    position:absolute; bottom:0; right:2px;
+}
+#header2013 .navigation-panel {
+  top: 60px;
+  padding-top: 40px;
+}
+
+/*#header2013 #nav-menus li.menu:hover a.main-link:after{
+    background:url(../img/sprites-arrow.png) no-repeat 0 -8px; 
+}
+
+#header2013 #nav-menus li.menu:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#header2013 #nav-menus li.menu:hover > a, 
+#header2013 #nav-menus li.menu:hover > a > acronym{
+    color: #fff;
+}*/
+
+#header2013 #nav-menus a.main-link span {
+    font-size: inherit;
+    margin-bottom: 7px; 
+}
+#header2013 #nav-menus a.main-link acronym {
+    color: #000; margin-bottom: 7px; display: block;
+}
+
+#header2013 #nav-search { height: 60px;}
+#header2013 #search-box { margin: 10px 0 0 0;  bottom: auto;}
+
+#header2013 input.search{
+    width: 162px;
+    height: 23px;
+    line-height: 23px;
+    padding: 0 8px 0 8px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #000;
+    border-right: none;
+    float: left;
+}
+#header2013 .search-filter {
+    float: left;
+    width: 120px; height: 23px;
+    border-color: #000;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    background: #fff url(../img/sprites.png) no-repeat 0 0;
+    padding-left: 0;
+    line-height: 23px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+#header2013 .search-button{
+    background-image: url(../img/magnifier.png);
+    width: 25px; height: 25px;
+    cursor: pointer;
+    vertical-align: bottom;
+    text-indent: -999em;
+    border: none;
+    float: left;
+}
+#header2013 .selected-field {
+  display: block;
+  padding-left: 8px;
+  background: url(../img/sprites.png) no-repeat -261px 0;
+}
+#header2013 .selected-field:hover {
+    background: #000 url(../img/sprites.png) no-repeat -261px -25px;
+    color: #fff;
+}
+
+#header2013 .search-filter .menu {
+    width: 117px;
+    position: absolute;
+    left: -1px; top: 24px;
+    z-index: 9999;
+    padding: 4px 0 4px 0;
+    border: 1px solid #b8b8b8;
+    border-top: none;
+    background: #fff none;
+    list-style-type: none;
+    line-height: 18px;
+    font-weight: normal;
+}
+#header2013 .search-filter .menu { font-weight: normal; color: #000;}
+#header2013 .search-filter .menu label { display: block; padding: 3px 7px; cursor: pointer;}
+#header2013 .search-filter .menu label:hover, 
+#header2013 .search-filter .menu label:hover abbr, 
+#header2013 .search-filter .menu label:hover acronym { background-color: #000; color: #fff; }
+#header2013 .search-filter .menu.hidden{ position: absolute; left: -999em;}
+#header2013 .search-filter .menu li { 
+    display: list-item; float: none; margin-bottom: 0;
+    border-bottom: 1px solid #fff; /* MSIE 6 */
+    list-style-image: none;
+    margin-left: 0;}
+#header2013 .search-filter .menu input { margin-right: 4px; }
+#header2013 #header_searchform .ui-autocomplete {
+    top : 57px ;
+    width:297px ;
+    cursor: pointer;
+}
+
+
+
+
+
 /**************************** Header definition *******************************/
 #header{ margin-left: auto; margin-right: auto; width: 980px; padding: 0 8px; background-color: #fff;}
 #header a{ background: none; }
@@ -400,11 +539,11 @@ to be removed when jahia automaticvally includes plancours.css
 
 #breadcrumbs, #languages{
     padding: 2px 0 0 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
+    font-family: Arial, helvetica, sans-serif;
     letter-spacing: 1px;
     font-size: 11px;
     font-weight: normal;
+    margin-top: 4px;
 }
 #breadcrumbs { float: left; }
 #breadcrumbs li{
@@ -419,9 +558,21 @@ to be removed when jahia automaticvally includes plancours.css
 #breadcrumbs .last {color:black; font-weight:bold;}
 
 #languages { float:right; background:none; }
-#languages li { background:none; display:inline; padding:0 0 0 20px; }
-#languages .current { font-weight:bold; color:black; }
-#languages a { background:none; }
+#languages li { background:none; display:inline; padding:0 0 0 20px;  position: relative;}
+#languages li:before {
+    content:'\00A0'; width: 11px; height: 11px;
+    position:absolute; left:2px; bottom: 1px;
+    background: url(../img/slash.png) no-repeat;
+    
+}
+#languages li:first-child:before {
+    content:''; background: none;
+}
+
+
+#languages a { background:none; color: #696f6e;}
+#languages .current { color:black; font-weight: bold;}
+
 
 #social-networks { float:right; margin-right:8px; }
 #social-networks .icon {
@@ -1014,7 +1165,7 @@ ul.home-list-layout { overflow:hidden; width:656px; padding-top:4px;}
     width:324px;
     height:282px;
     margin:28px 4px 0 0;
-    padding 0;
+    padding: 0;
     float:left;
 }
 
@@ -1323,10 +1474,8 @@ span.nbCredits { color: red; font-weight: bold;}
     width: 980px;
     margin: 0 auto 0 auto;
     border-bottom: 1px solid #000;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
+    font-family: Arial, helvetica, sans-serif;
     font-size: 11px;
-    letter-spacing: 1px;
     padding-bottom: 0;
 
 }
@@ -1334,7 +1483,10 @@ span.nbCredits { color: red; font-weight: bold;}
 #footer a:hover { text-decoration: underline}
 
 #footer ul{  padding: 0; margin: 0; }
-#footer li { list-style: none; display: inline; margin-right: 16px; }
+#footer li { list-style: none; display: inline; margin-right: 8px; }
+#footer li:before { content: '|'; margin-right: 8px; }
+#footer li:first-child:before,
+#footer li.login:before { content: ''; margin: 0; }
 
 .copyright { color:#454545}
 #footer li.login {
