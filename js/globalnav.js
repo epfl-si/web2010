@@ -39,9 +39,31 @@ function getPeopleAutocomplete() {
 
 var current_search_base = null;
 
+
+function showPanel() {
+    jQuery("#header").expose({color: '#000', opacity: 0.6, loadSpeed: 0, closeSpeed: 0});
+    jQuery('.navigation-panel').addClass("hidden");
+    jQuery(this).children('.navigation-panel').removeClass('hidden');
+}
+
+function hidePanel(){}
+
+function removeLastWord(element) {
+    var text = element.html();
+    var i = text.lastIndexOf(' ');
+    element.html(text.substring(0, i) + '...');
+    return i !== -1;
+}
+
+/* add arrows when news texts are too long */
+function isTotallyVisible(parent, element) {
+    return element.position().top + element.outerHeight() + 2 < parent.position().top + parent.innerHeight();
+}
+
+
 function change_search_base(radio){
     jQuery('#search-options').remove();
-    jQuery("#searchform input[type=radio]").removeAttr("checked");
+    jQuery("#searchform input[type=radio]").removeAttr("checked");  
     var rid = radio.attr('id');
     var label =  jQuery('label[for=' + rid + ']');
     jQuery("#searchfield").autocomplete({ disabled: true });
@@ -72,25 +94,8 @@ function change_search_base(radio){
     }
 }
 
-function showPanel() {
-    jQuery("#header").expose({color: '#000', opacity: 0.6, loadSpeed: 0, closeSpeed: 0});
-    jQuery('.navigation-panel').addClass("hidden");
-    jQuery(this).children('.navigation-panel').removeClass('hidden');
-}
 
-function hidePanel(){}
 
-function removeLastWord(element) {
-    var text = element.html();
-    var i = text.lastIndexOf(' ');
-    element.html(text.substring(0, i) + '...');
-    return i !== -1;
-}
-
-/* add arrows when news texts are too long */
-function isTotallyVisible(parent, element) {
-    return element.position().top + element.outerHeight() + 2 < parent.position().top + parent.innerHeight();
-}
 
 jQuery.fn.exists = function(){ return this.length>0; };
 jQuery(document).ready(function($){

@@ -49,8 +49,13 @@ h6 { color: #000; font-weight: bold;}
 p { margin-bottom: 9px; margin-top:9px; color: #454545; }
 form { margin-bottom: 18px;}
 
+
 a { text-decoration: none; color: #000; background: url(../img/underline.gif) repeat-x 0 14px; }
 a:hover { background-image: url(../img/underline-hover.png); }
+
+/*a { text-decoration: none; color: #000; border-bottom: 1px dotted #000; }
+a:hover { border-bottom: 1px solid #000; }
+*/
 
 h1 a { background: none; text-decoration: none; }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { background: none; color:#ae0010;}
@@ -281,7 +286,7 @@ to be removed when jahia automaticvally includes plancours.css
 }
 #header2013 a{ background: none; }
 
-#header2013 #nav-logo {background: none; height:46px; border-bottom: none; padding-top: 8px; margin-bottom: 13px;}
+#header2013 #nav-logo {background: none; height:46px; border-bottom: none; padding-top: 8px; margin-bottom: 11px;}
 #header2013 #nav-logo a {background: none;}
 #header2013 #main-menus li{
     background-color: #fff;
@@ -292,8 +297,8 @@ to be removed when jahia automaticvally includes plancours.css
 }
 #header2013 #nav-menus a.main-link {
     color: #000;
-    font: bold 14px/10px Arial, helvetica, sans-serif;
-    top: 8px; bottom: auto;
+    font: bold 14px/11px Arial, helvetica, sans-serif;
+    top: 8px; left: 0; bottom: auto;
     border-left: 4px solid black;
     background: none;
     padding-left: 8px;
@@ -325,10 +330,10 @@ to be removed when jahia automaticvally includes plancours.css
 
 #header2013 #nav-menus a.main-link span {
     font-size: inherit;
-    margin-bottom: 7px; 
+    margin-bottom: 5px; 
 }
 #header2013 #nav-menus a.main-link acronym {
-    color: #000; margin-bottom: 7px; display: block;
+    color: #000; margin-bottom: 5px; display: block;
 }
 
 #header2013 #nav-search { height: 60px;}
@@ -379,20 +384,20 @@ to be removed when jahia automaticvally includes plancours.css
 }
 
 #header2013 .search-filter .menu {
-    width: 117px;
+    width: 144px;
     position: absolute;
     left: -1px; top: 24px;
     z-index: 9999;
     padding: 4px 0 4px 0;
-    border: 1px solid #b8b8b8;
+    border: 1px solid #000;
     border-top: none;
     background: #fff none;
     list-style-type: none;
     line-height: 18px;
     font-weight: normal;
+    color: #000;
 }
-#header2013 .search-filter .menu { font-weight: normal; color: #000;}
-#header2013 .search-filter .menu label { display: block; padding: 3px 7px; cursor: pointer;}
+#header2013 .search-filter .menu label { display: block; padding: 1px 7px; cursor: pointer;}
 #header2013 .search-filter .menu label:hover, 
 #header2013 .search-filter .menu label:hover abbr, 
 #header2013 .search-filter .menu label:hover acronym { background-color: #000; color: #fff; }
@@ -511,7 +516,7 @@ to be removed when jahia automaticvally includes plancours.css
 }
 
 .navigation-panel ul { list-style: none; padding: 0; margin-bottom: 28px; }
-.navigation-panel a{ font-family: Arial, helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing:.05em;}
+.navigation-panel a{ font-family: Arial, helvetica, sans-serif; font-size: 13px; font-weight: bold;}
 .navigation-panel a:hover { text-decoration: underline;}
 .navigation-panel h3 {
     margin:0 0 4px 0; padding:0;
@@ -540,7 +545,7 @@ to be removed when jahia automaticvally includes plancours.css
 #breadcrumbs, #languages{
     padding: 2px 0 0 0;
     font-family: Arial, helvetica, sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 0;
     font-size: 11px;
     font-weight: normal;
     margin-top: 4px;
@@ -548,20 +553,28 @@ to be removed when jahia automaticvally includes plancours.css
 #breadcrumbs { float: left; }
 #breadcrumbs li{
     display:inline;
-    background: url(../img/separator.png) no-repeat right center;
     padding-right: 12px;
+    position: relative;
 }
-#breadcrumbs li.last{ background: none; }
+#breadcrumbs li:before { 
+    content:'\00A0'; width: 4px; height: 7px;
+    position:absolute; left:-8px; bottom: 2px;
+    background: url(../img/separator.png) no-repeat;
+}
+#breadcrumbs li:first-child:before {
+    content:''; background: none;
+}
+
 #breadcrumbs a { color: #000; background: none;}
 #breadcrumbs a:hover, #languages a:hover { text-decoration: underline}
 #breadcrumbs .last a {color:black; font-weight:bold; background: none }
 #breadcrumbs .last {color:black; font-weight:bold;}
 
 #languages { float:right; background:none; }
-#languages li { background:none; display:inline; padding:0 0 0 20px;  position: relative;}
+#languages li { background:none; display:inline; padding:0 0 0 20px;  position: relative; }
 #languages li:before {
     content:'\00A0'; width: 11px; height: 11px;
-    position:absolute; left:2px; bottom: 1px;
+    position:absolute; left:3px; bottom: 0;
     background: url(../img/slash.png) no-repeat;
     
 }
