@@ -108,6 +108,7 @@ jQuery(document).ready(function($){
   };
 
   var closePane = function(){
+    if ($(".navigation-panel:not(.hidden)").length === 0) { return; }
     $('.navigation-panel').addClass("hidden");
     $.mask.close();
   };
