@@ -61,7 +61,7 @@
         <div class="menus public">
               <ul>
                 <li class="group-2-cols">
-                  <h3><a href="http://futuretudiant.epfl.ch/page-21078-fr.html">Portail Futurs Étudiants</a></h3>
+                  <h3><a href="http://futuretudiant.epfl.ch/fr">Portail Futurs Étudiants</a></h3>
                   <ul>
                     <li><a href="http://www.epfl.ch/epfl-virtual-tour/virtual-tour.html">EPFL en images</a></li>
                     <li><a href="http://sae.epfl.ch/venir-en-echange">Étudiants en échange</a></li>
@@ -75,10 +75,10 @@
                   </ul>
                 </li>
                 <li class="group-2-cols last">
-                  <h3><a href="http://recherche.epfl.ch/page-36159-fr.html">Portail Chercheurs</a></h3>
+                  <h3><a href="http://research-office.epfl.ch/portail-chercheurs">Portail Chercheurs</a></h3>
                   <ul>
-                    <li><a href="http://dar.epfl.ch/page-69195-fr.html">Financement de la recherche</a></li>
-                    <li><a href="http://phd.epfl.ch/page-19491-fr.html">Doctorat à l'EPFL</a></li>
+                    <li><a href="http://research-office.epfl.ch/financements">Financement de la recherche</a></li>
+                    <li><a href="http://phd.epfl.ch/candidatures">Doctorat à l'EPFL</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
@@ -89,24 +89,24 @@
                   </ul>
                 </li>
                 <li class="group-2-cols">
-                  <h3><a href="http://entreprises.epfl.ch/page57580-fr.html">Portail Entreprises</a></h3>
+                  <h3><a href="http://entreprises.epfl.ch/fr">Portail Entreprises</a></h3>
                   <ul>
-                    <li><a href="http://vpiv.epfl.ch/page-22990-fr.html">Innovation &amp; valorisation</a></li>
-                    <li><a href="http://vpiv.epfl.ch/page-23023-fr.html">Quartier de l'innovation</a></li>
+                    <li><a href="http://vpiv.epfl.ch/fr">Innovation &amp; valorisation</a></li>
+                    <li><a href="http://vpiv.epfl.ch/quartierinnovation">Quartier de l'innovation</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols last">
-                  <h3><a href="http://medias.epfl.ch/page-33838-fr.html">Portail Médias</a></h3>
+                  <h3><a href="http://medias.epfl.ch/fr">Portail Médias</a></h3>
                   <ul>
-                    <li><a href="http://medias.epfl.ch/communiques-de-presse">Communiqués de presse</a>, <a href="http://medias.epfl.ch/magazine-reflex">Reflex</a>, <a href="http://actualites.epfl.ch/index.php?module=Newspaper&amp;func=viewalleditions">Flash</a></li>
+                    <li><a href="http://medias.epfl.ch/communiques-de-presse">Communiqués de presse</a>, <a href="http://medias.epfl.ch/reflex-fr">Reflex</a>, <a href="http://medias.epfl.ch/flash">Flash</a></li>
                     <li><a href="http://mediatheque.epfl.ch/">Banque d'images</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
-                  <h3><a href="http://teaching.epfl.ch/page-16682-fr.html">Portail Enseignants</a></h3>
+                  <h3><a href="http://teaching.epfl.ch/fr">Portail Enseignants</a></h3>
                   <ul>
-                    <li><a href="http://teaching.epfl.ch/page-53543-fr.html">Gestion des cours</a></li>
-                    <li><a href="http://teaching.epfl.ch/page-16697-fr.html">Gestion des étudiants</a></li>
+                    <li><a href="http://teaching.epfl.ch/mes_cours">Gestion des cours</a></li>
+                    <li><a href="http://teaching.epfl.ch/mes-etudiants">Gestion des étudiants</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
@@ -124,16 +124,16 @@
         <div class="menus fac">
               <ul>
                 <li class="group-2-cols">
-                  <h3><a href="http://enac.epfl.ch/page-1922-fr.html" class="enac">Environnement Naturel, Architectural et Construit <acronym title="Environnement Naturel, Architectural et Construit">ENAC</acronym></a></h3>
+                  <h3><a href="http://enac.epfl.ch/fr" class="enac">Environnement Naturel, Architectural et Construit <acronym title="Environnement Naturel, Architectural et Construit">ENAC</acronym></a></h3>
                   <ul>
-                    <li><a href="http://enac.epfl.ch/page-2444-fr.html">Architecture</a></li>
-                    <li><a href="http://enac.epfl.ch/page-2445-fr.html">Ingénierie civile</a></li>
-                    <li><a href="http://enac.epfl.ch/page-2446-fr.html">Ingénierie de l'environnement</a></li>
-                    <li><a href="http://enac.epfl.ch/page-2447-fr.html">Ville et Territoire</a></li>
+                    <li><a href="http://enac.epfl.ch/architecture">Architecture</a></li>
+                    <li><a href="http://enac.epfl.ch/ingenierie-civile">Ingénierie civile</a></li>
+                    <li><a href="http://enac.epfl.ch/ingenierie-de-l-environnement">Ingénierie de l'environnement</a></li>
+                    <li><a href="http://enac.epfl.ch/ville-et-territoire">Ville et Territoire</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
-                  <h3><a href="http://sb.epfl.ch/page-2902-fr.html" class="sb">Sciences de Base <acronym title="Sciences de Base">SB</acronym></a></h3>
+                  <h3><a href="http://sb.epfl.ch/fr" class="sb">Sciences de Base <acronym title="Sciences de Base">SB</acronym></a></h3>
                   <ul>
                     <li><a href="http://sb.epfl.ch/chimie">Chimie</a></li>
                     <li><a href="http://sb.epfl.ch/mathematiques">Mathématiques</a></li>
@@ -141,29 +141,29 @@
                   </ul>
                 </li>
                 <li class="group-2-cols last">
-                  <h3><a href="http://sti.epfl.ch/page-1541-fr.html" class="sti">Sciences et Techniques de l'Ingénieur <acronym title="Sciences et Techniques de l'Ingénieur">STI</acronym></a></h3>
+                  <h3><a href="http://sti.epfl.ch/fr" class="sti">Sciences et Techniques de l'Ingénieur <acronym title="Sciences et Techniques de l'Ingénieur">STI</acronym></a></h3>
                   <ul>
-                    <li><a href="http://sti.epfl.ch/page-1545-fr.html">Génie électrique et électronique</a></li>
-                    <li><a href="http://sti.epfl.ch/page-1592-fr.html">Génie mécanique</a></li>
-                    <li><a href="http://sti.epfl.ch/page-1617-fr.html">Science et génie des matériaux</a></li>
-                    <li><a href="http://sti.epfl.ch/page-1674-fr.html">Microtechnique</a></li>
+                    <li><a href="http://sti.epfl.ch/genie-electrique-et-electronique">Génie électrique et électronique</a></li>
+                    <li><a href="http://sti.epfl.ch/genie-mecanique">Génie mécanique</a></li>
+                    <li><a href="http://sti.epfl.ch/science-et-genie-des-materiaux">Science et génie des matériaux</a></li>
+                    <li><a href="http://sti.epfl.ch/microtechnique">Microtechnique</a></li>
                     <li><a href="http://ibi.epfl.ch/">Bioengineering</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
-                  <h3><a href="http://ic.epfl.ch/page-5735-fr.html" class="ic">Informatique &amp; Communications <acronym title="Informatique &amp; Communications">I&amp;C</acronym></a></h3>
+                  <h3><a href="http://ic.epfl.ch/fr" class="ic">Informatique et Communications <acronym title="Informatique et Communications">IC</acronym></a></h3>
                   <ul>
                     <li><a href="http://ic.epfl.ch/informatique">Informatique</a></li>
                     <li><a href="http://ic.epfl.ch/syscom">Systèmes de communication</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
-                  <h3><a href="http://sv.epfl.ch/page-26568-fr.html" class="sv">Sciences de la Vie <acronym title="Sciences de la Vie">SV</acronym></a></h3>
+                  <h3><a href="http://sv.epfl.ch/fr" class="sv">Sciences de la Vie <acronym title="Sciences de la Vie">SV</acronym></a></h3>
                   <ul>
-                    <li><a href="http://sv.epfl.ch/page-37989-fr.html">Bioingénierie</a></li>
-                    <li><a href="http://sv.epfl.ch/page-26599-fr.html">Neurosciences Brain Mind &amp; Blue Brain</a></li>
-                    <li><a href="http://sv.epfl.ch/page-37990.html">Infectiologie</a></li>
-                    <li><a href="http://sv.epfl.ch/page-37991.html">Cancer</a></li>
+                    <li><a href="http://sv.epfl.ch/bioingenierie">Bioingénierie</a></li>
+                    <li><a href="http://sv.epfl.ch/neurosciences">Neurosciences Brain Mind &amp; Blue Brain</a></li>
+                    <li><a href="http://sv.epfl.ch/infectiologie">Infectiologie</a></li>
+                    <li><a href="http://sv.epfl.ch/isrec">Cancer</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols last">
@@ -174,71 +174,67 @@
                   </ul>
                 </li>
                 <li class="group-2-cols" style="clear:left;">
-                  <h3><a href="http://cdh.epfl.ch/page-1543-fr.html" class="cdh">Collège des Humanités <acronym title="Collège des Humanités">CDH</acronym></a></h3>
+                  <h3><a href="http://cdh.epfl.ch/fr" class="cdh">Collège des Humanités <acronym title="Collège des Humanités">CDH</acronym></a></h3>
                   <ul>
                     <li><a href="http://cdh.epfl.ch/shs">Sciences humaines et sociales</a></li>
-                    <li><a href="http://cdh.epfl.ch/page-25502-fr.html">Area &amp; cultural studies</a></li>
+                    <li><a href="http://cdh.epfl.ch/fr/area-and-cultural-studies">Area &amp; cultural studies</a></li>
                     <li><a href="http://cdh.epfl.ch/ontologie">Centre d'ontologie sociale</a></li>
                   </ul>
                 </li>
               </ul>
-
               <div class="clear"></div>
-          
           </div>
+          
           <h2><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym> en bref</h2>
           <div class="menus bref">
               <ul>
                 <li class="group-2-cols">
-                  <h3><a href="http://information.epfl.ch/page-16430-fr.html"><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></a></h3>
+                  <h3><a href="http://information.epfl.ch/presentation"><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></a></h3>
                   <ul>
                     <li><a href="http://direction.epfl.ch/presentation">Direction</a></li>
-                    <li><a href="http://www.epfl.ch/organigrammes">Structure EPFL</a></li>
-                    <li><a href="http://information.epfl.ch/page-16430-fr.html">Information et présentation</a></li>
+                    <li><a href="http://information.epfl.ch/presentation">Information et présentation</a></li>
                     <li><a href="http://library.epfl.ch">Bibliothèque</a></li>
-                    <li><a href="http://emploi.epfl.ch/page-31605-fr.html">Offres d'emploi</a></li>
+                    <li><a href="http://emploi.epfl.ch/fr">Offres d'emploi</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
-                  <h3><a href="http://futuretudiant.epfl.ch/page-21078-fr.html">Formations</a></h3>
+                  <h3><a href="http://futuretudiant.epfl.ch/fr">Formations</a></h3>
                   <ul>
                     <li><a href="http://cms.epfl.ch"><acronym title="Cours de Mathématiques Spéciales">CMS</acronym> Cours Préparatoire</a></li>
-                    <li><a href="http://bachelor.epfl.ch/">Bachelor</a></li>
-                    <li><a href="http://master.epfl.ch/">Master</a></li>
+                    <li><a href="http://bachelor.epfl.ch/etudes">Bachelor</a></li>
+                    <li><a href="http://master.epfl.ch/fr">Master</a></li>
                     <li><a href="http://phd.epfl.ch/accueil">École doctorale</a></li>
                     <li><a href="http://www.formation-continue-unil-epfl.ch/">Formation continue</a> (EPFL-UNIL)</li>
                   </ul>
                 </li>
                 <li class="group-2-cols last">
-                  <h3><a href="http://dar.epfl.ch/page-69195-fr.html">Recherche</a></h3>
+                  <h3><a href="http://research-office.epfl.ch/fr">Recherche</a></h3>
                   <ul>
-                    <li><a href="http://vpiv.epfl.ch/page-22996-fr.html">Centres interdisciplinaires</a></li>
-					<li><a href="http://commission-recherche.epfl.ch/page-25053-fr.html">Commission de la recherche</a></li>
-                    <li><a href="http://grantsoffice.epfl.ch/">Grants office</a></li>
-					<li><a href="http://spi.epfl.ch/fr">Projets interinstitutionnels</a></li>
+                    <li><a href="http://research-office.epfl.ch/centres-de-recherche">Centres interdisciplinaires</a></li>
+					<li><a href="http://commission-recherche.epfl.ch/fr">Commission de la recherche</a></li>
+                    <li><a href="http://research-office.epfl.ch/grantsDB">Grants</a></li>
                     <li><a href="http://infoscience.epfl.ch/?ln=fr">Publications <acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols" style="clear: left;">
-                  <h3><a href="http://vpiv.epfl.ch/page-22990-fr.html">Innovation &amp; Valorisation</a></h3>
+                  <h3><a href="http://vpiv.epfl.ch/fr">Innovation &amp; Valorisation</a></h3>
                   <ul>
-                    <li><a href="http://vpiv.epfl.ch/page-22997-fr.html">Partenariats</a></li>
-                    <li><a href="http://vpiv.epfl.ch/page-22998-fr.html">Soutien aux start-ups</a></li>
+                    <li><a href="http://vpiv.epfl.ch/partenariats">Partenariats</a></li>
+                    <li><a href="http://vpiv.epfl.ch/innogrant">Soutien aux start-ups</a></li>
                     <li><a href="http://www.alliance-tt.ch">Liaison industrielle</a></li>
-                    <li><a href="http://sri.epfl.ch/">Transfert de technologies, brevets</a></li>
+                    <li><a href="http://tto.epfl.ch/homepage">Transfert de technologies, brevets</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols" >
-                  <h3><a href="http://international.epfl.ch/page-42781-fr.html">Portail international</a></h3>
+                  <h3><a href="http://international.epfl.ch/accueil">Portail international</a></h3>
                   <ul>
-                    <li><a href="http://ri.epfl.ch/page-21112-fr.html">Relations internationales</a></li>
+                    <li><a href="http://ri.epfl.ch/fr">Relations internationales</a></li>
                     <li><a href="http://www.epfl.ae">EPFL Middle East</a></li>
-                    <li><a href="http://cooperation.epfl.ch/page-8942-fr.html">Coopération</a></li>
+                    <li><a href="http://cooperation.epfl.ch/accueil">Coopération</a></li>
                   </ul>
                 </li>
               </ul>
               <div class="clear"></div>
-
           </div>
         
     </div>
@@ -246,7 +242,7 @@
       <ul>
         <li><a href="mailto:webmaster@epfl.ch">Contact</a></li>
         <li><a href="http://www.epfl.ch/accessibility.fr.shtml">Accessibilité</a></li>
-        <li class="copyright">&copy; 2012 EPFL tous droits réservés</li>
+        <li class="copyright">&copy; 2013 EPFL tous droits réservés</li>
         <li><a href="#top" class="hidden">Retour en haut de la page</a></li>
       </ul>
     </div>
