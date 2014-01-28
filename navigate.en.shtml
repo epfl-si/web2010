@@ -63,7 +63,7 @@
                 <li class="group-2-cols">
                   <h3><a href="http://futuretudiant.epfl.ch/en">Prospective students portal</a></h3>
                   <ul>
-                    <li><a href="http://www.epfl.ch/epfl-virtual-tour/virtual-tour.html">EPFL Virtual tour</a></li>
+                    <li><a href="http://bachelor.epfl.ch/studies">Bachelor</a>, <a href="http://master.epfl.ch/page-94489-en.html">Master</a>, <a href="http://phd.epfl.ch/home">Phd</a></li>
                     <li><a href="http://sae.epfl.ch/exchange-incoming">Exchange student</a></li>
                   </ul>
                 </li>
@@ -78,21 +78,21 @@
                   <h3><a href="http://research-office.epfl.ch/researchers-portal">Researchers portal</a></h3>
                   <ul>
                     <li><a href="http://research-office.epfl.ch/funding">Research funding</a></li>
-                    <li><a href="http://phd.epfl.ch/applicants">Doctorate at EPFL</a></li>
+                    <li><a href="http://actu.epfl.ch/search/research_awards/">Prizes and Awards</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
                   <h3><a href="http://working.epfl.ch/staff-portal">Staff portal</a></h3>
                   <ul>
                     <li><a href="http://rh.epfl.ch">Human resources</a></li>
-                    <li><a href="http://help.epfl.ch/help">Help</a></li>
+                    <li><a href="http://help.epfl.ch/help">(Help)</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
                   <h3><a href="http://entreprises.epfl.ch/business">Business portal</a></h3>
                   <ul>
                     <li><a href="http://vpiv.epfl.ch/en">Innovation &amp; Tech Transfer</a></li>
-                    <li><a href="http://vpiv.epfl.ch/inno-square">Innovation Square</a></li>
+                    <li><a href="http://vpiv.epfl.ch/innovationparkengl">EPFL Innovation Park</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols last">
@@ -101,7 +101,8 @@
                     <li><a href="http://medias.epfl.ch/press-releases">Press releases</a>, <a href="http://medias.epfl.ch/reflex-en">Reflex</a>, <a href="http://medias.epfl.ch/flash-newspaper">Flash</a></li>
                     <li><a href="http://mediatheque.epfl.ch/">Image library</a></li>
                   </ul>
-                </li><li class="group-2-cols">
+                </li>
+                <li class="group-2-cols">
                   <h3><a href="http://teaching.epfl.ch/en">Teaching portal</a></h3>
                   <ul>
                     <li><a href="http://teaching.epfl.ch/my_courses">Courses management</a></li>
@@ -151,7 +152,7 @@
                   </ul>
                 </li>
                 <li class="group-2-cols">
-                  <h3><a href="http://ic.epfl.ch/en" class="ic">Computer and Communication Sciences <acronym title="Informatique et Communications">IC</acronym></a></h3>
+                  <h3><a href="http://ic.epfl.ch/en" class="ic">Computer and Communication Sciences <acronym title="Computer &amp; Communication Sciences">IC</acronym></a></h3>
                   <ul>
                     <li><a href="http://ic.epfl.ch/computer-science">Computer Science</a></li>
                     <li><a href="http://ic.epfl.ch/communication-systems">Communication Systems</a></li>
@@ -170,6 +171,7 @@
                   <h3><a href="http://cdm.epfl.ch/homepage" class="cdm">Management of Technology <acronym title="Collège du Management de la Technologie">CDM</acronym></a></h3>
                   <ul>
                     <li><a href="http://mtei.epfl.ch">Management of Technology</a></li>
+                    <li><a href="http://itpp.epfl.ch">Technology and Public Policy</a></li>
                     <li><a href="http://sfi.epfl.ch">Financial Engineering</a></li>
                   </ul>
                 </li>
@@ -177,8 +179,7 @@
                   <h3><a href="http://cdh.epfl.ch/en" class="cdh">College of Humanities <acronym title="Collège des Humanités">CDH</acronym></a></h3>
                   <ul>
                     <li><a href="http://cdh.epfl.ch/humanities-and-social-sciences">Human and Social Science</a></li>
-                    <li><a href="http://cdh.epfl.ch/cacs">Area &amp; Cultural Studies</a></li>
-                    <li><a href="http://cdh.epfl.ch/ontology">Center for Social Ontology</a></li>
+                    <li><a href="http://cdh.epfl.ch/cacs">Area and Cultural Studies</a></li>
                   </ul>
                 </li>
               </ul>
@@ -189,7 +190,7 @@
           <div class="menus bref">          
               <ul>
                 <li class="group-2-cols">
-                  <h3><a href="http://information.epfl.ch/introduction"><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></a></h3>
+                  <h3><a href="http://information.epfl.ch/introduction"><acronym title="École polytechnique fédérale de Lausanne">EPFL</acronym></a></h3>
                   <ul>
                     <li><a href="http://direction.epfl.ch/en/presentation">Direction</a></li>
                     <li><a href="http://information.epfl.ch/introduction">General information</a></li>
@@ -210,11 +211,11 @@
                 <li class="group-2-cols last">
                   <h3><a href="http://research-office.epfl.ch/en">Research</a></h3>
                   <ul>
-					<li><a href="http://research-office.epfl.ch/research-centers">Transdisciplinary Centers</a></li>
-					<li><a href="http://commission-recherche.epfl.ch/en">Research Commission</a></li>
-					<li><a href="http://research-office.epfl.ch/GrantsDB">Grants</a></li>
-                    <li><a href="http://infoscience.epfl.ch/?ln=en"><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym> Publications</a></li>
-				  </ul>
+                    <li><a href="http://research-office.epfl.ch/research-centers">Research Centers</a></li>
+                    <li><a href="http://commission-recherche.epfl.ch/en">Research Commission</a></li>
+                    <li><a href="http://research-office.epfl.ch/GrantsDB">Grants Database</a></li>
+                    <li><a href="http://infoscience.epfl.ch/?ln=en"><acronym title="École polytechnique fédérale de Lausanne">EPFL</acronym> Publications</a></li>
+                  </ul>
                 </li>
                 <li class="group-2-cols" style="clear: left;">
                   <h3><a href="http://vpiv.epfl.ch/en">Innovation &amp; Tech Transfer</a></h3>
