@@ -413,7 +413,12 @@ to be removed when jahia automaticvally includes plancours.css
     width:297px ;
     cursor: pointer;
 }
-
+#header2013 .ac-more{float:right;
+	 font: italic bold 12px/16px Georgia,'Times New Roman',Times,serif;
+         background: url(../img/underline.gif) repeat-x 0 14px;
+         padding: 0; margin-right: 4px;
+}
+#header2013 .ac-more:hover { background-image: url(../img/underline-hover.png); }
 
 
 

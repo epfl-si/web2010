@@ -177,12 +177,18 @@ jQuery(document).ready(function($){
           source: function(request, response) {
               $.ajax({url: "http://search.epfl.ch/json/autocompletename.action",
                       dataType: 'jsonp',
-                      data: { maxRows: 15, term: request.term },
+                      data: { maxRows: 10, term: request.term },
                       success: function(data){
-                        response($.map(data.result, function(item) {
+                        var res = $.map(data.result, function(item) {
                           return {label: item.name + ', ' + item.firstname,
                                   value: item.firstname + ' ' + item.name};
-                        }));
+                        });
+                        response(res);
+                        if (data.hasMore){
+                          var label = data.lang && data.lang==="en" ? "See all results": "Voir tous les résultats";
+                          var link = "http://search.epfl.ch/psearch.action?q=" + data.term;
+                          $('#header2013 #search-box ul.ui-autocomplete li').last().after('<li><a class="ac-more" href="' + link + '">' + label + '</a></li>'); 
+                        }
                       }
               });
           },
