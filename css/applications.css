@@ -41,6 +41,10 @@
 .group:hover .icon {background-position: -456px -24px; }
 .vcard .icon {background: url(../img/icons-applications.png) no-repeat -480px 0; }
 .vcard:hover .icon {background-position: -480px -24px; }
+.attention .icon {background: url(../img/icons-applications.png) no-repeat -504px 0; }
+.attention:hover .icon {background-position: -504px -24px; }
+.search .icon {background: url(../img/icons-applications.png) no-repeat -528px 0; }
+.search:hover .icon {background-position: -528px -24px; }
 
 .associations .icon {background-position-y: -72px;}
 .associations:hover .icon {background-position-y: -48px;}
