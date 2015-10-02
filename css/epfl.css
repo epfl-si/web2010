@@ -96,7 +96,7 @@ object { z-index: 0; }
 cite { font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; letter-spacing: 1px; font-size: 11px;}
 
 sup, sub { font-size: 11px; }
-acronym, abbr {color:#ae0010;}
+acronym, abbr {color:#ae0010; text-decoration: none;}
 
 /* Standard format for tables */
 
