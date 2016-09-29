@@ -12,7 +12,7 @@ function getPeopleAutocomplete() {
   field.autocomplete({
       source: function(request, response) {
           jQuery.ajax({
-                       url: "http://search.epfl.ch/json/autocompletename.action",
+                       url: "https://search.epfl.ch/json/autocompletename.action",
                        dataType: 'jsonp',
                        data: { maxRows: 15, term: request.term },
                        success: function(data){
@@ -175,7 +175,7 @@ jQuery(document).ready(function($){
     var setAutoComplete = function(){
       $("#header2013 #header_searchfield").autocomplete({
           source: function(request, response) {
-              $.ajax({url: "http://search.epfl.ch/json/autocompletename.action",
+              $.ajax({url: "https://search.epfl.ch/json/autocompletename.action",
                       dataType: 'jsonp',
                       data: { maxRows: 10, term: request.term },
                       success: function(data){
@@ -186,7 +186,7 @@ jQuery(document).ready(function($){
                         response(res);
                         if (data.hasMore){
                           var label = data.lang && data.lang==="en" ? "See all results": "Voir tous les résultats";
-                          var link = "http://search.epfl.ch/psearch.action?q=" + data.term;
+                          var link = "https://search.epfl.ch/psearch.action?q=" + data.term;
                           $('#header2013 #search-box ul.ui-autocomplete li').last().after('<li><a class="ac-more" href="' + link + '">' + label + '</a></li>'); 
                         }
                       }
