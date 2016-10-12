@@ -983,7 +983,7 @@ img.right { margin-left:25px; }
     font-weight: normal; font-size:22px; letter-spacing:0.1em; line-height:26px;
     color: #000;
     text-transform: uppercase;
-    padding: 1px 0 4px;
+    padding: 1px 0 4px 1px;
     border-bottom:1px solid #000;
     margin: 0 0 10px 0;}
 .fullbox h3 { margin-bottom: 4px; }
