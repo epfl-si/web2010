@@ -50,8 +50,8 @@ p { margin-bottom: 9px; margin-top:9px; color: #454545; }
 form { margin-bottom: 18px;}
 
 
-a { text-decoration: none; color: #000; background: url(../img/underline.gif) repeat-x 0 14px; }
-a:hover { background-image: url(../img/underline-hover.png); }
+a { text-decoration: none; color: #000; background: url("../img/underline.gif") repeat-x 0 14px; }
+a:hover { background-image: url("../img/underline-hover.png"); }
 
 /*a { text-decoration: none; color: #000; border-bottom: 1px dotted #000; }
 a:hover { border-bottom: 1px solid #000; }
@@ -134,7 +134,7 @@ table.table-cours th {padding: 0 2px 0 2px;}
     border-bottom: 1px solid #000;}
 .content .table td { 
     padding: 4px 4px 7px 0; vertical-align: top;
-    background: url(../img/underline.gif) repeat-x 0 bottom;
+    background: url("../img/underline.gif") repeat-x 0 bottom;
     line-height: 15px;
 }
 
@@ -191,10 +191,10 @@ table.table-cours th {padding: 0 2px 0 2px;}
 .noSpacing, .content .noSpacing {padding:0; margin:0;}
 .noSpacing a, .content .noSpacing a {background:none;}
 
-.label {font-family: Georgia, 'Times New Roman', Times, serif; font-size: 11px; letter-spacing: 1px; font-style: italic; background: url(../img/underline.gif) repeat-x 0 14px; cursor: pointer;}
+.label {font-family: Georgia, 'Times New Roman', Times, serif; font-size: 11px; letter-spacing: 1px; font-style: italic; background: url("../img/underline.gif") repeat-x 0 14px; cursor: pointer;}
 .button { float: left; margin-right: 20px; cursor: pointer;}
 .button .label {display: block; float: left; margin-top: 3px; }
-.button:hover .label { background-image: url(../img/underline-hover.png); }
+.button:hover .label { background-image: url("../img/underline-hover.png"); }
 
 
 
@@ -415,10 +415,10 @@ to be removed when jahia automaticvally includes plancours.css
 }
 #header2013 .ac-more{float:right;
 	 font: italic bold 12px/16px Georgia,'Times New Roman',Times,serif;
-         background: url(../img/underline.gif) repeat-x 0 14px;
+         background: url("../img/underline.gif") repeat-x 0 14px;
          padding: 0; margin-right: 4px;
 }
-#header2013 .ac-more:hover { background-image: url(../img/underline-hover.png); }
+#header2013 .ac-more:hover { background-image: url("../img/underline-hover.png"); }
 
 
 
@@ -699,7 +699,7 @@ to be removed when jahia automaticvally includes plancours.css
     padding-left: 12px;
 }
 .toggler a {background-color: #fff}
-.toggler:hover a{background-image: url(../img/underline-hover.png);}
+.toggler:hover a{background-image: url("../img/underline-hover.png");}
 .toggled-active {background-position: -55px;}
 
 .modal-window {
@@ -1028,7 +1028,7 @@ img.right { margin-left:25px; }
     font-weight: bold; text-transform: none; font-size: 18px; line-height: 20px; letter-spacing: 1px;
     border: none; margin-top:3px; /* new margin-top:3px; */
 }
-.home-navpanel a { background-image: url(../img/underline-white.gif); }
+.home-navpanel a { background-image: url("../img/underline-white.gif"); }
 .box-flat-panel { padding: 6px 8px 8px 8px; width: 308px;} /* could be done as .box.home-navpanel. Say thanks to MSIE6 buggy selectors */
 .box-flat-panel h3 { padding: 0; margin: 0 0 2px 0; }
 
@@ -1463,9 +1463,9 @@ ul.noNav { background-color: #fff; color: #000;}
 ul.noNav a {
     display:inline; left: 0; margin: 0; padding: 0;
     text-decoration: none; color: #000;
-    background: url(../img/underline.gif) repeat-x 0 14px;
+    background: url("../img/underline.gif") repeat-x 0 14px;
 }
-ul.noNav a:hover { background-image: url(../img/underline-hover.png); }
+ul.noNav a:hover { background-image: url("../img/underline-hover.png"); }
 ul.noNav a.hover, ul.noNav li.hover { 
     background-image:none; background-color:transparent !important;
 }
