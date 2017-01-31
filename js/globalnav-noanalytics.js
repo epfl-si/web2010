@@ -12,7 +12,7 @@ function getPeopleAutocomplete() {
   field.autocomplete({
       source: function(request, response) {
           jQuery.ajax({
-                       url: "http://search.epfl.ch/json/autocompletename.action",
+                       url: "https://search.epfl.ch/json/autocompletename.action",
                        dataType: 'jsonp',
                        data: { maxRows: 15, term: request.term },
                        success: function(data){
@@ -174,7 +174,7 @@ jQuery(document).ready(function($){
     var setAutoComplete = function(){
       $("#header2013 #header_searchfield").autocomplete({
           source: function(request, response) {
-              $.ajax({url: "http://search.epfl.ch/json/autocompletename.action",
+              $.ajax({url: "https://search.epfl.ch/json/autocompletename.action",
                       dataType: 'jsonp',
                       data: { maxRows: 15, term: request.term },
                       success: function(data){
