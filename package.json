@@ -1,0 +1,22 @@
+{
+  "name": "web2010",
+  "private": true,
+  "version": "2.0.0",
+  "description": "web2010",
+  "keywords": [],
+  "author": "",
+  "contributors": [
+    {
+      "name": "William Belle",
+      "email": "william.belle@gmail.com",
+      "web": "https://github.com/williambelle"
+    }
+  ],
+  "license": "",
+  "repository": "https://github.com/epfl-idevelop/web2010.git",
+  "scripts": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "load-grunt-config": "^0.19.2"
+  }
+}

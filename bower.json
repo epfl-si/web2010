@@ -1,0 +1,19 @@
+{
+  "name": "web2010",
+  "private": true,
+  "version": "2.0.0",
+  "description": "web2010",
+  "keywords": [],
+  "author": "",
+  "contributors": [
+    {
+      "name": "William Belle",
+      "email": "william.belle@gmail.com",
+      "web": "https://github.com/williambelle"
+    }
+  ],
+  "license": "",
+  "dependencies": {
+    "cookieconsent": "^3.0.4"
+  }
+}
