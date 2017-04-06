@@ -1,3 +1,8 @@
+/*
+ * (c) All rights reserved. ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE,
+ * Switzerland, VPSI, 2017.
+ */
+
 window.addEventListener("load", function() {
 
   // Retrieve language, default 'fr'

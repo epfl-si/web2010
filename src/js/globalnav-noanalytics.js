@@ -1,7 +1,8 @@
 /*
  * EPFL navigation
  *
- * Copyright (c) 2010-2013 EPFL
+ * (c) All rights reserved. ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE,
+ * Switzerland, VPSI, 2017.
  *
  * Date: 2013-09-06 16:00
  * Revision: 1.5
