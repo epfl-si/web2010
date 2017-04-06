@@ -14,6 +14,24 @@ Links
   * http://atelierweb.epfl.ch/modeles-html-css
   * http://web2010.epfl.ch/
 
+Setup
+-----
+
+You need to have Node.js, then:
+
+```bash
+$ npm install -g grunt bower
+```
+
+and
+
+```bash
+$ bower install
+$ npm install
+```
+
+You can now build this :factory:.
+
 Update global header
 --------------------
 
