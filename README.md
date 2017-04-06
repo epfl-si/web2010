@@ -1,10 +1,10 @@
-
-# web2010
+web2010
+=======
 
 Description
 -----------
 This EPFL project contains:
-  * EPFL global header (non reponsive website)
+  * EPFL global header (non responsive website)
   * templates html
   * css files (non responsive)
   * js files
@@ -27,6 +27,20 @@ Change "headerversion" + "headerdate":
 * trunk/templates/fragments/header.sig.html
 
 Commit the changes.
+
+Change in JavaScript or CSS
+---------------------------
+
+Original files need to be in the `src` folder.
+To maintain the retrocompatibility, commit the minified files.
+
+To build:
+
+```bash
+$ grunt
+```
+
+Then commit the changes.
 
 Test
 ----
