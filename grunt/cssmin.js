@@ -3,12 +3,9 @@ module.exports = {
     files: {
       'css/epfl.css': [
         'src/css/epfl.css',
-        'bower_components/cookieconsent/build/cookieconsent.min.css'
+        'bower_components/cookieconsent/build/cookieconsent.min.css',
+        'src/css/cookie.css'
       ],
-      'css/cdh.css': [
-        'src/css/cdh.css',
-        'bower_components/cookieconsent/build/cookieconsent.min.css'
-      ]
     }
   }
 };
