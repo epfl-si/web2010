@@ -8,3 +8,11 @@
 .cc-compliance a {
   background-image: none;
 }
+
+.cc-message {
+  font-size: 13px;
+}
+
+.cc-window {
+  font-family: Arial;
+}
