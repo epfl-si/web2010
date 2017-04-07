@@ -19,9 +19,10 @@ window.addEventListener("load", function() {
     },
     fr: {
       msg: 'En poursuivant votre navigation sur ce site, vous acceptez ' +
-        'l\'utilisation de cookies pour améliorer votre expérience ' +
-        'utilisateur et réaliser des statistiques de visites.',
-      link: 'Lire les mentions légales',
+        'l\'utilisation de cookies pour am&eacute;liorer votre ' +
+        'exp&eacute;rience utilisateur et r&eacute;aliser des statistiques ' +
+        'de visites.',
+      link: 'Lire les mentions l&eacute;gales',
       href: '//mediacom.epfl.ch/mentions-legales'
     }
   };
