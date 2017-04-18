@@ -15,6 +15,10 @@ module.exports = {
         'src/js/globalnav-noanalytics.js',
         'bower_components/cookieconsent/build/cookieconsent.min.js',
         'src/js/init-cookieconsent.js'
+      ],
+      'js/epfl-cookie-consent.js': [
+        'bower_components/cookieconsent/build/cookieconsent.min.js',
+        'src/js/init-cookieconsent.js'
       ]
     }
   }
