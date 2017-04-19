@@ -5,6 +5,9 @@
 
 window.addEventListener("load", function() {
 
+  // Ensure we have latest style
+  reloadStylesheetEpflCss();
+
   // Retrieve language, default 'fr'
   var lang = document.documentElement.lang || 'fr';
 
@@ -49,3 +52,17 @@ window.addEventListener("load", function() {
     }
   });
 });
+
+/*
+ * Reload epfl.css !
+ * Delete this, 1 week after prod...
+ */
+function reloadStylesheetEpflCss() {
+  var links = document.getElementsByTagName("link");
+  for (var i = 0; i < links.length;i++) {
+    var link = links[i].href;
+    if (link.indexOf('css/epfl.css') > 1) {
+      link.href += '?unicorn';
+    }
+  }
+}
