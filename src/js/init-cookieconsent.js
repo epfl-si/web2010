@@ -62,7 +62,7 @@ function reloadStylesheetEpflCss() {
   for (var i = 0; i < links.length;i++) {
     var link = links[i].href;
     if (link.indexOf('css/epfl.css') > 1) {
-      link.href += '?unicorn';
+      links[i].href += '?unicorn';
     }
   }
 }
