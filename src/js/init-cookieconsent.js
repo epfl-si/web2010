@@ -6,7 +6,7 @@
 window.addEventListener("load", function() {
 
   // Ensure we have latest style
-  reloadStylesheetEpflCss();
+  injectCookieConsentCss();
 
   // Retrieve language, default 'fr'
   var lang = document.documentElement.lang || 'fr';
@@ -55,14 +55,17 @@ window.addEventListener("load", function() {
 
 /*
  * Reload epfl.css !
- * Delete this, 1 week after prod...
+ * Delete this, 1 month after prod...
  */
-function reloadStylesheetEpflCss() {
-  var links = document.getElementsByTagName("link");
-  for (var i = 0; i < links.length;i++) {
-    var link = links[i].href;
-    if (link.indexOf('css/epfl.css') > 1) {
-      links[i].href += '?unicorn';
-    }
+function injectCookieConsentCss() {
+  var link = document.createElement("link");
+  link.href = "http://www.epfl.ch/css/epfl-cookie-consent.css";
+  if (window.location.href.indexOf('www-test.epfl.ch')) {
+    link.href = "http://www-test.epfl.ch/css/epfl-cookie-consent.css";
   }
+  link.type = "text/css";
+  link.rel = "stylesheet";
+
+  var headTag = document.getElementsByTagName("head")[0];
+  headTag.appendChild(link);
 }

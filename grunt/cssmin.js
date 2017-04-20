@@ -6,6 +6,10 @@ module.exports = {
         'bower_components/cookieconsent/build/cookieconsent.min.css',
         'src/css/cookie.css'
       ],
+      'css/epfl-cookie-consent.css': [
+        'bower_components/cookieconsent/build/cookieconsent.min.css',
+        'src/css/cookie.css'
+      ],
     }
   }
 };
