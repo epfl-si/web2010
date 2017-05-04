@@ -307,11 +307,6 @@ jQuery(document).ready(function($){
     }
   });
 
-
-  /* Google Analytics */
-  $.jGoogleAnalytics('UA-4833294-1', {topLevelDomain: '.epfl.ch'} );
-
-
   /* Jahia specific */
   $("#main-content ul").each(function(){
       var elem = $(this);
