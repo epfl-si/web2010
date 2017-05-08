@@ -6,6 +6,20 @@
  * Date: 2013-09-06 16:00
  * Revision: 1.5
  */
+
+/*
+ * This should be in html as recommended by Google...
+ */
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-4833294-1', 'auto', 'web2010');
+ga('web2010.set', 'anonymizeIp', true);
+ga('web2010.send', 'pageview');
+
+
 function getPeopleAutocomplete() {
   "use strict";
   var field = jQuery("#searchfield");
@@ -22,7 +36,7 @@ function getPeopleAutocomplete() {
                                       value: item.firstname + ' ' + item.name
                                       };
                             }));
-                  
+
                        }
           });
       },
@@ -63,11 +77,11 @@ function isTotallyVisible(parent, element) {
 
 function change_search_base(radio){
     jQuery('#search-options').remove();
-    jQuery("#searchform input[type=radio]").removeAttr("checked");  
+    jQuery("#searchform input[type=radio]").removeAttr("checked");
     var rid = radio.attr('id');
     var label =  jQuery('label[for=' + rid + ']');
     jQuery("#searchfield").autocomplete({ disabled: true });
-    
+
     switch (rid){
         case "search-engine-person":
             getPeopleAutocomplete();
@@ -80,10 +94,10 @@ function change_search_base(radio){
         default:
             break;
     }
-    
+
     if (jQuery('#searchfield').val() === jQuery('#searchform label.current').attr('title')) { jQuery('#searchfield').val(''); }
     if (jQuery('#searchfield').val() === '') { jQuery('#searchfield').val(label.attr('title')); }
-    
+
     current_search_base.toggleClass('current');
     current_search_base = label;
     current_search_base.toggleClass('current');
@@ -115,7 +129,7 @@ jQuery(document).ready(function($){
 
   if ($('#header').exists()){
     /* Header - Web 2010 */
-    
+
     // Big panels
     $('#header').mouseleave(function(){
       $.mask.close();
@@ -146,7 +160,7 @@ jQuery(document).ready(function($){
 
   } else {
     /* Header - Web 2013 */
-    
+
     $("#header2013 #nav-menus .menu").click(function(){
         var pane = $('.navigation-panel', this);
         if (pane.hasClass('hidden')){
@@ -160,12 +174,12 @@ jQuery(document).ready(function($){
         event.stopPropagation();
     });
     $(document).keyup(function(e){
-      if (e.keyCode === 27) { // escape key 
+      if (e.keyCode === 27) { // escape key
         closePane();
       }
     });
     $('html').click(closePane);
-  
+
     // Search box
     $('#header2013 .selected-field').click(function(){ $(this).siblings('ul').toggleClass('hidden'); });
     $('#header2013 .search-filter').mouseleave(function(){ $(this).children('ul').addClass('hidden'); });
@@ -187,7 +201,7 @@ jQuery(document).ready(function($){
                         if (data.hasMore){
                           var label = data.lang && data.lang==="en" ? "See all results": "Voir tous les résultats";
                           var link = "https://search.epfl.ch/psearch.action?q=" + data.term;
-                          $('#header2013 #search-box ul.ui-autocomplete li').last().after('<li><a class="ac-more" href="' + link + '">' + label + '</a></li>'); 
+                          $('#header2013 #search-box ul.ui-autocomplete li').last().after('<li><a class="ac-more" href="' + link + '">' + label + '</a></li>');
                         }
                       }
               });
@@ -201,15 +215,15 @@ jQuery(document).ready(function($){
           }
       });
     };
-    
+
     var unsetAutoComplete = function(){
       $("#header2013 #header_searchfield").autocomplete({ disabled: true });
     };
-    
+
     $('#header2013 input[type="radio"]').change(function(){
       var label =  $('label[for=' + $(this).attr('id') + ']');
       $('#search-box .selected-field').text(label.text());
-      
+
       if ($(this).is('#search-engine-person')){
         setAutoComplete();
       } else {
@@ -234,8 +248,8 @@ jQuery(document).ready(function($){
   $('#searchlink').click(function(){
     $('#searchfield').focus();
   });
-  
-  
+
+
   /* navigation: Dropdown menus */
   $('.dropdown').click(function(){ $(this).children('ul').toggleClass('hidden'); });
   $('.dropdown').mouseleave(function(){ $(this).children('ul').addClass('hidden'); });
@@ -256,14 +270,14 @@ jQuery(document).ready(function($){
       function(e) { e.stopPropagation(); $(this).parent().removeClass("hover");}
   );
 
-  
+
 
   /* activate togglers */
   $('.toggler').click(function(){
     $(this).toggleClass("toggled-active").next().slideToggle("slow");
     return false;
   });
-  
+
   /* modal windows */
   $(".modal-opener[rel]").overlay({mask: { color: '#000', opacity: 0.6, loadSpeed: 200},
                                    closeOnClick: false});
@@ -276,10 +290,10 @@ jQuery(document).ready(function($){
   /* add class .left to images having align="left" and so on. */
   $('img[align]').each(function(){ $(this).addClass($(this).attr('align')); });
 
-      
+
   /* Overlay */
   $("img[rel]").overlay();
-  
+
   /* News (actu.epfl.ch) */
   var newsDivs = $("div.news-text");
   newsDivs.each(function(i, news) {
@@ -292,11 +306,6 @@ jQuery(document).ready(function($){
       }
     }
   });
-  
-  
-  /* Google Analytics */
-  $.jGoogleAnalytics('UA-4833294-1', {topLevelDomain: '.epfl.ch'} );
-
 
   /* Jahia specific */
   $("#main-content ul").each(function(){
