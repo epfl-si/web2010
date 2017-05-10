@@ -6,12 +6,12 @@
 <!--#include virtual="../fragments/header.sig.html" -->
 <title>LFS - Laboratory of Fictive Science: welcome</title>
 <link href="../../css/epfl.css" media="all" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
+<script type="text/javascript" src="//www.epfl.ch/js/jquery-epfl.min.js"></script>
 <script type="text/javascript">jQuery.noConflict();</script>
-<script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
+<script type="text/javascript" src="//www.epfl.ch/js/globalnav.js"></script>
 <script type="text/javascript">
 /*
- 
+
  jQuery Tools 1.2.3 Tabs- The basics of UI design.
 
  NO COPYRIGHTS OR LICENSES. DO WHAT YOU LIKE.
@@ -19,7 +19,7 @@
  http://flowplayer.org/tools/tabs/
 
  Since: November 2008
- Date:    Mon Jun 7 13:43:53 2010 +0000 
+ Date:    Mon Jun 7 13:43:53 2010 +0000
 */
 (function(c){function p(e,b,a){var d=this,l=e.add(this),h=e.find(a.tabs),i=b.jquery?b:e.children(b),j;h.length||(h=e.children());i.length||(i=e.parent().find(b));i.length||(i=c(b));c.extend(this,{click:function(f,g){var k=h.eq(f);if(typeof f=="string"&&f.replace("#","")){k=h.filter("[href*="+f.replace("#","")+"]");f=Math.max(h.index(k),0)}if(a.rotate){var n=h.length-1;if(f<0)return d.click(n,g);if(f>n)return d.click(0,g)}if(!k.length){if(j>=0)return d;f=a.initialIndex;k=h.eq(f)}if(f===j)return d;
 g=g||c.Event();g.type="onBeforeClick";l.trigger(g,[f]);if(!g.isDefaultPrevented()){o[a.effect].call(d,f,function(){g.type="onClick";l.trigger(g,[f])});j=f;h.removeClass(a.current);k.addClass(a.current);return d}},getConf:function(){return a},getTabs:function(){return h},getPanes:function(){return i},getCurrentPane:function(){return i.eq(j)},getCurrentTab:function(){return h.eq(j)},getIndex:function(){return j},next:function(){return d.click(j+1)},prev:function(){return d.click(j-1)},destroy:function(){h.unbind(a.event).removeClass(a.current);
@@ -91,7 +91,7 @@ jQuery('#accordion').tabs('#accordion div.pane', {tabs:'div.accordeon', effect:'
                 <li>Pareira Correia Pinto Francisco</li>
                 <li>Scheafer Gunnar</li>
                 <li>Walther Andreas</li>
-                <li>Yang Feng</li>         
+                <li>Yang Feng</li>
               </ul>
             </div>
             <div class="clear"></div>
@@ -118,7 +118,7 @@ jQuery('#accordion').tabs('#accordion div.pane', {tabs:'div.accordeon', effect:'
 </div>
    <div class="clear"></div>
   </div>
-   
+
    <div class="box">
       <h3>Comp&Eacute;tence</h3>
       <ul>
@@ -134,10 +134,10 @@ jQuery('#accordion').tabs('#accordion div.pane', {tabs:'div.accordeon', effect:'
 </div>
 <div id="footer">
   <ul>
-    <li><a href="#">Plan du site</a></li>
+    <li><a href="//www.epfl.ch/accessibility.fr.shtml">Accessibilité</a></li>
+    <li><a href="http://mediacom.epfl.ch/mentions-legales">Mentions légales</a></li>
     <li><a href="mailto:webmaster@epfl.ch">Contact</a></li>
-    <li><a href="http://www.epfl.ch/accessibility.fr.shtml">Accessibilité</a></li>
-    <li class="copyright">&copy; 2010 EPFL tous droits réservés</li>
+    <li class="copyright">&copy; 2017 EPFL tous droits réservés</li>
     <li><a href="#top" class="hidden">Retour en haut de la page</a></li>
   </ul>
 </div>
