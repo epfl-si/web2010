@@ -576,10 +576,10 @@ to be removed when jahia automaticvally includes plancours.css
 #breadcrumbs .last {color:black; font-weight:bold;}
 
 #languages { float:right; background:none; }
-#languages li { background:none; display:inline; padding:0 0 0 20px;  position: relative; }
+#languages li { background:none; display:inline-block; padding:0 0 0 20px;  position: relative; }
 #languages li:before {
     content:'\00A0'; width: 11px; height: 11px;
-    position:absolute; left:3px; bottom: 0;
+    position:absolute; left:3px; top: 5px;
     background: url(../img/slash.png) no-repeat;
     
 }
