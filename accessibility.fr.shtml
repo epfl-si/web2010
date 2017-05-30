@@ -1,28 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!--#include virtual="./templates/fragments/header.sig.html" -->
     <title>Accessibilité sur les sites web de l'EPFL</title>
-    <link href="http://www.epfl.ch/css/epfl.css" media="all" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
-    <script type="text/javascript">jQuery.noConflict();</script> 
-    <script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
+    <link href="//www.epfl.ch/css/epfl.css" media="all" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-epfl.min.js"></script>
+    <script type="text/javascript">jQuery.noConflict();</script>
+    <script type="text/javascript" src="js/globalnav.js"></script>
   </head>
   <body>
 <!--#include virtual="./templates/fragments/header-no-local-search.fr.html" -->
     <div id="main-content">
       <ul id="breadcrumbs">
-        <li><a href="http://www.epfl.ch/" title="EPFL Homepage">EPFL</a></li>
+        <li><a href="//www.epfl.ch/" title="EPFL Homepage">EPFL</a></li>
         <li class="last">Accessibilité</li>
       </ul>
       <ul id="languages" title="Language">
-        <li><a href="http://www.epfl.ch/accessibility.en.shtml">English</a></li>
+        <li><a href="//www.epfl.ch/accessibility.en.shtml">English</a></li>
         <li class="current">français</li>
       </ul>
       <div class="clear"></div>
-      
+
       <h1>Accessibilité</h1>
       <div id="main-navigation" class="navigation-bar">
         <ul class="topnav">
@@ -31,13 +31,13 @@
         <div class="clear"></div>
       </div>
       <div id="tools"></div>
-      <div id="content" class="content content-nomenu">    
+      <div id="content" class="content content-nomenu">
         <h2>Pour les personnes handicapées</h2>
         <p>La question de l'accessibilit&eacute; des sites pour les personnes handicap&eacute;es figure parmi nos priorit&eacute;s. Cette page est consacr&eacute;e &agrave; l'accessibilit&eacute; du site web de l'<acronym title="&Eacute;cole polytechnique f&eacute;d&eacute;rale de Lausanne">EPFL</acronym>.</p>
-        
+
         <h3>Raccourcis clavier</h3>
         <p>Toutes les pages du site de l'<acronym title="&Eacute;cole polytechnique f&eacute;d&eacute;rale de Lausanne">EPFL</acronym> sont munies de raccourcis clavier (accesskeys) qui facilitent la navigation aux personnes handicap&eacute;es utilisant des moyens auxiliaires tels que les logiciels de lecture d'écran, ligne braille, agrandisseur d'&eacute;cran, etc.</p>
-        
+
         <h4>Liste des raccourcis clavier</h4>
         <p>Les raccourcis suivants sont syst&eacute;matiquement plac&eacute;s au d&eacute;but de chaque page. Ils sont invisibles pour le grand public.</p>
         <ul title="Liste des raccourcis clavier">
@@ -52,10 +52,10 @@
           <li>8. Plan de ce sous-site</li>
           <li>9. Contact</li>
         </ul>
-        
+
         <h3>Rappel des raccourcis clavier</h3>
         <p>Les raccourcis clavier sont diff&eacute;rents selon le syst&egrave;me d'exploitation et le navigateur que vous utilisez :</p>
-        
+
         <h4>Pour Windows </h4>
         <ul>
           <li>Internet Explorer : utiliser <acronym title="Touche alternative du clavier">ALT </acronym> et la touche de raccourcis, puis Entr&eacute;e </li>
@@ -63,14 +63,14 @@
           <li>Opera : utiliser <acronym title="Touche &eacute;chappement du clavier">ESC</acronym> + <acronym title="Touche majuscule du clavier">MAJ </acronym> et la touche de raccourcis</li>
           <li>Safari : utiliser Alt et la touche de raccourcis</li>
         </ul>
-        
+
         <h4>Pour Mac </h4>
         <ul>
           <li>Safari : utiliser <acronym title="Touche contr&ocirc;le du clavier">CTRL</acronym>, <acronym title="Touche option du clavier">Option</acronym>, puis la touche de raccourcis</li>
           <li>Firefox : utiliser <acronym title="Touche contr&ocirc;le du clavier">CTRL</acronym> et la touche de raccourcis</li>
           <li>Op&eacute;ra :  utiliser <acronym title="Touche &eacute;chappement du clavier">ESC</acronym> + <acronym title="Touche majuscule du clavier">MAJ </acronym> et la touche de raccourcis</li>
         </ul>
-  
+
         <h4>Pour Linux </h4>
         <ul>
           <li>Firefox : utiliser <acronym title="Touche alternative du clavier">ALT </acronym> et la touche de raccourcis</li>
@@ -80,7 +80,7 @@
         <h4>Limites des raccourcis clavier </h4>
         <p>Les touches d'acc&egrave;s clavier sont &agrave; priori un mécanisme d'accessibilit&eacute; tr&egrave;s s&eacute;duisant par sa simplicit&eacute; de mise en oeuvre. Mais les nombreux obstacles rencontr&eacute;s du fait d'une impl&eacute;mentation inachev&eacute;e en limitent consid&eacute;rablement la port&eacute;e. Seules une poign&eacute;e de touches num&eacute;riques s'avèrent finalement pertinentes, et ce uniquement en renfort d'autres mesures d'accessibilit&eacute; plus &eacute;prouv&eacute;es.<br />
         <a target="_blank" href="http://openweb.eu.org/articles/accesskey_essai_non_transforme/">Lire l'article complet</a> paru sur <a href="http://openweb.eu.org/" target="_blank">Openweb</a>. </p>
-  
+
         <h3>Autres formes d'accessibilit&eacute; Web </h3>
         <p>Pour aider les personnes malvoyantes, les raccourcis clavier zoom et dézoom sont utilisables. </p>
         <ul>
@@ -95,7 +95,7 @@
         </ul>
         <p>De plus, les couleurs utilis&eacute;es pour illustrer les diff&eacute;rentes pages Web respectent les différents symptômes de daltonisme, et donc proposent des pages Web adapt&eacute;es. </p>
       </div>
-  
+
       <div class="right-col">
         <div class="box two-cols">
           <h3>À consulter</h3>
@@ -107,13 +107,13 @@
       </div>
       <div class="clear"></div>
     </div>
-    
+
     <div id="footer">
       <ul>
+        <li><a href="//www.epfl.ch/accessibility.fr.shtml">Accessibilité</a></li>
+        <li><a href="http://mediacom.epfl.ch/mentions-legales">Mentions légales</a></li>
         <li><a href="mailto:webmaster@epfl.ch">Contact</a></li>
-        <li><a href="http://www.epfl.ch/accessibility.fr.shtml">Accessibilité</a></li>
-        <li class="copyright">&copy; 2012 EPFL tous droits réservés</li>
-        <li><a href="#top" class="hidden">Retour en haut de la page</a></li>
+        <li class="copyright">&copy; 2017 EPFL tous droits réservés</li>
       </ul>
     </div>
   </body>
