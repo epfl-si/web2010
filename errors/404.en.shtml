@@ -57,7 +57,10 @@
 
     <div id="footer" class="space404">
       <ul>
-        <li>In case of problem please <a href="mailto:webmaster@epfl.ch">contact webmaster@epfl.ch</a></li>
+        <li><a href="http://www.epfl.ch/accessibility.en.shtml">Accessibility</a></li>
+        <li><a href="http://mediacom.epfl.ch/disclaimer">Disclaimer</a></li>
+        <li><a href="mailto:webmaster@epfl.ch">Contact</a></li>
+        <li class="copyright">&copy; 2017 EPFL All rights reserved</li> 
       </ul>
     </div>
   </div>
