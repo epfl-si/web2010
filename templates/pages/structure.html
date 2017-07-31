@@ -6,12 +6,12 @@
 <!--#include virtual="../fragments/header.sig.html" -->
 <title>LFS - Laboratory of Fictive Science: welcome</title>
 <link href="../../css/epfl.css" media="all" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
+<script type="text/javascript" src="//www.epfl.ch/js/jquery-epfl.min.js"></script>
 <script type="text/javascript">jQuery.noConflict();</script>
-<script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
+<script type="text/javascript" src="//www.epfl.ch/js/globalnav.js"></script>
 <script type="text/javascript">
 /*
- 
+
  jQuery Tools 1.2.3 Tabs- The basics of UI design.
 
  NO COPYRIGHTS OR LICENSES. DO WHAT YOU LIKE.
@@ -19,7 +19,7 @@
  http://flowplayer.org/tools/tabs/
 
  Since: November 2008
- Date:    Mon Jun 7 13:43:53 2010 +0000 
+ Date:    Mon Jun 7 13:43:53 2010 +0000
 */
 (function(c){function p(e,b,a){var d=this,l=e.add(this),h=e.find(a.tabs),i=b.jquery?b:e.children(b),j;h.length||(h=e.children());i.length||(i=e.parent().find(b));i.length||(i=c(b));c.extend(this,{click:function(f,g){var k=h.eq(f);if(typeof f=="string"&&f.replace("#","")){k=h.filter("[href*="+f.replace("#","")+"]");f=Math.max(h.index(k),0)}if(a.rotate){var n=h.length-1;if(f<0)return d.click(n,g);if(f>n)return d.click(0,g)}if(!k.length){if(j>=0)return d;f=a.initialIndex;k=h.eq(f)}if(f===j)return d;
 g=g||c.Event();g.type="onBeforeClick";l.trigger(g,[f]);if(!g.isDefaultPrevented()){o[a.effect].call(d,f,function(){g.type="onClick";l.trigger(g,[f])});j=f;h.removeClass(a.current);k.addClass(a.current);return d}},getConf:function(){return a},getTabs:function(){return h},getPanes:function(){return i},getCurrentPane:function(){return i.eq(j)},getCurrentTab:function(){return h.eq(j)},getIndex:function(){return j},next:function(){return d.click(j+1)},prev:function(){return d.click(j-1)},destroy:function(){h.unbind(a.event).removeClass(a.current);
@@ -39,7 +39,7 @@ jQuery('#accordion').tabs('#accordion div.pane', {tabs:'h3', effect:'slide', ini
 <!--#include virtual="../fragments/header.fr.html" -->
 <div id="main-content">
   <ul id="breadcrumbs" title="Navigation dans l'arborescence de l'EPFL">
-    <li><a href="http://www.epfl.ch/" title="Page d'accueil de l'EPFL">EPFL</a></li>				
+    <li><a href="http://www.epfl.ch/" title="Page d'accueil de l'EPFL">EPFL</a></li>
     <li class="last"><a href="#">l'actualit&eacute;</a></li>
   </ul>
   <ul id="languages" title="Choix de la langue">
@@ -67,7 +67,7 @@ jQuery('#accordion').tabs('#accordion div.pane', {tabs:'h3', effect:'slide', ini
   <!--------------------------------------------------------------------------------->
   <div id="content" class="content">
    <h2>Structure</h2>
-   <div id="accordion"> 
+   <div id="accordion">
    <h3 class="current">Facult&eacute;</h3>
    <div class="pane">
    <div class="content-structure top">
@@ -83,7 +83,7 @@ jQuery('#accordion').tabs('#accordion div.pane', {tabs:'h3', effect:'slide', ini
    <li class="acronyme">CIBM</li>
    <li class="responsable"><a href="#">Grutter Rolf</a></li>
    <li class="membres"><div class="large_icon"></div></li>
-   </ul> 
+   </ul>
    <div style="clear:both"></div>
    </div>
  <!--------------------------------------------------------------------------------->
@@ -99,7 +99,7 @@ jQuery('#accordion').tabs('#accordion div.pane', {tabs:'h3', effect:'slide', ini
    <li class="name"><a href="#">D&eacute;canat de SB</a></li>
    <li class="acronyme">SB-DO</li>
    <li class="responsable"><a href="#">Rizzo Thomas</a></li>   <li class="membres"><div class="large_icon"></div></li>
-   </ul> 
+   </ul>
     <ul class="line-structure">
    <li class="name"><a href="#">Conseil de facult&eacute; SB</a></li>
    <li class="acronyme">CF-SB</li>
@@ -120,7 +120,7 @@ jQuery('#accordion').tabs('#accordion div.pane', {tabs:'h3', effect:'slide', ini
    <li class="name"><a href="#">SB-Services g&eacute;n&eacute;raux Gestion</a></li>
    <li class="acronyme">SB-GE</li>
    <li class="responsable"><a href="#">Alt-Jenny Fran&ccedil;oise</a></li>   <li class="membres"><div class="large_icon"></div></li>
-   </ul> 
+   </ul>
    <ul class="line-structure">
    <li class="name"><a href="#">SB-Services g&eacute;n&eacute;raux Ressources humaines</a></li>
    <li class="acronyme">SB-RH</li>
@@ -130,22 +130,22 @@ jQuery('#accordion').tabs('#accordion div.pane', {tabs:'h3', effect:'slide', ini
    <li class="name"><a href="#">SB-Services g&eacute;n&eacute;raux Finances</a></li>
    <li class="acronyme">SB-FI</li>
    <li class="responsable"><a href="#">Alt-Jenny Fran&ccedil;oise</a></li>   <li class="membres"><div class="large_icon"></div></li>
-   </ul> 
+   </ul>
       <ul class="line-structure">
    <li class="name"><a href="#">SB-Services g&eacute;n&eacute;raux Informatique</a></li>
    <li class="acronyme">SB-IT</li>
    <li class="responsable"><a href="#">Renggli Loris</a></li>   <li class="membres"><div class="large_icon"></div></li>
-   </ul> 
+   </ul>
       <ul class="line-structure">
    <li class="name"><a href="#">SB-Services g&eacute;n&eacute;raux Infrastructures</a></li>
    <li class="acronyme">SB-IN</li>
    <li class="responsable"><a href="#">Roch Gabriel</a></li>   <li class="membres"><div class="large_icon"></div></li>
-   </ul> 
+   </ul>
       <ul class="line-structure">
    <li class="name"><a href="#">SB-Services g&eacute;n&eacute;raux Securit&eacute; et sant&eacute; au travail</a></li>
    <li class="acronyme">SB-SST</li>
    <li class="responsable"><a href="#">Meyer Thierry</a></li>   <li class="membres"><div class="large_icon"></div></li>
-   </ul>   
+   </ul>
    <div style="clear:both"></div>
    </div>
    </div>
@@ -165,7 +165,7 @@ jQuery('#accordion').tabs('#accordion div.pane', {tabs:'h3', effect:'slide', ini
    <li class="acronyme">CIBM</li>
    <li class="responsable"><a href="#">Grutter Rolf</a></li>
    <li class="membres">25</li>
-   </ul> 
+   </ul>
    <div style="clear:both"></div>
    </div>
  <!--------------------------------------------------------------------------------->
@@ -182,13 +182,13 @@ jQuery('#accordion').tabs('#accordion div.pane', {tabs:'h3', effect:'slide', ini
    <li class="acronyme">SB-DO</li>
    <li class="responsable"><a href="#">Rizzo Thomas</a></li>
    <li class="membres">&nbsp;</li>
-   </ul> 
+   </ul>
     <ul class="line-structure">
    <li class="name"><a href="#">Conseil de facult&eacute; SB</a></li>
    <li class="acronyme">CF-SB</li>
    <li class="responsable"><a href="#">Rizzo Thomas</a></li>
    <li class="membres">&nbsp;</li>
-   </ul> 
+   </ul>
    <div style="clear:both"></div>
    </div>
  <!--------------------------------------------------------------------------------->
@@ -205,7 +205,7 @@ jQuery('#accordion').tabs('#accordion div.pane', {tabs:'h3', effect:'slide', ini
    <li class="acronyme">SB-GE</li>
    <li class="responsable"><a href="#">Alt-Jenny Fran&ccedil;oise</a></li>
    <li class="membres">&nbsp;</li>
-   </ul> 
+   </ul>
    <ul class="line-structure">
    <li class="name"><a href="#">SB-Services g&eacute;n&eacute;raux Ressources humaines</a></li>
    <li class="acronyme">SB-RH</li>
@@ -217,33 +217,33 @@ jQuery('#accordion').tabs('#accordion div.pane', {tabs:'h3', effect:'slide', ini
    <li class="acronyme">SB-FI</li>
    <li class="responsable"><a href="#">Alt-Jenny Fran&ccedil;oise</a></li>
    <li class="membres">&nbsp;</li>
-   </ul> 
+   </ul>
       <ul class="line-structure">
    <li class="name"><a href="#">SB-Services g&eacute;n&eacute;raux Informatique</a></li>
    <li class="acronyme">SB-IT</li>
    <li class="responsable"><a href="#">Renggli Loris</a></li>
    <li class="membres">&nbsp;</li>
-   </ul> 
+   </ul>
       <ul class="line-structure">
    <li class="name"><a href="#">SB-Services g&eacute;n&eacute;raux Infrastructures</a></li>
    <li class="acronyme">SB-IN</li>
    <li class="responsable"><a href="#">Roch Gabriel</a></li>
    <li class="membres">&nbsp;</li>
-   </ul> 
+   </ul>
       <ul class="line-structure">
    <li class="name"><a href="#">SB-Services g&eacute;n&eacute;raux Securit&eacute; et sant&eacute; au travail</a></li>
    <li class="acronyme">SB-SST</li>
    <li class="responsable"><a href="#">Meyer Thierry</a></li>
    <li class="membres">&nbsp;</li>
-   </ul>   
+   </ul>
    <div style="clear:both"></div>
    </div>
- <!---------------------------------------------------------------------------------> 
+ <!--------------------------------------------------------------------------------->
 
    </div>
    </div>
 
-    
+
   </div>
   <!--------------------------------------------------------------------------------->
   <div class="right-col">
@@ -285,10 +285,10 @@ jQuery('#accordion').tabs('#accordion div.pane', {tabs:'h3', effect:'slide', ini
 </div>
 <div id="footer">
   <ul>
-    <li><a href="#">Plan du site</a></li>
+    <li><a href="//www.epfl.ch/accessibility.fr.shtml">Accessibilité</a></li>
+    <li><a href="http://mediacom.epfl.ch/mentions-legales">Mentions légales</a></li>
     <li><a href="mailto:webmaster@epfl.ch">Contact</a></li>
-    <li><a href="http://www.epfl.ch/accessibility.fr.shtml">Accessibilité</a></li>
-    <li class="copyright">&copy; 2010 EPFL tous droits réservés</li>
+    <li class="copyright">&copy; 2017 EPFL tous droits réservés</li>
     <li><a href="#top" class="hidden">Retour en haut de la page</a></li>
   </ul>
 </div>

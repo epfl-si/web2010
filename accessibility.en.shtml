@@ -1,28 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!--#include virtual="templates/fragments/header.sig.html" -->
     <title>Accessibility on EPFL websites</title>
-    <link href="http://www.epfl.ch/css/epfl.css" media="all" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
-    <script type="text/javascript">jQuery.noConflict();</script> 
-    <script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
+    <link href="//www.epfl.ch/css/epfl.css" media="all" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="//www.epfl.ch/js/jquery-epfl.min.js"></script>
+    <script type="text/javascript">jQuery.noConflict();</script>
+    <script type="text/javascript" src="//www.epfl.ch/js/globalnav.js"></script>
   </head>
   <body>
 <!--#include virtual="templates/fragments/header-no-local-search.en.html" -->
     <div id="main-content">
       <ul id="breadcrumbs">
-        <li><a href="http://www.epfl.ch/" title="EPFL Homepage">EPFL</a></li>
+        <li><a href="//www.epfl.ch/" title="EPFL Homepage">EPFL</a></li>
         <li class="last">Accessibility</li>
       </ul>
       <ul id="languages" title="Language">
         <li class="current">English</li>
-        <li><a href="http://www.epfl.ch/accessibility.fr.shtml">français</a></li>
+        <li><a href="//www.epfl.ch/accessibility.fr.shtml">français</a></li>
       </ul>
       <div class="clear"></div>
-      
+
       <h1>Accessibility</h1>
       <div id="main-navigation" class="navigation-bar">
         <ul class="topnav">
@@ -31,12 +31,12 @@
         <div class="clear"></div>
       </div>
       <div id="tools"></div>
-      <div id="content" class="content content-nomenu">    
+      <div id="content" class="content content-nomenu">
         <h2>For the physically disabled persons</h2>
         <p>This page regards the accessibility of the EPFL website, one of our priorities.</p>
         <h3>Access keys</h3>
         <p>All pages on the EPFL website feature access keys that facilitate web browsing for the physically disabled, using auxiliary means such as screen reading software, Braille, screen enlargers, etc.</p>
-        
+
         <h4>List of access keys</h4>
         <p>The following access keys are conveniently placed at the beginning of each page. They are not visible to the general public.</p>
         <ul title="List of access keys">
@@ -54,7 +54,7 @@
 
         <h4>Access key reminders</h4>
         <p>Keyboard access keys vary depending on the user system and browser software being used:</p>
-        
+
         <h5>For Windows</h5>
         <ul>
           <li>Internet Explorer: use <acronym title="Alternate key on the keyboard">ALT</acronym> and the access key, then click Enter</li>
@@ -62,23 +62,23 @@
           <li>Opera: use <acronym title="Escape key on the keyboard">ESC</acronym> + <acronym title="Shift (or capitals) key on the keyboard">SHIFT</acronym> and the access key</li>
           <li>Safari: use <acronym title="Alternate key on the keyboard">ALT</acronym> and the access key</li>
         </ul>
-  
+
         <h5>For Mac</h5>
           <ul>
             <li>Safari: use <acronym title="Control key on the keyboard">CTRL</acronym>, Option (<acronym title="Alternate key on the keyboard">ALT</acronym>), and the access key</li>
             <li>Firefox: use <acronym title="Control key on the keyboard">CTRL</acronym> and the access key</li>
             <li>Opera: use <acronym title="Escape key on the keyboard">ESC</acronym> + <acronym title="Shift (or capitals) key on the keyboard">SHIFT</acronym> and the access key</li>
           </ul>
-        
+
         <h5>For Linux</h5>
         <ul>
           <li>Firefox: use <acronym title="Alternate key on the keyboard">ALT</acronym> and the access key</li>
           <li>Opera: use <acronym title="Escape key on the keyboard">ESC</acronym> + <acronym title="Shift (or capitals) key on the keyboard">SHIFT</acronym> and the access key</li>
         </ul>
-        
+
         <h4>Limitations of access keys</h4>
         <p>Access keys essentially provide accessibility through simple and easy-to-use access solutions. However, numerous obstacles encountered due to unfinished implementation considerably limit their scope. Only a handful of numerical keys have proven to be valid, and, as such, solely as a backup to other tired and tested accessibility measures.</p>
-  
+
         <h3>Other forms of Web accessibility</h3>
         <p>Keyboard zoom-in and zoom-out access keys are also usable to assist the visually impaired.</p>
         <ul>
@@ -91,10 +91,10 @@
           <li>To zoom-out in Mac : use Command (Apple key) plus the - key</li>
           <li>To zoom-out in Linux : use <acronym title="Control key on the keyboard">CTRL</acronym> plus the - key</li>
         </ul>
-        
+
         <p>Furthermore, the colors used to illustrate different Web pages respect different color-blind conditions, thus proposing suitably conforming Web pages.</p>
       </div>
-  
+
       <div class="right-col">
         <div class="box two-cols">
           <h3>Additional material</h3>
@@ -106,14 +106,14 @@
       </div>
       <div class="clear"></div>
     </div>
-    
+
     <div id="footer">
       <ul>
+        <li><a href="//www.epfl.ch/accessibility.en.shtml">Accessibility</a></li>
+        <li><a href="http://mediacom.epfl.ch/disclaimer">Disclaimer</a></li>
         <li><a href="mailto:webmaster@epfl.ch">Contact</a></li>
-        <li><a href="http://www.epfl.ch/accessibility.en.shtml">Accessibility</a></li>
-        <li class="copyright">&copy; 2012 EPFL all rights reserved</li>
-        <li><a href="#top" class="hidden">Jump to top of the page</a></li>
-      </ul>
+        <li class="copyright">&copy; 2017 EPFL All rights reserved</li>
+       </ul>
     </div>
   </body>
 </html>

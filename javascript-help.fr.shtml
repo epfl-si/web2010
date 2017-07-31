@@ -1,31 +1,31 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!--#include virtual="templates/fragments/header.sig.html" -->
     <title>Activation de JavaScript</title>
-    <link href="http://www.epfl.ch/css/epfl.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="//www.epfl.ch/css/epfl.css" media="all" rel="stylesheet" type="text/css" />
     <style type="text/css">
       .content img{ margin: 0 5px -4px 0; width: 25px; height: 25px;}
     </style>
-    <script type="text/javascript" src="http://www.epfl.ch/js/jquery-epfl.min.js"></script>
-    <script type="text/javascript">jQuery.noConflict();</script> 
-    <script type="text/javascript" src="http://www.epfl.ch/js/globalnav.js"></script>
+    <script type="text/javascript" src="//www.epfl.ch/js/jquery-epfl.min.js"></script>
+    <script type="text/javascript">jQuery.noConflict();</script>
+    <script type="text/javascript" src="//www.epfl.ch/js/globalnav.js"></script>
   </head>
   <body>
 <!--#include virtual="templates/fragments/header-no-local-search.fr.html" -->
     <div id="main-content">
       <ul id="breadcrumbs" title="Navigation dans l'arborescence de l'EPFL">
-        <li><a href="http://www.epfl.ch/" title="Page d'accueil de l'EPFL">EPFL</a></li>
+        <li><a href="//www.epfl.ch/" title="Page d'accueil de l'EPFL">EPFL</a></li>
         <li class="last">Activation de JavaScript</li>
       </ul>
       <ul id="languages" title="Choix de la langue">
-        <li><a href="http://www.epfl.ch/javascript-help.en.shtml">English</a></li>
+        <li><a href="//www.epfl.ch/javascript-help.en.shtml">English</a></li>
         <li class="current">français</li>
       </ul>
       <div class="clear"></div>
-      
+
       <h1>Activation de JavaScript</h1>
       <div id="main-navigation" class="navigation-bar">
         <ul class="topnav">
@@ -33,7 +33,7 @@
         </ul>
         <div style="clear:both"></div>
       </div>
-      
+
       <div id="content" class="content fullpage-content homepage-content">
         <p>JavaScript offre un plus grand confort de navigation au travers des sites de l'EPFL. Vous trouverez ci-dessous des instructions permettant d'activer cette technologie dans les principaux navigateurs web.</p>
         <h3><img src="img/explorer6.jpg" alt="" />Internet Explorer</h3>
@@ -86,10 +86,10 @@
     </div>
     <div id="footer">
       <ul>
+        <li><a href="//www.epfl.ch/accessibility.fr.shtml">Accessibilité</a></li>
+        <li><a href="http://mediacom.epfl.ch/mentions-legales">Mentions légales</a></li>
         <li><a href="mailto:webmaster@epfl.ch">Contact</a></li>
-        <li><a href="http://www.epfl.ch/accessibility.fr.shtml">Accessibilité</a></li>
-        <li class="copyright">&copy; 2012 EPFL tous droits réservés</li>
-        <li><a href="#top" class="hidden">Retour en haut de la page</a></li>
+        <li class="copyright">&copy; 2017 EPFL tous droits réservés</li>
       </ul>
     </div>
   </body>
