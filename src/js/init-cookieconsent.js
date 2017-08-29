@@ -60,9 +60,6 @@ window.addEventListener("load", function() {
 function injectCookieConsentCss() {
   var link = document.createElement("link");
   link.href = "https://www.epfl.ch/css/epfl-cookie-consent.css";
-  if (window.location.href.indexOf('www-test.epfl.ch')) {
-    link.href = "https://www-test.epfl.ch/css/epfl-cookie-consent.css";
-  }
   link.type = "text/css";
   link.rel = "stylesheet";
 
