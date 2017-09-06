@@ -30,6 +30,13 @@ window.addEventListener("load", function() {
     }
   };
 
+  // To avoid being annoyed locally
+  var domain = 'epfl.ch';
+  var location = window.location.hostname;
+  if ( location === 'localhost' || location === '127.0.0.1') {
+    domain = location;
+  }
+
   // Init cookieconsent
   window.cookieconsent.initialise({
     "palette": {
@@ -48,7 +55,7 @@ window.addEventListener("load", function() {
     },
     "cookie": {
       "name": "petitpois", // Chosen by a magical unicorn!
-      "domain": "epfl.ch"
+      "domain": domain
     }
   });
 });
