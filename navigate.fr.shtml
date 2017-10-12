@@ -117,6 +117,13 @@
                     <li><a href="http://www.epflalumni.ch/nos-evenements/">Evénements Alumni</a></li>
                   </ul>
                 </li>
+                <li class="group-2-cols last">
+                  <h3><a href="//artlab.epfl.ch/accueil">Portail Sciences et Société</a></h3>
+                  <ul>
+                    <li><a href="//sps.epfl.ch/accueil">Promotion des sciences</a></li>
+                    <li><a href="//artlab.epfl.ch/accueil">Culture/Art/Science - ArtLab</a></li>
+                  </ul>
+                </li>
               </ul>
               <div class="clear"></div>
         </div>
