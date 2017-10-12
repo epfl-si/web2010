@@ -30,11 +30,17 @@ window.addEventListener("load", function() {
     }
   };
 
-  // To avoid being annoyed locally
+  // Retrieve the domain
+  // Don't work with google.co.uk for example
   var domain = 'epfl.ch';
-  var location = window.location.hostname;
-  if ( location === 'localhost' || location === '127.0.0.1') {
-    domain = location;
+  var hostame = window.location.hostname;
+  if ( hostame === 'localhost' || hostame === '127.0.0.1') {
+    domain = hostame;
+  } else {
+    var hostParts = hostame.split('.').reverse();
+    if (hostParts[0] !== undefined && hostParts[1] !== undefined) {
+        domain = hostParts[1] + '.' + hostParts[0];
+    }
   }
 
   // Init cookieconsent
