@@ -27,6 +27,19 @@ window.addEventListener("load", function() {
     }
   };
 
+  // Retrieve the domain
+  // Don't work with google.co.uk for example
+  var domain = 'epfl.ch';
+  var hostame = window.location.hostname;
+  if ( hostame === 'localhost' || hostame === '127.0.0.1') {
+    domain = hostame;
+  } else {
+    var hostParts = hostame.split('.').reverse();
+    if (hostParts[0] !== undefined && hostParts[1] !== undefined) {
+        domain = hostParts[1] + '.' + hostParts[0];
+    }
+  }
+
   // Init cookieconsent
   window.cookieconsent.initialise({
     "palette": {
@@ -45,7 +58,7 @@ window.addEventListener("load", function() {
     },
     "cookie": {
       "name": "petitpois", // Chosen by a magical unicorn!
-      "domain": "epfl.ch"
+      "domain": domain
     }
   });
 });
