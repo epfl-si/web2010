@@ -40,8 +40,8 @@ Edit the following files:
 * templates/fragments/header.en.html
 * templates/fragments/header-no-local-search.fr.html
 * templates/fragments/header-no-local-search.en.html
-* navigation.fr.shtml
-* navigation.en.shtml
+* navigate.fr.shtml
+* navigate.en.shtml
 
 Change "headerversion" + "headerdate":
 * trunk/templates/fragments/header.sig.html
