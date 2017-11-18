@@ -5,9 +5,6 @@
 
 window.addEventListener("load", function() {
 
-  // Retrieve language, default 'fr'
-  var lang = document.documentElement.lang || 'fr';
-
   // Translation
   var cookieI18n = {
     en: {
@@ -26,6 +23,13 @@ window.addEventListener("load", function() {
       href: '//mediacom.epfl.ch/mentions-legales'
     }
   };
+
+  // Retrieve language, default 'fr'
+  var langAttribute = document.documentElement.lang;
+  var lang = langAttribute.substring(0, 2);
+  if (! cookieI18n[lang]) {
+    lang = 'fr';
+  }
 
   // Retrieve the domain
   // Don't work with google.co.uk for example
