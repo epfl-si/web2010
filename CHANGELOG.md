@@ -1,9 +1,13 @@
 Changelog
 =========
 
+### v2.20 / 2017-11-22
+
+  - Fix resolution of html lang attribute
+
 ### v2.19 / 2017-10-17
 
-  - Set cookie (from Cooke Consent) on localhost and external domain
+  - Set cookie (from Cookie Consent) on localhost and external domain
   - Remove protocols in header
 
 ### v2.18 / 2017-10-11
