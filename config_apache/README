@@ -1,0 +1,17 @@
+# Fichiers de configuration Apache
+
+Ce répertoire contient tous les fichiers de configuration d'apache pour le serveur www.epfl.ch
+La configuration a été séparée en fichiers:
+• 01-apache.conf: erreurs, modules à charger, configuration de base de http://www.epfl.ch/
+• 02-homepage.conf: configuration de la page d'accueil http://www.epfl.ch/index.fr.html.
+• 03-www.conf: configuration des fichiers statiques (/css, /img, /js, ...)
+• 04-templates.conf: configuration du site des templates http://www.epfl.ch/templates
+• \d{2}.redirect\..*\.conf: redirections demandées par les différents services.
+• failover.conf: fichier qui ne doit pas être supprimé et qui ne contient rien.
+
+
+# GitHub / C4Science
+Le contenu de ce dossier est versionné sur GitHub / C4Science (web2010):
+
+Cela permet de retracer l'historique des modifications effectuées et de revenir
+en arrière lorsqu'une modification pose problème.
