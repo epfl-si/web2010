@@ -16,6 +16,7 @@ module.exports = {
           'tools/**',
           '*.shtml',
           'favicon.ico',
+          'package.json',
           'robots.txt',
         ],
         dest: 'release/',
