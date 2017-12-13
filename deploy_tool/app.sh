@@ -8,6 +8,18 @@
 #WWW_PATH = /var/www/vhost/www.epfl.ch
 WWW_PATH=~/tmp_man/www.epfl.ch
 APP_NAME=web2010-vX.Y.Z-release.tgz
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+
+echo "DIR is '$DIR'"
+
+# Deploy the tools to the various servers
+deploy_tools() {
+  for SERVER in "exopgesrv75.epfl.ch" "exopgesrv76.epfl.ch" "exopgesrv34.epfl.ch"; do
+    echo "Deploy to $SERVER..."
+    scp $DIR/app.sh kis@$SERVER:~/
+  done
+}
 
 # Deploy a new version of the application
 deploy() {
@@ -49,6 +61,8 @@ case $1 in
     echo "Usage: $0 operation [options]"
     echo ""
     echo -e "\tdeploy <archive>:\tdeploys the specified app archive (<$APP_NAME>)"
+    echo ""
+    echo -e "\tdeploy_tools:\t\tdeploys the tools to the servers"
     exit 2
     ;;
 
