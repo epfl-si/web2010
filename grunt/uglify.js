@@ -22,7 +22,10 @@ module.exports = {
       'release/js/epfl-cookie-consent.js': [
         'bower_components/cookieconsent/build/cookieconsent.min.js',
         'src/js/init-cookieconsent.js'
-      ]
-    }
-  }
+      ],
+      'release/js/homepage.js': [
+        'src/js/homepage.js'
+      ],
+    },
+  },
 };
