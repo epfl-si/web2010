@@ -4,8 +4,8 @@ default:
   - "release"
 
 release:
-  - "cssmin"
-  - "uglify"
   - "clean"
   - "copy"
+  - "cssmin"
+  - "uglify"
   - "compress"
