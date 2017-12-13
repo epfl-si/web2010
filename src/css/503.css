@@ -1,0 +1,11 @@
+/*
+ * (c) All rights reserved. ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE,
+ * Switzerland, VPSI, 2017.
+ */
+
+.cle {
+  background: url(../img/cle.png) no-repeat;
+  height: 319px;
+  width: 100%;
+  margin: 20px 0 20px 0;
+}

@@ -1,0 +1,236 @@
+/*
+ * (c) All rights reserved. ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE,
+ * Switzerland, VPSI, 2017.
+ */
+
+.local-color {
+  background-color: #895116;
+}
+
+.local-color-text {
+  color: #895116;
+}
+
+acronym, abbr {
+  color: #895116;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  color: #895116;
+}
+
+#main-navigation {
+  background-color: #895116;
+}
+
+#main-navigation li {
+  border-color: #895116;
+}
+
+#main-navigation li:hover {
+  background-color: #652f00;
+}
+
+.tree li {
+  background-color: #895116;
+}
+
+.tree li.hover {
+  background-color: #652f00;
+}
+
+.local-color-light {
+  background-color: #652f00;
+}
+
+.local-color-dark {
+  background-color: #471900;
+}
+
+.news-text h2 a:hover {
+  color: #895116;
+}
+
+.search-results a {
+  color: #895116;
+}
+
+.search-results cite {
+  color: #471900;
+}
+
+.print .icon {
+  background-position-y: -456px;
+}
+
+.print:hover .icon {
+  background-position-y: -432px;
+}
+
+.print .icon {
+  background-position: 0 -456px;
+}
+
+.print:hover .icon {
+  background-position: 0 -432px;
+}
+
+.feed .icon {
+  background-position: -24px -456px;
+}
+
+.feed:hover .icon {
+  background-position: -24px -432px;
+}
+
+.share .icon {
+  background-position: -48px -456px;
+}
+
+.share:hover .icon {
+  background-position: -48px -432px;
+}
+
+.information .icon {
+  background-position: -72px -456px;
+}
+
+.information:hover .icon {
+  background-position: -72px -432px;
+}
+
+.question .icon {
+  background-position: -96px -456px;
+}
+
+.question:hover .icon {
+  background-position: -96px -432px;
+}
+
+.contact .icon {
+  background-position: -120px -456px;
+}
+
+.contact:hover .icon {
+  background-position: -120px -432px;
+}
+
+.comment .icon {
+  background-position: -144px -456px;
+}
+
+.comment:hover .icon {
+  background-position: -144px -432px;
+}
+
+.mail .icon {
+  background-position: -168px -456px;
+}
+
+.mail:hover .icon {
+  background-position: -168px -432px;
+}
+
+.first .icon {
+  background-position: -192px -456px;
+}
+
+.first:hover .icon {
+  background-position: -192px -432px;
+}
+
+.last .icon {
+  background-position: -216px -456px;
+}
+
+.last:hover .icon {
+  background-position: -216px -432px;
+}
+
+.previous .icon, .gotostart .icon {
+  background-position: -240px -456px;
+}
+
+.previous:hover .icon, .gotostart:hover .icon {
+  background-position: -240px -432px;
+}
+
+.forward .icon, .showall .icon {
+  background-position: -264px -456px;
+}
+
+.forward:hover .icon, .showall:hover .icon {
+  background-position: -264px -432px;
+}
+
+.up .icon, .gototop .icon {
+  background-position: -288px -456px;
+}
+
+.up:hover .icon, .gototop:hover .icon {
+  background-position: -288px -432px;
+}
+
+.down .icon {
+  background-position: -312px -456px;
+}
+
+.down:hover .icon {
+  background-position: -312px -432px;
+}
+
+.file .icon {
+  background-position: -336px -456px;
+}
+
+.file:hover .icon {
+  background-position: -336px -432px;
+}
+
+.pdffile .icon {
+  background-position: -360px -456px;
+}
+
+.pdffile:hover .icon {
+  background-position: -360px -432px;
+}
+
+.francais .diet_icon {
+  background-position: -90px -288px;
+}
+
+.anglais .diet_icon {
+  background-position: -108px -288px;
+}
+
+.allemand .diet_icon {
+  background-position: -72px -288px;
+}
+
+.winter .little_icon {
+  background-position: -54px -288px;
+}
+
+.sun .little_icon {
+  background-position: -18px -288px;
+}
+
+.printemps .little_icon {
+  background-position: 0 -288px;
+}
+
+.automne .little_icon {
+  background-position: -36px -288px;
+}
+
+.members .icon {
+  background-position: -264px -480px;
+}
+
+.category-en {
+  background-image: url(../img/news-categories-en-bw.png);
+}
+
+.category-fr {
+  background-image: url(../img/news-categories-fr-bw.png);
+}

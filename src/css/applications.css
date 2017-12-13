@@ -1,0 +1,262 @@
+/*
+ * (c) All rights reserved. ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE,
+ * Switzerland, VPSI, 2017.
+ */
+
+/* Applications */
+
+.cross .icon {
+  background: url(../img/icons-applications.png) no-repeat 0 0;
+}
+
+.cross:hover .icon {
+  background-position: 0 -24px;
+}
+
+.checkmark .icon {
+  background: url(../img/icons-applications.png) no-repeat -24px 0;
+}
+
+.checkmark:hover .icon {
+  background-position: -24px -24px;
+}
+
+.plus .icon {
+  background: url(../img/icons-applications.png) no-repeat -48px 0;
+}
+
+.plus:hover .icon {
+  background-position: -48px -24px;
+}
+
+.stats .icon {
+  background: url(../img/icons-applications.png) no-repeat -72px 0;
+}
+
+.stats:hover .icon {
+  background-position: -72px -24px;
+}
+
+.edit .icon {
+  background: url(../img/icons-applications.png) no-repeat -96px 0;
+}
+
+.edit:hover .icon {
+  background-position: -96px -24px;
+}
+
+.ok .icon {
+  background: url(../img/icons-applications.png) no-repeat -120px 0;
+}
+
+.ok:hover .icon {
+  background-position: -120px -24px;
+}
+
+.time .icon {
+  background: url(../img/icons-applications.png) no-repeat -144px 0;
+}
+
+.time:hover .icon {
+  background-position: -144px -24px;
+}
+
+.url .icon {
+  background: url(../img/icons-applications.png) no-repeat -168px 0;
+}
+
+.url:hover .icon {
+  background-position: -168px -24px;
+}
+
+.multiple .icon {
+  background: url(../img/icons-applications.png) no-repeat -192px 0;
+}
+
+.multiple:hover .icon {
+  background-position: -192px -24px;
+}
+
+.out .icon {
+  background: url(../img/icons-applications.png) no-repeat -216px 0;
+}
+
+.out:hover .icon {
+  background-position: -216px -24px;
+}
+
+.reload .icon {
+  background: url(../img/icons-applications.png) no-repeat -240px 0;
+}
+
+.reload:hover .icon {
+  background-position: -240px -24px;
+}
+
+.hierarchy .icon {
+  background: url(../img/icons-applications.png) no-repeat -264px 0;
+}
+
+.hierarchy:hover .icon {
+  background-position: -264px -24px;
+}
+
+.administration .icon {
+  background: url(../img/icons-applications.png) no-repeat -288px 0;
+}
+
+.administration:hover .icon {
+  background-position: -288px -24px;
+}
+
+.podcast .icon {
+  background: url(../img/icons-applications.png) no-repeat -312px 0;
+}
+
+.podcast:hover .icon {
+  background-position: -312px -24px;
+}
+
+.length .icon {
+  background: url(../img/icons-applications.png) no-repeat -336px 0;
+}
+
+.length:hover .icon {
+  background-position: -336px -24px;
+}
+
+.area .icon {
+  background: url(../img/icons-applications.png) no-repeat -360px 0;
+}
+
+.area:hover .icon {
+  background-position: -360px -24px;
+}
+
+.bullseye .icon {
+  background: url(../img/icons-applications.png) no-repeat -384px 0;
+}
+
+.bullseye:hover .icon {
+  background-position: -384px -24px;
+}
+
+.accred .icon {
+  background: url(../img/icons-applications.png) no-repeat -408px 0;
+}
+
+.accred:hover .icon {
+  background-position: -408px -24px;
+}
+
+.mailinglist .icon {
+  background: url(../img/icons-applications.png) no-repeat -432px 0;
+}
+
+.mailinglist:hover .icon {
+  background-position: -432px -24px;
+}
+
+.group .icon {
+  background: url(../img/icons-applications.png) no-repeat -456px 0;
+}
+
+.group:hover .icon {
+  background-position: -456px -24px;
+}
+
+.vcard .icon {
+  background: url(../img/icons-applications.png) no-repeat -480px 0;
+}
+
+.vcard:hover .icon {
+  background-position: -480px -24px;
+}
+
+.attention .icon {
+  background: url(../img/icons-applications.png) no-repeat -504px 0;
+}
+
+.attention:hover .icon {
+  background-position: -504px -24px;
+}
+
+.search .icon {
+  background: url(../img/icons-applications.png) no-repeat -528px 0;
+}
+
+.search:hover .icon {
+  background-position: -528px -24px;
+}
+
+.associations .icon {
+  background-position-y: -72px;
+}
+
+.associations:hover .icon {
+  background-position-y: -48px;
+}
+
+.cdm .icon {
+  background-position-y: -120px;
+}
+
+.cdm:hover .icon {
+  background-position-y: -96px;
+}
+
+.cdh .icon {
+  background-position-y: -168px;
+}
+
+.cdh:hover .icon {
+  background-position-y: -144px;
+}
+
+.sv .icon {
+  background-position-y: -216px;
+}
+
+.sv:hover .icon {
+  background-position-y: -192px;
+}
+
+.sti .icon {
+  background-position-y: -264px;
+}
+
+.sti:hover .icon {
+  background-position-y: -240px;
+}
+
+.ic .icon {
+  background-position-y: -312px;
+}
+
+.ic:hover .icon {
+  background-position-y: -288px;
+}
+
+.sb .icon {
+  background-position-y: -360px;
+}
+
+.sb:hover .icon {
+  background-position-y: -336px;
+}
+
+.enac .icon {
+  background-position-y: -408px;
+}
+
+.enac:hover .icon {
+  background-position-y: -384px;
+}
+
+.inter .icon {
+  background-position-y: -456px;
+}
+
+.inter:hover .icon {
+  background-position-y: -432px;
+}
