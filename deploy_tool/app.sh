@@ -11,8 +11,6 @@ APP_NAME=web2010-vX.Y.Z-release.tgz
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 
-echo "DIR is '$DIR'"
-
 # Deploy the tools to the various servers
 deploy_tools() {
   for SERVER in "exopgesrv75.epfl.ch" "exopgesrv76.epfl.ch" "exopgesrv34.epfl.ch"; do
