@@ -49,6 +49,10 @@ deploy() {
   cp ~/tmp/favicon.ico $WWW_PATH/htdocs/
   cp ~/tmp/robots.txt $WWW_PATH/htdocs/
 
+  if [ ! -d "$WWW_PATH/htdocs/public" ]; then
+    mkdir $WWW_PATH/htdocs/public
+  fi
+
   echo "Deployed version $VERSION"
 }
 
