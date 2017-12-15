@@ -41,6 +41,7 @@ deploy() {
   cp ~/tmp/config_apache/* $WWW_PATH/conf/
   cp -r ~/tmp/css $WWW_PATH/htdocs/css
   cp -r ~/tmp/errors $WWW_PATH/htdocs/errors
+  cp -r ~/tmp/img $WWW_PATH/htdocs/images
   cp -r ~/tmp/img $WWW_PATH/htdocs/img
   cp -r ~/tmp/js $WWW_PATH/htdocs/js
   cp -r ~/tmp/templates $WWW_PATH/htdocs/templates

@@ -10,6 +10,7 @@ module.exports = {
           'config_apache/**',
           'css/**',
           'errors/**',
+          'images/**',
           'img/**',
           'js/**',
           'templates/**',
