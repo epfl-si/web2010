@@ -52,7 +52,6 @@ Change in JavaScript or CSS
 ---------------------------
 
 Original files need to be in the `src` folder.
-To maintain the retrocompatibility, commit the minified files.
 
 To build:
 
