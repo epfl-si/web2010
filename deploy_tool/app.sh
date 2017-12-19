@@ -5,7 +5,7 @@
 # See the LICENSE file for more details.
 #
 
-WWW_PATH = /var/www/vhost/www.epfl.ch
+WWW_PATH=/var/www/vhosts/www.epfl.ch
 APP_NAME=web2010-vX.Y.Z-release.tgz
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
