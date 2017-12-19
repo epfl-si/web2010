@@ -92,7 +92,7 @@ Deploy
 ------
 Copy the deploy tool on the servers (if doesn't exist on the server):
 ```bash
-./app.sh deploy_tools
+./deploy_tool/app.sh deploy_tools
 ```
 
 Deploy the archive on the servers:
