@@ -64,7 +64,6 @@ deploy() {
     ln -s $WWW_PATH/htdocs/homepages/current/index.fr.html $WWW_PATH/htdocs/index.fr.html
     ln -s $WWW_PATH/htdocs/homepages/current/index.en.html $WWW_PATH/htdocs/index.en.html
     ln -s $WWW_PATH/htdocs/homepages/current/visual $WWW_PATH/htdocs/visual
-    ln -s $WWW_PATH/htdocs/tools/jpgraph $WWW_PATH/htdocs/jpgraph
   fi
 
   echo "Deployed version $VERSION"
