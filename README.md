@@ -59,8 +59,6 @@ To build:
 $ grunt
 ```
 
-Then commit the changes.
-
 Test
 ----
 Deploy on test server.
