@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+print "Content-type: text/plain\n\n";
+
+# In ../homepages each folder contains a different version of the homepage
+# and is named following the pattern yyyy-mm-dd hh:mm:ss. It also contains a
+# symbolic link named "current" to the current version.
+# The service calling this script expects the first line to be the name
+# of the current homepage version. So we get the name of the folder targeted
+# by the symbolic link "current".
+print readlink("../homepages/current") . "\n";
+
+# Then we return all the versions (including the current one) in chronological order,
+# one version by line. However, we remove the "current" folder. It is the output expected by the user.
+print reverse `ls -1At ../homepages -I "current"`;
