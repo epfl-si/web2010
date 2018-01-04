@@ -8,11 +8,15 @@
 WWW_PATH=/var/www/vhosts/www.epfl.ch
 APP_NAME=web2010-vX.Y.Z-release.tgz
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
+SERVERS_LIST=( "exopgesrv34.epfl.ch"
+               "exopgesrv75.epfl.ch"
+               "exopgesrv76.epfl.ch"
+               "exopgesrv95.epfl.ch"
+               "exopgesrv96.epfl.ch" )
 
 # Deploy the tools to the various servers
 deploy_tools() {
-  for SERVER in "exopgesrv75.epfl.ch" "exopgesrv76.epfl.ch" "exopgesrv34.epfl.ch"; do
+  for SERVER in "${SERVERS_LIST[@]}"; do
     echo "Deploy to $SERVER..."
     scp $DIR/app.sh kis@$SERVER:~/
   done
