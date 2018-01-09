@@ -1,6 +1,17 @@
 Changelog
 =========
 
+### v3.0.0 / 2018-01-09
+
+  - Feature improve deployment
+  - Set 5s cache on html
+  - Add homepage_versions script
+  - Remove email.php
+  - Remove jpgraph (PHP)
+  - Remove other old PHP scripts
+  - Add removed logos in 04.2017 (still used today)
+  - Replace epfl_small.png (color too dark in previous)
+
 ### v2.20 / 2017-11-22
 
   - Fix resolution of html lang attribute

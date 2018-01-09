@@ -1,7 +1,7 @@
 {
   "name": "web2010",
   "private": true,
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "web2010",
   "keywords": [],
   "author": "",
@@ -10,6 +10,11 @@
       "name": "William Belle",
       "email": "william.belle@gmail.com",
       "web": "https://github.com/williambelle"
+    },
+    {
+      "name": "Olivier Bieler",
+      "email": "olivier.bieler@epfl.ch",
+      "web": "https://github.com/obieler"
     }
   ],
   "license": "",
