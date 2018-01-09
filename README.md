@@ -52,15 +52,12 @@ Change in JavaScript or CSS
 ---------------------------
 
 Original files need to be in the `src` folder.
-To maintain the retrocompatibility, commit the minified files.
 
 To build:
 
 ```bash
 $ grunt
 ```
-
-Then commit the changes.
 
 Test
 ----
@@ -91,11 +88,21 @@ git push --tags
 
 Deploy
 ------
-ssh on server:
+Copy the deploy tool on the servers (if doesn't exist on the server):
 ```bash
-cd /var/www/vhosts/www.epfl.ch/htdocs
-git pull
+./deploy_tool/app.sh deploy_tools
 ```
+
+Deploy the archive on the servers:
+```bash
+scp release/*.tgz <user>@<server>:~
+```
+
+Then on each server:
+```bash
+./app.sh deploy <archive>
+```
+
 
 Copyright
 ---------

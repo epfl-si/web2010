@@ -1,0 +1,203 @@
+/*
+ * (c) All rights reserved. ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE,
+ * Switzerland, VPSI, 2017.
+ */
+
+.local-color {
+  background-color: #aebd00;
+}
+
+.local-color-text {
+  color: #aebd00;
+}
+
+acronym, abbr {
+  color: #aebd00;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  background: none;
+  color: #aebd00;
+}
+
+#main-navigation {
+  background-color: #aebd00;
+}
+
+#main-navigation li {
+  border-color: #aebd00;
+}
+
+#main-navigation li:hover {
+  background-color: #8d9c00;
+}
+
+.tree li {
+  background-color: #aebd00;
+}
+
+.tree li.hover {
+  background-color: #8d9c00;
+}
+
+.local-color-light {
+  background-color: #8d9c00;
+}
+
+.local-color-dark {
+  background-color: #707f00;
+}
+
+.local-color-down {
+  background-color: #723C07;
+}
+
+/* Changer, couleur pas trouv�e... */
+
+.news-text h2 a:hover {
+  color: #aebd00;
+}
+
+.search-results a {
+  color: #aebd00;
+}
+
+.search-results cite {
+  color: #707f00;
+}
+
+.print .icon {
+  background-position: 0 -72px;
+}
+
+.print:hover .icon {
+  background-position: 0 -48px;
+}
+
+.feed .icon {
+  background-position: -24px -72px;
+}
+
+.feed:hover .icon {
+  background-position: -24px -48px;
+}
+
+.share .icon {
+  background-position: -48px -72px;
+}
+
+.share:hover .icon {
+  background-position: -48px -48px;
+}
+
+.information .icon {
+  background-position: -72px -72px;
+}
+
+.information:hover .icon {
+  background-position: -72px -48px;
+}
+
+.question .icon {
+  background-position: -96px -72px;
+}
+
+.question:hover .icon {
+  background-position: -96px -48px;
+}
+
+.contact .icon {
+  background-position: -120px -72px;
+}
+
+.contact:hover .icon {
+  background-position: -120px -48px;
+}
+
+.comment .icon {
+  background-position: -144px -72px;
+}
+
+.comment:hover .icon {
+  background-position: -144px -48px;
+}
+
+.mail .icon {
+  background-position: -168px -72px;
+}
+
+.mail:hover .icon {
+  background-position: -168px -48px;
+}
+
+.first .icon {
+  background-position: -192px -72px;
+}
+
+.first:hover .icon {
+  background-position: -192px -48px;
+}
+
+.last .icon {
+  background-position: -216px -72px;
+}
+
+.last:hover .icon {
+  background-position: -216px -48px;
+}
+
+.previous .icon, .gotostart .icon {
+  background-position: -240px -72px;
+}
+
+.previous:hover .icon, .gotostart:hover .icon {
+  background-position: -240px -48px;
+}
+
+.forward .icon, .showall .icon {
+  background-position: -264px -72px;
+}
+
+.forward:hover .icon, .showall:hover .icon {
+  background-position: -264px -48px;
+}
+
+.up .icon, .gototop .icon {
+  background-position: -288px -72px;
+}
+
+.up:hover .icon, .gototop:hover .icon {
+  background-position: -288px -48px;
+}
+
+.down .icon {
+  background-position: -312px -72px;
+}
+
+.down:hover .icon {
+  background-position: -312px -48px;
+}
+
+.file .icon {
+  background-position: -336px -72px;
+}
+
+.file:hover .icon {
+  background-position: -336px -48px;
+}
+
+.pdffile .icon {
+  background-position: -360px -72px;
+}
+
+.pdffile:hover .icon {
+  background-position: -360px -48px;
+}
+
+.category-en {
+  background-image: url(../img/news-categories-en-bw.png);
+}
+
+.category-fr {
+  background-image: url(../img/news-categories-fr-bw.png);
+}

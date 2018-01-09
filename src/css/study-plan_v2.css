@@ -1,0 +1,233 @@
+/*
+ * (c) All rights reserved. ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE,
+ * Switzerland, VPSI, 2017.
+ */
+
+#content .line-up {
+  border-top: 1px solid #000;
+  padding-top: 1px;
+}
+
+#content .line-down {
+  border-bottom: 1px dotted #000;
+  padding-top: 1px;
+}
+
+#content .first-line {
+  background: url('../img/main-navigation.png') repeat;
+  margin-bottom: 4px;
+  margin-top: 1px;
+  height: 38px;
+  width: 100%;
+}
+
+#content .line {
+  margin-bottom: 3px;
+  margin-top: 2px;
+  width: 100%;
+}
+
+#content .langue {
+  width: 15px;
+  height: 38px;
+  display: block;
+  float: left;
+}
+
+#content .cours-title {
+  width: 75px;
+  float: left;
+}
+
+#content .cours-name {
+  padding-top: 3px;
+  width: 220px;
+  float: left;
+}
+
+#content .cours-master {
+  width: 193px;
+  float: left;
+  font-size: 11px;
+}
+
+#content .cours-code {
+  width: 75px;
+  float: left;
+}
+
+#content .cours {
+  width: 220px;
+  float: left;
+  font-size: 11px;
+}
+
+#content .section {
+  width: 60px;
+  float: left;
+}
+
+#content .section-name {
+  width: 60px;
+  float: left;
+}
+
+#content .enseignement {
+  width: 85px;
+  float: left;
+}
+
+#content .enseignement-master {
+  width: 70px;
+  float: left;
+}
+
+#content .specialisation {
+  width: 80px;
+  min-height: 38px;
+  float: left;
+}
+
+#content .specialisation img {
+  margin: 4px 0px 4px 0px;
+}
+
+#content .enseignement-name {
+  float: left;
+  line-height: 13px;
+  margin-bottom: 2px;
+  width: 85px;
+}
+
+#content .bachlor {
+  width: 70px;
+  height: 100%;
+  border-left: 1px solid #FFF;
+  float: left;
+}
+
+#content .pdm {
+  width: 100px;
+  height: 100%;
+  border-left: 1px solid #FFF;
+  float: left;
+}
+
+#content .bachlor-color {
+  float: left;
+}
+
+#content .examen {
+  width: 80px;
+  border-left: 1px solid #FFF;
+  float: left;
+  font-size: 11px;
+}
+
+#content .examen-master {
+  width: 60px;
+  border-left: 1px solid #FFF;
+  float: left;
+  font-size: 11px;
+}
+
+#content .credit {
+  width: 66px;
+  height: 100%;
+  border-left: 1px solid #FFF;
+  float: left;
+}
+
+.titre {
+  font-family: "Georgia", Times New Roman, Times, serif;
+  font-style: italic;
+  font-size: 11px;
+}
+
+.titre_bachlor {
+  font-family: "Georgia", Times New Roman, Times, serif;
+  font-style: italic;
+  font-size: 11px;
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.cep {
+  width: 20px;
+  text-align: center;
+  float: left;
+}
+
+.cep-master {
+  padding: 0 6px;
+}
+
+.red-color {
+  background-color: #e2001a;
+  color: #FFF;
+  width: 68px;
+  float: left;
+  padding-left: 1px;
+}
+
+.credit-time {
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 18px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.exam-icon {
+  width: 18px;
+  margin-left: 3px;
+  min-height: 38px;
+  float: left;
+}
+
+.exam-icon .little_icon {
+  margin-right: 2px;
+}
+
+.bachlor-text {
+  text-align: center;
+  padding-bottom: 2px;
+  margin-top: 18px;
+  color: #FFF;
+  font-size: 11px;
+}
+
+#content .cours-name a {
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  background: url('../img/underline.gif') repeat-x 0 14px;
+}
+
+#content .cours-name a:hover {
+  background-image: url('../img/underline-hover.png');
+}
+
+.legende {
+  font-family: "Georgia", Times New Roman, Times, serif;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: bold;
+  width: 5px;
+  float: left;
+  padding-right: 10px;
+}
+
+.img_legende {
+  float: left;
+  width: 17px;
+  height: 17px;
+}
+
+#content .master {
+  width: 48px;
+}

@@ -1,0 +1,60 @@
+/*
+ * (c) All rights reserved. ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE,
+ * Switzerland, VPSI, 2017.
+ */
+
+/* Study plan icons */
+
+.diet_icon {
+  float: left;
+  background: url(../img/icons-plancours.png) no-repeat;
+  height: 18px;
+  width: 14px;
+  margin-right: 0;
+  border: none;
+}
+
+.little_icon {
+  float: left;
+  background: url(../img/icons-plancours.png) no-repeat;
+  height: 17px;
+  width: 17px;
+  margin-right: 0;
+  border: none;
+}
+
+.winter .little_icon {
+  background-position: -54px 0;
+}
+
+.sun .little_icon {
+  background-position: -18px 0;
+}
+
+.printemps .little_icon {
+  background-position: 0 0;
+}
+
+.automne .little_icon {
+  background-position: -36px 0;
+}
+
+.francais .diet_icon {
+  background-position: -90px 0;
+}
+
+.anglais .diet_icon {
+  background-position: -108px 0;
+}
+
+.allemand .diet_icon {
+  background-position: -72px 0;
+}
+
+.italien .diet_icon {
+  background-position: -148px 0;
+}
+
+.franglais .diet_icon {
+  background-position: -166px 0;
+}

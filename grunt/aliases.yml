@@ -1,6 +1,11 @@
-default:
-  - "build"
+# (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017.
 
-build:
+default:
+  - "release"
+
+release:
+  - "clean"
+  - "copy"
   - "cssmin"
   - "uglify"
+  - "compress"
