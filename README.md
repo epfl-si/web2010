@@ -8,6 +8,10 @@ This EPFL project contains:
   * templates html
   * css files (non responsive)
   * js files
+  * EPFL logos
+  * PHP scripts (label.php)
+  * PERL script (/cgi-bin)
+  * Apache config
 
 Links
 -----
@@ -76,8 +80,8 @@ wget -P /home/obieler/workspace/actu/src/templates/header/ -N -nd -r -l 1 http:/
 Tagging
 -------
 
-Check the changes since the last release and update the changelog accordingly.
-Bump the new version and date in `templates/fragments/header.sig.html`.
+Check the changes since the last release and update `CHANGELOG.md` accordingly.
+Bump the new version and date in `templates/fragments/header.sig.html` and `package.json`.
 
 Then
 
