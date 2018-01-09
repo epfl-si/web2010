@@ -9,7 +9,7 @@ This EPFL project contains:
   * css files (non responsive)
   * js files
   * EPFL logos
-  * PHP scripts (label.php)
+  * PHP script (label.php)
   * PERL script (/cgi-bin)
   * Apache config
 
