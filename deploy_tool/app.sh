@@ -41,15 +41,15 @@ deploy() {
   tar xzf $1 -C ~/tmp
   VERSION=`cat ~/tmp/package.json|grep version|cut -d'"' -f4`
 
-  cp -r ~/tmp/cgi-bin $WWW_PATH/htdocs/cgi-bin
+  cp -r ~/tmp/cgi-bin $WWW_PATH/htdocs
   cp ~/tmp/config_apache/* $WWW_PATH/conf/
-  cp -r ~/tmp/css $WWW_PATH/htdocs/css
-  cp -r ~/tmp/errors $WWW_PATH/htdocs/errors
-  cp -r ~/tmp/img $WWW_PATH/htdocs/images
-  cp -r ~/tmp/img $WWW_PATH/htdocs/img
-  cp -r ~/tmp/js $WWW_PATH/htdocs/js
-  cp -r ~/tmp/templates $WWW_PATH/htdocs/templates
-  cp -r ~/tmp/tools $WWW_PATH/htdocs/tools
+  cp -r ~/tmp/css $WWW_PATH/htdocs
+  cp -r ~/tmp/errors $WWW_PATH/htdocs
+  cp -r ~/tmp/images $WWW_PATH/htdocs
+  cp -r ~/tmp/img $WWW_PATH/htdocs
+  cp -r ~/tmp/js $WWW_PATH/htdocs
+  cp -r ~/tmp/templates $WWW_PATH/htdocs
+  cp -r ~/tmp/tools $WWW_PATH/htdocs
   cp ~/tmp/*.shtml $WWW_PATH/htdocs/
   cp ~/tmp/favicon.ico $WWW_PATH/htdocs/
   cp ~/tmp/robots.txt $WWW_PATH/htdocs/
