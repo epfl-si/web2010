@@ -70,6 +70,10 @@ deploy() {
     ln -s $WWW_PATH/htdocs/homepages/current/visual $WWW_PATH/htdocs/visual
   fi
 
+  # set exec permission
+  chcon -t httpd_exec_t $WWW_PATH/htdocs/cgi-bin/homepage_versions
+  chmod +x $WWW_PATH/htdocs/cgi-bin/homepage_versions
+
   echo "Deployed version $VERSION"
 }
 
