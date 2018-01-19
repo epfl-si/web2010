@@ -7,7 +7,6 @@ module.exports = {
       {
         expand: true,
         src: [
-          'cgi-bin/**',
           'config_apache/**',
           'css/**',
           'errors/**',
