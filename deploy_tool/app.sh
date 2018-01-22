@@ -41,7 +41,6 @@ deploy() {
   tar xzf $1 -C ~/tmp
   VERSION=`cat ~/tmp/package.json|grep version|cut -d'"' -f4`
 
-  cp -r ~/tmp/cgi-bin $WWW_PATH/htdocs
   cp ~/tmp/config_apache/* $WWW_PATH/conf/
   cp -r ~/tmp/css $WWW_PATH/htdocs
   cp -r ~/tmp/errors $WWW_PATH/htdocs

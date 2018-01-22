@@ -10,7 +10,6 @@ This EPFL project contains:
   * js files
   * EPFL logos
   * PHP script (label.php)
-  * PERL script (/cgi-bin)
   * Apache config
 
 Links
