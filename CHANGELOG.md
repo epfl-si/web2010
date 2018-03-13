@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v3.0.1 / 2018-03-13
+
+  - Gzip svg (apache config)
+
 ### v3.0.0 / 2018-01-09
 
   - Feature improve deployment
