@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v3.0.2 / 2018-03-15
+
+  - Remove all proxy configs (apache)
+
 ### v3.0.1 / 2018-03-13
 
   - Gzip svg (apache config)
