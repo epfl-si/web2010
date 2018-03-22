@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v3.1.0 / 2018-03-22
+
+  - Add proxy pass for label.php
+
 ### v3.0.2 / 2018-03-15
 
   - Remove all proxy configs (apache)
