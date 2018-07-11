@@ -48,7 +48,6 @@ deploy() {
   cp -r ~/tmp/img $WWW_PATH/htdocs
   cp -r ~/tmp/js $WWW_PATH/htdocs
   cp -r ~/tmp/templates $WWW_PATH/htdocs
-  cp -r ~/tmp/tools $WWW_PATH/htdocs
   cp ~/tmp/*.shtml $WWW_PATH/htdocs/
   cp ~/tmp/favicon.ico $WWW_PATH/htdocs/
   cp ~/tmp/robots.txt $WWW_PATH/htdocs/
