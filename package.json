@@ -21,12 +21,12 @@
   "repository": "https://github.com/epfl-idevelop/web2010.git",
   "scripts": {},
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.3",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-compress": "^1.4.3",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^2.0.0",
-    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-uglify": "^3.3.0",
     "load-grunt-config": "^0.19.2"
   }
 }
