@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v3.1.1 / 2018-07-18
+
+  - Add EPFL Middle East section
+  - Update dev dependencies
+  - Remove tools folder
+  - Disable `package-lock.json`
+
 ### v3.1.0 / 2018-03-22
 
   - Add proxy pass for label.php
