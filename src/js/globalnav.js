@@ -20,46 +20,6 @@
  ga('web2010.set', 'anonymizeIp', true);
  ga('web2010.send', 'pageview');
 
-
-function getPeopleAutocomplete() {
-  "use strict";
-  var field = jQuery("#searchfield");
-  field.autocomplete({
-    source: function(request, response) {
-      jQuery.ajax({
-        url: "https://search.epfl.ch/json/autocompletename.action",
-        dataType: 'jsonp',
-        data: {
-          maxRows: 15,
-          term: request.term
-        },
-        success: function(data) {
-          response(jQuery.map(data.result, function(item) {
-            return {
-              label: item.name + ', ' + item.firstname,
-              value: item.firstname + ' ' + item.name
-            };
-          }));
-
-        }
-      });
-    },
-    appendTo: jQuery('#searchform'),
-    disabled: false,
-    minLength: 3,
-    select: function(event, ui) {
-      if (ui.item) {
-        field.val(ui.item.value);
-      }
-      jQuery('#searchform').submit();
-    }
-  });
-}
-
-
-var current_search_base = null;
-
-
 function showPanel() {
   jQuery("#header").expose({
     color: '#000',
@@ -84,49 +44,6 @@ function removeLastWord(element) {
 function isTotallyVisible(parent, element) {
   return element.position().top + element.outerHeight() + 2 < parent.position().top + parent.innerHeight();
 }
-
-
-function change_search_base(radio) {
-  jQuery('#search-options').remove();
-  jQuery("#searchform input[type=radio]").removeAttr("checked");
-  var rid = radio.attr('id');
-  var label = jQuery('label[for=' + rid + ']');
-  jQuery("#searchfield").autocomplete({
-    disabled: true
-  });
-
-  switch (rid) {
-    case "search-engine-person":
-      getPeopleAutocomplete();
-      break;
-    case "search-engine-local":
-      jQuery('#searchform').append(
-        jQuery("<input/>").attr("type", "hidden").attr("id", "search-options").attr("name", "as_sitesearch").attr("value", jQuery.url.attr("host"))
-      );
-      break;
-    default:
-      break;
-  }
-
-  if (jQuery('#searchfield').val() === jQuery('#searchform label.current').attr('title')) {
-    jQuery('#searchfield').val('');
-  }
-  if (jQuery('#searchfield').val() === '') {
-    jQuery('#searchfield').val(label.attr('title'));
-  }
-
-  current_search_base.toggleClass('current');
-  current_search_base = label;
-  current_search_base.toggleClass('current');
-  radio.attr('checked', 'checked');
-  radio.blur();
-  if (document.referrer.indexOf('#') !== -1) {
-    radio.focus();
-  }
-}
-
-
-
 
 jQuery.fn.exists = function() {
   return this.length > 0;
@@ -172,37 +89,6 @@ jQuery(document).ready(function($) {
     });
     $('#header').mouseleave(closePane);
 
-    // Search box
-    $('#searchform').submit(function() {
-      if ($('#searchfield').val() === $('#searchform label.current').attr('title')) {
-        $('#searchfield').val('');
-      }
-    });
-    current_search_base = $('#header #searchform label.current');
-    change_search_base($("#header #search-engine-person"));
-    $('#search-box input[type=radio]').change(function() {
-      change_search_base($(this));
-    });
-    $('#searchfield').focus(function() {
-      if ($(this).val() === current_search_base.attr('title')) {
-        $(this).val('').addClass('focused');
-      }
-    });
-    if ($.browser.msie) {
-      $('#search-box input[type=radio]').click(function() {
-        change_search_base($(this));
-        this.blur();
-        this.focus();
-      });
-    }
-    /* Make labels clickable under mobile safari*/
-    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)) {
-      $('#search-box label').click(function() {
-        var el = $(this).attr('for');
-        change_search_base($('#' + el));
-      });
-    }
-
   } else {
     /* Header - Web 2013 */
 
@@ -224,92 +110,7 @@ jQuery(document).ready(function($) {
       }
     });
     $('html').click(closePane);
-
-    // Search box
-    $('#header2013 .selected-field').click(function() {
-      $(this).siblings('ul').toggleClass('hidden');
-    });
-    $('#header2013 .search-filter').mouseleave(function() {
-      $(this).children('ul').addClass('hidden');
-    });
-    $('#header2013  #nav-search input[type="radio"]').click(function() {
-      $(this).parent().parent().addClass('hidden');
-    });
-    var setAutoComplete = function() {
-      $("#header2013 #header_searchfield").autocomplete({
-        source: function(request, response) {
-          $.ajax({
-            url: "https://search.epfl.ch/json/autocompletename.action",
-            dataType: 'jsonp',
-            data: {
-              maxRows: 10,
-              term: request.term
-            },
-            success: function(data) {
-              var res = $.map(data.result, function(item) {
-                return {
-                  label: item.name + ', ' + item.firstname,
-                  value: item.firstname + ' ' + item.name
-                };
-              });
-              response(res);
-              if (data.hasMore) {
-                var label = data.lang && data.lang === "en" ? "See all results" : "Voir tous les résultats";
-                var link = "https://search.epfl.ch/psearch.action?q=" + data.term;
-                $('#header2013 #search-box ul.ui-autocomplete li').last().after('<li><a class="ac-more" href="' + link + '">' + label + '</a></li>');
-              }
-            }
-          });
-        },
-        appendTo: $('#header_searchform'),
-        disabled: false,
-        minLength: 3,
-        select: function(event, ui) {
-          if (ui.item) {
-            $(this).val(ui.item.value);
-          }
-          $('#header2013 #header_searchform').submit();
-        }
-      });
-    };
-
-    var unsetAutoComplete = function() {
-      $("#header2013 #header_searchfield").autocomplete({
-        disabled: true
-      });
-    };
-
-    $('#header2013 input[type="radio"]').change(function() {
-      var label = $('label[for=' + $(this).attr('id') + ']');
-      $('#search-box .selected-field').text(label.text());
-
-      if ($(this).is('#search-engine-person')) {
-        setAutoComplete();
-      } else {
-        unsetAutoComplete();
-      }
-    });
-    setAutoComplete();
-    $('#header2013 #search-engine-local').change(function() {
-      $('#header_local_site').attr("value", jQuery.url.attr("host"));
-    });
   } // end Web2010/2013
-
-
-  $('#searchfield').blur(function() {
-    if ($(this).val() === '') {
-      $(this).val($('#searchform label.current').attr('title')).removeClass('focused');
-    }
-  });
-  $('#searchfield').keypress(function(e) {
-    if (e.which === 13) {
-      $(this).parent('form').submit();
-    }
-  });
-  $('#searchlink').click(function() {
-    $('#searchfield').focus();
-  });
-
 
   /* navigation: Dropdown menus */
   $('.dropdown').click(function() {
@@ -347,8 +148,6 @@ jQuery(document).ready(function($) {
       $(this).parent().removeClass("hover");
     }
   );
-
-
 
   /* activate togglers */
   $('.toggler').click(function() {
