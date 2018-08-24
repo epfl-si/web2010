@@ -853,22 +853,6 @@ to be removed when jahia automaticvally includes plancours.css
   float: left;
 }
 
-#header2013 .search-filter {
-  float: left;
-  width: 120px;
-  height: 23px;
-  border-color: #000;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  background: #fff url(../img/sprites.png) no-repeat 0 0;
-  padding-left: 0;
-  line-height: 23px;
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  position: relative;
-}
-
 #header2013 .search-button {
   background-image: url(../img/magnifier.png);
   width: 25px;
@@ -878,69 +862,6 @@ to be removed when jahia automaticvally includes plancours.css
   text-indent: -999em;
   border: none;
   float: left;
-}
-
-#header2013 .selected-field {
-  display: block;
-  padding-left: 8px;
-  background: url(../img/sprites.png) no-repeat -261px 0;
-}
-
-#header2013 .selected-field:hover {
-  background: #000 url(../img/sprites.png) no-repeat -261px -25px;
-  color: #fff;
-}
-
-#header2013 .search-filter .menu {
-  width: 144px;
-  position: absolute;
-  left: -1px;
-  top: 24px;
-  z-index: 9999;
-  padding: 4px 0 4px 0;
-  border: 1px solid #000;
-  border-top: none;
-  background: #fff none;
-  list-style-type: none;
-  line-height: 18px;
-  font-weight: normal;
-  color: #000;
-}
-
-#header2013 .search-filter .menu label {
-  display: block;
-  padding: 1px 7px;
-  cursor: pointer;
-}
-
-#header2013 .search-filter .menu label:hover, #header2013 .search-filter .menu label:hover abbr, #header2013 .search-filter .menu label:hover acronym {
-  background-color: #000;
-  color: #fff;
-}
-
-#header2013 .search-filter .menu.hidden {
-  position: absolute;
-  left: -999em;
-}
-
-#header2013 .search-filter .menu li {
-  display: list-item;
-  float: none;
-  margin-bottom: 0;
-  border-bottom: 1px solid #fff;
-  /* MSIE 6 */
-  list-style-image: none;
-  margin-left: 0;
-}
-
-#header2013 .search-filter .menu input {
-  margin-right: 4px;
-}
-
-#header2013 #header_searchform .ui-autocomplete {
-  top: 57px;
-  width: 297px;
-  cursor: pointer;
 }
 
 #header2013 .ac-more {
