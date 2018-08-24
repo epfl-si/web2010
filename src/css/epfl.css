@@ -1063,15 +1063,6 @@ to be removed when jahia automaticvally includes plancours.css
   margin: 0;
 }
 
-#searchform label:hover {
-  cursor: pointer;
-}
-
-#searchform label.current {
-  font-weight: bold;
-  background: url(../img/wheretosearch.gif) no-repeat top left;
-}
-
 #searchform input.search {
   width: 277px;
   height: 22px;

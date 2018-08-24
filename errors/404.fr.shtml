@@ -32,17 +32,8 @@
         <div class="local-color" id="nav-search">
           <div id="search-box">
             <a name="search" id="search"></a>
-            <form name="search" action="https://search.epfl.ch/process_web2010" id="searchform">
-              <input class="hidden" type="radio" name="engine" id="search-engine-person" value="person" checked="checked" title="Chercher une personne" />
-              <label for="search-engine-person" class="current" title="Chercher une personne">Personne</label>
-              <input class="hidden" type="radio" name="engine" id="search-engine-place" value="place" title="Chercher un lieu" />
-              <label for="search-engine-place" title="Chercher un lieu">Lieu</label>
-              <input class="hidden" type="radio" name="engine" id="search-engine-epfl" value="epfl" title="Chercher dans toute l'EPFL" />
-              <label for="search-engine-epfl" title="Chercher dans toute l'EPFL">Web <acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></label>
-              <input class="hidden" type="radio" name="engine" id="search-engine-local" value="local" title="Chercher dans ce site" />
-              <label for="search-engine-local" title="Chercher dans ce site">Sur ce site</label>
-              <input type="hidden" name="lang" value="fr" />
-              <input type="text" class="search" name="q" value="" id="searchfield" /><button type="submit" class="search-button" title="Rechercher">Rechercher</button>
+            <form name="search" action="https://search.epfl.ch/?" id="searchform">
+              <input type="text" class="search" name="q" value="" id="searchfield" /><button type="submit" class="search-button"  title="Rechercher">Rechercher</button>
             </form>
           </div>
         </div>
