@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v3.2.0 / 2018-08-28
+
+  - Remove search filter
+  - Remove search autocomplete
+  - Fix links in header
+
 ### v3.1.1 / 2018-07-18
 
   - Add EPFL Middle East section
