@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v3.2.1 / 2018-12-17
+
+  - Fix redirect with /index.html
+
 ### v3.2.0 / 2018-08-28
 
   - Remove search filter
