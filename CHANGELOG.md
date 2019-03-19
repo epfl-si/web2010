@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v3.3.0 / 2019-03-18
+
+  - Change EPFL logos
+  - Keep cookieconsent to v3.0.4
+
 ### v3.2.1 / 2018-12-17
 
   - Fix redirect with /index.html
