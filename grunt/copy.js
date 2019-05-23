@@ -1,5 +1,5 @@
 /*
- * (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017.
+ * (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2019.
  */
 module.exports = {
   release: {
@@ -19,6 +19,7 @@ module.exports = {
           'favicon.ico',
           'package.json',
           'robots.txt',
+          'index.html',
         ],
         dest: 'release/',
       },
