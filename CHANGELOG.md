@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v3.4.0 / 2019-06-19
+
+  - Clean redirect and config
+  - Remove homepage related stuff
+
 ### v3.3.0 / 2019-03-18
 
   - Change EPFL logos
