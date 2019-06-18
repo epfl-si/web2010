@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #
-# (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017.
+# (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2019.
 # See the LICENSE file for more details.
 #
 
@@ -51,22 +51,7 @@ deploy() {
   cp ~/tmp/*.shtml $WWW_PATH/htdocs/
   cp ~/tmp/favicon.ico $WWW_PATH/htdocs/
   cp ~/tmp/robots.txt $WWW_PATH/htdocs/
-
-  # public is a folder where content is copied from homepage.epfl.ch (hp2013)
-  if [ ! -d "$WWW_PATH/htdocs/public" ]; then
-    mkdir $WWW_PATH/htdocs/public
-  fi
-
-  # if /homepages not exist, create an init. version (for the symlink below)
-  if [ ! -d "$WWW_PATH/htdocs/homepages" ]; then
-    mkdir -p $WWW_PATH/htdocs/homepages/initial/visual
-    touch $WWW_PATH/htdocs/homepages/initial/index.en.html
-    touch $WWW_PATH/htdocs/homepages/initial/index.fr.html
-    ln -s $WWW_PATH/htdocs/homepages/initial $WWW_PATH/htdocs/homepages/current
-    ln -s $WWW_PATH/htdocs/homepages/current/index.fr.html $WWW_PATH/htdocs/index.fr.html
-    ln -s $WWW_PATH/htdocs/homepages/current/index.en.html $WWW_PATH/htdocs/index.en.html
-    ln -s $WWW_PATH/htdocs/homepages/current/visual $WWW_PATH/htdocs/visual
-  fi
+  cp ~/tmp/index.html $WWW_PATH/htdocs/
 
   echo "Deployed version $VERSION"
 }
