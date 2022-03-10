@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <!--#include virtual="../templates/fragments/header.sig.html" -->
+  <!--#include virtual="/templates/fragments/header.sig.html" -->
   <title>Service temporarily unavailable</title>
   <link href="//www.epfl.ch/css/epfl.css" media="all" rel="stylesheet" type="text/css" />
   <link href="//www.epfl.ch/css/503.css" rel="stylesheet" type="text/css" />
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <!--#include virtual="../templates/fragments/header.en.html" -->
+  <!--#include virtual="/templates/fragments/header.en.html" -->
   <div id="main-content">
     <h1>This system is currently under maintenance</h1>
     <h4>We apologize for any inconvenience this may cause.</h4>
