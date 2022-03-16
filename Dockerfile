@@ -50,6 +50,6 @@ RUN \
 ENV TZ=Europe/Zurich
 
 RUN rm /etc/nginx/conf.d/default.conf
-COPY ./docker/web2010_nginx.conf /etc/nginx/conf.d/
+COPY web2010_nginx.conf /etc/nginx/conf.d/
 
 COPY --from=build-stage /app/release/ /usr/share/nginx/html/
