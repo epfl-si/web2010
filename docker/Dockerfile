@@ -1,4 +1,4 @@
-FROM ubuntu:20.04 as build-stage
+FROM docker-registry.default.svc:5000/wwp-test/ubuntu:20.04 as build-stage
 
 ENV TZ=Europe/Zurich
 
@@ -39,7 +39,7 @@ RUN bower install --allow-root
 RUN grunt
 
 
-FROM nginx:1.21.6
+FROM docker-registry.default.svc:5000/wwp-test/nginx:1.21.6
 
 RUN \
   apt-get update && \
