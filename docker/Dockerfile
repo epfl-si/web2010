@@ -1,6 +1,4 @@
-ARG BASE_IMAGE_STAGE_0=docker-registry.default.svc:5000/wwp-test/ubuntu:20.04
-
-FROM $BASE_IMAGE_STAGE_0 as build-stage
+FROM ubuntu:20.04 as build-stage
 
 ENV TZ=Europe/Zurich
 
