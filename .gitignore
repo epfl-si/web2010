@@ -44,3 +44,6 @@ jspm_packages
 
 # Bower components
 bower_components
+
+# Docker
+Dockerfile-dev
