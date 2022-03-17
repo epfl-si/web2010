@@ -1,4 +1,7 @@
-FROM docker-registry.default.svc:5000/wwp-test/ubuntu:20.04 as build-stage
+ARG BASE_IMAGE_0="docker-registry.default.svc:5000/wwp-test/ubuntu:20.04"
+ARG BASE_IMAGE_1="docker-registry.default.svc:5000/wwp-test/nginx:1.21.6"
+
+FROM $BASE_IMAGE_0 as build-stage
 
 ENV TZ=Europe/Zurich
 
@@ -9,7 +12,6 @@ RUN \
 RUN \
   apt-get update && \
   apt-get install -yqq --no-install-recommends \
-    apache2=2.4.41-4ubuntu3.9 \
     ca-certificates=20210119~20.04.2 \
     git=1:2.25.1-1ubuntu3.2 \
     gnupg2=2.2.19-3ubuntu2.1 \
@@ -39,7 +41,7 @@ RUN bower install --allow-root
 RUN grunt
 
 
-FROM docker-registry.default.svc:5000/wwp-test/nginx:1.21.6
+FROM $BASE_IMAGE_1
 
 RUN \
   apt-get update && \
