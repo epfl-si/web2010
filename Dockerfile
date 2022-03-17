@@ -1,7 +1,7 @@
 ARG BASE_IMAGE_0="docker-registry.default.svc:5000/wwp-test/ubuntu:20.04"
 ARG BASE_IMAGE_1="docker-registry.default.svc:5000/wwp-test/nginx:1.21.6"
 
-FROM $BASE_IMAGE_0 as build-stage
+FROM ${BASE_IMAGE_0} as build-stage
 
 ENV TZ=Europe/Zurich
 
@@ -41,7 +41,7 @@ RUN bower install --allow-root
 RUN grunt
 
 
-FROM $BASE_IMAGE_1
+FROM ${BASE_IMAGE_1}
 
 RUN \
   apt-get update && \
