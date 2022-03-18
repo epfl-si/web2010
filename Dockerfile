@@ -38,13 +38,7 @@ RUN bower install --allow-root
 RUN grunt
 
 
-FROM docker-registry.default.svc:5000/wwp-test/nginx:1.21.6
-
-RUN \
-  apt-get update && \
-  apt-get install -yqq --no-install-recommends \
-    vim=2:8.2.2434-3+deb11u1 && \
-  rm -rf /var/lib/apt/lists/*
+FROM docker-registry.default.svc:5000/wwp-test/nginxinc/nginx-unprivileged:1.21-alpine
 
 ENV TZ=Europe/Zurich
 
