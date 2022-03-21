@@ -16,6 +16,7 @@ help:
 set-dockerfile-dev:
 	@cp Dockerfile Dockerfile-dev
 	@sed -i 's#docker-registry.default.svc:5000/wwp-test/##g' Dockerfile-dev
+	@sed -i 's#nginx-unprivileged#nginxinc/nginx-unprivileged#' Dockerfile-dev
 
 .PHONY: build
 build: set-dockerfile-dev
