@@ -30,9 +30,8 @@ COPY . /app
 WORKDIR /app
 
 # Build setup
-RUN npm install -g bower@^1.8.13 grunt@^1.4.1
+RUN npm install -g grunt@^1.4.1
 RUN npm install
-RUN bower install --allow-root
 
 # Build
 RUN grunt

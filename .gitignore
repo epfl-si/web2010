@@ -42,8 +42,5 @@ jspm_packages
 # OSX custom attributes
 .DS_Store
 
-# Bower components
-bower_components
-
 # Docker
 Dockerfile-dev

@@ -22,13 +22,12 @@ Setup
 You need to have Node.js, then:
 
 ```bash
-$ npm install -g grunt bower
+$ npm install -g grunt
 ```
 
 and
 
 ```bash
-$ bower install
 $ npm install
 ```
 
