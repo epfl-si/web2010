@@ -30,11 +30,10 @@ COPY . /app
 WORKDIR /app
 
 # Build setup
-RUN npm install -g grunt@^1.4.1
 RUN npm install
 
 # Build
-RUN grunt
+RUN npm run build
 
 
 FROM docker-registry.default.svc:5000/wwp-test/nginx-unprivileged:1.20.2-alpine

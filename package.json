@@ -19,7 +19,9 @@
   ],
   "license": "",
   "repository": "https://github.com/epfl-si/web2010.git",
-  "scripts": {},
+  "scripts": {
+    "build": "grunt"
+  },
   "dependencies": {
     "cookieconsent": "3.0.4"
   },
