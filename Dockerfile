@@ -38,7 +38,7 @@ RUN bower install --allow-root
 RUN grunt
 
 
-FROM docker-registry.default.svc:5000/wwp-test/nginx-unprivileged:1.21-alpine
+FROM docker-registry.default.svc:5000/wwp-test/nginx-unprivileged:1.20.2-alpine
 
 ENV TZ=Europe/Zurich
 

@@ -12,7 +12,7 @@ help:
 	@echo "  make build-force           — Force build"
 	@echo "  make up                    — Run"
 
-.PHONY: copy-dockerfile-to-dockerfile-dev
+.PHONY: set-dockerfile-dev
 set-dockerfile-dev:
 	@cp Dockerfile Dockerfile-dev
 	@sed -i 's#docker-registry.default.svc:5000/wwp-test/##g' Dockerfile-dev
