@@ -27,5 +27,5 @@ build-force: set-dockerfile-dev
 	@docker-compose build --force-rm --no-cache --pull
 
 .PHONY: up
-up:
+up: set-dockerfile-dev
 	@docker-compose up
