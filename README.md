@@ -79,6 +79,6 @@ You need to have access to wwp-test and wwp OpenShift namespaces, and be logged 
 
 Clone [wp-ops](https://github.com/epfl-si/wp-ops) repository and deploy web2010:
 
-`./ansible/wpsible --tags "web2010" --prod`
-`./ansible/wpsible --tags "web2010.rebuild"`
-`./ansible/wpsible --tags "web2010.image.promote" --prod`
+`./ansible/wpsible --tags "web2010" --prod`  
+`./ansible/wpsible --tags "web2010.rebuild"`  
+`./ansible/wpsible --tags "web2010.image.promote" --prod`  
