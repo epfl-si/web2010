@@ -29,11 +29,10 @@ RUN \
 COPY . /app
 WORKDIR /app
 
-# Build setup
-RUN npm install
-
 # Build
-RUN npm run build
+RUN \
+  npm install && \
+  npm run build
 
 
 FROM docker-registry.default.svc:5000/wwp-test/nginx-unprivileged:1.20.2-alpine
@@ -41,16 +40,19 @@ FROM docker-registry.default.svc:5000/wwp-test/nginx-unprivileged:1.20.2-alpine
 ENV TZ=Europe/Zurich
 
 RUN rm /etc/nginx/conf.d/default.conf
+
 COPY web2010_nginx.conf /etc/nginx/conf.d/
-
 COPY --from=build-stage /app/release/ /usr/share/nginx/html/
-
 COPY docker-entrypoint.sh /
+
 USER root
 RUN \
   apk update && \
-  apk add --no-cache openssl=1.1.1n-r0
-RUN chmod a+x /docker-entrypoint.sh
+  apk add --no-cache openssl=1.1.1n-r0 && \
+  chmod a+x /docker-entrypoint.sh && \
+  rm /usr/share/nginx/html/50x.html && \
+  rm /usr/share/nginx/html/package.json
+
 USER 101
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
