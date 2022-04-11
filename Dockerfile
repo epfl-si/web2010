@@ -50,8 +50,7 @@ RUN \
   apk update && \
   apk add --no-cache openssl=1.1.1n-r0 && \
   chmod a+x /docker-entrypoint.sh && \
-  rm /usr/share/nginx/html/50x.html && \
-  rm /usr/share/nginx/html/package.json
+  rm /usr/share/nginx/html/50x.html
 
 USER 101
 ENTRYPOINT ["/docker-entrypoint.sh"]
