@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v3.5.0 / 2022-04-12
+
+  - Containerize web2010 (with migration to NGINX instead of Apache)
+    - Dockerfile
+    - NGINX config
+  - Remove Bower and don't install Grunt globally
+
 ### v3.4.0 / 2019-06-19
 
   - Clean redirect and config
