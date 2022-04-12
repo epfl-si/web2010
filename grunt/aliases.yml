@@ -8,4 +8,3 @@ release:
   - "copy"
   - "cssmin"
   - "uglify"
-  - "compress"

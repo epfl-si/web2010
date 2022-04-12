@@ -9,12 +9,7 @@ This EPFL project contains:
   * css files (non responsive)
   * js files
   * EPFL logos
-  * Apache config
-
-Links
------
-  * http://atelierweb.epfl.ch/modeles-html-css
-  * http://web2010.epfl.ch/
+  * NGINX config
 
 Setup
 -----
@@ -22,13 +17,6 @@ Setup
 You need to have Node.js, then:
 
 ```bash
-$ npm install -g grunt bower
-```
-
-and
-
-```bash
-$ bower install
 $ npm install
 ```
 
@@ -55,24 +43,20 @@ Change in JavaScript or CSS
 
 Original files need to be in the `src` folder.
 
-To build:
+
+Build / Run
+-----------
 
 ```bash
-$ grunt
+$ make up
 ```
 
 Test
 ----
-Deploy on test server.
-
-Modify /etc/hosts file to point www.epfl.ch on the test server:
-```bash
-<ip_test_server>     www.epfl.ch
-```
 
 Test to download fragments:
 ```bash
-wget -P /home/obieler/workspace/actu/src/templates/header/ -N -nd -r -l 1 http://www.epfl.ch/templates/fragments/download-me.html
+wget -P <dest> -N -nd -r -l 1 http://localhost:8080/templates/fragments/download-me.html
 ```
 
 Tagging
@@ -90,22 +74,11 @@ git push --tags
 
 Deploy
 ------
-Copy the deploy tool on the servers (if doesn't exist on the server):
-```bash
-./deploy_tool/app.sh deploy_tools
-```
 
-Deploy the archive on the servers:
-```bash
-scp release/*.tgz <user>@<server>:~
-```
+You need to have access to wwp-test and wwp OpenShift namespaces, and be logged in to OpenShift.
 
-Then on each server:
-```bash
-./app.sh deploy <archive>
-```
+Clone [wp-ops](https://github.com/epfl-si/wp-ops) repository and deploy web2010:
 
-
-Copyright
----------
-(c) All rights reserved. ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017.
+`./ansible/wpsible --tags "web2010" --prod`  
+`./ansible/wpsible --tags "web2010.rebuild"`  
+`./ansible/wpsible --tags "web2010.image.promote" --prod`  

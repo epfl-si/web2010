@@ -13,11 +13,11 @@ module.exports = {
       {
         'release/css/epfl.css': [
           'src/css/epfl.css',
-          'bower_components/cookieconsent/build/cookieconsent.min.css',
+          'node_modules/cookieconsent/build/cookieconsent.min.css',
           'src/css/cookie.css'
         ],
         'release/css/epfl-cookie-consent.css': [
-          'bower_components/cookieconsent/build/cookieconsent.min.css',
+          'node_modules/cookieconsent/build/cookieconsent.min.css',
           'src/css/cookie.css'
         ],
       },

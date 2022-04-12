@@ -11,16 +11,16 @@ module.exports = {
     files: {
       'release/js/globalnav.js': [
         'src/js/globalnav.js',
-        'bower_components/cookieconsent/build/cookieconsent.min.js',
+        'node_modules/cookieconsent/build/cookieconsent.min.js',
         'src/js/init-cookieconsent.js'
       ],
       'release/js/globalnav-noanalytics.js': [
         'src/js/globalnav-noanalytics.js',
-        'bower_components/cookieconsent/build/cookieconsent.min.js',
+        'node_modules/cookieconsent/build/cookieconsent.min.js',
         'src/js/init-cookieconsent.js'
       ],
       'release/js/epfl-cookie-consent.js': [
-        'bower_components/cookieconsent/build/cookieconsent.min.js',
+        'node_modules/cookieconsent/build/cookieconsent.min.js',
         'src/js/init-cookieconsent.js'
       ],
       'release/js/homepage.js': [

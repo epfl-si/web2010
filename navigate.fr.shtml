@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!--#include virtual="templates/fragments/header.sig.html" -->
+<!--#include virtual="/templates/fragments/header.sig.html" -->
     <title>Navigation dans les pages de l'EPFL</title>
     <link href="//www.epfl.ch/css/epfl.css" media="all" rel="stylesheet" type="text/css" />
     <style type="text/css">
@@ -34,7 +34,7 @@
     <script type="text/javascript">jQuery(document).ready(function(){ jQuery("#jswarning").hide(); });</script>
   </head>
   <body>
-<!--#include virtual="templates/fragments/header-no-local-search.fr.html" -->
+<!--#include virtual="/templates/fragments/header-no-local-search.fr.html" -->
     <div id="main-content">
       <ul id="breadcrumbs" title="Navigation dans l'arborescence de l'EPFL">
         <li><a href="//www.epfl.ch/" title="Page d'accueil de l'EPFL">EPFL</a></li>

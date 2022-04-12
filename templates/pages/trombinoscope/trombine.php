@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <!--#include virtual="../fragments/header.sig.html" -->
+    <!--#include virtual="/templates/fragments/header.sig.html" -->
     <title>LFS - Laboratory of Fictive Science: welcome</title>
     <link href="http://www.epfl.ch/css/epfl.css" media="all" rel="stylesheet" type="text/css"/>
     <link href="http://www.epfl.ch/css/sb.css" media="all" rel="stylesheet" type="text/css"/>
@@ -67,7 +67,7 @@ ul.bottin table.contact td {
     </style>
   </head>
   <body>
-<!--#include virtual="../fragments/header.fr.html" -->
+<!--#include virtual="/templates/fragments/header.fr.html" -->
     <div id="main-content">
       <ul id="breadcrumbs" title="Navigation dans l'arborescence de l'EPFL">
         <li><a href="http://www.epfl.ch/" title="Page d'accueil de l'EPFL">EPFL</a></li>
@@ -75,7 +75,7 @@ ul.bottin table.contact td {
       </ul>
       <ul id="languages" title="Choix de la langue">
         <li><a href="home-en.html">English</a></li>
-        <li class="current">français</li>
+        <li class="current">franÃ§ais</li>
       </ul>
       <div class="clear"></div>
 
@@ -118,7 +118,7 @@ ul.bottin table.contact td {
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#">À propos de l'ENAC</a>
+            <a href="#">Ã€ propos de l'ENAC</a>
             <ul class="menu hidden">
               <li><a href="#">subpage</a></li>
               <li><a href="#">subpage 2</a></li>

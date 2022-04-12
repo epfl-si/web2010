@@ -18,12 +18,16 @@
     }
   ],
   "license": "",
-  "repository": "https://github.com/epfl-idevelop/web2010.git",
-  "scripts": {},
+  "repository": "https://github.com/epfl-si/web2010.git",
+  "scripts": {
+    "build": "grunt"
+  },
+  "dependencies": {
+    "cookieconsent": "3.0.4"
+  },
   "devDependencies": {
     "grunt": "^1.0.3",
     "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-compress": "^1.4.3",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^2.0.0",
     "grunt-contrib-uglify": "^3.3.0",
