@@ -1,15 +1,18 @@
 web2010
 =======
 
+Old web graphical charter non-responsive still used (sometimes partially) by several applications or web sites at EPFL. 
+
 Description
 -----------
+
 This EPFL project contains:
-  * EPFL global header (non responsive website)
-  * templates html
-  * css files (non responsive)
-  * js files
-  * EPFL logos
-  * NGINX config
+* EPFL global header (non responsive website)
+* templates html
+* css files (non responsive)
+* js files
+* EPFL logos
+* NGINX config
 
 Setup
 -----
@@ -82,3 +85,24 @@ Clone [wp-ops](https://github.com/epfl-si/wp-ops) repository and deploy web2010:
 `./ansible/wpsible --tags "web2010" --prod`  
 `./ansible/wpsible --tags "web2010.rebuild"`  
 `./ansible/wpsible --tags "web2010.image.promote" --prod`  
+
+Routing url
+-----------
+
+The routing of urls trough 'www.epfl.ch' between WordPress and web2010 is operated by Varnish (see Varnish config) since 15th of September 2022.  
+Here are the white list of urls forwarded to web2010 (excepted the last one):
+* `^/accessibility`
+* `^/images/`
+* `^/cgi-bin/csoldap`
+* `^/css/`
+* `^/errors/`
+* `^/javascript-help`
+* `^/img/`
+* `^/js/`
+* `^/navigate`
+* `^/organigrammes`
+* `^/templates`
+* `^/tools` (302 -> https://wwwlabel.epfl.ch/)
+
+Test web2010 urls:
+`python test_web2010_urls.py`
