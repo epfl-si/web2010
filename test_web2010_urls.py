@@ -29,10 +29,14 @@ paths = {
 sum_test_passed = 0
 sum_test_failed = 0
 
+headers = {
+  'User-Agent': 'ISAS-FSD Agent 1.0',
+}
+
 for path, code in paths.items():
   url = BASE_URL + path + '?' + str(uuid.uuid4())
   print(url)
-  response_head = requests.head(url)
+  response_head = requests.head(url, headers=headers)
   response_code = response_head.status_code
   if (response_code != code):
     print('FAILED: {} -> {}, should be {}'.format(url, response_code, code))
