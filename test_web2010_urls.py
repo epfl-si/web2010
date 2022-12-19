@@ -23,7 +23,6 @@ paths = {
   '/navigate.fr.shtml': 200,
   '/templates/fragments/header.fr.html': 200,
   '/templates/fragments/header.en.html': 200,
-  '/tools/label.php?s=22&BG=99cccc&FG=ffffff&label=Drebin': 302,
 }
 
 sum_test_passed = 0
