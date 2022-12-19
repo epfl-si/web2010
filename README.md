@@ -90,7 +90,7 @@ Routing url
 -----------
 
 The routing of urls trough 'www.epfl.ch' between WordPress and web2010 is operated by Varnish (see Varnish config) since 15th of September 2022.  
-Here are the white list of urls forwarded to web2010 (excepted the last one):
+Here are the white list of urls forwarded to web2010:
 * `^/accessibility`
 * `^/images/`
 * `^/cgi-bin/csoldap`
