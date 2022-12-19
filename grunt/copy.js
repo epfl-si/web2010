@@ -7,7 +7,6 @@ module.exports = {
       {
         expand: true,
         src: [
-          'config_apache/**',
           'css/**',
           'errors/**',
           'images/**',
@@ -16,8 +15,6 @@ module.exports = {
           'templates/**',
           '*.shtml',
           'favicon.ico',
-          'robots.txt',
-          'index.html',
         ],
         dest: 'release/',
       },

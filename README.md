@@ -100,7 +100,6 @@ Here are the white list of urls forwarded to web2010:
 * `^/img/`
 * `^/js/`
 * `^/navigate`
-* `^/organigrammes`
 * `^/templates`
 
 Test web2010 urls:
