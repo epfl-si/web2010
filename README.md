@@ -100,7 +100,6 @@ Here are the white list of urls forwarded to web2010 (excepted the last one):
 * `^/img/`
 * `^/js/`
 * `^/navigate`
-* `^/organigrammes`
 * `^/templates`
 * `^/tools` (302 -> https://wwwlabel.epfl.ch/)
 
