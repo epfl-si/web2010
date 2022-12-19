@@ -14,7 +14,6 @@ module.exports = {
           'img/**',
           'js/**',
           'templates/**',
-          'tools/**',
           '*.shtml',
           'favicon.ico',
           'robots.txt',
