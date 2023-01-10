@@ -1,6 +1,14 @@
 Changelog
 =========
 
+### v3.6.0 / 2023-01-10
+
+  - Add script to test web2010 urls (routing)
+  - Simplify and update Dockerfile
+  - Remove inaccessible files in image
+  - Remove label.php
+  - Improve README
+
 ### v3.5.0 / 2022-04-12
 
   - Containerize web2010 (with migration to NGINX instead of Apache)
