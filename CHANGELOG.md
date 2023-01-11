@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v3.6.1 / 2023-01-11
+
+  - Disable hadolint rule DL3018 (pin version)
+
 ### v3.6.0 / 2023-01-10
 
   - Add script to test web2010 urls (routing)
