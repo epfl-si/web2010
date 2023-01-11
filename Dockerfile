@@ -22,7 +22,7 @@ COPY docker-entrypoint.sh /
 USER root
 RUN \
   apk update && \
-  apk add --no-cache openssl=3.0.7-r2 && \
+  apk add --no-cache openssl && \
   chmod a+x /docker-entrypoint.sh && \
   rm /usr/share/nginx/html/50x.html
 
