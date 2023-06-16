@@ -8,18 +8,6 @@
  * Revision: 1.5
  */
 
- /*
-  * This should be in html as recommended by Google...
-  */
- (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
- ga('create', 'UA-4833294-1', 'auto', 'web2010');
- ga('web2010.set', 'anonymizeIp', true);
- ga('web2010.send', 'pageview');
-
 function showPanel() {
   jQuery("#header").expose({
     color: '#000',
