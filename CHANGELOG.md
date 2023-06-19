@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v3.7.0 / 2023-06-19
+
+  - Update Google Analytics (UA → GA4)
+
 ### v3.6.1 / 2023-01-11
 
   - Disable hadolint rule DL3018 (pin version)
