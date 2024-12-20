@@ -41,6 +41,3 @@ jspm_packages
 
 # OSX custom attributes
 .DS_Store
-
-# Docker
-Dockerfile-dev
