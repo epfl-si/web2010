@@ -1,4 +1,4 @@
-FROM docker-registry.default.svc:5000/wwp-test/node:16-alpine as build-stage
+FROM docker-registry.default.svc:5000/wwp-test/node:22-alpine as build-stage
 
 COPY . /app
 WORKDIR /app
@@ -9,7 +9,7 @@ RUN \
   npm run build
 
 
-FROM docker-registry.default.svc:5000/wwp-test/nginx-unprivileged:1.22.1-alpine
+FROM docker-registry.default.svc:5000/wwp-test/nginx-unprivileged:1.26.2-alpine
 
 ENV TZ=Europe/Zurich
 

@@ -103,4 +103,4 @@ Here are the white list of urls forwarded to web2010:
 * `^/templates`
 
 Test web2010 urls:
-`python test_web2010_urls.py`
+`python3 test_web2010_urls.py`
