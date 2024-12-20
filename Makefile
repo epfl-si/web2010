@@ -20,12 +20,12 @@ set-dockerfile-dev:
 
 .PHONY: build
 build: set-dockerfile-dev
-	@docker-compose build
+	@docker compose build
 
 .PHONY: build-force
 build-force: set-dockerfile-dev
-	@docker-compose build --force-rm --no-cache --pull
+	@docker compose build --force-rm --no-cache --pull
 
 .PHONY: up
 up: set-dockerfile-dev
-	@docker-compose up
+	@docker compose up
