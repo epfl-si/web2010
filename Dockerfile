@@ -17,7 +17,6 @@ RUN rm /etc/nginx/conf.d/default.conf
 
 COPY web2010_nginx.conf /etc/nginx/conf.d/
 COPY --from=build-stage /app/release/ /usr/share/nginx/html/
-COPY docker-entrypoint.sh /
 
 USER root
 RUN \
@@ -27,6 +26,5 @@ RUN \
   rm /usr/share/nginx/html/50x.html
 
 USER 101
-ENTRYPOINT ["/docker-entrypoint.sh"]
 
-EXPOSE 8080 8443
+EXPOSE 8080
