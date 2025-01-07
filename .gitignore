@@ -41,3 +41,6 @@ jspm_packages
 
 # OSX custom attributes
 .DS_Store
+
+# Ansible
+ansible/ansible-deps-cache
