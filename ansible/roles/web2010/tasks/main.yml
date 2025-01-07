@@ -1,0 +1,11 @@
+- name: "web2010 - Image"
+  when: >-
+    inventory_hostname == "openshift_namespace_test"
+  include_tasks:
+    file: image.yml
+    apply:
+      tags:
+        - image
+  tags:
+    - image
+    - image.startbuild
