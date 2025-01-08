@@ -9,3 +9,13 @@
   tags:
     - image
     - image.startbuild
+
+- name: "web2010 - App"
+  include_tasks:
+    file: app.yml
+    apply:
+      tags:
+        - app
+  tags:
+    - app
+    - app.restart

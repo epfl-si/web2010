@@ -3,6 +3,7 @@ quay_registry: quay-its.epfl.ch/svc0041
 
 app_image_name: web2010
 app_image_tag: latest
+app_image_source: "{{ quay_registry }}/{{ app_image_name }}:{{ app_image_tag }}"
 
 web2010_secrets: "{{ lookup('file', '/keybase/team/epfl_web2010/openshift_secrets.yml') | from_yaml }}"
 
