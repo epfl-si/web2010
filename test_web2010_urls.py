@@ -1,7 +1,8 @@
 import requests
 import uuid
 
-BASE_URL = 'https://www.epfl.ch'
+BASE_URL = 'http://localhost:8080'
+# BASE_URL = 'https://www.epfl.ch'
 
 paths = {
   '/accessibility.en.shtml': 200,

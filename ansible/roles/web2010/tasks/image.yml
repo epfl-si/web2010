@@ -1,0 +1,66 @@
+# Kubernetes configuration for “cloud” builds
+#
+# Builds happen in a test namespace *only.* The images can then be consumed
+# (through the same Quay instance) in both test and production namespaces.
+
+- name: Builder Pull Secret
+  kubernetes.core.k8s:
+    definition:
+      apiVersion: v1
+      kind: Secret
+      type: kubernetes.io/dockerconfigjson
+      metadata:
+        name: builder-web2010-pull-secret
+        namespace: "{{ openshift_namespace }}"
+      data:
+        .dockerconfigjson: "{{ builder_pull_secret_config | to_json | b64encode }}"
+
+- name: Service Account for Build Config
+  kubernetes.core.k8s:
+    definition:
+      apiVersion: v1
+      kind: ServiceAccount
+      metadata:
+        name: builder-web2010
+        namespace: "{{ openshift_namespace }}"
+      secrets:
+        - name: builder-web2010-pull-secret
+      # This is not supposed to be required (it worked without in
+      # OpenShift 4.14); but see
+      # https://access.redhat.com/solutions/7098226
+      imagePullSecrets:
+      - name: builder-web2010-pull-secret
+
+- name: Build Config
+  kubernetes.core.k8s:
+    definition:
+      apiVersion: build.openshift.io/v1
+      kind: BuildConfig
+      metadata:
+        name: web2010
+        namespace: "{{ openshift_namespace }}"
+      spec:
+        serviceAccount: builder-web2010
+        source:
+          type: Git
+          git:
+            ref: "master"
+            uri: "{{ web2010_git_uri }}"
+        strategy:
+          type: Docker
+          dockerStrategy:
+            forcePull: true
+        triggers:
+          - type: ConfigChange
+        output:
+          to:
+            kind: DockerImage
+            name: "{{ quay_registry }}/{{ app_image_name }}:{{ app_image_tag }}"
+
+- name: Start build
+  when: >-
+    "image.startbuild" in ansible_run_tags
+  shell:
+    cmd: "oc -n {{ openshift_namespace }} start-build --wait web2010"
+  tags:
+    - image.startbuild

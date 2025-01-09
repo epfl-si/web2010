@@ -1,4 +1,4 @@
-FROM docker-registry.default.svc:5000/wwp-test/node:16-alpine as build-stage
+FROM quay-its.epfl.ch/svc0041/node:22-alpine as build-stage
 
 COPY . /app
 WORKDIR /app
@@ -9,7 +9,7 @@ RUN \
   npm run build
 
 
-FROM docker-registry.default.svc:5000/wwp-test/nginx-unprivileged:1.22.1-alpine
+FROM quay-its.epfl.ch/svc0041/nginx-unprivileged:1.26.2-alpine
 
 ENV TZ=Europe/Zurich
 
@@ -17,7 +17,6 @@ RUN rm /etc/nginx/conf.d/default.conf
 
 COPY web2010_nginx.conf /etc/nginx/conf.d/
 COPY --from=build-stage /app/release/ /usr/share/nginx/html/
-COPY docker-entrypoint.sh /
 
 USER root
 RUN \
@@ -27,6 +26,5 @@ RUN \
   rm /usr/share/nginx/html/50x.html
 
 USER 101
-ENTRYPOINT ["/docker-entrypoint.sh"]
 
-EXPOSE 8080 8443
+EXPOSE 8080

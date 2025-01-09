@@ -1,0 +1,43 @@
+- name: Routes
+  kubernetes.core.k8s:
+    definition:
+      apiVersion: route.openshift.io/v1
+      kind: Route
+      metadata:
+        name: >-
+          web2010-{{
+            item | regex_replace('[^A-Za-z0-9-]+', '-')
+                | regex_replace('^-', '')  }}
+        namespace: "{{ openshift_namespace }}"
+        labels:
+          route: public
+        annotations:
+          haproxy.router.openshift.io/balance: roundrobin
+          haproxy.router.openshift.io/disable_cookies: 'true'
+      spec:
+        host: "{{ web2010_host }}"
+        path: "{{ item }}"
+        to:
+          kind: Service
+          name: web2010
+          weight: 100
+        port:
+          targetPort: web2010-svc-port
+        tls:
+          termination: edge
+          insecureEdgeTerminationPolicy: Redirect
+  with_items:
+    - /accessibility.en.shtml
+    - /accessibility.fr.shtml
+    - /css
+    - /errors
+    - /javascript-help.en.shtml
+    - /javascript-help.fr.shtml
+    - /js
+    - /navigate.en.shtml
+    - /navigate.fr.shtml
+    - /images
+    - /img
+    # Redirected as part of /etc/nginx/conf.d/web2010_nginx.conf on that same Deployment:
+    - /cgi-bin/csoldap
+    - /templates
