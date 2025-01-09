@@ -5,3 +5,4 @@ all:
       ansible_host: localhost
       ansible_python_interpreter: "{{ web2010sible_suitcase_dir }}/bin/python3"
       openshift_namespace: svc0041p-wordpress
+      web2010_host: www.epfl.ch

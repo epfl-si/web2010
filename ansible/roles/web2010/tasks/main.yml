@@ -19,3 +19,12 @@
   tags:
     - app
     - app.restart
+
+- name: "web2010 - Routes"
+  include_tasks:
+    file: routes.yml
+    apply:
+      tags:
+        - routes
+  tags:
+    - routes
