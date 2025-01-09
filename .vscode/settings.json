@@ -9,5 +9,5 @@
   "python.analysis.exclude": [
     "ansible/ansible-deps-cache/**"
   ],
-  "ansible.python.interpreterPath": "/home/obieler/.pyenv/versions/3.12.7/bin/python"
+  "ansible.python.interpreterPath": "ansible/ansible-deps-cache/bin/python3"
 }
