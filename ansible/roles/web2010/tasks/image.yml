@@ -44,7 +44,7 @@
         source:
           type: Git
           git:
-            ref: "feature/migrate-to-os4"   # TODO: Change to master when ready for merge
+            ref: "master"
             uri: "{{ web2010_git_uri }}"
         strategy:
           type: Docker
