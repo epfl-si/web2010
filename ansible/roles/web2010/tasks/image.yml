@@ -58,9 +58,9 @@
             name: "{{ quay_registry }}/{{ app_image_name }}:{{ app_image_tag }}"
 
 - name: Start build
-  shell:
-    cmd: "oc -n {{ openshift_namespace }} start-build --wait web2010"
   when: >-
     "image.startbuild" in ansible_run_tags
+  shell:
+    cmd: "oc -n {{ openshift_namespace }} start-build --wait web2010"
   tags:
     - image.startbuild
