@@ -1,0 +1,25 @@
+web2010_git_uri: https://github.com/epfl-si/web2010
+quay_registry: quay-its.epfl.ch/svc0041
+
+app_image_name: web2010
+app_image_tag: latest
+app_image_source: "{{ quay_registry }}/{{ app_image_name }}:{{ app_image_tag }}"
+
+web2010_secrets: "{{ lookup('file', '/keybase/team/epfl_web2010/openshift_secrets.yml') | from_yaml }}"
+
+_pull_robot_secrets: "{{ web2010_secrets.quay.pull_robot }}"
+_pull_robot_credential: "{{ _pull_robot_secrets.name }}:{{ _pull_robot_secrets.token }}"
+
+pull_secret_config:
+  auths:
+    "quay-its.epfl.ch":
+      "auth": "{{ _pull_robot_credential | b64encode }}"
+
+
+_pull_robot_builder_secrets: "{{ web2010_secrets.quay.pull_robot_builder }}"
+_pull_robot_builder_credential: "{{ _pull_robot_builder_secrets.name }}:{{ _pull_robot_builder_secrets.token }}"
+
+builder_pull_secret_config:
+  auths:
+    "quay-its.epfl.ch":
+      "auth": "{{ _pull_robot_builder_credential | b64encode }}"

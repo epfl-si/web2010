@@ -1,0 +1,4 @@
+- name: web2010
+  hosts: all
+  roles:
+    - role: roles/web2010

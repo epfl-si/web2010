@@ -1,0 +1,8 @@
+all:
+  hosts:
+    openshift_namespace_test:
+      ansible_connection: local
+      ansible_host: localhost
+      ansible_python_interpreter: "{{ web2010sible_suitcase_dir }}/bin/python3"
+      openshift_namespace: svc0041t-wordpress
+      web2010_host: wpn-test.epfl.ch
