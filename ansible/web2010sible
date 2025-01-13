@@ -58,7 +58,7 @@ ensure_suitcase
 [ "$1" == "--help" ] && help
 
 declare -a ansible_args
-ansible_args=(-e "web2010sible_suitcase_dir=$PWD/ansible-deps-cache")
+ansible_args=()
 inventory_mode="test"
 cluster_url="https://api.ocpitst0001.xaas.epfl.ch:6443"
 namespace="svc0041t-wordpress"
