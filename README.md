@@ -19,7 +19,6 @@ Routed paths
 
 * /accessibility.en.shtml
 * /accessibility.fr.shtml
-* /cgi-bin/csoldap
 * /css
 * /errors
 * /images
