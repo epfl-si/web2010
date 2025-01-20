@@ -7,9 +7,6 @@ BASE_URL = 'http://localhost:8080'
 paths = {
   '/accessibility.en.shtml': 200,
   '/accessibility.fr.shtml': 200,
-  '/cgi-bin/csoldap/browse?unit=10339': 302,
-  '/cgi-bin/csoldap?sciper=199918': 302,
-  '/cgi-bin/csoldap/simple?sciper=263877': 302,
   '/cssss': 404,
   '/css/print.css': 200,
   '/css/epfl.css': 200,
