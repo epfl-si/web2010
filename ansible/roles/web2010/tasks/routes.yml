@@ -10,7 +10,7 @@
                 | regex_replace('^-', '')  }}
         namespace: "{{ openshift_namespace }}"
         labels:
-          route: public
+          route: "{{ avi_route_access_level }}"
         annotations:
           haproxy.router.openshift.io/balance: roundrobin
           haproxy.router.openshift.io/disable_cookies: 'true'
@@ -39,5 +39,4 @@
     - /images
     - /img
     # Redirected as part of /etc/nginx/conf.d/web2010_nginx.conf on that same Deployment:
-    - /cgi-bin/csoldap
     - /templates
